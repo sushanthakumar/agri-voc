@@ -1,0 +1,42 @@
+{
+    "@context": {
+        "geojson": "https://purl.org/geojson/vocab#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "iudx": "https://voc.iudx.org.in/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "adex": "https://agrijson.adex.org.in/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:gustSpeed",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "A sudden burst of high-speed wind over the observed average wind speed lasting  only for a few seconds.",
+            "rdfs:label": "gustSpeed",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "iudx:gustSpeed"
+            }
+        }
+    ]
+}

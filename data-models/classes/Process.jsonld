@@ -1,0 +1,26 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "iudx": "https://voc.iudx.org.in/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "adex": "https://agrijson.adex.org.in/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:Process",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Data models that pertain to the environment domain",
+            "rdfs:label": "Process",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Concept"
+            }
+        }
+    ]
+}

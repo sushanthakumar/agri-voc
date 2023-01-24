@@ -1,0 +1,63 @@
+{
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "schema": "http://schema.org/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org.in/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:location",
+            "@type": [
+                "adex:GeoProperty"
+            ],
+            "rdfs:comment": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor.",
+            "rdfs:label": "location",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource"
+                },
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Provider"
+                },
+                {
+                    "@id": "adex:ResourceServer"
+                },
+                {
+                    "@id": "adex:Organization"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Point"
+                },
+                {
+                    "@id": "adex:GeoJSONGeometry"
+                },
+                {
+                    "@id": "adex:Place"
+                },
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:location"
+            }
+        }
+    ]
+}
