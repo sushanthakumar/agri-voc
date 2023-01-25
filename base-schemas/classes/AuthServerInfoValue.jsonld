@@ -15,9 +15,6 @@
             ],
             "rdfs:comment": "Describes information about the ADEX Authorization Server for a given resource.",
             "rdfs:label": "AuthServerInfoValue",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
                 "@id": "adex:StructuredValue"
             }
