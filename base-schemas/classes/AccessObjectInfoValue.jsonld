@@ -15,9 +15,6 @@
             ],
             "rdfs:comment": "Describes information on accessing data from a given resource.",
             "rdfs:label": "AccessObjectInfoValue",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
                 "@id": "adex:StructuredValue"
             }
