@@ -1,0 +1,127 @@
+{
+    "@graph": [
+        {
+            "@id": "adex:Class",
+            "@type": [
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "A class, also often called a 'Type'; equivalent to rdfs:Class.",
+            "rdfs:label": "Class",
+            "adex:isPartOf": {
+                "@id": "https://voc.iudx.org.in/meta"
+            },
+            "owl:equivalentClass": {
+                "@id": "rdfs:Class"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Intangible"
+            }
+        },
+        {
+            "@id": "adex:Intangible",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Class of all intangible things like Structured valued objects etc.",
+            "rdfs:label": "Intangible",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Thing"
+            }
+        },
+        {
+            "@id": "adex:Thing",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Most generic ADEX object.",
+            "rdfs:label": "Thing",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:Thing"
+            }
+        },
+        {
+            "@id": "adex:description",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Description for an ADEX thing.",
+            "rdfs:label": "description",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Thing"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:domainIncludes",
+            "@type": [
+                "rdf:Property"
+            ],
+            "rdfs:comment": "Relates a property to a class that is (one of) the type(s) the property is expected to be used on.",
+            "rdfs:label": "domainIncludes",
+            "adex:domainIncludes": [
+                {
+                    "@id": "rdf:Property"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Class"
+                }
+            ],
+            "skos:exactmatch": {
+                "@id": "schema:domainIncludes"
+            }
+        },
+        {
+            "@id": "adex:rangeIncludes",
+            "@type": [
+                "rdf:Property"
+            ],
+            "rdfs:comment": "Relates a property to a class that constitutes (one of) the expected type(s) for values of the property.",
+            "rdfs:label": "rangeIncludes",
+            "skos:exactMatch": {
+                "@id": "schema:rangeIncludes"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "rdf:Property"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Class"
+                }
+            ],
+            "skos:exactmatch": {
+                "@id": "schema:rangeIncludes"
+            }
+        }
+    ],
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org.in/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/"
+    }
+}

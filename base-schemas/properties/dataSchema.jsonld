@@ -28,10 +28,7 @@
                     "@id": "adex:Text",
                     "@type": "@id"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

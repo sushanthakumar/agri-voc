@@ -36,9 +36,6 @@
             ],
             "skos:exactMatch": {
                 "@id": "schema:latitude"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
             }
         }
     ]

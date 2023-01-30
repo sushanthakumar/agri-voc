@@ -15,9 +15,6 @@
             ],
             "rdfs:comment": "Data Model for weather conditions observed at a certain place and time.",
             "rdfs:label": "Weather",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
                 "@id": "adex:AgriResource"
             }

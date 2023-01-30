@@ -1,0 +1,37 @@
+{
+    "@graph": [
+        {
+            "@id": "adex:relationType",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Type of relation. ENUM: [REL_MESSAGESTREAM, REL_FILE, REL_DATASET, REL_THING].",
+            "rdfs:label": "relationType",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:RelationshipValue",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        }
+    ],
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "adex": "https://agrijson.adex.org.in/"
+    }
+}

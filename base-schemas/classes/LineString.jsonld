@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "Describes the GeoJSON LineString",
             "rdfs:label": "LineString",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "skos:exactMatch": {
                 "@id": "geojson:LineString"
             },

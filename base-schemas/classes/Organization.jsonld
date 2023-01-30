@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "Information about a given organization (contact info, email, urls etc.)",
             "rdfs:label": "Organization",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "skos:exactMatch": {
                 "@id": "schema:Organization"
             },

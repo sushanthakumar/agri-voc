@@ -15,9 +15,6 @@
             ],
             "rdfs:comment": "Lists various fields associated with the data available from a given group of resource items.",
             "rdfs:label": "DataFieldListValue",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
                 "@id": "adex:StructuredValue"
             }

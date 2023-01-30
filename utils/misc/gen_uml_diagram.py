@@ -48,10 +48,12 @@ def get_id(graph_obj):
                 print("\t" + j["@id"], file=text_file)
     print("}", file=text_file)
 
-def graph(obj):
+def graph(obj,cl_dir):
     """ Generate PlantUML text.
     This function generates a text file from the classes,
     which is used by plantuml to generate the UML Ontology diagram for ADEX.
+
+    The cl_dir is the directory of data-type classes in the ADEX voc that needs to be ignored which is not the actual floating class.
     """
     global ct
     global dict
@@ -66,18 +68,15 @@ def graph(obj):
                     cname = "".join(cname)
                     if class_name not in dup_classes:
                         dup_classes.append(class_name)
-                        if 'rdfs:subClassOf' not in  i and 'rdfs:isDefinedBy' in i:
-                            
+                        data_type_dir  = cl_dir.split("/")[-2]
+                        
+                        if 'rdfs:subClassOf' not in  i and data_type_dir != "data-types":
                             if i['rdfs:label'] != "Thing":
                                 print("class " + "\"" + class_name +  f"<sup>{ct}</sup>" + "\"" + " as " + class_name + f" {bg_color}" +"{", file=text_file) 
                                 get_id(graph_obj)
                                 dict.update({class_name:ct})
                                 ct = ct + 1
-                            else:
-                                print("class " + "\"" + class_name + "\"" + " as " + class_name + f" {bg_color}" +"{", file=text_file) 
-                                get_id(graph_obj) 
-                                
-                        
+                         
                         if 'rdfs:subClassOf' not in  i and 'rdfs:isDefinedBy' not in i:
                             print("class " + "\"" + class_name + "\"" + " as " + class_name + f" {bg_color}" +"{", file=text_file)   
                             get_id(graph_obj)
@@ -96,7 +95,7 @@ def graph(obj):
                                 file_path = find_file(super_class[1]+ '.jsonld',voc_dir)
                                 with open(file_path[0], "r+") as super_file:
                                     super_obj = json.load(super_file)
-                                    graph(super_obj)
+                                    graph(super_obj,cl_dir)
                             print(f'"{spclass_name}"' + " --|> " + f'"{class_name}"' + " : SubClass", file=text_file)
                         elif "rdf:" not in i["rdfs:subClassOf"]["@id"]:
                             spclass_name = i["rdfs:subClassOf"]["@id"]
@@ -106,7 +105,7 @@ def graph(obj):
                             file_path = find_file(super_class[1]+ '.jsonld',voc_dir)
                             with open(file_path[0], "r+") as super_file:
                                 super_obj = json.load(super_file)
-                                graph(super_obj)
+                                graph(super_obj,cl_dir)
                             print(f'"{spclass_name}"' + " --|> " + f'"{class_name}"' + " : SubClass", file=text_file)
                                     
         else:
@@ -143,7 +142,6 @@ def prop(obj):
     which is used by plantuml to generate the UML Ontology diagram for ADEX.
     """
     global ct
-    #try:
 
     if "@graph" in obj.keys():
         graph_obj = copy.deepcopy(obj["@graph"])
@@ -221,9 +219,7 @@ def prop(obj):
                     dup_property.append(property_name)                          
     else:
         print("@graph missing in " + filename)
-    #except:
-    #    print("Error in file")
-
+    
 
 with open(os.path.join(diagram_path, 'adex-Vocab-Ontology.txt'), "w+") as text_file:
     print("@startuml", file=text_file)
@@ -232,48 +228,49 @@ with open(os.path.join(diagram_path, 'adex-Vocab-Ontology.txt'), "w+") as text_f
     print("skinparam titleFontColor DarkGoldenRod" + "\n", file=text_file)
     print("left to right direction" + "\n" + "skinparam classFontColor DarkCyan" + "\n" + "skinparam roundcorner 27" + "\n", file=text_file)
     print("skinparam legendBackgroundColor #FFFFFF"+ "\n", file=text_file)
-    #Accessing all Classes in voc
+    #Accessing all the Classes in agrijson
     dirs = glob.glob(os.path.join(voc_dir, '*'))
     class_dirs = find_name('classes',voc_dir)
     try:    
-        for dir in class_dirs:
+        for cl_dir in class_dirs:
+            sub_dirs = glob.glob(os.path.join(cl_dir, '*.jsonld'))
+            for cl_filename in sub_dirs:
+                with open(cl_filename, "r+") as obj_file:
+                    obj = json.load(obj_file)
+                    graph(obj,cl_dir)
+    except:
+        print("Error in Json file") 
+    #Accessing all the Properties in agrijson
+    try:
+        property_dirs = find_name('properties',voc_dir)
+        for dir in property_dirs:
             sub_dirs = glob.glob(os.path.join(dir, '*.jsonld'))
             for filename in sub_dirs:
                 with open(filename, "r+") as obj_file:
                     obj = json.load(obj_file)
-                    graph(obj)
+                    prop(obj)
     except:
-        print("Json file is empty") 
-    #Accessing all Properties in voc
-    #try:
-    property_dirs = find_name('properties',voc_dir)
-    for dir in property_dirs:
-        sub_dirs = glob.glob(os.path.join(dir, '*.jsonld'))
-        for filename in sub_dirs:
-            with open(filename, "r+") as obj_file:
-                print(filename)
-                obj = json.load(obj_file)
-                prop(obj)
+        print("Json file is empty")  
+
     print(""" 
     legend
     <back:red>     </back> TimeProperty         <back:blue>     </back> TextProperty         <back:brown>     </back> QuantitativeProperty         <back:black>     </back> StructuredProperty         <back:grey>     </back> GeoProperty         <back:green>     </back> Relationship 
     endlegend""", file=text_file)            
     print("\n" + "@enduml", file=text_file)
-   # except:
-    #    print("Json file is empty")   
+    
 
 
 #Install Java "sudo apt install default-jre"
-plantuml_path = "/home/iudx/pari/agri/iudx-voc/utils/misc/plantuml.jar"
+plantuml_path = os.path.join(voc_dir,'utils/misc/plantuml.jar')
 out_path = os.path.join(diagram_path, 'adex-Vocab-Ontology.txt')
 subprocess.check_output(f'java -jar -DPLANTUML_LIMIT_SIZE=20000 {plantuml_path} {out_path}', shell=True, text=True)
 
 
 #Install packages for png to pdf "sudo apt-get install python3-pil tesseract-ocr libtesseract-dev tesseract-ocr-eng tesseract-ocr-script-latn"
-'''png_path = os.path.join(diagram_path,"adex-Vocab-Ontology.png")
+png_path = os.path.join(diagram_path,"adex-Vocab-Ontology.png")
 pdf_path = os.path.join(diagram_path,"adex-Vocab-Ontology.pdf")
 PDF = pytesseract.image_to_pdf_or_hocr(png_path, extension='pdf')
 # export to searchable.pdf
 with open(pdf_path, "w+b") as f:
-    f.write(bytearray(PDF))'''
+    f.write(bytearray(PDF))
 

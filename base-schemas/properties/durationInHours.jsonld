@@ -24,10 +24,7 @@
                 {
                     "@id": "adex:Number"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

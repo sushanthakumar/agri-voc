@@ -15,9 +15,6 @@
             ],
             "rdfs:comment": "Class of all ADEX Entities (Resource, ResourceGroup, ResourceServer, Provider etc.)",
             "rdfs:label": "ADEXEntity",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
                 "@id": "adex:Thing"
             }

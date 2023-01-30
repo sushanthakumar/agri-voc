@@ -16,9 +16,6 @@
             ],
             "rdfs:comment": "Most generic ADEX object.",
             "rdfs:label": "Thing",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "skos:exactMatch": {
                 "@id": "schema:Thing"
             }

@@ -27,9 +27,6 @@
             ],
             "skos:exactMatch": {
                 "@id": "schema:minValue"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
             }
         }
     ]

@@ -1,0 +1,39 @@
+{
+    "@context": "https://agrijson.adex.org.in/",
+    "type": [
+        "adex:ResourceServer"
+    ],
+    "id": "providerID/example.com/",
+    "name": "adexResourceServer",
+    "description": "Generic ADEX resource server",
+    "tags": "ADEX, Resource, Server, Platform",
+    "itemStatus": "ACTIVE",
+    "itemCreatedAt": "2020-07-01T10:03:26+0000",
+    "resourceServerHTTPAccessURL": "example.com/",
+    "resourceServerOrg": {
+        "name": "adex",
+        "additionalInfoURL": "https://iudx.org.in",
+        "location": {
+            "type": "Place",
+            "address": "IISc, Bangalore",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    75.92,
+                    13.5
+                ]
+            }
+        }
+    },
+    "location": {
+        "type": "Place",
+        "address": "Pune",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                74.92,
+                12.5
+            ]
+        }
+    }
+}

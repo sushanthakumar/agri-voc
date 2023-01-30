@@ -15,9 +15,6 @@
             ],
             "rdfs:comment": "Describes the Resource entity in the ADEX catalogue.",
             "rdfs:label": "Resource",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
                 "@id": "adex:ADEXEntity"
             }

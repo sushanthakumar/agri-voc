@@ -1,0 +1,264 @@
+{
+    "@graph": [
+        {
+            "@id": "adex:LineString",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Describes the GeoJSON LineString",
+            "rdfs:label": "LineString",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "geojson:LineString"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:GeoJSONGeometry"
+            }
+        },
+        {
+            "@id": "adex:GeoJSONGeometry",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Describes the GeoJSON object",
+            "rdfs:label": "GeoJSONGeometry",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:StructuredValue"
+            }
+        },
+        {
+            "@id": "adex:StructuredValue",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Describes a generic nested JSON structured value",
+            "rdfs:label": "StructuredValue",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Intangible"
+            }
+        },
+        {
+            "@id": "adex:Intangible",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Class of all intangible things like Structured valued objects etc.",
+            "rdfs:label": "Intangible",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Thing"
+            }
+        },
+        {
+            "@id": "adex:Thing",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Most generic ADEX object.",
+            "rdfs:label": "Thing",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:Thing"
+            }
+        },
+        {
+            "@id": "adex:description",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Description for an ADEX thing.",
+            "rdfs:label": "description",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Thing"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:value",
+            "@type": [
+                "rdf:Property"
+            ],
+            "rdfs:comment": "Value of the quantity being described in the ValueDescriptor object.",
+            "rdfs:label": "value",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:Boolean"
+                },
+                {
+                    "@id": "adex:NumericArray"
+                },
+                {
+                    "@id": "adex:StructuredValue"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:geometry",
+            "@type": [
+                "adex:GeoProperty"
+            ],
+            "rdfs:comment": "Geometry property in a GeoJSON object",
+            "rdfs:label": "geometry",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Feature"
+                },
+                {
+                    "@id": "adex:Place"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:GeoJSONGeometry"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "geojson:geometry"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:geoCovers",
+            "@type": [
+                "adex:GeoProperty"
+            ],
+            "rdfs:comment": "Represents the coverage relationship between two geometries/places.",
+            "rdfs:label": "geoCovers",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Place"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:GeoJSONGeometry"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:location",
+            "@type": [
+                "adex:GeoProperty"
+            ],
+            "rdfs:comment": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor.",
+            "rdfs:label": "location",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource"
+                },
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Provider"
+                },
+                {
+                    "@id": "adex:ResourceServer"
+                },
+                {
+                    "@id": "adex:Organization"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Point"
+                },
+                {
+                    "@id": "adex:GeoJSONGeometry"
+                },
+                {
+                    "@id": "adex:Place"
+                },
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:location"
+            }
+        },
+        {
+            "@id": "adex:geoJSON",
+            "@type": [
+                "adex:GeoProperty"
+            ],
+            "rdfs:comment": "Geo-coordinates of a place specified in GeoJSON format.",
+            "rdfs:label": "geoJSON",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Place"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:GeoJSONGeometry"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        }
+    ],
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "adex": "https://agrijson.adex.org.in/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    }
+}

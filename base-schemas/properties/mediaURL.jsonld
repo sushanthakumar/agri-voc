@@ -28,9 +28,6 @@
                     "@id": "adex:ValueDescriptor"
                 }
             ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "skos:exactMatch": {
                 "@id": "open311:media_url"
             }

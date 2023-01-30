@@ -43,9 +43,6 @@
             ],
             "skos:exactMatch": {
                 "@id": "schema:name"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
             }
         }
     ]

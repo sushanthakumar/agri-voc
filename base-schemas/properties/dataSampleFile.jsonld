@@ -33,10 +33,7 @@
                     "@container": "@list",
                     "@id": "adex:RelationshipValue"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

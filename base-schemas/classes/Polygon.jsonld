@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "Describes the GeoJSON Polygon",
             "rdfs:label": "Polygon",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "skos:exactMatch": {
                 "@id": "geojson:Polygon"
             },

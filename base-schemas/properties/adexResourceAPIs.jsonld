@@ -29,10 +29,7 @@
                     "@id": "adex:Text",
                     "@container": "@set"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

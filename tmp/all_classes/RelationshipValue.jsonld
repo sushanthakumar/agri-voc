@@ -1,0 +1,564 @@
+{
+    "@graph": [
+        {
+            "@id": "adex:RelationshipValue",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Describes the value of a Relationship Object.",
+            "rdfs:label": "RelationshipValue",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:StructuredValue"
+            }
+        },
+        {
+            "@id": "adex:StructuredValue",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Describes a generic nested JSON structured value",
+            "rdfs:label": "StructuredValue",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Intangible"
+            }
+        },
+        {
+            "@id": "adex:Intangible",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Class of all intangible things like Structured valued objects etc.",
+            "rdfs:label": "Intangible",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Thing"
+            }
+        },
+        {
+            "@id": "adex:Thing",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Most generic ADEX object.",
+            "rdfs:label": "Thing",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:Thing"
+            }
+        },
+        {
+            "@id": "adex:description",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Description for an ADEX thing.",
+            "rdfs:label": "description",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Thing"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:value",
+            "@type": [
+                "rdf:Property"
+            ],
+            "rdfs:comment": "Value of the quantity being described in the ValueDescriptor object.",
+            "rdfs:label": "value",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:Boolean"
+                },
+                {
+                    "@id": "adex:NumericArray"
+                },
+                {
+                    "@id": "adex:StructuredValue"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:dataQualityFile",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": " Data Quality file download link for the resource",
+            "rdfs:label": "dataQualityFile",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@container": "@list",
+                    "@id": "adex:Text"
+                },
+                {
+                    "@container": "@list",
+                    "@id": "adex:RelationshipValue"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:resourceGroup",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "IRI pointing to the resourceGroup entity associated with the resource.",
+            "rdfs:label": "resourceGroup",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:accessObject",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "Link to the access object. For example, an open API object.",
+            "rdfs:label": "accessObject",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:AccessObjectInfoValue"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:additionalInfoURL",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "URL from which additional information of the subject can be obtained",
+            "rdfs:label": "additionalInfoURL",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:AccessObjectInfoValue"
+                },
+                {
+                    "@id": "adex:Organization"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:relationType",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Type of relation. ENUM: [REL_MESSAGESTREAM, REL_FILE, REL_DATASET, REL_THING].",
+            "rdfs:label": "relationType",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:RelationshipValue",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:provider",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "IRI pointing to the provider entity associated with the given catalogue item",
+            "rdfs:label": "provider",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource"
+                },
+                {
+                    "@id": "adex:ResourceGroup",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:dataDescriptor",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "URI pointing to the data-descriptor entity",
+            "rdfs:label": "dataDescriptor",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@type": "@id",
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                },
+                {
+                    "@id": "adex:DataModel"
+                }
+            ]
+        },
+        {
+            "@id": "adex:downloadURL",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "A download URL specifying the protocol, for e.g s3:// or https://, etc.",
+            "rdfs:label": "downloadURL",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:associatedEntity",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "ID of the associated entity.",
+            "rdfs:label": "associatedEntity",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ADEXEntity"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:isRelatedTo",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Value associated with RelationshipValue class. Contains IRI(s) that specify the relationship object(s).",
+            "rdfs:label": "isRelatedTo",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id",
+                    "@container": "@set"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        },
+        {
+            "@id": "adex:dataSampleFile",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "Sample file download link for the resource",
+            "rdfs:label": "dataSampleFile",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@container": "@list",
+                    "@id": "adex:Text"
+                },
+                {
+                    "@container": "@list",
+                    "@id": "adex:RelationshipValue"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:hasObject",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Value associated with RelationshipValue class. Contains IRI(s) that specify the relationship object(s).",
+            "rdfs:label": "hasObject",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id",
+                    "@container": "@set"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        },
+        {
+            "@id": "adex:relatedEntity",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "ID of the associated entity.",
+            "rdfs:label": "relatedEntity",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ADEXEntity"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:repositoryURL",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "A URL pointing to a repository containing additional resources or code pertaining to this entity.",
+            "rdfs:label": "repositoryURL",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:name",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Name of the entity.",
+            "rdfs:label": "name",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Place"
+                },
+                {
+                    "@id": "adex:Organization"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                },
+                {
+                    "@id": "adex:ADEXEntity",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "schema:name"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:resourceServer",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "IRI pointing to the ResourceServer entity for a given Resource or ResourceGroup.",
+            "rdfs:label": "resourceServer",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource"
+                },
+                {
+                    "@id": "adex:ResourceGroup"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:authServerURL",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "URL of the ADEX authorization server used for a given resource.",
+            "rdfs:label": "authServerURL",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:AuthServerInfoValue"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        }
+    ],
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org.in/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "schema": "http://schema.org/"
+    }
+}

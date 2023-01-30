@@ -15,9 +15,6 @@
             ],
             "rdfs:comment": "Class of all Relationships in ADEX. A relationship property relates a resource to another resource. The range of relationship property are objects describing the links (URIs etc.) to the related resource and may contain meta-information about the type of relationship.",
             "rdfs:label": "Relationship",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
                 "@id": "rdf:Property"
             }

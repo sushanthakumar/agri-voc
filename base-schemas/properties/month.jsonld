@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "Month corresponding to this observation and is described in MM format, for eg. 11 for the month of November.",
             "rdfs:label": "month",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [],
             "adex:rangeIncludes": [
                 {

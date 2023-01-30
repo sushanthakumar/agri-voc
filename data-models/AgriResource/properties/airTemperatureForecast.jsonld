@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "Forecasted value of air temperature over a certain duration in future.",
             "rdfs:label": "airTemperatureForecast",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Weather"

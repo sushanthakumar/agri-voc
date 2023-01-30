@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "The number of photons that are being emitted by the sun.",
             "rdfs:label": "solarRadiation",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Weather"

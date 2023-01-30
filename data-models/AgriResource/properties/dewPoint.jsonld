@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "Observed  temperature to which air must be cooled to become saturated with water vapor.",
             "rdfs:label": "dewPoint",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Weather"

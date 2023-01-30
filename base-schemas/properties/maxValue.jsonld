@@ -27,9 +27,6 @@
             ],
             "skos:exactMatch": {
                 "@id": "schema:maxValue"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
             }
         }
     ]

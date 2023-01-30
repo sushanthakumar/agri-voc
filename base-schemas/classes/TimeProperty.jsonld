@@ -15,9 +15,6 @@
             ],
             "rdfs:comment": "Class of all Time properties in ADEX. The range of time property is a time/date objects in standard formats.",
             "rdfs:label": "TimeProperty",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
                 "@id": "rdf:Property"
             }

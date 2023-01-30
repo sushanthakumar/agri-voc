@@ -25,10 +25,7 @@
                 {
                     "@id": "adex:DateTime"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

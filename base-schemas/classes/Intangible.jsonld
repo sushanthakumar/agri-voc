@@ -15,9 +15,6 @@
             ],
             "rdfs:comment": "Class of all intangible things like Structured valued objects etc.",
             "rdfs:label": "Intangible",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
                 "@id": "adex:Thing"
             }

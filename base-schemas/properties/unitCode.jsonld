@@ -35,9 +35,6 @@
             ],
             "skos:exactMatch": {
                 "@id": "schema:unitCode"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
             }
         }
     ]

@@ -39,10 +39,7 @@
                 {
                     "@id": "adex:StructuredValue"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

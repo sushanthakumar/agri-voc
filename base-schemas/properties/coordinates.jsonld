@@ -31,9 +31,6 @@
             ],
             "skos:exactMatch": {
                 "@id": "geojson:coordinates"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
             }
         }
     ]

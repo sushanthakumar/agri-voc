@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "Describes fixed location for various entities. The places can be described using geo-Coordinates (points, polgons, bboxes etc.) , structured form of addresses or simple address strings.",
             "rdfs:label": "Place",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "skos:closeMatch": {
                 "@id": "schema:Place"
             },

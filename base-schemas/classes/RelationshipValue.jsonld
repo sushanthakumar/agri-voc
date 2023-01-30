@@ -15,9 +15,6 @@
             ],
             "rdfs:comment": "Describes the value of a Relationship Object.",
             "rdfs:label": "RelationshipValue",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
                 "@id": "adex:StructuredValue"
             }

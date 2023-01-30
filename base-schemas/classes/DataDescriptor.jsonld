@@ -17,9 +17,6 @@
             "rdfs:label": "DataDescriptor",
             "rdfs:subClassOf": {
                 "@id": "adex:StructuredValue"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
             }
         }
     ]

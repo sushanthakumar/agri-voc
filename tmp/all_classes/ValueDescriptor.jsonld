@@ -1,0 +1,1214 @@
+{
+    "@graph": [
+        {
+            "@id": "adex:ValueDescriptor",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Value descriptors are JSON objects that describes the value object for a given property.",
+            "rdfs:label": "ValueDescriptor",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Intangible"
+            }
+        },
+        {
+            "@id": "adex:Intangible",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Class of all intangible things like Structured valued objects etc.",
+            "rdfs:label": "Intangible",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Thing"
+            }
+        },
+        {
+            "@id": "adex:Thing",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Most generic ADEX object.",
+            "rdfs:label": "Thing",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:Thing"
+            }
+        },
+        {
+            "@id": "adex:description",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Description for an ADEX thing.",
+            "rdfs:label": "description",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Thing"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:address",
+            "@type": [
+                "adex:GeoProperty"
+            ],
+            "rdfs:comment": "Physical address of a place.",
+            "rdfs:label": "address",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Place"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:address"
+            }
+        },
+        {
+            "@id": "adex:instValue",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.",
+            "rdfs:label": "instValue",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:TimeSeriesAggregation"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        },
+        {
+            "@id": "adex:durationInHours",
+            "@type": [
+                "rdf:Property"
+            ],
+            "rdfs:comment": "Specifies an interval duration in hours for computing statistical aggregations.",
+            "rdfs:label": "durationInHours",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:sameAs",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "URL reference to another thing/entity that identifies the given thing/entity. This may be used to provide references to another data models where a property is described or say a reference to Wiki pages for a given thing etc.",
+            "rdfs:label": "sameAs",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "schema:sameAs"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:date",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Date corresponding to this observation and is described in YYYY-MM-DD format, for eg. '2020-11-01'.",
+            "rdfs:label": "date",
+            "adex:domainIncludes": [],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:relationType",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Type of relation. ENUM: [REL_MESSAGESTREAM, REL_FILE, REL_DATASET, REL_THING].",
+            "rdfs:label": "relationType",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:RelationshipValue",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:minOverTime",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+            "rdfs:label": "minOverTime",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:TimeSeriesAggregation"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        },
+        {
+            "@id": "adex:unitText",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Describes the unit of measurement. Useful if unitCode is not available.",
+            "rdfs:label": "unitText",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "schema:unitText"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:maxOverTime",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+            "rdfs:label": "maxOverTime",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:TimeSeriesAggregation"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        },
+        {
+            "@id": "adex:minValue",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "The lower value of a quantity/property.",
+            "rdfs:label": "minValue",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "schema:minValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:isRelatedTo",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Value associated with RelationshipValue class. Contains IRI(s) that specify the relationship object(s).",
+            "rdfs:label": "isRelatedTo",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id",
+                    "@container": "@set"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        },
+        {
+            "@id": "adex:month",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Month corresponding to this observation and is described in MM format, for eg. 11 for the month of November.",
+            "rdfs:label": "month",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        },
+        {
+            "@id": "adex:landmark",
+            "@type": [
+                "adex:GeoProperty"
+            ],
+            "rdfs:comment": "A physical distinguishing feature on land that marks a locality or a place.",
+            "rdfs:label": "landmark",
+            "adex:domainIncludes": [],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:dataSchema",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Associated data schema. Specified as an URI (linking it to one of the known data type vocabulary, e.g., xsd)",
+            "rdfs:label": "dataSchema",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:hasObject",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Value associated with RelationshipValue class. Contains IRI(s) that specify the relationship object(s).",
+            "rdfs:label": "hasObject",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id",
+                    "@container": "@set"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        },
+        {
+            "@id": "adex:avgOverTime",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+            "rdfs:label": "avgOverTime",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:TimeSeriesAggregation"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        },
+        {
+            "@id": "adex:aggregationDuration",
+            "@type": [
+                "rdf:Property"
+            ],
+            "rdfs:comment": "Specifies the interval duration for computing statistical aggregations. Default duration interval unit is in Hours. Other units can be specified using ValueDescriptor Type.",
+            "rdfs:label": "aggregationDuration",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:unitCode",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes/unit vocabularies may be used with a prefix",
+            "rdfs:label": "unitCode",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "schema:unitCode"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:maxValue",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "The upper value of a quantity/property.",
+            "rdfs:label": "maxValue",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "schema:maxValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:location",
+            "@type": [
+                "adex:GeoProperty"
+            ],
+            "rdfs:comment": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor.",
+            "rdfs:label": "location",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource"
+                },
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Provider"
+                },
+                {
+                    "@id": "adex:ResourceServer"
+                },
+                {
+                    "@id": "adex:Organization"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Point"
+                },
+                {
+                    "@id": "adex:GeoJSONGeometry"
+                },
+                {
+                    "@id": "adex:Place"
+                },
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:location"
+            }
+        },
+        {
+            "@id": "adex:name",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Name of the entity.",
+            "rdfs:label": "name",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Place"
+                },
+                {
+                    "@id": "adex:Organization"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                },
+                {
+                    "@id": "adex:ADEXEntity",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "schema:name"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:value",
+            "@type": [
+                "rdf:Property"
+            ],
+            "rdfs:comment": "Value of the quantity being described in the ValueDescriptor object.",
+            "rdfs:label": "value",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:Boolean"
+                },
+                {
+                    "@id": "adex:NumericArray"
+                },
+                {
+                    "@id": "adex:StructuredValue"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:durationInMinutes",
+            "@type": [
+                "rdf:Property"
+            ],
+            "rdfs:comment": "Specifies an interval duration in minutes for computing statistical aggregations.",
+            "rdfs:label": "durationInMinutes",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:mediaURL",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "URL providing further information of any image(s) or media of the complaint or place.",
+            "rdfs:label": "mediaURL",
+            "adex:domainIncludes": [],
+            "adex:rangeIncludes": [
+                {
+                    "@container": "@list",
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "open311:media_url"
+            }
+        },
+        {
+            "@id": "adex:resolution",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Resolution of a measurement. That is, the smallest change in a quantity being measured that causes a perceptible change in the corresponding observation under specified conditions.",
+            "rdfs:label": "resolution",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:year",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
+            "rdfs:label": "year",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        },
+        {
+            "@id": "adex:measAccuracy",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Accuracy of a measurement. Maximum difference that can exist between the actual value and the measured value. It can be specified in relative as well as absolute terms.",
+            "rdfs:label": "measAccuracy",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:precipitationForecast",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Forecasted rainfall over a certain duration in future.",
+            "rdfs:label": "precipitationForecast",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "iudx:precipitationForecast"
+            }
+        },
+        {
+            "@id": "adex:precipitation",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Observed precipitation/rainfall level over a given duration.",
+            "rdfs:label": "precipitation",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "Fiware:precipitation"
+            }
+        },
+        {
+            "@id": "adex:gustSpeed",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "A sudden burst of high-speed wind over the observed average wind speed lasting  only for a few seconds.",
+            "rdfs:label": "gustSpeed",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "iudx:gustSpeed"
+            }
+        },
+        {
+            "@id": "adex:solarRadiation",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "The number of photons that are being emitted by the sun.",
+            "rdfs:label": "solarRadiation",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "Fiware:solarRadiation"
+            }
+        },
+        {
+            "@id": "adex:airQualityIndex",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Overall Air Quality Index (AQI) for the observed air quality.",
+            "rdfs:label": "airQualityIndex",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "iudx:airQualityIndex"
+            }
+        },
+        {
+            "@id": "adex:atmosphericPressure",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Observed air (atmospheric or barometric) pressure.",
+            "rdfs:label": "atmosphericPressure",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "Fiware:atmosphericPressure"
+            }
+        },
+        {
+            "@id": "adex:airTemperatureForecast",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Forecasted value of air temperature over a certain duration in future.",
+            "rdfs:label": "airTemperatureForecast",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "iudx:airTemperatureForecast"
+            }
+        },
+        {
+            "@id": "adex:aqiMajorPollutant",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Major pollutant in the Air Quality Index (AQI).",
+            "rdfs:label": "aqiMajorPollutant",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "iudx:aqiMajorPollutant"
+            }
+        },
+        {
+            "@id": "adex:relativeHumidityForecast",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Forecasted relative humidity (water vapour in air) over a certain duration in future.",
+            "rdfs:label": "relativeHumidityForecast",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "iudx:relativeHumidityForecast"
+            }
+        },
+        {
+            "@id": "adex:aqiMajorPollutantForecast",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future.",
+            "rdfs:label": "aqiMajorPollutantForecast",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "iudx:aqiMajorPollutantForecast"
+            }
+        },
+        {
+            "@id": "adex:dewPoint",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Observed  temperature to which air must be cooled to become saturated with water vapor.",
+            "rdfs:label": "dewPoint",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "iudx:dewPoint"
+            }
+        },
+        {
+            "@id": "adex:windSpeed",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Observed wind speed.",
+            "rdfs:label": "windSpeed",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "Fiware:windSpeed"
+            }
+        },
+        {
+            "@id": "adex:windDirection",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Observed wind directiont. Measured in degrees clockwise from due north.",
+            "rdfs:label": "windDirection",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "Fiware:windDirection"
+            }
+        },
+        {
+            "@id": "adex:weatherType",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Observed weather type or status. Represented by a comma separated list of weather types, e.g., cloudy, sunny etc.",
+            "rdfs:label": "weatherType",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "Fiware:weatherType"
+            }
+        },
+        {
+            "@id": "adex:illuminance",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Observed instantaneous ambient light intensity.",
+            "rdfs:label": "illuminance",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                },
+                {
+                    "@id": "adex:TimeSeriesAggregation"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "Fiware:illuminance"
+            }
+        },
+        {
+            "@id": "adex:airQualityIndexForecast",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Forecasted overall Air Quality Index (AQI) over a certain duration in future.",
+            "rdfs:label": "airQualityIndexForecast",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "iudx:airQualityIndexForecast"
+            }
+        },
+        {
+            "@id": "adex:observationDateTime",
+            "@type": [
+                "adex:TimeProperty"
+            ],
+            "rdfs:comment": "Last reported time of observation.",
+            "rdfs:label": "observationDateTime",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:DateTime"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        }
+    ],
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "iudx": "https://voc.iudx.org.in/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "adex": "https://agrijson.adex.org.in/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "qudt": "http://qudt.org/vocab/unit/"
+    }
+}

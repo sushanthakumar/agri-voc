@@ -1,0 +1,52 @@
+{
+    "@graph": [
+        {
+            "@id": "adex:name",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Name of the entity.",
+            "rdfs:label": "name",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Place"
+                },
+                {
+                    "@id": "adex:Organization"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                },
+                {
+                    "@id": "adex:ADEXEntity",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "schema:name"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        }
+    ],
+    "@context": {
+        "schema": "http://schema.org/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "iudx": "https://voc.iudx.org.in/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "adex": "https://agrijson.adex.org.in/"
+    }
+}

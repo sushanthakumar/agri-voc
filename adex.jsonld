@@ -1,0 +1,465 @@
+{
+    "@context": {
+        "Object": {
+            "@id": "adex:Object"
+        },
+        "type": "@type",
+        "id": "@id",
+        "@vocab": "https://agrijson.adex.org.in/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "schema": "http://schema.org/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org.in/",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "qudt": "http://qudt.org/vocab/unit/",
+        "Number": {
+            "@id": "adex:Number"
+        },
+        "Text": {
+            "@id": "adex:Text"
+        },
+        "Boolean": {
+            "@id": "adex:Boolean"
+        },
+        "NumericArray": {
+            "@id": "adex:NumericArray"
+        },
+        "DateTime": {
+            "@id": "adex:DateTime"
+        },
+        "DataFieldListValue": {
+            "@id": "adex:DataFieldListValue"
+        },
+        "Thing": {
+            "@id": "adex:Thing"
+        },
+        "ResourceServer": {
+            "@id": "adex:ResourceServer"
+        },
+        "Resource": {
+            "@id": "adex:Resource"
+        },
+        "AuthServerInfoValue": {
+            "@id": "adex:AuthServerInfoValue"
+        },
+        "StructuredProperty": {
+            "@id": "adex:StructuredProperty"
+        },
+        "TextProperty": {
+            "@id": "adex:TextProperty"
+        },
+        "DataDescriptor": {
+            "@id": "adex:DataDescriptor"
+        },
+        "Organization": {
+            "@id": "adex:Organization"
+        },
+        "ValueDescriptor": {
+            "@id": "adex:ValueDescriptor"
+        },
+        "RelationshipValue": {
+            "@id": "adex:RelationshipValue"
+        },
+        "Intangible": {
+            "@id": "adex:Intangible"
+        },
+        "AccessObjectInfoValue": {
+            "@id": "adex:AccessObjectInfoValue"
+        },
+        "StructuredValue": {
+            "@id": "adex:StructuredValue"
+        },
+        "TimeProperty": {
+            "@id": "adex:TimeProperty"
+        },
+        "Concept": {
+            "@id": "adex:Concept"
+        },
+        "Class": {
+            "@id": "adex:Class"
+        },
+        "Place": {
+            "@id": "adex:Place"
+        },
+        "ResourceGroup": {
+            "@id": "adex:ResourceGroup"
+        },
+        "Feature": {
+            "@id": "adex:Feature"
+        },
+        "QuantitativeProperty": {
+            "@id": "adex:QuantitativeProperty"
+        },
+        "LineString": {
+            "@id": "adex:LineString"
+        },
+        "Provider": {
+            "@id": "adex:Provider"
+        },
+        "GeoJSONGeometry": {
+            "@id": "adex:GeoJSONGeometry"
+        },
+        "ModelInfo": {
+            "@id": "adex:ModelInfo"
+        },
+        "GeoCoordinates": {
+            "@id": "adex:GeoCoordinates"
+        },
+        "GeoProperty": {
+            "@id": "adex:GeoProperty"
+        },
+        "Relationship": {
+            "@id": "adex:Relationship"
+        },
+        "ADEXEntity": {
+            "@id": "adex:ADEXEntity"
+        },
+        "Polygon": {
+            "@id": "adex:Polygon"
+        },
+        "Point": {
+            "@id": "adex:Point"
+        },
+        "TimeSeriesAggregation": {
+            "@id": "adex:TimeSeriesAggregation"
+        },
+        "authServerInfo": {
+            "@id": "adex:authServerInfo"
+        },
+        "dataQualityFile": {
+            "@id": "adex:dataQualityFile",
+            "@type": "@id"
+        },
+        "address": {
+            "@id": "adex:address"
+        },
+        "instValue": {
+            "@id": "adex:instValue"
+        },
+        "accessObjectInfo": {
+            "@id": "adex:accessObjectInfo"
+        },
+        "resourceServerFileAccessURL": {
+            "@id": "adex:resourceServerFileAccessURL",
+            "@type": "@id"
+        },
+        "itemModifiedAt": {
+            "@id": "adex:itemModifiedAt"
+        },
+        "durationInHours": {
+            "@id": "adex:durationInHours"
+        },
+        "domainIncludes": {
+            "@id": "adex:domainIncludes"
+        },
+        "sameAs": {
+            "@id": "adex:sameAs"
+        },
+        "resourceServerHTTPAccessURL": {
+            "@id": "adex:resourceServerHTTPAccessURL",
+            "@type": "@id"
+        },
+        "date": {
+            "@id": "adex:date"
+        },
+        "rangeIncludes": {
+            "@id": "adex:rangeIncludes"
+        },
+        "resourceGroup": {
+            "@id": "adex:resourceGroup",
+            "@type": "@id"
+        },
+        "accessObject": {
+            "@id": "adex:accessObject",
+            "@type": "@id"
+        },
+        "additionalInfoURL": {
+            "@id": "adex:additionalInfoURL",
+            "@type": "@id"
+        },
+        "itemDeprecatedAt": {
+            "@id": "adex:itemDeprecatedAt"
+        },
+        "relationType": {
+            "@id": "adex:relationType"
+        },
+        "provider": {
+            "@id": "adex:provider",
+            "@type": "@id"
+        },
+        "geometry": {
+            "@id": "adex:geometry"
+        },
+        "providerOrg": {
+            "@id": "adex:providerOrg"
+        },
+        "dataDescriptor": {
+            "@id": "adex:dataDescriptor",
+            "@type": "@id"
+        },
+        "description": {
+            "@id": "adex:description"
+        },
+        "minOverTime": {
+            "@id": "adex:minOverTime"
+        },
+        "unitText": {
+            "@id": "adex:unitText"
+        },
+        "maxOverTime": {
+            "@id": "adex:maxOverTime"
+        },
+        "downloadURL": {
+            "@id": "adex:downloadURL",
+            "@type": "@id"
+        },
+        "manufacturerName": {
+            "@id": "adex:manufacturerName"
+        },
+        "coordinates": {
+            "@id": "adex:coordinates"
+        },
+        "tags": {
+            "@id": "adex:tags"
+        },
+        "associatedEntity": {
+            "@id": "adex:associatedEntity",
+            "@type": "@id"
+        },
+        "minValue": {
+            "@id": "adex:minValue"
+        },
+        "isRelatedTo": {
+            "@id": "adex:isRelatedTo"
+        },
+        "geoCovers": {
+            "@id": "adex:geoCovers"
+        },
+        "dataSampleFile": {
+            "@id": "adex:dataSampleFile",
+            "@type": "@id"
+        },
+        "secureDataFields": {
+            "@id": "adex:secureDataFields"
+        },
+        "authControlLevel": {
+            "@id": "adex:authControlLevel"
+        },
+        "accessPolicy": {
+            "@id": "adex:accessPolicy"
+        },
+        "resourceServerOrg": {
+            "@id": "adex:resourceServerOrg"
+        },
+        "month": {
+            "@id": "adex:month"
+        },
+        "landmark": {
+            "@id": "adex:landmark"
+        },
+        "itemStatus": {
+            "@id": "adex:itemStatus"
+        },
+        "dataSchema": {
+            "@id": "adex:dataSchema"
+        },
+        "dataSample": {
+            "@id": "adex:dataSample"
+        },
+        "hasObject": {
+            "@id": "adex:hasObject"
+        },
+        "avgOverTime": {
+            "@id": "adex:avgOverTime"
+        },
+        "longitude": {
+            "@id": "adex:longitude"
+        },
+        "requiredProperty": {
+            "@id": "adex:requiredProperty"
+        },
+        "aggregationDuration": {
+            "@id": "adex:aggregationDuration"
+        },
+        "areaServed": {
+            "@id": "adex:areaServed"
+        },
+        "accessObjectType": {
+            "@id": "adex:accessObjectType"
+        },
+        "authType": {
+            "@id": "adex:authType"
+        },
+        "unitCode": {
+            "@id": "adex:unitCode"
+        },
+        "adexResourceAPIs": {
+            "@id": "adex:adexResourceAPIs"
+        },
+        "modelURL": {
+            "@id": "adex:modelURL"
+        },
+        "relatedEntity": {
+            "@id": "adex:relatedEntity",
+            "@type": "@id"
+        },
+        "maxValue": {
+            "@id": "adex:maxValue"
+        },
+        "location": {
+            "@id": "adex:location"
+        },
+        "repositoryURL": {
+            "@id": "adex:repositoryURL",
+            "@type": "@id"
+        },
+        "name": {
+            "@id": "adex:name"
+        },
+        "resourceServer": {
+            "@id": "adex:resourceServer",
+            "@type": "@id"
+        },
+        "dataDescriptorLabel": {
+            "@id": "adex:dataDescriptorLabel"
+        },
+        "itemCreatedAt": {
+            "@id": "adex:itemCreatedAt"
+        },
+        "authServerURL": {
+            "@id": "adex:authServerURL",
+            "@type": "@id"
+        },
+        "isPartOf": {
+            "@id": "adex:isPartOf"
+        },
+        "brandName": {
+            "@id": "adex:brandName"
+        },
+        "resourceServerStreamingAccessURL": {
+            "@id": "adex:resourceServerStreamingAccessURL",
+            "@type": "@id"
+        },
+        "value": {
+            "@id": "adex:value"
+        },
+        "durationInMinutes": {
+            "@id": "adex:durationInMinutes"
+        },
+        "openDataFields": {
+            "@id": "adex:openDataFields"
+        },
+        "latitude": {
+            "@id": "adex:latitude"
+        },
+        "geoJSON": {
+            "@id": "adex:geoJSON"
+        },
+        "mediaURL": {
+            "@id": "adex:mediaURL"
+        },
+        "modelName": {
+            "@id": "adex:modelName"
+        },
+        "resourceType": {
+            "@id": "adex:resourceType"
+        },
+        "label": {
+            "@id": "adex:label"
+        },
+        "dataDescriptorName": {
+            "@id": "adex:dataDescriptorName"
+        },
+        "resolution": {
+            "@id": "adex:resolution"
+        },
+        "year": {
+            "@id": "adex:year"
+        },
+        "measAccuracy": {
+            "@id": "adex:measAccuracy"
+        },
+        "labelXYZ": {
+            "@id": "adex:labelXYZ"
+        },
+        "Weather": {
+            "@id": "adex:Weather"
+        },
+        "precipitationForecast": {
+            "@id": "adex:precipitationForecast"
+        },
+        "relativeHumidity": {
+            "@id": "adex:relativeHumidity"
+        },
+        "precipitation": {
+            "@id": "adex:precipitation"
+        },
+        "gustSpeed": {
+            "@id": "adex:gustSpeed"
+        },
+        "solarRadiation": {
+            "@id": "adex:solarRadiation"
+        },
+        "airQualityIndex": {
+            "@id": "adex:airQualityIndex"
+        },
+        "atmosphericPressure": {
+            "@id": "adex:atmosphericPressure"
+        },
+        "airTemperature": {
+            "@id": "adex:airTemperature"
+        },
+        "airTemperatureForecast": {
+            "@id": "adex:airTemperatureForecast"
+        },
+        "aqiMajorPollutant": {
+            "@id": "adex:aqiMajorPollutant"
+        },
+        "relativeHumidityForecast": {
+            "@id": "adex:relativeHumidityForecast"
+        },
+        "aqiMajorPollutantForecast": {
+            "@id": "adex:aqiMajorPollutantForecast"
+        },
+        "dewPoint": {
+            "@id": "adex:dewPoint"
+        },
+        "windSpeed": {
+            "@id": "adex:windSpeed"
+        },
+        "windDirection": {
+            "@id": "adex:windDirection"
+        },
+        "weatherType": {
+            "@id": "adex:weatherType"
+        },
+        "illuminance": {
+            "@id": "adex:illuminance"
+        },
+        "airQualityIndexForecast": {
+            "@id": "adex:airQualityIndexForecast"
+        },
+        "Material": {
+            "@id": "adex:Material"
+        },
+        "Service": {
+            "@id": "adex:Service"
+        },
+        "AgriResource": {
+            "@id": "adex:AgriResource"
+        },
+        "Process": {
+            "@id": "adex:Process"
+        },
+        "Person": {
+            "@id": "adex:Person"
+        },
+        "observationDateTime": {
+            "@id": "adex:observationDateTime"
+        }
+    }
+}

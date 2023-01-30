@@ -1,0 +1,645 @@
+{
+    "@graph": [
+        {
+            "@id": "adex:Resource",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Describes the Resource entity in the ADEX catalogue.",
+            "rdfs:label": "Resource",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:ADEXEntity"
+            }
+        },
+        {
+            "@id": "adex:ADEXEntity",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Class of all ADEX Entities (Resource, ResourceGroup, ResourceServer, Provider etc.)",
+            "rdfs:label": "ADEXEntity",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Thing"
+            }
+        },
+        {
+            "@id": "adex:Thing",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Most generic ADEX object.",
+            "rdfs:label": "Thing",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:Thing"
+            }
+        },
+        {
+            "@id": "adex:description",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Description for an ADEX thing.",
+            "rdfs:label": "description",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Thing"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:itemModifiedAt",
+            "@type": [
+                "adex:TimeProperty"
+            ],
+            "rdfs:comment": "DateTime of modification of a catalogue item.",
+            "rdfs:label": "itemModifiedAt",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ADEXEntity"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:DateTime"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:itemDeprecatedAt",
+            "@type": [
+                "adex:TimeProperty"
+            ],
+            "rdfs:comment": "DateTime of deprecation of a catalogue item.",
+            "rdfs:label": "itemDeprecatedAt",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ADEXEntity"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:DateTime"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:associatedEntity",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "ID of the associated entity.",
+            "rdfs:label": "associatedEntity",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ADEXEntity"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:itemStatus",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Status of a catalouge item. ENUM: [ACTIVE, DEPRECATED].",
+            "rdfs:label": "itemStatus",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ADEXEntity"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:id",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "ID of the entity.",
+            "rdfs:label": "id",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ADEXEntity"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:relatedEntity",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "ID of the associated entity.",
+            "rdfs:label": "relatedEntity",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ADEXEntity"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:name",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Name of the entity.",
+            "rdfs:label": "name",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Place"
+                },
+                {
+                    "@id": "adex:Organization"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                },
+                {
+                    "@id": "adex:ADEXEntity",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "schema:name"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:itemCreatedAt",
+            "@type": [
+                "adex:TimeProperty"
+            ],
+            "rdfs:comment": "DateTime of creation of a catalogue item.",
+            "rdfs:label": "itemCreatedAt",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ADEXEntity"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:DateTime"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:label",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Human readable label for an entity",
+            "rdfs:label": "label",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ADEXEntity"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:authServerInfo",
+            "@type": [
+                "adex:StructuredProperty"
+            ],
+            "rdfs:comment": "Information about the Authorization Server used for a given resource.",
+            "rdfs:label": "authServerInfo",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource"
+                },
+                {
+                    "@id": "adex:ResourceGroup",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:AuthServerInfoValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:dataQualityFile",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": " Data Quality file download link for the resource",
+            "rdfs:label": "dataQualityFile",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@container": "@list",
+                    "@id": "adex:Text"
+                },
+                {
+                    "@container": "@list",
+                    "@id": "adex:RelationshipValue"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:resourceGroup",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "IRI pointing to the resourceGroup entity associated with the resource.",
+            "rdfs:label": "resourceGroup",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:provider",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "IRI pointing to the provider entity associated with the given catalogue item",
+            "rdfs:label": "provider",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource"
+                },
+                {
+                    "@id": "adex:ResourceGroup",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:dataDescriptor",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "URI pointing to the data-descriptor entity",
+            "rdfs:label": "dataDescriptor",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@type": "@id",
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                },
+                {
+                    "@id": "adex:DataModel"
+                }
+            ]
+        },
+        {
+            "@id": "adex:tags",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Comma separated discovery tags associated with an ADEXEntity (resource , resource Group)",
+            "rdfs:label": "tags",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource",
+                    "adex:requiredProperty": true
+                },
+                {
+                    "@id": "adex:ResourceGroup",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@container": "@list",
+                    "@id": "adex:Text"
+                }
+            ]
+        },
+        {
+            "@id": "adex:dataSampleFile",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "Sample file download link for the resource",
+            "rdfs:label": "dataSampleFile",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@container": "@list",
+                    "@id": "adex:Text"
+                },
+                {
+                    "@container": "@list",
+                    "@id": "adex:RelationshipValue"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:accessPolicy",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Defines the access policy for resources belonging to ResourceGroup or an individual Resource. In case of ResourceGroup item, it can take values: [OPEN, SECURE, MIXED]. OPEN implies all Resources in the group are open (and need no authorization token for data access). SECURE implies that all Resources are secured and will need authorization token for access. MIXED implies that some of Resource items may be open. In case of accessPolicy being set to MIXED in the resource group, the individual resource items will further qualify the access policy using this field. In case of Resource item, it will take values from: [OPEN, SECURE].",
+            "rdfs:label": "accessPolicy",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:dataSample",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Stringified sample object of the resource",
+            "rdfs:label": "dataSample",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:adexResourceAPIs",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "The set of ADEX resource APIs supported by a given ResourceGroup. ENUM: [TEMPORAL, SPATIAL, ATTR, TEXT]",
+            "rdfs:label": "adexResourceAPIs",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ResourceGroup",
+                    "adex:requiredProperty": true
+                },
+                {
+                    "@id": "adex:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@container": "@set"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:location",
+            "@type": [
+                "adex:GeoProperty"
+            ],
+            "rdfs:comment": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor.",
+            "rdfs:label": "location",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource"
+                },
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Provider"
+                },
+                {
+                    "@id": "adex:ResourceServer"
+                },
+                {
+                    "@id": "adex:Organization"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Point"
+                },
+                {
+                    "@id": "adex:GeoJSONGeometry"
+                },
+                {
+                    "@id": "adex:Place"
+                },
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:location"
+            }
+        },
+        {
+            "@id": "adex:resourceServer",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "IRI pointing to the ResourceServer entity for a given Resource or ResourceGroup.",
+            "rdfs:label": "resourceServer",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource"
+                },
+                {
+                    "@id": "adex:ResourceGroup"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:resourceType",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Type of resource. ENUM: [MESSAGESTREAM, DATASET, FILE, GSLAYER, MEDIASTREAM].",
+            "rdfs:label": "resourceType",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ResourceGroup",
+                    "adex:requiredProperty": true
+                },
+                {
+                    "@id": "adex:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        }
+    ],
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org.in/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "geojson": "https://purl.org/geojson/vocab#"
+    }
+}

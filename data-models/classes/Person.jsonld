@@ -15,11 +15,8 @@
             ],
             "rdfs:comment": "Data models that pertain to the environment domain",
             "rdfs:label": "Person",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
-                "@id": "adex:Concept"
+                "@id": "adex:DataModel"
             }
         }
     ]

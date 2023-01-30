@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "Describes the GeoJSON Point",
             "rdfs:label": "Point",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "skos:exactMatch": {
                 "@id": "geojson:Point"
             },

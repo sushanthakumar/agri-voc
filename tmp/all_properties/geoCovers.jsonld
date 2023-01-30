@@ -1,0 +1,36 @@
+{
+    "@graph": [
+        {
+            "@id": "adex:geoCovers",
+            "@type": [
+                "adex:GeoProperty"
+            ],
+            "rdfs:comment": "Represents the coverage relationship between two geometries/places.",
+            "rdfs:label": "geoCovers",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Place"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:GeoJSONGeometry"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        }
+    ],
+    "@context": {
+        "schema": "http://schema.org/",
+        "iudx": "https://voc.iudx.org.in/",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "adex": "https://agrijson.adex.org.in/"
+    }
+}

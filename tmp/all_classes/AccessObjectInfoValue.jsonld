@@ -1,0 +1,212 @@
+{
+    "@graph": [
+        {
+            "@id": "adex:AccessObjectInfoValue",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Describes information on accessing data from a given resource.",
+            "rdfs:label": "AccessObjectInfoValue",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:StructuredValue"
+            }
+        },
+        {
+            "@id": "adex:StructuredValue",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Describes a generic nested JSON structured value",
+            "rdfs:label": "StructuredValue",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Intangible"
+            }
+        },
+        {
+            "@id": "adex:Intangible",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Class of all intangible things like Structured valued objects etc.",
+            "rdfs:label": "Intangible",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Thing"
+            }
+        },
+        {
+            "@id": "adex:Thing",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Most generic ADEX object.",
+            "rdfs:label": "Thing",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:Thing"
+            }
+        },
+        {
+            "@id": "adex:description",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Description for an ADEX thing.",
+            "rdfs:label": "description",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Thing"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:value",
+            "@type": [
+                "rdf:Property"
+            ],
+            "rdfs:comment": "Value of the quantity being described in the ValueDescriptor object.",
+            "rdfs:label": "value",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:Boolean"
+                },
+                {
+                    "@id": "adex:NumericArray"
+                },
+                {
+                    "@id": "adex:StructuredValue"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:accessObjectInfo",
+            "@type": [
+                "adex:StructuredProperty"
+            ],
+            "rdfs:comment": "Link to the access object. For example, an open API object.",
+            "rdfs:label": "accessObjectInfo",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ResourceGroup"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:AccessObjectInfoValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:accessObject",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "Link to the access object. For example, an open API object.",
+            "rdfs:label": "accessObject",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:AccessObjectInfoValue"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:additionalInfoURL",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "URL from which additional information of the subject can be obtained",
+            "rdfs:label": "additionalInfoURL",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:AccessObjectInfoValue"
+                },
+                {
+                    "@id": "adex:Organization"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:accessObjectType",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Type of access object. ENUM: [OpenAPI, AsyncAPI]",
+            "rdfs:label": "accessObjectType",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:AccessObjectInfoValue"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ]
+        }
+    ],
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org.in/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "schema": "http://schema.org/"
+    }
+}

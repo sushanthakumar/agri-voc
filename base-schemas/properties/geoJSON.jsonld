@@ -27,10 +27,7 @@
                 {
                     "@id": "adex:GeoJSONGeometry"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

@@ -15,9 +15,6 @@
             ],
             "rdfs:comment": "Describes the class of all properties in ADEX that have a complex JSON structures and cannot be described using simple strings and native data types.",
             "rdfs:label": "StructuredProperty",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
                 "@id": "rdf:Property"
             }

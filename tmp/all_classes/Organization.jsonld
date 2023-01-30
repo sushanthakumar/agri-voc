@@ -1,0 +1,216 @@
+{
+    "@graph": [
+        {
+            "@id": "adex:Organization",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Information about a given organization (contact info, email, urls etc.)",
+            "rdfs:label": "Organization",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:Organization"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Thing"
+            }
+        },
+        {
+            "@id": "adex:Thing",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": "Most generic ADEX object.",
+            "rdfs:label": "Thing",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:Thing"
+            }
+        },
+        {
+            "@id": "adex:description",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Description for an ADEX thing.",
+            "rdfs:label": "description",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Thing"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        },
+        {
+            "@id": "adex:additionalInfoURL",
+            "@type": [
+                "adex:Relationship"
+            ],
+            "rdfs:comment": "URL from which additional information of the subject can be obtained",
+            "rdfs:label": "additionalInfoURL",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:AccessObjectInfoValue"
+                },
+                {
+                    "@id": "adex:Organization"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                }
+            ]
+        },
+        {
+            "@id": "adex:providerOrg",
+            "@type": [
+                "adex:StructuredProperty"
+            ],
+            "rdfs:comment": "Information about the Provider Organization.",
+            "rdfs:label": "providerOrg",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Provider",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Organization"
+                }
+            ]
+        },
+        {
+            "@id": "adex:resourceServerOrg",
+            "@type": [
+                "adex:StructuredProperty"
+            ],
+            "rdfs:comment": "Information about the organization operating the Resource Server.",
+            "rdfs:label": "resourceServerOrg",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ResourceServer"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Organization"
+                }
+            ]
+        },
+        {
+            "@id": "adex:location",
+            "@type": [
+                "adex:GeoProperty"
+            ],
+            "rdfs:comment": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor.",
+            "rdfs:label": "location",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Resource"
+                },
+                {
+                    "@id": "adex:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Provider"
+                },
+                {
+                    "@id": "adex:ResourceServer"
+                },
+                {
+                    "@id": "adex:Organization"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Point"
+                },
+                {
+                    "@id": "adex:GeoJSONGeometry"
+                },
+                {
+                    "@id": "adex:Place"
+                },
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "skos:exactMatch": {
+                "@id": "schema:location"
+            }
+        },
+        {
+            "@id": "adex:name",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Name of the entity.",
+            "rdfs:label": "name",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Place"
+                },
+                {
+                    "@id": "adex:Organization"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
+                },
+                {
+                    "@id": "adex:ADEXEntity",
+                    "adex:requiredProperty": true
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "schema:name"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        }
+    ],
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "adex": "https://agrijson.adex.org.in/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    }
+}
