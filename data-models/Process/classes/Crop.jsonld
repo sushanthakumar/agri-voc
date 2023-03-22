@@ -13,7 +13,7 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "rdfs:comment": "Data Model for crops cultivated in an agricultural land.",
+            "rdfs:comment": "Data Model for weather conditions observed at a certain place and time.",
             "rdfs:label": "Crop",
             "rdfs:subClassOf": {
                 "@id": "adex:Process"
