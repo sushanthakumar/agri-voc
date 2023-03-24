@@ -12,7 +12,7 @@ token = "localauth"
 # verify = False
 
 # ext
-url = "https://voc.iudx.org.in"
+url = "https://agrijson.adex.org.in/"
 verify = True
 
 headers = {"token": token, "content-type": "application/ld+json"}
