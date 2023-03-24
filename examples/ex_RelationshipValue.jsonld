@@ -1,6 +1,6 @@
 {
     "@context": "https://agrijson.adex.org.in/",
-    "type": ["adex:ResourceGroup"],
+    "type": ["adex:RelationshipValue"],
     "id": "providerID/example.com/senosrs",
     "description": "Description of this resource group",
     "name": "sensors",
