@@ -4,7 +4,7 @@ import os
 import sys
 
 dirname = "examples"
-token = ""
+token = "localauth"
 
 
 # local
@@ -12,14 +12,14 @@ token = ""
 # verify = False
 
 # ext
-url = "https://agrijson.adex.org.in/"
+url = "https://voc.iudx.org.in"
 verify = True
 
 headers = {"token": token, "content-type": "application/ld+json"}
 
 
 failed_list = []
-#print(url)
+print(url);
 for filename in os.listdir(dirname):
     with open(dirname + "/" + filename, 'r') as f:
         doc = json.load(f)
