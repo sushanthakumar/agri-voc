@@ -16,3 +16,6 @@ time.sleep(5)
 
 # Call insert
 os.system("python3 utils/push/hookTriggeredInsert.py")
+
+os.system("python3 utils/push/push_example.py")
+
