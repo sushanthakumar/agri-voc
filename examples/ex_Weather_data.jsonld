@@ -1,0 +1,6 @@
+{
+    "@context": "https://agrijson.adex.org.in/",
+    "type": ["adex:Weather"],
+    "airPressure": 990,
+    "airQualityIndex": 100
+}

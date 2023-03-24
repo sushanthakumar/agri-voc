@@ -1,0 +1,26 @@
+{
+    "@context": [
+                   "https://agrijson.adex.org.in/",
+                   {
+                     "qudt-unit": "http://qudt.org/vocab/unit/",
+                     "unitCode": {
+                       "@type": "@id"
+                     }
+                   }
+    ],
+    "type": ["adex:Weather"],
+    "atmosphericPressure": {
+        "type": ["ValueDescriptor"],
+        "description": "Measured Air pressure",
+        "unitCode": "qudt-unit:MILLIBAR",
+        "unitText": "Milli Bar",
+        "dataSchema": "adex:Number"
+    },
+    "airQualityIndex": {
+        "type": ["ValueDescriptor"],
+        "description": "Overall AQI ",
+        "unitCode": "C62",
+        "unitText": "dimensionless",
+        "dataSchema": "adex:Number"
+    }
+}
