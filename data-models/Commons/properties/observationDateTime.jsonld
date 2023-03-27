@@ -20,6 +20,9 @@
 		"adex:domainIncludes": [
 			{
 				"@id": "adex:Weather"
+			},
+			{
+				"@id": "adex:CropDiseaseDesc"
 			}
 	 	],
 		"adex:rangeIncludes": [{

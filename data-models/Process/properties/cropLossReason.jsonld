@@ -1,26 +1,29 @@
 {
     "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "geojson": "https://purl.org/geojson/vocab#",
-        "schema": "http://schema.org/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "iudx": "https://voc.iudx.org.in/",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
         "adex": "https://agrijson.adex.org.in/"
     },
     "@graph": [
         {
-            "@id": "adex:mediaURL",
+            "@id": "adex:cropLossReason",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "URL providing further information of any image(s) or media of the complaint or place.",
-            "rdfs:label": "mediaURL",
+            "rdfs:comment": "The reason for the crop loss",
+            "rdfs:label": "cropLossReason",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:CropDiseaseDesc"
+                    "@id": "adex:CropSpecies"
                 }
             ],
             "adex:rangeIncludes": [
@@ -31,10 +34,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "skos:exactMatch": {
-                "@id": "open311:media_url"
-            }
+            ]
         }
     ]
 }
