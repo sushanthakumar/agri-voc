@@ -112,9 +112,6 @@
         "relativeHumidityForecast": {
             "@id": "adex:relativeHumidityForecast"
         },
-        "test": {
-            "@id": "adex:test"
-        },
         "Weather": {
             "@id": "adex:Weather"
         },
