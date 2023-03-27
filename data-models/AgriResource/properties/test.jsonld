@@ -1,0 +1,39 @@
+{
+    "@context": {
+        "geojson": "https://purl.org/geojson/vocab#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "iudx": "https://voc.iudx.org.in/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "adex": "https://agrijson.adex.org.in/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:test",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Overall Air Quality Index (AQI) for the observed air quality.",
+            "rdfs:label": "test",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Weather"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "iudx:test"
+            }
+        }
+    ]
+}
