@@ -8,7 +8,7 @@
     },
     "@graph": [
         {
-            "@id": "adex:TestBaseClass",
+            "@id": "adex:Provider",
             "@type": [
                 "owl:Class",
                 "rdfs:Class"
