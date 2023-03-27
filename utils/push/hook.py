@@ -2,7 +2,7 @@ import os
 import time
 
 # Wait for repo to get updated
-os.system("git fetch && git reset --hard origin/main")
+os.system("git fetch && git reset --hard origin/master")
 time.sleep(10)
 # clear tmp
 os.system("rm -rf /tmp/all_*")
