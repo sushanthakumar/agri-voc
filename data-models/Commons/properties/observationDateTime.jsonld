@@ -23,7 +23,10 @@
 			},
 			{
 				"@id": "adex:CropDiseaseDesc"
-			}
+			},
+			{
+                    "@id": "adex:LandParcel"
+            }
 	 	],
 		"adex:rangeIncludes": [{
 				"@id": "adex:DateTime"

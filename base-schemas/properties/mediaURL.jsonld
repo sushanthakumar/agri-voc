@@ -21,6 +21,9 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropDiseaseDesc"
+                },
+                {
+                    "@id": "adex:LandParcel"
                 }
             ],
             "adex:rangeIncludes": [

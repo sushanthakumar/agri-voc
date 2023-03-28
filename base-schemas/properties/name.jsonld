@@ -31,6 +31,9 @@
                 {
                     "@id": "adex:ADEXEntity",
                     "adex:requiredProperty": true
+                },
+                {
+                    "@id": "adex:PersonnelDesc"
                 }
             ],
             "adex:rangeIncludes": [
