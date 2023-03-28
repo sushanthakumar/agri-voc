@@ -1,27 +1,23 @@
 {
     "@context": {
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "iudx": "https://voc.iudx.org.in/",
-        "geojson": "https://purl.org/geojson/vocab#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
         "adex": "https://agrijson.adex.org.in/"
     },
     "@graph": [
         {
-            "@id": "adex:year",
+            "@id": "adex:beneficiaryCount",
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
-            "rdfs:label": "year",
+            "rdfs:comment": "Represents the count of people benefited under the scheme corresponding to this observation.",
+            "rdfs:label": "beneficiaryCount",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:CropDiseaseDesc"
-                },
                 {
                     "@id": "adex:PublicSchemes"
                 }

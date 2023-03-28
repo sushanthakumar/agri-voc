@@ -232,9 +232,7 @@ def jsonld_update(filename, domain, column_name, schema):
 
 def gen_properties(df):
     for index, item in df.iterrows():
-        print(" --- ")
         if item[7] == "0":
-            print(" in 7 ")
             new_dict = OrderedDict()
             new_dict["@context"] = obj["@context"]
             csv_label = item[0].strip()
