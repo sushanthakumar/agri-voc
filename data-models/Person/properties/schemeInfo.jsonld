@@ -12,28 +12,25 @@
     },
     "@graph": [
         {
-            "@id": "adex:capitalInfo",
+            "@id": "adex:schemeInfo",
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "The income and expenditure information corresponding to the entity.",
-            "rdfs:label": "capitalInfo",
+            "rdfs:comment": "Farmer welfare schemes information corresponding to this observation.",
+            "rdfs:label": "schemeInfo",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:LandParcel"
-                },
                 {
                     "@id": "adex:Farmer"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:CapitalDesc"
+                    "@id": "adex:PublicSchemes"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

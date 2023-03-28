@@ -12,28 +12,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:capitalInfo",
+            "@id": "adex:kisanNumber",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The income and expenditure information corresponding to the entity.",
-            "rdfs:label": "capitalInfo",
+            "rdfs:comment": "The registration number of a farmer for the PM Kisan Samman Nidhi scheme.",
+            "rdfs:label": "kisanNumber",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:LandParcel"
-                },
                 {
                     "@id": "adex:Farmer"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:CapitalDesc"
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

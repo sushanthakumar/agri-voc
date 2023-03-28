@@ -19,8 +19,11 @@
             "rdfs:comment": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
             "rdfs:label": "year",
             "adex:domainIncludes": [
-            	{
+                {
                     "@id": "adex:CropDiseaseDesc"
+                },
+                {
+                    "@id": "adex:PublicSchemes"
                 }
             ],
             "adex:rangeIncludes": [

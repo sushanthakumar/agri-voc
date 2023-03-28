@@ -1,0 +1,209 @@
+{
+	"@context": "https://agrijson.adex.org.in",
+	"type": [
+		"adex:Weather",
+		"adex:Schema"
+	],
+	"id": "https://agrijson.adex.org.in/Weather",
+	"schema": {
+		"title": "ADEX Weather Data Model",
+		"description": "A Data Model for weather monitored observed at a certain place and time.",
+		"type": "object",
+		"properties": {
+			"type": {
+				"type": "array",
+				"items": [{
+						"type": "string",
+						"description": "ADEX Data Model name. It has to be Weather"
+					},
+					{
+						"type": "string",
+						"description": "ADEX Entity type. It has to be Resource"
+					}
+				]
+			},
+			"id": {
+				"type": "string",
+				"description": "Unique ADEX ID for the resource."
+			},
+			"observationDateTime": {
+				"type": "string",
+				"format": "date-time",
+				"description": "Last reported time of observation."
+			},
+			"relativeHumidity": {
+				"type": "object",
+				"description": "Observed instantaneous relative humidity (water vapour in air).",
+				"properties": {
+					"avgOverTime": {
+						"type": "number",
+						"description": "Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+						"unitCode": "P1",
+						"unitText": "percent"
+					},
+					"maxOverTime": {
+						"type": "number",
+						"description": "Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+						"unitCode": "P1",
+						"unitText": "percent"
+					},
+					"instValue": {
+						"type": "number",
+						"description": "Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.",
+						"unitCode": "P1",
+						"unitText": "percent"
+					},
+					"minOverTime": {
+						"type": "number",
+						"description": "Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+						"unitCode": "P1",
+						"unitText": "percent"
+					}
+				}
+			},
+			"atmosphericPressure": {
+				"type": "number",
+				"description": "Observed air (atmospheric or barometric) pressure.",
+				"unitCode": "MBR",
+				"unitText": "millibar (mbar)"
+			},
+			"airTemperature": {
+				"type": "object",
+				"description": "Observed value of air temperature. Value is an object containing attributes representing statistical aggregates derived from past data.",
+				"properties": {
+					"avgOverTime": {
+						"type": "number",
+						"description": "Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+						"unitCode": "CEL",
+						"unitText": "degree Celsius (C)"
+					},
+					"maxOverTime": {
+						"type": "number",
+						"description": "Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+						"unitCode": "CEL",
+						"unitText": "degree Celsius (C)"
+					},
+					"instValue": {
+						"type": "number",
+						"description": "Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.",
+						"unitCode": "CEL",
+						"unitText": "degree Celsius (C)"
+					},
+					"minOverTime": {
+						"type": "number",
+						"description": "Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+						"unitCode": "CEL",
+						"unitText": "degree Celsius (C)"
+					}
+				}
+			},
+			"gustSpeed": {
+				"type": "number",
+				"description": "A sudden burst of high-speed wind over the observed average wind speed lasting only for a few seconds.",
+				"unitCode": "KMH",
+				"unitText": "kilometre per hour"
+			},
+			"dewPoint": {
+				"type": "number",
+				"description": "Observed temperature to which air must be cooled to become saturated with water vapor.",
+				"unitCode": "CEL",
+				"unitText": "degree Celsius (C)"
+			},
+			"weatherType": {
+				"type": "string",
+				"description": "Observed weather type or status. Represented by a comma separated list of weather types, e.g., cloudy, sunny etc."
+			},
+			"windDirection": {
+				"type": "number",
+				"description": "Observed wind direction. Measured in degrees clockwise from due north.",
+				"unitCode": "DD",
+				"unitText": "degree"
+			},
+			"relativeHumidityForecast": {
+				"type": "number",
+				"description": "Forecasted relative humidity (water vapour in air) over a certain duration in future."
+			},
+			"windSpeed": {
+				"type": "number",
+				"description": "Observed wind speed.",
+				"unitCode": "MTS",
+				"unitText": "metre per second"
+			},
+			"precipitationForecast": {
+				"type": "number",
+				"description": "Forecasted rainfall over a certain duration in future.",
+				"unitCode": "MMT",
+				"unitText": "millimetre"
+			},
+			"aqiMajorPollutantForecast": {
+				"type": "string",
+				"description": "Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future.."
+			},
+			"illuminance": {
+				"type": "object",
+				"description": "Observed instantaneous ambient light intensity.",
+				"properties": {
+					"avgOverTime": {
+						"type": "number",
+						"description": "Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+						"unitCode": "LUX",
+						"unitText": "lux"
+					},
+					"maxOverTime": {
+						"type": "number",
+						"description": "Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+						"unitCode": "LUX",
+						"unitText": "lux"
+					},
+					"instValue": {
+						"type": "number",
+						"description": "Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.",
+						"unitCode": "LUX",
+						"unitText": "lux"
+					},
+					"minOverTime": {
+						"type": "number",
+						"description": "Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+						"unitCode": "LUX",
+						"unitText": "lux"
+					}
+				}
+			},
+			"airQualityIndex": {
+				"type": "number",
+				"description": "Overall Air Quality Index (AQI) for the observed air quality.",
+				"unitCode": "C62",
+				"unitText": "dimensionless"
+			},
+			"aqiMajorPollutant": {
+				"type": "string",
+				"description": "Major pollutant in the Air Quality Index (AQI).."
+			},
+			"airTemperatureForecast": {
+				"type": "number",
+				"description": "Forecasted value of air temperature over a certain duration in future.",
+				"unitCode": "CEL",
+				"unitText": "degree Celsius"
+			},
+			"precipitation": {
+				"type": "number",
+				"description": "Observed precipitation/rainfall level over a given duration.",
+				"aggregationDuration": 24,
+				"unitCode": "MMT",
+				"unitText": "millimetre"
+			},
+			"solarRadiation": {
+				"type": "number",
+				"description": "The number of photons that are being emitted by the sun.",
+				"unitCode": "HTZ",
+				"unitText": "hertz"
+			},
+			"airQualityIndexForecast": {
+				"type": "number",
+				"description": "Forecasted overall Air Quality Index (AQI) over a certain duration in future.",
+				"unitCode": "C62",
+				"unitText": "dimensionless"
+			}
+		}
+	}
+}

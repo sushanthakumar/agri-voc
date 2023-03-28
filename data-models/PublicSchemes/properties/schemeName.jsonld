@@ -8,18 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:tehsilCode",
+            "@id": "adex:schemeName",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The tehsil code corresponding to this observation.",
-            "rdfs:label": "tehsilCode",
+            "rdfs:comment": "The name of the scheme or programme introduced by the government for public welfare and development.",
+            "rdfs:label": "schemeName",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:LocaleDesc"
+                    "@id": "adex:PublicSchemes"
                 }
             ],
             "adex:rangeIncludes": [

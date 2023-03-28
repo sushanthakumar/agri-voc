@@ -2,7 +2,8 @@
 	"@context": "https://agrijson.adex.org.in",
 	"id": "https://agrijson.adex.org.in/Weather",
 	"type": [
-		"adex:Weather"
+		"adex:Weather",
+		"adex:Resource"
 	],
 	"relativeHumidity": {
 		"instValue": 55.1,

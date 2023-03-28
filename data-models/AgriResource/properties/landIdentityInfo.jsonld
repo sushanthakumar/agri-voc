@@ -28,7 +28,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Landidentitydesc"
+                    "@id": "adex:LandIdentityDesc"
                 }
             ]
         }
