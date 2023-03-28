@@ -8,23 +8,23 @@
     },
     "@graph": [
         {
-            "@id": "adex:tehsilCode",
+            "@id": "adex:bankAccountNo",
             "@type": [
-                "adex:TextProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The tehsil code corresponding to this observation.",
-            "rdfs:label": "tehsilCode",
+            "rdfs:comment": "The bank account number of the individual or business corresponding to this observation.",
+            "rdfs:label": "bankAccountNo",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:LocaleDesc"
+                    "@id": "adex:IdentityDesc"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

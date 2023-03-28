@@ -16,7 +16,7 @@
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Municipality information corresponding to this observation.",
+            "rdfs:comment": "Locale information corresponding to this observation.",
             "rdfs:label": "localeInfo",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
@@ -24,11 +24,14 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:LandParcel"
+                },
+                {
+                    "@id": "adex:Weather"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Localedesc"
+                    "@id": "adex:LocaleDesc"
                 }
             ]
         }

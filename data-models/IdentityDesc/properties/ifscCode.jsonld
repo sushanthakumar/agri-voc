@@ -8,18 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:tehsilName",
+            "@id": "adex:ifscCode",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Name of the tehsil corresponding to this observation. A tehsil is also called as a mandal, tahsil, tahasil, taluka, taluk, or taluq",
-            "rdfs:label": "tehsilName",
+            "rdfs:comment": "The IFSC code for the bank corresponding to this observation.",
+            "rdfs:label": "ifscCode",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:LocaleDesc"
+                    "@id": "adex:IdentityDesc"
                 }
             ],
             "adex:rangeIncludes": [

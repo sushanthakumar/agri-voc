@@ -28,7 +28,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Capitaldesc"
+                    "@id": "adex:CapitalDesc"
                 }
             ]
         }

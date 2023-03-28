@@ -12,7 +12,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Name of the subdistrict corresponding to this observation.",
+            "rdfs:comment": "Name of the subdistrict corresponding to this observation. A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states.",
             "rdfs:label": "subdistrictName",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
