@@ -17,9 +17,6 @@
             "rdfs:label": "PublicSchemes",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
-            },
-            "rdfs:subClassOf": {
-                "@id": "adex:PublicSchemes"
             }
         }
     ]
