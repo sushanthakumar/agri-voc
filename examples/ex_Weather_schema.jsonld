@@ -6,8 +6,6 @@
 	],
 	"id": "https://agrijson.adex.org.in/Weather",
 	"schema": {
-		"$schema": "http://json-schema.org/schema#",
-		"$id": "https://agrijson.adex.org.in/Weather",
 		"title": "ADEX Weather Data Model",
 		"description": "A Data Model for weather monitored observed at a certain place and time.",
 		"type": "object",
