@@ -8,13 +8,13 @@
     },
     "@graph": [
         {
-            "@id": "adex:AgriResource",
+            "@id": "adex:Materials",
             "@type": [
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "rdfs:comment": "Data models that pertain to the environment domain",
-            "rdfs:label": "AgriResource",
+            "rdfs:comment": "Data models that pertain to the Materials domain",
+            "rdfs:label": "Materials",
             "rdfs:subClassOf": {
                 "@id": "adex:DataModel"
             }

@@ -8,15 +8,15 @@
     },
     "@graph": [
         {
-            "@id": "adex:Farmer",
+            "@id": "adex:Processes",
             "@type": [
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "rdfs:comment": "Data Model for the information about farmer.",
-            "rdfs:label": "Farmer",
+            "rdfs:comment": "Data models that pertain to the environment domain",
+            "rdfs:label": "Processes",
             "rdfs:subClassOf": {
-                "@id": "adex:Person"
+                "@id": "adex:DataModel"
             }
         }
     ]

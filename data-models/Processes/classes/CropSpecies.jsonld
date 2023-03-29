@@ -12,14 +12,14 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:AgriMarket",
-            "rdfs:comment": "A Data Model for agricultural markets/mandis.",
-            "rdfs:label": "AgriMarket",
+            "@id": "adex:CropSpecies",
+            "rdfs:comment": "A Data Model for information in crops",
+            "rdfs:label": "CropSpecies",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "rdfs:subClassOf": {
-                "@id": "adex:Person"
+                "@id": "adex:Processes"
             }
         }
     ]

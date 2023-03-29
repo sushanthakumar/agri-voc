@@ -14,7 +14,7 @@ such as [schema.org](schema.org), [smart data models](https://smartdatamodels.or
 [iotschema.org](http://iotschema.org/) and [dcat](https://www.w3.org/TR/vocab-dcat/#dcat-scope)
 wherever possible in an effort to link ontologies and provide for interoperability.
 
-Schemas hosted here are available in web-view format on [ADEX Vocabulary Server](https://voc.adex.org.in)
+Schemas hosted here are available in web-view format on [ADEX Vocabulary Server](https://agrijson.adex.org.in/)
 
 
 ## Structure

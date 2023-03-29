@@ -8,15 +8,15 @@
     },
     "@graph": [
         {
-            "@id": "adex:Weather",
+            "@id": "adex:Personnel",
             "@type": [
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "rdfs:comment": "Data Model for weather conditions observed at a certain place and time.",
-            "rdfs:label": "Weather",
+            "rdfs:comment": "Data models that pertain to the personnel domain",
+            "rdfs:label": "Personnel",
             "rdfs:subClassOf": {
-                "@id": "adex:AgriResource"
+                "@id": "adex:DataModel"
             }
         }
     ]

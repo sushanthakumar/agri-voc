@@ -12,14 +12,14 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:CropSpecies",
-            "rdfs:comment": "A Data Model for information in crops",
-            "rdfs:label": "CropSpecies",
+            "@id": "adex:CropInsurance",
+            "rdfs:comment": "A Data Model for crop insurance",
+            "rdfs:label": "CropInsurance",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "rdfs:subClassOf": {
-                "@id": "adex:Process"
+                "@id": "adex:Services"
             }
         }
     ]
