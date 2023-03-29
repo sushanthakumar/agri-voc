@@ -13,7 +13,7 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "rdfs:comment": "Data models that pertain to the Materials domain",
+            "rdfs:comment": "Data models that pertain to the materials domain",
             "rdfs:label": "Materials",
             "rdfs:subClassOf": {
                 "@id": "adex:DataModel"
