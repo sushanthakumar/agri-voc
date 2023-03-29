@@ -12,34 +12,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:localeInfo",
+            "@id": "adex:policyNumber",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "Locale information corresponding to this observation.",
-            "rdfs:label": "localeInfo",
+            "rdfs:comment": "Insurance policy number corresponding to this observation",
+            "rdfs:label": "policyNumber",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:LandParcel"
-                },
-                {
-                    "@id": "adex:Weather"
-                },
-                {
-                    "@id": "adex:AgriMarket"
-                },
                 {
                     "@id": "adex:CropInsurance"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:LocaleDesc"
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

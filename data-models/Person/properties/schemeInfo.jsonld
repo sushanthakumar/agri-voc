@@ -18,19 +18,22 @@
             ],
             "rdfs:comment": "Farmer welfare schemes information corresponding to this observation.",
             "rdfs:label": "schemeInfo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Farmer"
+                },
+                {
+                    "@id": "adex:CropInsurance"
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:PublicSchemes"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

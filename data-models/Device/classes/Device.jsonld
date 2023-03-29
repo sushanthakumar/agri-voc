@@ -12,14 +12,11 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:LandParcel",
-            "rdfs:comment": "A Data Model for agricultural land parcel information",
-            "rdfs:label": "LandParcel",
+            "@id": "adex:Device",
+            "rdfs:comment": "Information about the device or sensor used to capture realtime data",
+            "rdfs:label": "Device",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
-            },
-            "rdfs:subClassOf": {
-                "@id": "adex:AgriResource"
             }
         }
     ]

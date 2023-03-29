@@ -12,29 +12,26 @@
     },
     "@graph": [
         {
-            "@id": "adex:localeInfo",
+            "@id": "adex:insurancePremium",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Locale information corresponding to this observation.",
-            "rdfs:label": "localeInfo",
+            "rdfs:comment": "The amount that is paid by the individual or business for availing the insurance policy.",
+            "rdfs:label": "insurancePremium",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:LandParcel"
-                },
-                {
-                    "@id": "adex:Weather"
+                    "@id": "adex:CropInsurance"
                 },
                 {
                     "@id": "adex:AgriMarket"
-                },
-                {
-                    "@id": "adex:CropInsurance"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:LocaleDesc"
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
             ],
             "rdfs:isDefinedBy": {

@@ -12,14 +12,11 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:LandParcel",
-            "rdfs:comment": "A Data Model for agricultural land parcel information",
-            "rdfs:label": "LandParcel",
+            "@id": "adex:ContactPointDesc",
+            "rdfs:comment": "Information about point of contact(s) to an individual or business.",
+            "rdfs:label": "ContactPointDesc",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
-            },
-            "rdfs:subClassOf": {
-                "@id": "adex:AgriResource"
             }
         }
     ]

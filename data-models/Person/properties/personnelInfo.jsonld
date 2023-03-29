@@ -18,19 +18,25 @@
             ],
             "rdfs:comment": "Personnel information of an individual or business corresponding to this observation.",
             "rdfs:label": "personnelInfo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Farmer"
+                },
+                {
+                    "@id": "adex:AgriMarket"
+                },
+                {
+                    "@id": "adex:CropInsurance"
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:PersonnelDesc"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

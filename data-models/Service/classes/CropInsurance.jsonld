@@ -12,14 +12,14 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:LandParcel",
-            "rdfs:comment": "A Data Model for agricultural land parcel information",
-            "rdfs:label": "LandParcel",
+            "@id": "adex:CropInsurance",
+            "rdfs:comment": "A Data Model for crop insurance",
+            "rdfs:label": "CropInsurance",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "rdfs:subClassOf": {
-                "@id": "adex:AgriResource"
+                "@id": "adex:Service"
             }
         }
     ]

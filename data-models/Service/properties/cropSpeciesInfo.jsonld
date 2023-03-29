@@ -12,34 +12,25 @@
     },
     "@graph": [
         {
-            "@id": "adex:localeInfo",
+            "@id": "adex:cropSpeciesInfo",
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Locale information corresponding to this observation.",
-            "rdfs:label": "localeInfo",
+            "rdfs:comment": "Information of crops corresponding to this observation.",
+            "rdfs:label": "cropSpeciesInfo",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:LandParcel"
-                },
-                {
-                    "@id": "adex:Weather"
-                },
-                {
-                    "@id": "adex:AgriMarket"
-                },
                 {
                     "@id": "adex:CropInsurance"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:LocaleDesc"
+                    "@id": "adex:CropSpecies"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

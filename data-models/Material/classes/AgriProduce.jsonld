@@ -12,14 +12,14 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:LandParcel",
-            "rdfs:comment": "A Data Model for agricultural land parcel information",
-            "rdfs:label": "LandParcel",
+            "@id": "adex:AgriProduce",
+            "rdfs:comment": "A Data Model for agricultural produce/commodities/products",
+            "rdfs:label": "AgriProduce",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "rdfs:subClassOf": {
-                "@id": "adex:AgriResource"
+                "@id": "adex:Material"
             }
         }
     ]

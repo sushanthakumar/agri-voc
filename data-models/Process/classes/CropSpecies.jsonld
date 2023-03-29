@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:CropSpecies",
-            "rdfs:comment": "A datamodel for information in crops",
+            "rdfs:comment": "A Data Model for information in crops",
             "rdfs:label": "CropSpecies",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

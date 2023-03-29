@@ -12,34 +12,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:localeInfo",
+            "@id": "adex:issualDate",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "Locale information corresponding to this observation.",
-            "rdfs:label": "localeInfo",
+            "rdfs:comment": "The date of issual of the insurance corresponding to this observation.",
+            "rdfs:label": "issualDate",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:LandParcel"
-                },
-                {
-                    "@id": "adex:Weather"
-                },
-                {
-                    "@id": "adex:AgriMarket"
-                },
                 {
                     "@id": "adex:CropInsurance"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:LocaleDesc"
+                    "@id": "adex:DateTime"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

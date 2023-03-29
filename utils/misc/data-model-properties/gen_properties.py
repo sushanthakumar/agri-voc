@@ -12,6 +12,7 @@ from pathlib import Path
 import os.path as path
 from tkinter import Tk
 from tkinter import filedialog
+import PySimpleGUI as sg
 
 # tk 8.6
 """ Add the property names to ignore list to skip property generation. """
@@ -82,7 +83,7 @@ def add_domain_or_range(item_list, items, item_type):
                     dr_dict["@id"] = "adex:Text"
                 else:
                     dr_dict[
-                        "@id"] = "adex:" + item.strip().capitalize() if item_type == "adex:rangeIncludes" and item.strip() not in [
+                        "@id"] = "adex:" + item.strip() if item_type == "adex:rangeIncludes" and item.strip() not in [
                         "NumericArray", "ValueDescriptor"] else "adex:" + item.strip()
             dr_list.append(dr_dict)
             for i in range(len(dr_list)):
@@ -97,7 +98,7 @@ def add_domain_or_range(item_list, items, item_type):
         else:
 
             dr_dict[
-                "@id"] = "adex:" + items.strip().capitalize() if item_type == "adex:rangeIncludes" else "adex:" + items.strip()
+                "@id"] = "adex:" + items.strip() if item_type == "adex:rangeIncludes" else "adex:" + items.strip()
         dr_list.append(dr_dict)
     return dr_list
 
@@ -117,10 +118,10 @@ def find_name(pattern, path):
     return result
 
 
-def create_classes(properties_path):
+def create_classes(properties_path, subclass):
     subdomain_path = properties_path + "/" + sub_domain + ".jsonld"
     if not os.path.exists(subdomain_path):
-        comment = input("Enter the description for the sub domain\n")
+        comment = input("Enter the description\n")
         class_dict = obj
         del class_dict["@context"]['skos']
         del class_dict["@context"]['schema']
@@ -131,7 +132,9 @@ def create_classes(properties_path):
         class_dict["@graph"][0]["rdfs:comment"] = comment
         class_dict["@graph"][0]["rdfs:label"] = sub_domain
         dict1 = {}
-        dict1["rdfs:subClassOf"] = {"@id": "adex:" + domain_name}
+
+        if "Data Model" in subclass:
+            dict1["rdfs:subClassOf"] = {"@id": "adex:" + domain_name}
         obj["@graph"][0].update(dict1)
 
         with open(subdomain_path, "w+") as prop_file:
@@ -320,12 +323,27 @@ def gen_properties(df):
 
 if __name__ == "__main__":
 
-    domain_name = input("Enter the Domain name (without trailing or inline spaces)\n")
-    val = input("Do you want to add a new Domain (Y/N)\n").upper()
-    if val == "Y":
+    val = input("Do you want to make changes in existing Domain or Floating class(Y/N)\n").upper()
+
+    options = ['Data Model', 'Floating Class']
+    layout = [
+        [sg.Listbox(options, size=(27, len(options)))],
+        [sg.Button('Ok'), sg.Button('Cancel')]
+    ]
+    window = sg.Window('Select an item to add', layout)
+    values = window.read()
+    window.close()
+
+    if "Data Model" in values[1][0]:
+        domain_name = input("Enter the Domain name (without trailing or inline spaces)\n")
+
+    else:
+        domain_name = input("Enter the floating class name (without trailing or inline spaces)\n")
+
+    if val == "N":
         arr = next(os.walk(dir_home + "/data-models"))
         if domain_name in arr[1]:
-            print("Domain already exists")
+            print("Domain/floating class already exists")
 
     sub_domain = Path(file_dir).stem
 
@@ -335,8 +353,13 @@ if __name__ == "__main__":
 
     class_path = model_name_dir + "/classes"
     check_dir(class_path)
-    create_classes(class_path)
+    create_classes(class_path, values[1][0])
 
     for i in range(len((pd.ExcelFile(file_dir)).sheet_names)):
         df = pd.read_excel(file_dir, sheet_name=i).astype(str)
         gen_properties(df)
+
+
+
+
+
