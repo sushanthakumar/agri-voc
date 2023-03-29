@@ -354,10 +354,11 @@ if __name__ == "__main__":
     class_path = model_name_dir + "/classes"
     check_dir(class_path)
     create_classes(class_path, values[1][0])
-
-    for i in range(len((pd.ExcelFile(file_dir)).sheet_names)):
-        df = pd.read_excel(file_dir, sheet_name=i).astype(str)
-        gen_properties(df)
+    
+    #Fetching the data from csv file
+    
+    df = pd.read_csv(file_dir).astype(str)
+    gen_properties(df)
 
 
 
