@@ -9,7 +9,7 @@ We build over ideas and concepts standardized by [schema.org](schema.org) and
 build custom ontologies and semantic constructs to standardize ADEX operations, data access,
 and interoperable data comprehension.
 
-We standardize our schemas with popular strcutured data schema providers 
+We standardize our schemas with popular structured data schema providers 
 such as [schema.org](schema.org), [smart data models](https://smartdatamodels.org/),
 [iotschema.org](http://iotschema.org/) and [dcat](https://www.w3.org/TR/vocab-dcat/#dcat-scope)
 wherever possible in an effort to link ontologies and provide for interoperability.
