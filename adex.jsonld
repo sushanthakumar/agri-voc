@@ -37,18 +37,6 @@
         "observationDateTime": {
             "@id": "adex:observationDateTime"
         },
-        "Person": {
-            "@id": "adex:Person"
-        },
-        "Service": {
-            "@id": "adex:Service"
-        },
-        "Process": {
-            "@id": "adex:Process"
-        },
-        "Material": {
-            "@id": "adex:Material"
-        },
         "Farmer": {
             "@id": "adex:Farmer"
         },
