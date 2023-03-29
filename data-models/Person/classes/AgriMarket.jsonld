@@ -19,7 +19,7 @@
                 "@id": "adex:"
             },
             "rdfs:subClassOf": {
-                "@id": "adex:AgriMarket"
+                "@id": "adex:Person"
             }
         }
     ]
