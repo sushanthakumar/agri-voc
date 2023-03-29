@@ -43,9 +43,6 @@
         "Service": {
             "@id": "adex:Service"
         },
-        "AgriResource": {
-            "@id": "adex:AgriResource"
-        },
         "Process": {
             "@id": "adex:Process"
         },
