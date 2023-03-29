@@ -21,9 +21,6 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Farmer"
-                },
-                {
-                    "@id": "adex:CropInsurance"
                 }
             ],
             "adex:rangeIncludes": [

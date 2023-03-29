@@ -24,9 +24,6 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:LandParcel"
-                },
-                {
-                    "@id": "adex:CropInsurance"
                 }
             ],
             "adex:rangeIncludes": [

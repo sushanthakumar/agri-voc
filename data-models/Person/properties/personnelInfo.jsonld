@@ -24,9 +24,6 @@
                 },
                 {
                     "@id": "adex:AgriMarket"
-                },
-                {
-                    "@id": "adex:CropInsurance"
                 }
             ],
             "adex:rangeIncludes": [
