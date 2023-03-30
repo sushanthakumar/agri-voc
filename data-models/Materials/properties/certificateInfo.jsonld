@@ -8,15 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:electricalConductivity",
+            "@id": "adex:certificateInfo",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:StructuredProperty"
             ],
-            "rdfs:comment": "The measure of electrical conductivity of the entity corresponding to this observation.",
-            "rdfs:label": "electricalConductivity",
+            "rdfs:comment": "Date of issual, expiry/validity, renewal of the document/certificate corresponding to this observation.",
+            "rdfs:label": "certificateInfo",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Soil"
+                    "@id": "adex:CropInsurance"
                 },
                 {
                     "@id": "adex:Fertilizer"
@@ -24,15 +27,9 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
-                },
-                {
-                    "@id": "adex:ValueDescriptor"
+                    "@id": "adex:CertificateDesc"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

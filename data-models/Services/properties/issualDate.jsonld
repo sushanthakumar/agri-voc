@@ -14,7 +14,7 @@
         {
             "@id": "adex:issualDate",
             "@type": [
-                "adex:TextProperty"
+                "adex:TimeProperty"
             ],
             "rdfs:comment": "The date of issual of the insurance corresponding to this observation.",
             "rdfs:label": "issualDate",

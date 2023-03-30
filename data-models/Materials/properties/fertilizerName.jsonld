@@ -8,16 +8,14 @@
     },
     "@graph": [
         {
-            "@id": "adex:electricalConductivity",
-            "@type": [
-                "adex:QuantitativeProperty"
-            ],
-            "rdfs:comment": "The measure of electrical conductivity of the entity corresponding to this observation.",
-            "rdfs:label": "electricalConductivity",
+            "@id": "adex:fertilizerName",
+            "@type": null,
+            "rdfs:comment": "The chemical/generic name of the fertilizer corresponding to this observation.",
+            "rdfs:label": "fertilizerName",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:Soil"
-                },
                 {
                     "@id": "adex:Fertilizer"
                 }
@@ -29,10 +27,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

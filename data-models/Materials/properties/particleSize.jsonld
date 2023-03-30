@@ -8,31 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:electricalConductivity",
+            "@id": "adex:particleSize",
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The measure of electrical conductivity of the entity corresponding to this observation.",
-            "rdfs:label": "electricalConductivity",
+            "rdfs:comment": "The size of the fertilizer particles corresponding to this observation.",
+            "rdfs:label": "particleSize",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:Soil"
-                },
                 {
                     "@id": "adex:Fertilizer"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

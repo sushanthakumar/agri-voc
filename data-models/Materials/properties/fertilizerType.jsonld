@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@id": "adex:electricalConductivity",
+            "@id": "adex:fertilizerType",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The measure of electrical conductivity of the entity corresponding to this observation.",
-            "rdfs:label": "electricalConductivity",
+            "rdfs:comment": "The type of fertilizer used in the soil. [Organic/ Inorganic/ Synthetic/ soluble/ insoluble/ bioCompost, vermiCompost]",
+            "rdfs:label": "fertilizerType",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:Soil"
-                },
                 {
                     "@id": "adex:Fertilizer"
                 }
@@ -29,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }
