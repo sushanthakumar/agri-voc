@@ -12,28 +12,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:cropDiseaseInfo",
+            "@id": "adex:natureOfProblem",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The disease related information of the crop corresponding to this observation.",
-            "rdfs:label": "cropDiseaseInfo",
+            "rdfs:comment": "The problem for which the advisory has been issued to the people. such as flood, cyclone, insects attack, diseases, etc.",
+            "rdfs:label": "natureOfProblem",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:CropSpecies"
-                },
                 {
                     "@id": "adex:AgriAdvisory"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:CropDiseaseDesc"
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

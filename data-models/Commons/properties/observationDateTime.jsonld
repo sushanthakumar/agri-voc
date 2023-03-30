@@ -36,6 +36,9 @@
                 },
                 {
                     "@id": "adex:AgriProduce"
+                },
+                {
+                    "@id": "adex:AgriAdvisory"
                 }
             ],
             "adex:rangeIncludes": [

@@ -18,12 +18,12 @@
             ],
             "rdfs:comment": "The unique code assigned for the crop species as per the ICC (Indicative Crop Classification) of FAO (Food and Agicultural Organisation).",
             "rdfs:label": "cropCodeICC",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropSpecies"
+                },
+                {
+                    "@id": "adex:AgriAdvisory"
                 }
             ],
             "adex:rangeIncludes": [
@@ -33,7 +33,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }
