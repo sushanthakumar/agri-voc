@@ -36,6 +36,9 @@
                 },
                 {
                     "@id": "adex:LandParcel"
+                },
+                {
+                    "@id": "adex:Soil"
                 }
             ],
             "adex:rangeIncludes": [
