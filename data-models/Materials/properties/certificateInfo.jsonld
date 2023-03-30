@@ -19,9 +19,6 @@
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:CropInsurance"
-                },
-                {
                     "@id": "adex:Fertilizer"
                 }
             ],

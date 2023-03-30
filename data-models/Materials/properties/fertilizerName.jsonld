@@ -9,7 +9,9 @@
     "@graph": [
         {
             "@id": "adex:fertilizerName",
-            "@type": null,
+            "@type": [
+                "adex:TextProperty"
+            ],
             "rdfs:comment": "The chemical/generic name of the fertilizer corresponding to this observation.",
             "rdfs:label": "fertilizerName",
             "rdfs:isDefinedBy": {
