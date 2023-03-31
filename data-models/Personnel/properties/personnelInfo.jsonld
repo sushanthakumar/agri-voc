@@ -27,6 +27,9 @@
                 },
                 {
                     "@id": "adex:Fertilizer"
+                },
+                {
+                    "@id": "adex:CropInsurance"
                 }
             ],
             "adex:rangeIncludes": [

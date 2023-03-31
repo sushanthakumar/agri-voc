@@ -30,6 +30,9 @@
                 },
                 {
                     "@id": "adex:AgriAdvisory"
+                },
+                {
+                    "@id": "adex:CropInsurance"
                 }
             ],
             "adex:rangeIncludes": [
