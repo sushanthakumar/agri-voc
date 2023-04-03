@@ -1,0 +1,164 @@
+{
+	"@context": "https://agrijson.adex.org.in",
+	"type": [
+		"adex:CropSpecies",
+		"adex:Schema"
+	],
+	"id": "https://agrijson.adex.org.in/CropSpecies",
+	"schema": {
+		"title": "ADEX CropSpecies Data Model",
+		"type": "object",
+		"properties": {
+			"type": {
+				"type": "array",
+				"items": [{
+						"type": "string",
+						"description": "ADEX Data Model name. It has to be CropSpecies"
+					},
+					{
+						"type": "string",
+						"description": "ADEX Entity type. It has to be Resource"
+					}
+				]
+			},
+			"cropResidue": {
+				"type": "number",
+				"description": "The quantity of materials that are left in agricultural field after the crop has been harvested. It includes stalks and stubble, leaves and seed pods, etc.",
+				"unitCode": "KGM",
+				"unitText": "kilogram"
+			},
+			"cropNameLocal": {
+				"type": "string",
+				"description": "The common/local name of the crop species corresponding to the observation."
+			},
+			"plantingMethod": {
+				"type": "string",
+				"description": "Describes how the crop species has been planted. For eg, It can be via Seeds, Transplant, Machinery, Grafting etc."
+			},
+			"cropCode": {
+				"type": "string",
+				"description": "The unique code for the crop species corresponding to this observation."
+			},
+			"cropLossQuantity": {
+				"type": "number",
+				"description": "The total quantity of crop lost due to storage, mulching, natural calamities etc.",
+				"unitCode": "KGM",
+				"unitText": "kilogram"
+			},
+			"seedVarietyName": {
+				"type": "string",
+				"description": "The name of the seed variety corresponding to this observation."
+			},
+			"cropVarietyName": {
+				"type": "string",
+				"description": "The variations within the plant species either naturally or developed in research station."
+			},
+			"cropLossReason": {
+				"type": "string",
+				"description": "The reason for the crop loss"
+			},
+			"harvestedParts": {
+				"type": "string",
+				"description": "Represents the parts of the crop harvested for various purposes."
+			},
+			"cropCategory": {
+				"type": "string",
+				"description": "Describes the category of crop species, based on its widespread usage. ENUM [Food, Feed, Fiber, Oil, Ornamental, Industrial]"
+			},
+			"harvestPeriod": {
+				"type": "string",
+				"description": "The phase or period of crop harvest. It can take up values like Jan-March, October-December etc."
+			},
+			"cropAge": {
+				"type": "number",
+				"description": "The age of the crop species (in days) corresponding to the observation",
+				"unitCode": "C62",
+				"unitText": "dimensionless"
+			},
+			"cropType": {
+				"type": "string",
+				"description": "Type of the crop species. For eg., Pulses, Cereals, Legumes, Veg Proteins, cash crop etc"
+			},
+			"cropCodeICC": {
+				"type": "string",
+				"description": "The unique code assigned for the crop species as per the ICC (Indicative Crop Classification) of FAO (Food and Agicultural Organisation)."
+			},
+			"cropSeason": {
+				"type": "string",
+				"description": "The season in which the crop species is planted and harvested. ENUM [Kharif, Rabi, Zaid]."
+			},
+			"isMajorCrop": {
+				"type": "string",
+				"description": "Denotes whether the cultivated crop species is a main/sole crop wrt the farmland. ENUM[Y, N]"
+			},
+			"cropDiseaseInfo": {
+				"type": "object",
+				"description": "The disease related information of the crop corresponding to this observation.",
+				"properties": {
+					"diseaseName": {
+						"type": "string",
+						"description": "The name of the disease that has affected the crop/ farm."
+					},
+					"partsAffected": {
+						"type": "string",
+						"description": "The parts of the crop affected by the crop disease."
+					},
+					"diseaseControlMeasures": {
+						"type": "string",
+						"description": "The measures that needs to taken to reduce or control the pest and disease in the crops"
+					},
+					"causalOrganism": {
+						"type": "string",
+						"description": "The name of the organism/pest which has caused the crop disease."
+					},
+					"infectionStage": {
+						"type": "string",
+						"description": "The degree of infection with respect to spread or intensity. ENUM [Initial, Severe]"
+					},
+					"diseaseSymptoms": {
+						"type": "string",
+						"description": "Respresents the symptoms for the crop disease."
+					},
+					"diseasePreventionMeasures": {
+						"type": "string",
+						"description": "The measures that has to be taken to prevent the attack of pest and diseases for the crops."
+					}
+				}
+			},
+			"cropNameICC": {
+				"type": "string",
+				"description": "The name of the crop as given by the ICC (Indicative Crop Classification) of FAO (Food and Agicultural Organisation)."
+			},
+			"cropYield": {
+				"type": "number",
+				"description": "The amount of crop species harvested per unit of land area.",
+				"unitCode": "KGM",
+				"unitText": "kilogram"
+			},
+			"cropSpacing": {
+				"type": "number",
+				"description": "The distance between one plant and another in the farm. It can also indicate the number of crops planted in a unit area.",
+				"unitCode": "MTR",
+				"unitText": "Metre"
+			},
+			"cropNameBotanical": {
+				"type": "string",
+				"description": "The botanical nomenclature of the crop species corresponding to this observation."
+			},
+			"harvestEquipmentType": {
+				"type": "string",
+				"description": "The type of equipment(s) used for the purpose of harvesting the crop species corresponding to this observation."
+			},
+			"seedVarietyCode": {
+				"type": "string",
+				"description": "The code assigned to the seed variety corresponding to this observation."
+			},
+			"cropArea": {
+				"type": "number",
+				"description": "Area of the agricultural land used for cultivation, i.e, the arable land area.",
+				"unitCode": "HAR",
+				"unitText": "Hectare"
+			}
+		}
+	}
+}

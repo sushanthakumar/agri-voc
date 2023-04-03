@@ -1,0 +1,32 @@
+{
+	"@context": "https://agrijson.adex.org.in",
+	"id": "provider-id/rs.adex.org.in/cropspecies-rg/cropspecies-ri",
+	"type": [
+		"adex:CropSpecies",
+		"adex:Resource"
+	],
+	"cropResidue": 1000,
+	"cropNameLocal": "Rice",
+	"plantingMethod": "Dibbling",
+	"cropCode": "AR56",
+	"cropLossQuantity": 120,
+	"seedVarietyName": "CO56",
+	"cropLossReason": "Flood",
+	"harvestedParts": "Seed",
+	"cropCategory": "Food",
+	"cropAge": 90,
+	"cropType": "Food",
+	"cropCodeICC": "PQ1231",
+	"cropSeason": "Kharif",
+	"cropArea": 2.5,
+	"harvestEquipmentType": "Machinery",
+	"cropSpacing": 1.5,
+	"cropYield": 2500,
+	"cropDiseaseInfo": {
+		"diseaseName": "Rice blast",
+		"partsAffected": "Leaves",
+		"causalOrganism": "Pyricularia orizae",
+		"infectionStage": "Severe",
+		"diseaseSymptoms": "Yellow leaves"
+	}
+}

@@ -1,6 +1,6 @@
 {
 	"@context": "https://agrijson.adex.org.in",
-	"id": "providerid/rs.adex.org.in/farmer-data-rg/farmer-data-ri",
+	"id": "provider-id/rs.adex.org.in/farmer-data-rg/farmer-data-ri",
 	"type": [
 		"adex:Farmer",
 		"adex:Resource"

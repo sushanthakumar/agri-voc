@@ -1,0 +1,31 @@
+{
+  "@context": "https://agrijson.adex.org.in",
+  "id": "provider-id/rs.adex.org.in/agrimarket-rg/agrimarket-ri",
+  "type": [
+    "adex:AgriMarket",
+    "adex:Resource"
+  ],
+  "agencyName": "ABC Agency",
+  "marketID": "123",
+  "marketName": "ABC",
+  "commissionAgentsCount":23,
+  "marketFee": 500,
+  "tradersCount": 30,
+  "farmersCount": 57,
+  "foundingDate": "2023-03-31",
+  "marketValuation": 90000,
+  "observationDateTime": "2023-03-31T08:30:00+05:30",
+  "personnelInfo": {
+	"phone":"9876543210",
+	"email" : "abc@gmail.com",
+  	"businessAddress": {
+		"buildingNum": "52",
+	  	"street": "A street",
+		"locality": "Tirunelveli",
+	  	"villageTownCity": "Thenkasi",
+	  	"state": "Tamil Nadu",
+		"country": "India",
+		"pincode": 627811
+	  	}
+	  }
+}

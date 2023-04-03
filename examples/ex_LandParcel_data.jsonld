@@ -1,6 +1,6 @@
 {
 	"@context": "https://agrijson.adex.org.in",
-	"id": "providerid/rs.adex.org.in/land-parcel-rg/land-parcel-ri",
+	"id": "provider-id/rs.adex.org.in/land-parcel-rg/land-parcel-ri",
 	"type": [
 		"adex:LandParcel",
 		"adex:Resource"
