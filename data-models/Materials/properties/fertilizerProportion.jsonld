@@ -10,7 +10,7 @@
         {
             "@id": "adex:fertilizerProportion",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
             "rdfs:comment": "The ordered array comprising the quantity/ measure of each compound contained in the fertilizer added to the soil.",
             "rdfs:label": "fertilizerProportion",
@@ -24,7 +24,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:NumericArray"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

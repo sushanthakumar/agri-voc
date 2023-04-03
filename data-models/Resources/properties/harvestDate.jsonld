@@ -28,7 +28,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Datetime"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

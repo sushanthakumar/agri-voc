@@ -12,7 +12,7 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The total cost incurred due to trasportation of raw materials and supplies.",
+            "rdfs:comment": "The total cost incurred due to transportation of raw materials and supplies.",
             "rdfs:label": "transportationCost",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

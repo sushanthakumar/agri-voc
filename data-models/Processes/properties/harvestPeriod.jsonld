@@ -14,7 +14,7 @@
         {
             "@id": "adex:harvestPeriod",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
             "rdfs:comment": "The phase or period of crop harvest. It can take up values like Jan-March, October-December etc.",
             "rdfs:label": "harvestPeriod",
@@ -28,7 +28,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

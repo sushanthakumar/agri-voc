@@ -1,0 +1,44 @@
+{
+	"@context": "https://agrijson.adex.org.in",
+	"id": "providerid/rs.adex.org.in/farmer-data-rg/farmer-data-ri",
+	"type": [
+		"adex:Farmer",
+		"adex:Resource"
+	],
+	"kisanNumber": "011-454321113553",
+	"schemeInfo": {
+		"schemeName": "PM Kisan Samman Nidhi Yojana",
+	    "schemeID": "PMK5454H"
+	},
+	"personnelInfo": {
+		"phone": "9799999721",
+		"birthPlace": "Khammam,Telangana",
+		"residentialAddress": {
+			"buildingNum": "61/65",
+			"street": "abc",
+			"locality": "Ballepalli",
+			"districtName": "Khammam",
+			"stateName": "Telangana",
+			"countryName": "India",
+			"pincode": 507002
+		},
+		"birthDate": "1959-01-15",
+		"email": "kumarmk@gmail.com",
+		"salutation": "Mr",
+		"gender": "Male",
+		"identityInfo": {
+			"bankAccountNo": 101344515616,
+			"ifscCode": "SBIJ0005943",
+			"panNo": "BHSPS6711H",
+			"aadharNo": "0000 1111 2222"
+		}
+	},
+	"landParcelInfo": {
+		"ownershipType": "Owned",
+		"landIdentityInfo": {
+			"surveyNumber": "26 / 2e",
+			"landParcelID": 34554321345672
+		}
+	},
+	"farmerID": "KHA-FARMER-011"
+}

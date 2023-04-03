@@ -10,7 +10,7 @@
         {
             "@id": "adex:birthDate",
             "@type": [
-                "adex:TextProperty"
+                "adex:TimeProperty"
             ],
             "rdfs:comment": "Date of birth of the individual corresponding to this observation.",
             "rdfs:label": "birthDate",

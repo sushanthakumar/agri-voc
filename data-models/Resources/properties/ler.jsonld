@@ -14,7 +14,7 @@
         {
             "@id": "adex:ler",
             "@type": [
-                "adex:TextProperty"
+                "adex:QuantitativeProperty"
             ],
             "rdfs:comment": "Land Equivalent Ratio (LER) is the ratio of the area under sole cropping to the area under intercropping needed to give equal amounts of yield at the same management level.",
             "rdfs:label": "ler",
@@ -28,7 +28,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

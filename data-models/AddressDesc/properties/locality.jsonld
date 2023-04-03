@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:houseNo",
+            "@id": "adex:locality",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "House number/name corresponding to this observation.",
-            "rdfs:label": "houseNo",
+            "rdfs:comment": "Area name of the location corresponding to this observation.",
+            "rdfs:label": "locality",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },

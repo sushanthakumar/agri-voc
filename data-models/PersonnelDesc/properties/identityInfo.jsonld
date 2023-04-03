@@ -12,7 +12,7 @@
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Personal identification informations issued by the government.",
+            "rdfs:comment": "Personal identification information issued by the government.",
             "rdfs:label": "identityInfo",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
@@ -24,7 +24,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Identitydesc"
+                    "@id": "adex:IdentityDesc"
                 }
             ]
         }

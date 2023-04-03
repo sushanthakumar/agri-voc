@@ -14,7 +14,7 @@
         {
             "@id": "adex:sowingDate",
             "@type": [
-                "adex:TextProperty"
+                "adex:TimeProperty"
             ],
             "rdfs:comment": "The date at which the crop has been sown in the farm corresponding to this observation.",
             "rdfs:label": "sowingDate",
@@ -28,7 +28,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Datetime"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

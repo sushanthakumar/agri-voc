@@ -1,0 +1,276 @@
+{
+    "@context": "https://agrijson.adex.org.in",
+    "type": [
+        "adex:LandParcel",
+        "adex:Schema"
+    ],
+    "id": "https://agrijson.adex.org.in/LandParcel",
+    "schema": {
+        "title": "ADEX LandParcel Data Model",
+        "type": "object",
+        "properties": {
+            "type": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "string",
+                        "description": "ADEX Data Model name. It has to be LandParcel"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ADEX Entity type. It has to be Resource"
+                    }
+                ]
+            },
+            "id": {
+                  "type": "string",
+                  "description": "Unique ADEX ID for the resource."
+            },
+            "location": {
+                "type": "object",
+                "description": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor."
+            },
+            "mediaURL": {
+                "type": "string",
+                "description": "URL providing further information of any image(s) or media of the complaint or place."
+            },
+            "observationDateTime": {
+                "type": "string",
+                "description": "Last reported time of observation.",
+                "format": "date-time"
+            },
+            "sowingDate": {
+                "type": "string",
+                "description": "The date at which the crop has been sown in the farm corresponding to this observation.",
+                "format": "date"
+            },
+            "ownershipType": {
+                "type": "string",
+                "description": "The type of ownership of the entire land/crop area corresponding to the observation. ENUM: [Lease, Rented, Owned]"
+            },
+            "capitalInfo": {
+                "type": "object",
+                "description": "The income and expenditure information corresponding to the entity.",
+                "properties": {
+                    "electricityCost": {
+                        "type": "number",
+                        "description": "The total electricity cost incurred from agricultural purposes.",
+                        "unitCode": "INR",
+                        "unitText": "Indian Rupee"
+                    },
+                    "leaseAmount": {
+                        "type": "number",
+                        "description": "The amount paid by the lessee for the land under cultivation.",
+                        "unitCode": "INR",
+                        "unitText": "Indian Rupee"
+                    },
+                    "cultivationCost": {
+                        "type": "number",
+                        "description": "The total expense incurred on cultivation",
+                        "unitCode": "INR",
+                        "unitText": "Indian Rupee"
+                    },
+                    "netExpenditure": {
+                        "type": "number",
+                        "description": "The total cost incurred for the cultivation of a crop.",
+                        "unitCode": "INR",
+                        "unitText": "Indian Rupee"
+                    },
+                    "miscellaneousCost": {
+                        "type": "number",
+                        "description": "The inevitable minor expenses incurred for a season in the cultivation of a crop corresponding to this observation.",
+                        "unitCode": "INR",
+                        "unitText": "Indian Rupee"
+                    },
+                    "landCess": {
+                        "type": "number",
+                        "description": "The amount of tax levied on land holdings.",
+                        "unitCode": "INR",
+                        "unitText": "Indian Rupee"
+                    },
+                    "harvestCost": {
+                        "type": "number",
+                        "description": "The total cost incurred for harvesting the crop.",
+                        "unitCode": "INR",
+                        "unitText": "Indian Rupee"
+                    },
+                    "labourCost": {
+                        "type": "number",
+                        "description": "The total labour cost incurred during the cultivation of a crop.",
+                        "unitCode": "INR",
+                        "unitText": "Indian Rupee"
+                    },
+                    "machineryCost": {
+                        "type": "number",
+                        "description": "The total machinery cost incurred from agricultural purposes.",
+                        "unitCode": "INR",
+                        "unitText": "Indian Rupee"
+                    },
+                    "netIncome": {
+                        "type": "number",
+                        "description": "Net revenue from the farmland corresponding to this observation",
+                        "unitCode": "INR",
+                        "unitText": "Indian Rupee"
+                    },
+                    "transportationCost": {
+                        "type": "number",
+                        "description": "The total cost incurred due to transportation of raw materials and supplies.",
+                        "unitCode": "INR",
+                        "unitText": "Indian Rupee"
+                    }
+                }
+            },
+            "interCrops": {
+                "type": "string",
+                "description": "The crops which are cultivated in addition to the major crop in the farm corresponding to this observation."
+            },
+            "ler": {
+                "type": "number",
+                "description": "Land Equivalent Ratio (LER) is the ratio of the area under sole cropping to the area under intercropping needed to give equal amounts of yield at the same management level.",
+                "unitCode": "C62",
+                "unitText": "Dimensionless"
+            },
+            "landSlope": {
+                "type": "number",
+                "description": "The extent that a soil surface has an incline relative to the horizontal.",
+                 "unitCode": "P1",
+                 "unitText": "Percentage"
+            },
+            "totalCropYield": {
+                "type": "number",
+                "description": "The harvested production from the crop land.",
+                "unitCode": "KGM",
+                "unitText": "kilogram"
+            },
+            "landIdentityInfo": {
+                "type": "object",
+                "description": "The unique land identification information corresponding to this observation.",
+                "properties": {
+                    "surveyNumber": {
+                        "type": "string",
+                        "description": "The unique land survey number allocated to the land corresponding to this observation."
+                    },
+                    "baseSurveyNumber": {
+                        "type": "number",
+                        "description": "The base survey number of the land corresponding to this observation.",
+                        "unitCode": "C62",
+                        "unitText": "Dimensionless"
+                    },
+                    "landParcelID": {
+                        "type": "number",
+                        "description": "The ULPIN(Unique Land Parcel Identification Number) representing the land parcel corresponding to the observation.",
+                        "unitCode": "C62",
+                        "unitText": "Dimensionless"
+                    },
+                    "subdivisionNumber": {
+                        "type": "string",
+                        "description": "The subdivision number from the land survey number corresponding to this observation"
+                    }
+                }
+            },
+            "cropArea": {
+                "type": "number",
+                "description": "Area of the agricultural land used for cultivation, i.e, the arable land area.",
+                "unitCode": "HAR",
+                "unitText": "hectare"
+            },
+            "soleCrop": {
+                "type": "string",
+                "description": "The major crop cultivated in the farm corresponding to this observation."
+            },
+            "farmCondition": {
+                "type": "string",
+                "description": "Explains the current condition of the farm. It can take up a value like Barren, Cultivated, Harvested, etc."
+            },
+            "irrigationType": {
+                "type": "string",
+                "description": "The type of irrigation for a farm land, such as sprinkler, drip, furrow, etc"
+            },
+            "landExtent": {
+                "type": "number",
+                "description": "Area of the land corresponding to this observation.",
+                "unitCode": "ACR",
+                "unitText": "acre"
+            },
+            "localeInfo": {
+                "type": "object",
+                "description": "Locale information corresponding to this observation.",
+                "properties": {
+                    "subdistrictName": {
+                        "type": "string",
+                        "description": "Name of the subdistrict corresponding to this observation. A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
+                    },
+                    "wardName": {
+                        "type": "string",
+                        "description": "Ward name corresponding to this observation."
+                    },
+                    "clusterCode": {
+                        "type": "string",
+                        "description": "The cluster code corresponding to this observation."
+                    },
+                    "clusterName": {
+                        "type": "string",
+                        "description": "Name of the cluster corresponding to this observation."
+                    },
+                    "zoneID": {
+                        "type": "string",
+                        "description": "Zone ID corresponding to this observation."
+                    },
+                    "districtCode": {
+                        "type": "string",
+                        "description": "The district code corresponding to this observation."
+                    },
+                    "districtName": {
+                        "type": "string",
+                        "description": "Name of the district corresponding to this observation."
+                    },
+                    "zoneName": {
+                        "type": "string",
+                        "description": "Zone name corresponding to this observation."
+                    },
+                    "subdistrictCode": {
+                        "type": "string",
+                        "description": "The subdistrict code corresponding to this observation."
+                    },
+                    "wardID": {
+                        "type": "string",
+                        "description": "Ward ID corresponding to this observation."
+                    },
+                    "villageName": {
+                        "type": "string",
+                        "description": "Name of the village corresponding to this observation."
+                    },
+                    "stateCode": {
+                        "type": "string",
+                        "description": "The state code corresponding to this observation."
+                    },
+                    "revenueDivisionCode": {
+                        "type": "string",
+                        "description": "The revenue division code corresponding to this observation"
+                    },
+                    "villageCode": {
+                        "type": "string",
+                        "description": "The village code corresponding to this observation."
+                    },
+                    "revenueDivision": {
+                        "type": "string",
+                        "description": "Name of the revenue division in a district corresponding to this observation."
+                    },
+                    "stateName": {
+                        "type": "string",
+                        "description": "Name of the state corresponding to this observation."
+                    }
+                }
+            },
+            "harvestDate": {
+                "type": "string",
+                "description": "The date at which the crop has been harvested in the farm corresponding to this observation.",
+                "format": "date"
+            },
+            "irrigationSource": {
+                "type": "string",
+                "description": "The source of irrigation for a land, such as well, canals, tanks, borewell, etc"
+            }
+        }
+    }
+}
