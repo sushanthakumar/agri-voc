@@ -1,0 +1,336 @@
+{
+    "@context": "https://agrijson.adex.org.in",
+    "type": [
+        "adex:Fertilizer",
+        "adex:Schema"
+    ],
+    "id": "https://agrijson.adex.org.in/Fertilizer",
+    "schema": {
+        "title": "ADEX Fertilizer Data Model",
+        "type": "object",
+        "properties": {
+            "type": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "string",
+                        "description": "ADEX Data Model name. It has to be Fertilizer"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ADEX Entity type. It has to be Resource"
+                    }
+                ]
+            },
+            "electricalConductivity": {
+                "type": "number",
+                "description": "The measure of electrical conductivity of the entity corresponding to this observation.",
+                "unitCode": "D10",
+                "unitText": "siemens per metre"
+            },
+            "personnelInfo": {
+				"type": "object",
+				"description": "Personnel information of an individual or business corresponding to this observation.",
+				"properties": {
+					"phone": {
+						"type": "string",
+						"description": "Phone number  corresponding to this observation"
+					},
+					"birthPlace": {
+						"type": "string",
+						"description": "Place of birth of the individual corresponding to this observation."
+					},
+					"residentialAddress": {
+						"type": "object",
+						"description": "Residential address corresponding to this observation",
+                        "properties": {
+                              "districtName": {
+                                  "type": "string",
+                                  "description": "Name of the district corresponding to this observation."
+                              },
+                              "stateName": {
+                                  "type": "string",
+                                  "description": "Name of the state corresponding to this observation."
+                              },
+                              "addressLine": {
+                                  "type": "string",
+                                  "description": "Address corresponding to this observation"
+                              },
+                              "cityName": {
+                                  "type": "string",
+                                  "description": "Name of the city corresponding to this observation."
+                              },
+                              "countryName": {
+                                  "type": "string",
+                                  "description": "Name of the country corresponding to this observation."
+                              },
+                              "locality": {
+                                  "type": "string",
+                                  "description": "Area name of the location corresponding to this observation."
+                              },
+                              "pincode": {
+                                  "type": "number",
+                                  "description": "The postal code corresponding to this observation.",
+                                  "unitCode": "C62",
+                                  "unitText": "Dimensionless"
+                              },
+                              "buildingNum": {
+                                  "type": "string",
+                                  "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+                              },
+                              "street": {
+                                  "type": "string",
+                                  "description": "Street name corresponding to this observation."
+                              }
+                          }
+					},
+					"birthDate": {
+						"type": "string",
+						"description": "Date of birth of the individual corresponding to this observation.",
+                        "format": "date"
+					},
+					"email": {
+						"type": "string",
+						"description": "Email address of the individual corresponding to this observation"
+					},
+					"salutation": {
+						"type": "string",
+						"description": "Salutation of the individual corresponding to this observation"
+					},
+					"permanentAddress": {
+						"type": "object",
+						"description": "Permanent address corresponding to this observation",
+                        "properties": {
+                              "districtName": {
+                                  "type": "string",
+                                  "description": "Name of the district corresponding to this observation."
+                              },
+                              "stateName": {
+                                  "type": "string",
+                                  "description": "Name of the state corresponding to this observation."
+                              },
+                              "addressLine": {
+                                  "type": "string",
+                                  "description": "Address corresponding to this observation"
+                              },
+                              "cityName": {
+                                  "type": "string",
+                                  "description": "Name of the city corresponding to this observation."
+                              },
+                              "countryName": {
+                                  "type": "string",
+                                  "description": "Name of the country corresponding to this observation."
+                              },
+                              "locality": {
+                                  "type": "string",
+                                  "description": "Area name of the location corresponding to this observation."
+                              },
+                              "pincode": {
+                                  "type": "number",
+                                  "description": "The postal code corresponding to this observation.",
+                                  "unitCode": "C62",
+                                  "unitText": "Dimensionless"
+                              },
+                              "buildingNum": {
+                                  "type": "string",
+                                  "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+                              },
+                              "street": {
+                                  "type": "string",
+                                  "description": "Street name corresponding to this observation."
+                              }
+                          }
+					},
+					"businessAddress": {
+						"type": "object",
+						"description": "Business address corresponding to this observation",
+                        "properties": {
+                              "districtName": {
+                                  "type": "string",
+                                  "description": "Name of the district corresponding to this observation."
+                              },
+                              "stateName": {
+                                  "type": "string",
+                                  "description": "Name of the state corresponding to this observation."
+                              },
+                              "addressLine": {
+                                  "type": "string",
+                                  "description": "Address corresponding to this observation"
+                              },
+                              "cityName": {
+                                  "type": "string",
+                                  "description": "Name of the city corresponding to this observation."
+                              },
+                              "countryName": {
+                                  "type": "string",
+                                  "description": "Name of the country corresponding to this observation."
+                              },
+                              "locality": {
+                                  "type": "string",
+                                  "description": "Area name of the location corresponding to this observation."
+                              },
+                              "pincode": {
+                                  "type": "number",
+                                  "description": "The postal code corresponding to this observation.",
+                                  "unitCode": "C62",
+                                  "unitText": "Dimensionless"
+                              },
+                              "buildingNum": {
+                                  "type": "string",
+                                  "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+                              },
+                              "street": {
+                                  "type": "string",
+                                  "description": "Street name corresponding to this observation."
+                              }
+                          }
+					},
+					"gender": {
+						"type": "string",
+						"description": "Gender of the individual corresponding to this observation"
+					},
+					"identityInfo": {
+						"type": "object",
+						"description": "Personal identification information issued by the government.",
+						"properties": {
+							"bankAccountNo": {
+								"type": "number",
+								"description": "The bank account number of the individual or business corresponding to this observation.",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"gstin": {
+								"type": "string",
+								"description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
+							},
+							"ifscCode": {
+								"type": "string",
+								"description": "The IFSC code for the bank corresponding to this observation."
+							},
+							"drivingLicense": {
+								"type": "string",
+								"description": "The driving license number of the individual corresponding to this observation."
+							},
+							"panNo": {
+								"type": "string",
+								"description": "The pan card number of the individual corresponding to this observation."
+							},
+							"fssaiLicense": {
+								"type": "string",
+								"description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+							},
+							"aadharNo": {
+								"type": "string",
+								"description": "The aadhar number issued by the government for the individual corresponding to this observation."
+							}
+						}
+					},
+					"designation": {
+						"type": "string",
+						"description": "Designation of the individual corresponding to this observation"
+					}
+				}
+			},
+            "productModel": {
+                "type": "object",
+                "description": "Describes the model information of the device/sensor or system or product in consideration.",
+                "properties": {
+                    "manufacturerName": {
+                        "type": "string",
+                        "description": "Name of the manufacturer associated with an entity, e.g., sensor, device etc."
+                    },
+                    "areaServed": {
+                        "type": "string",
+                        "description": "Area served by the entity or a service."
+                    },
+                    "modelURL": {
+                        "type": "string",
+                        "description": "URL providing further information of a specific model associated with an entity, e.g., sensor, device etc."
+                    },
+                    "brandName": {
+                        "type": "string",
+                        "description": "Name of the brand associated with an entity, e.g., sensor, device etc."
+                    },
+                    "modelName": {
+                        "type": "string",
+                        "description": "Name of a specific model associated with an entity, e.g., sensor, device etc."
+                    }
+                }
+            },
+            "moistureContent": {
+                "type": "number",
+                "description": "The moisture content of the product corresponding to this observation.",
+                "unitCode": "P1",
+                "unitText": "Percentage"
+            },
+            "particleSize": {
+                "type": "number",
+                "description": "The size of the fertilizer particles corresponding to this observation.",
+                "unitCode": "MMT",
+                "unitText": "Millimetre"
+            },
+            "fertilizerType": {
+                "type": "string",
+                "description": "The type of fertilizer used in the soil. [Organic/ Inorganic/ Synthetic/ soluble/ insoluble/ bioCompost, vermiCompost]"
+            },
+            "productExpiryDate": {
+                "type": "string",
+                "description": "Date of expiry of the product corresponding to this observation",
+                "format":"date"
+            },
+            "waterSolubility": {
+                "type": "number",
+                "description": "The amount of chemical substance that can dissolve in water at a specific temperature.",
+                "unitCode": "M1",
+                "unitText": "Milligram per litre"
+            },
+            "fertilizerName": {
+                "type": "string",
+                "description": "The chemical/generic name of the fertilizer corresponding to this observation."
+            },
+            "fertilizerComposition": {
+                "type": "string",
+                "description": "The ordered array comprising the chemical/ organic composition of the fertilizer added to the soil"
+            },
+            "subsidyAmount": {
+                "type": "number",
+                "description": "The amount of government subsidy for a product corresponding to this observation for the welfare of the people.",
+                "unitText": "Indian Rupee",
+                "unitCode": "INR"
+            },
+            "certificateInfo": {
+                "type": "object",
+                "description": "Date of issual, expiry/validity, renewal of the document/certificate corresponding to this observation.",
+                "properties": {
+                    "certificationIssualDate": {
+                        "type": "string",
+                        "description": "The date of issual of the report or document or item corresponding to this observation.",
+                        "format":"date"    
+                    },
+                    "certificationExpiryDate": {
+                        "type": "string",
+                        "description": "The date of expiry of the report or document or item corresponding to this observation.",
+                        "format":"date"                   
+                    },
+                    "certifyingAuthority": {
+                        "type": "string",
+                        "description": "Name of the authority issuing the certificate corresponding to this observation."
+                    },
+                    "certificationRenewalDate": {
+                        "type": "string",
+                        "description": "The date of renewal of the report or document or item corresponding to this observation.",
+                        "format":"date"
+                    },
+                    "certificateNumber": {
+                        "type": "string",
+                        "description": "Unique identification number of the certificate corresponding to this observation."
+                    }
+                }
+            },
+            "fertilizerProportion": {
+                "type": "string",
+                "description": "The ordered array comprising the quantity/ measure of each compound contained in the fertilizer added to the soil."
+            }
+        }
+    }
+}

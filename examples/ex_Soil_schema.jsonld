@@ -1,0 +1,203 @@
+{
+	"@context": "https://agrijson.adex.org.in",
+	"type": [
+		"adex:Soil",
+		"adex:Schema"
+	],
+	"id": "https://agrijson.adex.org.in/Soil",
+	"schema": {
+		"title": "ADEX Soil Data Model",
+		"type": "object",
+		"properties": {
+			"type": {
+				"type": "array",
+				"items": [{
+						"type": "string",
+						"description": "ADEX Data Model name. It has to be Soil"
+					},
+					{
+						"type": "string",
+						"description": "ADEX Entity type. It has to be Resource"
+					}
+				]
+			},
+			"location": {
+				"type": "object",
+				"description": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor."
+			},
+			"nutrientInfo": {
+				"type": "object",
+				"description": "The chemical elements and compounds that are necessary for plant growth, reproduction, metabolism.",
+				"properties": {
+					"nitrogen": {
+						"type": "number",
+						"description": "Observed value of Nitrogen composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"cl": {
+						"type": "number",
+						"description": "Observed value of Chlorine composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"boron": {
+						"type": "number",
+						"description": "Observed value of Boron composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"k2o": {
+						"type": "number",
+						"description": "Observed value of Potassium Oxide composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"p2o5": {
+						"type": "number",
+						"description": "Observed value of Phosphorus Pentoxide composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"ca": {
+						"type": "number",
+						"description": "Observed value of Calcium composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"zn": {
+						"type": "number",
+						"description": "Observed value of Zinc composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"fe": {
+						"type": "number",
+						"description": "Observed value of Iron composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"potassium": {
+						"type": "number",
+						"description": "Observed value of Potassium composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"cu": {
+						"type": "number",
+						"description": "Observed value of Copper composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"mo": {
+						"type": "number",
+						"description": "Observed value of Molybdenum composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"mn": {
+						"type": "number",
+						"description": "Observed value of Manganese composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"phosphorus": {
+						"type": "number",
+						"description": "Observed value of Phosphorus composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"organicCarbon": {
+						"type": "number",
+						"description": "Observed value of Organic Carbon composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					},
+					"mgo": {
+						"type": "number",
+						"description": "Observed value of Magnesium Oxide composition in the soil.",
+						"unitCode": "P1",
+						"unitText": "Percentage"
+					}
+				}
+			},
+			"topSoilDepth": {
+				"type": "number",
+				"description": "The measure of top soil layer, which contains the high nutrients and organic matter neccessary for plant growth.",
+				"unitCode": "CMT",
+				"unitText": "centimetre"
+			},
+			"soilMoisture": {
+				"type": "number",
+				"description": "Volumetric Water Content (VMC) is the numerical measure of soil moisture. It is simply the ratio of water volume to soil volume.",
+				"unitCode": "G31",
+				"unitText": "kilogram per cubic centimetre"
+			},
+			"clayLevel": {
+				"type": "number",
+				"description": "The proportion of clay in the soil composition",
+				"unitCode": "P1",
+				"unitText": "Percentage"
+			},
+			"sandLevel": {
+				"type": "number",
+				"description": "The proportion of sand in the soil composition",
+				"unitCode": "P1",
+				"unitText": "Percentage"
+			},
+			"soilTexture": {
+				"type": "string",
+				"description": "Represents the texture of soil. It can take up values like sandy, silt, clay, loam."
+			},
+			"waterRetentionCapacity": {
+				"type": "number",
+				"description": "The water holding capacity of the soil.",
+				"unitCode": "P1",
+				"unitText": "Percentage"
+			},
+			"siltLevel": {
+				"type": "number",
+				"description": "The proportion of silt in the soil composition",
+				"unitCode": "P1",
+				"unitText": "Percentage"
+			},
+			"electricalConductivity": {
+				"type": "number",
+				"description": "The measure of electrical conductivity of the entity corresponding to this observation.",
+				"unitCode": "D10",
+				"unitText": "siemens per metre"
+			},
+			"soilType": {
+				"type": "string",
+				"description": "The type of soil corresponding to this observation, such as Alluvial Soil, Black Cotton Soil, Arid or Desert Soil, etc."
+			},
+			"soilSalinity": {
+				"type": "number",
+				"description": "The level of soil salinity. It is directly proportional to the measure of electrical conductivity of the soil moisture.",
+				"unitCode": "G43",
+				"unitText": "microsiemens per metre"
+			},
+			"loamLevel": {
+				"type": "number",
+				"description": "The proportion of loam in the soil composition",
+				"unitCode": "P1",
+				"unitText": "Percentage"
+			},
+			"pH": {
+				"type": "number",
+				"description": "The measure of the acidity or basicity.",
+				"unitCode": "C62",
+				"unitText": "dimensionless"
+			},
+			"soilQuality": {
+				"type": "string",
+				"description": "The quality of the soil which has been tested from the land parcel. ENUM [Good, Moderate, Poor]."
+			},
+			"observationDateTime": {
+				"type": "string",
+				"description": "Last reported time of observation.",
+				"format": "date-time"
+			}
+		}
+	}
+}

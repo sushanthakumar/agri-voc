@@ -1,0 +1,27 @@
+{
+	"@context": "https://agrijson.adex.org.in",
+	"id": "provider-id/rs.adex.org.in/fertilizer-rg/fertilizer-ri",
+	"type": [
+		"adex:Fertilizer",
+		"adex:Resource"
+	],
+	"fertilizerName": "ABC",
+	"electricalConductivity": 1.8,
+	"moistureContent": 0.64,
+	"particleSize": 1.1,
+	"fertilizerType": "Inorganic",
+	"productExpiryDate": "2023-10-12",
+	"waterSolubility": 3.3,
+	"subsidyAmount": 300,
+	"fertilizerComposition": "D:A:P",
+	"fertilizerProportion": "25:25:15",
+	"productModel": {
+		"manufacturerName": "ABC Pvt Ltd",
+		"areaServed": "Chennai",
+		"brandName": "CDE brand"
+	},
+	"certificateInfo": {
+		"certifyingAuthority": "The Fertilizer Association of India",
+		"certificateNumber": "FAI4214"
+	}
+}
