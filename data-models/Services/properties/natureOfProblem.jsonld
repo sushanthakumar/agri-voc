@@ -16,7 +16,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The problem for which the advisory has been issued to the people. such as flood, cyclone, insects attack, diseases, etc.",
+            "rdfs:comment": "The problem for which the advisory has been issued to the people such as flood, cyclone, insects attack, diseases, etc.",
             "rdfs:label": "natureOfProblem",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

@@ -16,7 +16,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The nature of adivsory correspnoding to this observation.",
+            "rdfs:comment": "The nature of advisory corresponding to this observation.",
             "rdfs:label": "advisoryNature",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

@@ -1,0 +1,32 @@
+{
+	"@context": "https://agrijson.adex.org.in",
+	"id": "provider-id/rs.adex.org.in/agriadvisory-rg/agriadvisory-ri",
+	"type": [
+		"adex:AgriAdvisory",
+		"adex:Resource"
+	],
+	"mediaURL": "https://gov-crop-advisory.com/rice",
+	"advisoryNature": "Government",
+	"natureOfProblem": "crop disease",
+	"advisoryChannel": ["Website", "Radio"],
+	"advisoryID": "IND0056",
+	"cropNameLocal": "Rice",
+	"cropDiseaseInfo": {
+		"diseaseName": "Rice blast",
+		"partsAffected": "Leaves",
+		"causalOrganism": "Pyricularia orizae",
+		"infectionStage": "Severe",
+		"diseaseSymptoms": "Yellow leaves"
+	},
+	"cropSeason": "Kharif",
+	"cropCodeICC": "PQ1231",
+	"cropVarietyName": "CR Dhan 801",
+	"localeInfo": {
+		"subdistrictName": "BONAKAL",
+		"clusterName": "BONAKAL",
+		"districtName": "Khammam",
+		"villageName": "ALLAPADU",
+		"stateName": "Telangana"
+	},
+	"observationDateTime": "2022-12-08T05:45:00+05:30"
+}

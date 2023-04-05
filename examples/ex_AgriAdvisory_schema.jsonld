@@ -1,0 +1,179 @@
+{
+    "@context": "https://agrijson.adex.org.in",
+    "type": [
+        "adex:AgriAdvisory",
+        "adex:Schema"
+    ],
+    "id": "https://agrijson.adex.org.in/AgriAdvisory",
+    "schema": {
+        "title": "ADEX AgriAdvisory Data Model",
+        "type": "object",
+        "properties": {
+            "type": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "string",
+                        "description": "ADEX Data Model name. It has to be AgriAdvisory"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ADEX Entity type. It has to be Resource"
+                    }
+                ]
+            },
+            "fileFormat": {
+                "type": "string",
+                "description": "Format of the media file corresponding to this observation."
+            },
+            "mediaURL": {
+                "type": "string",
+                "description": "URL providing further information of any image(s) or media of the complaint or place."
+            },
+            "advisoryNature": {
+                "type": "string",
+                "description": "The nature of advisory corresponding to this observation."
+            },
+            "natureOfProblem": {
+                "type": "string",
+                "description": "The problem for which the advisory has been issued to the people. such as flood, cyclone, insects attack, diseases, etc."
+            },
+            "advisoryChannel": {
+                "type": "array",
+                "description": "The channel(s) for communicating the advisory information to reach a larger group of people.",
+                "items": {
+                    "type": "string"
+                  }
+            },
+            "advisoryID": {
+                "type": "string",
+                "description": "The unique ID of the advisory entity corresponding to this observation."
+            },
+            "cropNameLocal": {
+                "type": "string",
+                "description": "The common/local name of the crop species corresponding to the observation."
+            },
+            "cropDiseaseInfo": {
+                "type": "object",
+                "description": "The disease related information of the crop corresponding to this observation.",
+                "properties": {
+                    "infectionStage": {
+                        "type": "string",
+                        "description": "The degree of infection with respect to spread or intensity. ENUM [Initial, Severe]"
+                    },
+                    "partsAffected": {
+                        "type": "string",
+                        "description": "The parts of the crop affected by the crop disease."
+                    },
+                    "diseaseControlMeasures": {
+                        "type": "string",
+                        "description": "The measures that needs to taken to reduce or control the pest and disease in the crops"
+                    },
+                    "diseaseName": {
+                        "type": "string",
+                        "description": "The name of the disease that has affected the crop/ farm."
+                    },
+                    "diseaseSymptoms": {
+                        "type": "string",
+                        "description": "Respresents the symptoms for the crop disease."
+                    },
+                    "causalOrganism": {
+                        "type": "string",
+                        "description": "The name of the organism/pest which has caused the crop disease."
+                    },
+                    "diseasePreventionMeasures": {
+                        "type": "string",
+                        "description": "The measures that has to be taken to prevent the attack of pest and diseases for the crops."
+                    }
+                }
+            },
+            "cropSeason": {
+                "type": "string",
+                "description": "The season in which the crop species is planted and harvested. ENUM [Kharif, Rabi, Zaid]."
+            },
+            "cropCodeICC": {
+                "type": "string",
+                "description": "The unique code assigned for the crop species as per the ICC (Indicative Crop Classification) of FAO (Food and Agicultural Organisation)."
+            },
+            "cropVarietyName": {
+                "type": "string",
+                "description": "The variations within the plant species either naturally or developed in research station."
+            },
+            "observationDateTime": {
+                "type": "string",
+                "description": "Last reported time of observation.",
+                "format": "date-time"
+            },
+            "localeInfo": {
+                "type": "object",
+                "description": "Locale information corresponding to this observation.",
+                "properties": {
+                    "subdistrictName": {
+                        "type": "string",
+                        "description": "Name of the subdistrict corresponding to this observation. A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
+                    },
+                    "wardName": {
+                        "type": "string",
+                        "description": "Ward name corresponding to this observation."
+                    },
+                    "clusterCode": {
+                        "type": "string",
+                        "description": "The cluster code corresponding to this observation."
+                    },
+                    "clusterName": {
+                        "type": "string",
+                        "description": "Name of the cluster corresponding to this observation."
+                    },
+                    "zoneID": {
+                        "type": "string",
+                        "description": "Zone ID corresponding to this observation."
+                    },
+                    "districtCode": {
+                        "type": "string",
+                        "description": "The district code corresponding to this observation."
+                    },
+                    "districtName": {
+                        "type": "string",
+                        "description": "Name of the district corresponding to this observation."
+                    },
+                    "zoneName": {
+                        "type": "string",
+                        "description": "Zone name corresponding to this observation."
+                    },
+                    "subdistrictCode": {
+                        "type": "string",
+                        "description": "The subdistrict code corresponding to this observation."
+                    },
+                    "wardID": {
+                        "type": "string",
+                        "description": "Ward ID corresponding to this observation."
+                    },
+                    "villageName": {
+                        "type": "string",
+                        "description": "Name of the village corresponding to this observation."
+                    },
+                    "stateCode": {
+                        "type": "string",
+                        "description": "The state code corresponding to this observation."
+                    },
+                    "revenueDivisionCode": {
+                        "type": "string",
+                        "description": "The revenue division code corresponding to this observation"
+                    },
+                    "villageCode": {
+                        "type": "string",
+                        "description": "The village code corresponding to this observation."
+                    },
+                    "revenueDivision": {
+                        "type": "string",
+                        "description": "Name of the revenue division in a district corresponding to this observation."
+                    },
+                    "stateName": {
+                        "type": "string",
+                        "description": "Name of the state corresponding to this observation."
+                    }
+                }
+            }
+        }
+    }
+}

@@ -132,5 +132,5 @@ file["schema"] = schema
 # print("File ----- ", json.dumps(file))
 
 json_object = json.dumps(file, indent=4)
-with open("../../examples/ex_"+dm+"_schema.json", "w") as outfile:
+with open("../../examples/ex_"+dm+"_schema.jsonld", "w") as outfile:
     outfile.write(json_object)
