@@ -24,6 +24,9 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:LandParcel"
+                },
+                {
+                    "@id": "adex:AgriMachinery"
                 }
             ],
             "adex:rangeIncludes": [
