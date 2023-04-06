@@ -18,12 +18,12 @@
             ],
             "rdfs:comment": "The date of expiry for insurance corresponding to this observation.",
             "rdfs:label": "expiryDate",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropInsurance"
+                },
+                {
+                    "@id": "adex:AgriMachinery"
                 }
             ],
             "adex:rangeIncludes": [
@@ -33,7 +33,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

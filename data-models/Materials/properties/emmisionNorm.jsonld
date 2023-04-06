@@ -8,31 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:subsidyAmount",
+            "@id": "adex:emmisionNorm",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The amount of government subsidy for a product corresponding to this observation for the welfare of the people.",
-            "rdfs:label": "subsidyAmount",
+            "rdfs:comment": "The standards set up by the Indian government which specify the amount of air pollutants from internal combustion engines, including those that vehicles can emit.",
+            "rdfs:label": "emmisionNorm",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:Fertilizer"
-                },
                 {
                     "@id": "adex:AgriMachinery"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }
