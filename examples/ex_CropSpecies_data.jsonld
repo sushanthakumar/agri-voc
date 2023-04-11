@@ -11,7 +11,7 @@
 	"cropCode": "AR56",
 	"cropLossQuantity": 120,
 	"seedVarietyName": "CO56",
-	"cropLossReason": "Flood",
+	"cropLossReason": ["Flood","Cyclones"],
 	"harvestedParts": "Seed",
 	"cropCategory": "Food",
 	"cropAge": 90,
@@ -19,7 +19,7 @@
 	"cropCodeICC": "PQ1231",
 	"cropSeason": "Kharif",
 	"cropArea": 2.5,
-	"harvestEquipmentType": "Machinery",
+	"harvestEquipmentType": ["Machinery"],
 	"cropSpacing": 1.5,
 	"cropYield": 2500,
 	"cropDiseaseInfo": {

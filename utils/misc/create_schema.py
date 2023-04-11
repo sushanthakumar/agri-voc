@@ -69,9 +69,16 @@ def SchemaProperties(prop, dict, splist):
     dict["properties"][propName] = {}
     dict["properties"][propName]["type"] = propType
     dict["properties"][propName]["description"] = propDesc
+    if dataType == "adex:TextProperty":
+        if "'@container': '@list'" in str(prop["@graph"][0]["adex:rangeIncludes"]):
+            dict["properties"][propName]["type"] = "array"
+            dict["properties"][propName]["items"] = {"type": "string"}
     if dataType == "adex:QuantitativeProperty":
         dict["properties"][propName]["unitCode"] = ""
         dict["properties"][propName]["unitText"] = ""
+        if "'@id': 'adex:NumericArray'" in str(prop["@graph"][0]["adex:rangeIncludes"]):
+            dict["properties"][propName]["type"] = "array"
+            dict["properties"][propName]["items"] = {"type": "number"}
     if dataType == "adex:TimeProperty":
         dt = {"@id": "adex:DateTime"}
         if dt in prop["@graph"][0]["adex:rangeIncludes"]:
@@ -114,7 +121,7 @@ for item in SPs:
     name = item.split("|")[1]
     if name in datamodels:
         path = "../../data-models/" + name + "/properties/"
-        print(" THIS PATH")
+        # print("SP PATH --- ", path)
     elif name + ".jsonld" in "../../base-schemas/classes":
         path = baseSchemaPropPath
     else:
@@ -125,7 +132,7 @@ for item in SPs:
         spSchema = Schema(path, name, "Yes")
         schema["properties"][propName]["properties"] = spSchema["properties"] if spSchema != {} else {}
     else:
-        print("Path does not exist in the folder structure")
+        print("Add SP schema manually - ", item)
 SchemaFile = file
 file["schema"] = schema
 # print("Schema ----- ", json.dumps(schema))
@@ -134,3 +141,4 @@ file["schema"] = schema
 json_object = json.dumps(file, indent=4)
 with open("../../examples/ex_"+dm+"_schema.jsonld", "w") as outfile:
     outfile.write(json_object)
+

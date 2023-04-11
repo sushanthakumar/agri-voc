@@ -27,5 +27,10 @@
 		"country": "India",
 		"pincode": 627811
 	  	}
-	  }
+	  },
+  "contactPointInfo": {
+    "contactPointName":"MD. Shanmugam",
+    "contactPointEmail": "abcthenkasi@gmail.com",
+    "helplineNumber": ["462-23433432","462-23211231"]
+  }
 }

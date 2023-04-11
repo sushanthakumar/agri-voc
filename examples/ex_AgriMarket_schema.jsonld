@@ -123,7 +123,10 @@
                         "description": "Phone number of point of contact to the business or service corresponding to this observation"
                     },
                     "helplineNumber": {
-                        "type": "string",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
                         "description": "Helpline contact number(s) corresponding to this observation."
                     },
                     "contactPointName": {

@@ -1,11 +1,4 @@
 {
-    "@context": "https://agrijson.adex.org.in",
-    "type": [
-        "adex:AgriAdvisory",
-        "adex:Schema"
-    ],
-    "id": "https://agrijson.adex.org.in/AgriAdvisory",
-    "schema": {
         "title": "ADEX AgriAdvisory Data Model",
         "type": "object",
         "properties": {
@@ -23,12 +16,18 @@
                 ]
             },
             "fileFormat": {
-                "type": "string",
-                "description": "Format of the media file corresponding to this observation."
+                "type": "array",
+                "description": "Format of the media file corresponding to this observation.",
+                "items": {
+                    "type": "string"
+                }
             },
             "mediaURL": {
-                "type": "string",
-                "description": "URL providing further information of any image(s) or media of the complaint or place."
+                "type": "array",
+                "description": "URL providing further information of any image(s) or media of the complaint or place.",
+                "items": {
+                    "type": "string"
+                }
             },
             "advisoryNature": {
                 "type": "string",
@@ -36,14 +35,14 @@
             },
             "natureOfProblem": {
                 "type": "string",
-                "description": "The problem for which the advisory has been issued to the people. such as flood, cyclone, insects attack, diseases, etc."
+                "description": "The problem for which the advisory has been issued to the people such as flood, cyclone, insects attack, diseases, etc."
             },
             "advisoryChannel": {
                 "type": "array",
                 "description": "The channel(s) for communicating the advisory information to reach a larger group of people.",
                 "items": {
                     "type": "string"
-                  }
+                }
             },
             "advisoryID": {
                 "type": "string",
@@ -66,8 +65,11 @@
                         "description": "The parts of the crop affected by the crop disease."
                     },
                     "diseaseControlMeasures": {
-                        "type": "string",
-                        "description": "The measures that needs to taken to reduce or control the pest and disease in the crops"
+                        "type": "array",
+                        "description": "The measures that needs to taken to reduce or control the pest and disease in the crops",
+                        "items": {
+                            "type": "string"
+                        }
                     },
                     "diseaseName": {
                         "type": "string",
@@ -82,8 +84,11 @@
                         "description": "The name of the organism/pest which has caused the crop disease."
                     },
                     "diseasePreventionMeasures": {
-                        "type": "string",
-                        "description": "The measures that has to be taken to prevent the attack of pest and diseases for the crops."
+                        "type": "array",
+                        "description": "The measures that has to be taken to prevent the attack of pest and diseases for the crops.",
+                        "items": {
+                            "type": "string"
+                        }
                     }
                 }
             },
@@ -176,4 +181,3 @@
             }
         }
     }
-}

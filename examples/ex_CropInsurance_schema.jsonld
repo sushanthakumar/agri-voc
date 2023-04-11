@@ -78,8 +78,11 @@
 						"description": "The variations within the plant species either naturally or developed in research station."
 					},
 					"cropLossReason": {
-						"type": "string",
-						"description": "The reason for the crop loss"
+						"type": "array",
+						"items": {
+                            "type": "string"
+                        },
+						"description": "The reason(s) for the crop loss"
 					},
 					"harvestedParts": {
 						"type": "string",
@@ -128,7 +131,10 @@
 								"description": "The parts of the crop affected by the crop disease."
 							},
 							"diseaseControlMeasures": {
-								"type": "string",
+								"type": "array",
+								"items": {
+                                    "type": "string"
+                                },
 								"description": "The measures that needs to taken to reduce or control the pest and disease in the crops"
 							},
 							"causalOrganism": {
@@ -144,7 +150,10 @@
 								"description": "Respresents the symptoms for the crop disease."
 							},
 							"diseasePreventionMeasures": {
-								"type": "string",
+								"type": "array",
+								"items": {
+                                    "type": "string"
+                                },
 								"description": "The measures that has to be taken to prevent the attack of pest and diseases for the crops."
 							}
 						}
@@ -170,7 +179,10 @@
 						"description": "The botanical nomenclature of the crop species corresponding to this observation."
 					},
 					"harvestEquipmentType": {
-						"type": "string",
+						"type": "array",
+						"items": {
+                            "type": "string"
+                        },
 						"description": "The type of equipment(s) used for the purpose of harvesting the crop species corresponding to this observation."
 					},
 					"seedVarietyCode": {

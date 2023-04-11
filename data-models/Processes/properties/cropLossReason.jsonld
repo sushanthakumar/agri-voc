@@ -16,7 +16,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The reason for the crop loss",
+            "rdfs:comment": "The reason(s) for the crop loss",
             "rdfs:label": "cropLossReason",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

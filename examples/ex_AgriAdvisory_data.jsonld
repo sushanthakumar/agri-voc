@@ -5,7 +5,7 @@
 		"adex:AgriAdvisory",
 		"adex:Resource"
 	],
-	"mediaURL": "https://gov-crop-advisory.com/rice",
+	"mediaURL": ["https://gov-crop-advisory.com/rice"],
 	"advisoryNature": "Government",
 	"natureOfProblem": "crop disease",
 	"advisoryChannel": ["Website", "Radio"],
@@ -16,7 +16,8 @@
 		"partsAffected": "Leaves",
 		"causalOrganism": "Pyricularia orizae",
 		"infectionStage": "Severe",
-		"diseaseSymptoms": "Yellow leaves"
+		"diseaseSymptoms": "Yellow leaves",
+        "diseasePreventionMeasures":["crop rotation", "fungicides"]
 	},
 	"cropSeason": "Kharif",
 	"cropCodeICC": "PQ1231",
