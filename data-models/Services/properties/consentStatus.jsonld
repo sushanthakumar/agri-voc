@@ -1,34 +1,29 @@
 {
     "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "geojson": "https://purl.org/geojson/vocab#",
-        "schema": "http://schema.org/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "iudx": "https://voc.iudx.org.in/",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
         "adex": "https://agrijson.adex.org.in/"
     },
     "@graph": [
         {
-            "@id": "adex:fileFormat",
+            "@id": "adex:consentStatus",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Format of the media file corresponding to this observation.",
-            "rdfs:label": "fileFormat",
+            "rdfs:comment": "Represents the current status of consent. It can be 'Active' or 'Revoked' or 'Expired'.",
+            "rdfs:label": "consentStatus",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:AgriAdvisory"
-                },
                 {
                     "@id": "adex:ConsentArtifact"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {

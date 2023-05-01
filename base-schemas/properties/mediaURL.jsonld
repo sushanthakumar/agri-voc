@@ -27,6 +27,9 @@
                 },
                 {
                     "@id": "adex:AgriAdvisory"
+                },
+                {
+                    "@id": "adex:ConsentArtifact"
                 }
             ],
             "adex:rangeIncludes": [

@@ -1,26 +1,25 @@
 {
     "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geojson": "https://purl.org/geojson/vocab#",
+        "owl": "http://www.w3.org/2002/07/owl#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "iudx": "https://voc.iudx.org.in/",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "schema": "http://schema.org/",
         "adex": "https://agrijson.adex.org.in/"
     },
     "@graph": [
         {
-            "@id": "adex:relatedEntity",
+            "@id": "adex:validTill",
             "@type": [
-                "adex:Relationship"
+                "adex:TimeProperty"
             ],
-            "rdfs:comment": "ID of the related entity.",
-            "rdfs:label": "relatedEntity",
+            "rdfs:comment": "The date of expiry of consent for the data corresponding to this observation.",
+            "rdfs:label": "validTill",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:ADEXEntity"
+                    "@id": "adex:ConsentArtifact"
                 }
             ],
             "adex:rangeIncludes": [
@@ -28,7 +27,7 @@
                     "@id": "adex:Text"
                 },
                 {
-                    "@id": "adex:RelationshipValue"
+                    "@id": "adex:ValueDescriptor"
                 }
             ]
         }
