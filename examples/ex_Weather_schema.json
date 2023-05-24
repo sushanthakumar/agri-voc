@@ -1,11 +1,4 @@
 {
-	"@context": "https://agrijson.adex.org.in",
-	"type": [
-		"adex:Weather",
-		"adex:Schema"
-	],
-	"id": "https://agrijson.adex.org.in/Weather",
-	"schema": {
 		"title": "ADEX Weather Data Model",
 		"description": "A Data Model for weather monitored observed at a certain place and time.",
 		"type": "object",
@@ -206,4 +199,3 @@
 			}
 		}
 	}
-}
