@@ -27,7 +27,7 @@
 				"unitCode": "KGM",
 				"unitText": "kilogram"
 			},
-			"cropNameLocal": {
+			"cropNameCommon": {
 				"type": "string",
 				"description": "The common/local name of the crop species corresponding to the observation."
 			},

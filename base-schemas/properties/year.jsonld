@@ -24,6 +24,9 @@
                 },
                 {
                     "@id": "adex:PublicSchemes"
+                },
+                {
+                    "@id": "adex:Farmer"
                 }
             ],
             "adex:rangeIncludes": [

@@ -11,7 +11,7 @@
     "insurancePremium": 3000,
     "policyNumber": "BHAR00012345",
     "cropSpeciesInfo": {
-        "cropNameLocal": "Rice",
+        "cropNameCommon": "Rice",
 		"plantingMethod": "Dibbling",
 	    "cropCode": "AR56"
 	},

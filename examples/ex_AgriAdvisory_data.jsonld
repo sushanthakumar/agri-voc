@@ -10,7 +10,7 @@
 	"natureOfProblem": "crop disease",
 	"advisoryChannel": ["Website", "Radio"],
 	"advisoryID": "IND0056",
-	"cropNameLocal": "Rice",
+	"cropNameCommon": "Rice",
 	"cropDiseaseInfo": {
 		"diseaseName": "Rice blast",
 		"partsAffected": "Leaves",

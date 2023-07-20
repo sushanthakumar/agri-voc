@@ -6,7 +6,7 @@
 		"adex:Resource"
 	],
 	"cropResidue": 1000,
-	"cropNameLocal": "Rice",
+	"cropNameCommon": "Rice",
 	"plantingMethod": "Dibbling",
 	"cropCode": "AR56",
 	"cropLossQuantity": 120,
