@@ -1,4 +1,11 @@
 {
+    "@context": "https://agrijson.adex.org.in",
+    "type": [
+        "adex:AgriAdvisory",
+        "adex:Schema"
+    ],
+    "id": "https://agrijson.adex.org.in/AgriAdvisory",
+    "schema": {
         "title": "ADEX AgriAdvisory Data Model",
         "type": "object",
         "properties": {
@@ -181,3 +188,4 @@
             }
         }
     }
+}

@@ -12,12 +12,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:daylength",
+            "@id": "adex:dayLength",
             "@type": [
                 "adex:QuantitativeProperty"
             ],
             "rdfs:comment": "The period of solar radiation in a day corresponding to this observation.",
-            "rdfs:label": "daylength",
+            "rdfs:label": "dayLength",
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Weather"
