@@ -12,19 +12,16 @@
     },
     "@graph": [
         {
-            "@id": "adex:cropCode",
+            "@id": "adex:smsAdvisoryRegional",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The unique code for the crop species corresponding to this observation.",
-            "rdfs:label": "cropCode",
+            "rdfs:comment": "The advisory which has been communicated to farmers in their regional language, via messaging (SMS)",
+            "rdfs:label": "smsAdvisoryRegional",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:CropSpecies"
-                },
                 {
                     "@id": "adex:AgriAdvisory"
                 }

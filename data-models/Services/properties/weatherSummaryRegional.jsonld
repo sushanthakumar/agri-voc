@@ -12,19 +12,16 @@
     },
     "@graph": [
         {
-            "@id": "adex:cropCode",
+            "@id": "adex:weatherSummaryRegional",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The unique code for the crop species corresponding to this observation.",
-            "rdfs:label": "cropCode",
+            "rdfs:comment": "A brief provided in the regional language on how the weather has been in the past and/or is to be in the near future and/or is to prevail for the current day.",
+            "rdfs:label": "weatherSummaryRegional",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:CropSpecies"
-                },
                 {
                     "@id": "adex:AgriAdvisory"
                 }

@@ -12,19 +12,16 @@
     },
     "@graph": [
         {
-            "@id": "adex:cropCode",
+            "@id": "adex:generalAdvisory",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The unique code for the crop species corresponding to this observation.",
-            "rdfs:label": "cropCode",
+            "rdfs:comment": "A general advisory to the farmers, for the cultivation of crops in regards to the conditions of weather, soil ,land etc. It may include warnings of potential catastrophical events.",
+            "rdfs:label": "generalAdvisory",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:CropSpecies"
-                },
                 {
                     "@id": "adex:AgriAdvisory"
                 }
