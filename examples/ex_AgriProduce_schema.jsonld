@@ -72,7 +72,7 @@
                 "unitCode": "KGM",
                 "unitText": "kilogram"
             },
-            "commodityNameLocal": {
+            "commodityName": {
                 "type": "string",
                 "description": "The local name of the commodity corresponding to this observation."
             },

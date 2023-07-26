@@ -13,6 +13,6 @@
 "maximumPrice": 7000,
 "commodityVarietyName": "White",
 "tradedQuantity": 7.3,
-"commodityNameLocal": "Red Gram",
+"commodityName": "Red Gram",
 "observationDateTime":"2023-03-30T05:00:00+05:30"
 }

@@ -12,12 +12,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:cropAdvisory",
+            "@id": "adex:technicalAdvisory",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "An advisory to the farmers for the cultivation of a specific crop corresponding to this observation.",
-            "rdfs:label": "cropAdvisory",
+            "rdfs:comment": "A detailed professional advisory to the farmers, for the cultivation of a specific crop or rearing of livestock or other agricultural practice corresponding to this observation.",
+            "rdfs:label": "technicalAdvisory",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
