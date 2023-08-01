@@ -12,31 +12,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:cropSpeciesInfo",
+            "@id": "adex:testCentreName",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "Information of crops corresponding to this observation.",
-            "rdfs:label": "cropSpeciesInfo",
+            "rdfs:comment": "The name of the centre at which the sample is being tested.",
+            "rdfs:label": "testCentreName",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:CropInsurance"
-                },
-                {
-                    "@id": "adex:Farmer"
-                },
                 {
                     "@id": "adex:Soil"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:CropSpecies"
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

@@ -33,6 +33,9 @@
                 },
                 {
                     "@id": "adex:CropInsurance"
+                },
+                {
+                    "@id": "adex:CropSpecies"
                 }
             ],
             "adex:rangeIncludes": [

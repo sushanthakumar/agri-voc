@@ -12,31 +12,25 @@
     },
     "@graph": [
         {
-            "@id": "adex:cropSpeciesInfo",
+            "@id": "adex:agriculturalExpert",
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Information of crops corresponding to this observation.",
-            "rdfs:label": "cropSpeciesInfo",
+            "rdfs:comment": "The personal details of an agricultural expert who has specialised training, education, and practical experience in the field of agriculture.",
+            "rdfs:label": "agriculturalExpert",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:CropInsurance"
-                },
-                {
-                    "@id": "adex:Farmer"
-                },
-                {
-                    "@id": "adex:Soil"
-                }
-            ],
-            "adex:rangeIncludes": [
                 {
                     "@id": "adex:CropSpecies"
                 }
             ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:PersonnelDesc"
+                }
+            ]
         }
     ]
 }

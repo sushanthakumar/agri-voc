@@ -18,22 +18,28 @@
             ],
             "rdfs:comment": "The unique land identification information corresponding to this observation.",
             "rdfs:label": "landIdentityInfo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:LandParcel"
                 },
                 {
                     "@id": "adex:CropInsurance"
+                },
+                {
+                    "@id": "adex:CropSpecies"
+                },
+                {
+                    "@id": "adex:Soil"
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:LandIdentityDesc"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

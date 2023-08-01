@@ -12,31 +12,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:cropSpeciesInfo",
+            "@id": "adex:lai",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Information of crops corresponding to this observation.",
-            "rdfs:label": "cropSpeciesInfo",
+            "rdfs:comment": "The Leaf Area Index (LAI) quantifies the amount of leaf material in a canopy. It is the ratio of one-sided leaf area per unit ground area.",
+            "rdfs:label": "lai",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:CropInsurance"
-                },
-                {
-                    "@id": "adex:Farmer"
-                },
-                {
-                    "@id": "adex:Soil"
-                }
-            ],
-            "adex:rangeIncludes": [
                 {
                     "@id": "adex:CropSpecies"
                 }
             ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
         }
     ]
 }

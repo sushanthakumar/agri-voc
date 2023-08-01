@@ -12,31 +12,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:cropSpeciesInfo",
+            "@id": "adex:plantDensity",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Information of crops corresponding to this observation.",
-            "rdfs:label": "cropSpeciesInfo",
+            "rdfs:comment": "The average number of crops/plants per square unit of the land corresponding to this observation.",
+            "rdfs:label": "plantDensity",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:CropInsurance"
-                },
-                {
-                    "@id": "adex:Farmer"
-                },
-                {
-                    "@id": "adex:Soil"
-                }
-            ],
-            "adex:rangeIncludes": [
                 {
                     "@id": "adex:CropSpecies"
                 }
             ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
         }
     ]
 }

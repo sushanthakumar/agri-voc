@@ -12,31 +12,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:cropSpeciesInfo",
+            "@id": "adex:targetYield",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Information of crops corresponding to this observation.",
-            "rdfs:label": "cropSpeciesInfo",
+            "rdfs:comment": "The desired or expected level of production for a specific agricultural crop within a given area or field.",
+            "rdfs:label": "targetYield",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:CropInsurance"
-                },
-                {
-                    "@id": "adex:Farmer"
-                },
-                {
-                    "@id": "adex:Soil"
-                }
-            ],
-            "adex:rangeIncludes": [
                 {
                     "@id": "adex:CropSpecies"
                 }
             ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
         }
     ]
 }
