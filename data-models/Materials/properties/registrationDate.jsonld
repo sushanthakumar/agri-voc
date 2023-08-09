@@ -8,15 +8,15 @@
     },
     "@graph": [
         {
-            "@id": "adex:deviceSimNumber",
+            "@id": "adex:registrationDate",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Gives the sim number of a particular device.",
-            "rdfs:label": "deviceSimNumber",
+            "rdfs:comment": "The date on which a particular item or entity becomes officially recognized, authorized or approved according to the relevant regulations, procedures or requirements.",
+            "rdfs:label": "registrationDate",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Device"
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [

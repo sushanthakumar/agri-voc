@@ -36,6 +36,9 @@
                 },
                 {
                     "@id": "adex:CropSpecies"
+                },
+                {
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [

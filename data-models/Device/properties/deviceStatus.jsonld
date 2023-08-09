@@ -12,11 +12,8 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Indicates the status of physical device or devices.",
+            "rdfs:comment": "Indicates the status of physical device or devices. For eg., active, inactive, etc.",
             "rdfs:label": "deviceStatus",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Device"
@@ -29,7 +26,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

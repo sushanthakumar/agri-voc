@@ -8,23 +8,26 @@
     },
     "@graph": [
         {
-            "@id": "adex:vehicleModel",
+            "@id": "adex:droneType",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The make/model information of the vehicle corresponding to this observation.",
-            "rdfs:label": "vehicleModel",
+            "rdfs:comment": "The type of drone categorised by its size or payload capacity or flight distance or wing type etc.",
+            "rdfs:label": "droneType",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgriMachinery"
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:ModelInfo"
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
             ]
         }

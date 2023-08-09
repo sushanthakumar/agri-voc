@@ -12,14 +12,14 @@
             "@type": [
                 "adex:TimeProperty"
             ],
-            "rdfs:comment": "The date of expiry of consent for the data corresponding to this observation.",
+            "rdfs:comment": "The specific period of time during which a document, authorization, offer or permission remains legally or effectively acceptable/applicable.",
             "rdfs:label": "validTill",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:ConsentArtifact"
+                },
+                {
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [
@@ -29,7 +29,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

@@ -14,12 +14,12 @@
             ],
             "rdfs:comment": "Describes the purpose of the consent request corresponding to this observation.",
             "rdfs:label": "purposeDescription",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:ConsentArtifact"
+                },
+                {
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [
@@ -29,7 +29,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

@@ -8,28 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:deviceSimNumber",
+            "@id": "adex:range",
             "@type": [
-                "adex:TextProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Gives the sim number of a particular device.",
-            "rdfs:label": "deviceSimNumber",
+            "rdfs:comment": "The distance upto which the vehicle is efficiently operational.",
+            "rdfs:label": "range",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Device"
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

@@ -8,15 +8,15 @@
     },
     "@graph": [
         {
-            "@id": "adex:deviceSimNumber",
+            "@id": "adex:brandName",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Gives the sim number of a particular device.",
-            "rdfs:label": "deviceSimNumber",
+            "rdfs:comment": "Name of the brand associated with an entity, e.g., sensor, device etc.",
+            "rdfs:label": "brandName",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Device"
+                    "@id": "adex:ModelDesc"
                 }
             ],
             "adex:rangeIncludes": [

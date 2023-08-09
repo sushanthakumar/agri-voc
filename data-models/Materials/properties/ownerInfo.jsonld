@@ -8,28 +8,25 @@
     },
     "@graph": [
         {
-            "@id": "adex:deviceSimNumber",
+            "@id": "adex:ownerInfo",
             "@type": [
-                "adex:TextProperty"
+                "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Gives the sim number of a particular device.",
-            "rdfs:label": "deviceSimNumber",
+            "rdfs:comment": "Details of the person who owns the entity corresponding to this observation.",
+            "rdfs:label": "ownerInfo",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Device"
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
-                },
-                {
-                    "@id": "adex:ValueDescriptor"
+                    "@id": "adex:PersonnelDesc"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

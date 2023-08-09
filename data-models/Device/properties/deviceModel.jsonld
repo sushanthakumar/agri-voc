@@ -14,9 +14,6 @@
             ],
             "rdfs:comment": "Describes the information of the device, sensor or system in consideration.",
             "rdfs:label": "deviceModel",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Device"
@@ -24,9 +21,12 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:ModelInfo"
+                    "@id": "adex:ModelDesc"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

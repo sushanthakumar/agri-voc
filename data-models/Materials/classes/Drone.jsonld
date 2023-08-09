@@ -12,9 +12,9 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:AgriMachinery",
-            "rdfs:comment": "A Data Model for information about agricultural machinearies.",
-            "rdfs:label": "AgriMachinery",
+            "@id": "adex:Drone",
+            "rdfs:comment": "A Data Model for specifications and utility of drones.",
+            "rdfs:label": "Drone",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },

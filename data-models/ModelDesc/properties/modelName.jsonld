@@ -8,18 +8,15 @@
     },
     "@graph": [
         {
-            "@id": "adex:manufacturerName",
+            "@id": "adex:modelName",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Name of the manufacturer associated with an entity, e.g., sensor, device etc.",
-            "rdfs:label": "manufacturerName",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
+            "rdfs:comment": "Name of a specific model associated with an entity, e.g., sensor, device etc.",
+            "rdfs:label": "modelName",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:ModelInfo"
+                    "@id": "adex:ModelDesc"
                 }
             ],
             "adex:rangeIncludes": [
@@ -29,7 +26,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

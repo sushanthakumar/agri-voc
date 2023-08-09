@@ -8,26 +8,23 @@
     },
     "@graph": [
         {
-            "@id": "adex:modelName",
+            "@id": "adex:deviceInfo",
             "@type": [
-                "adex:TextProperty"
+                "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Name of a specific model associated with an entity, e.g., sensor, device etc.",
-            "rdfs:label": "modelName",
+            "rdfs:comment": "The information of the device/sensor used in/for the entity/ service  corresponding to this observation.",
+            "rdfs:label": "deviceInfo",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:ModelInfo"
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
-                },
-                {
-                    "@id": "adex:ValueDescriptor"
+                    "@id": "adex:Device"
                 }
             ]
         }

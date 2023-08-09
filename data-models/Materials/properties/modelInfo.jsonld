@@ -8,23 +8,26 @@
     },
     "@graph": [
         {
-            "@id": "adex:deviceSimNumber",
+            "@id": "adex:modelInfo",
             "@type": [
-                "adex:TextProperty"
+                "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Gives the sim number of a particular device.",
-            "rdfs:label": "deviceSimNumber",
+            "rdfs:comment": "The make/model information of the entity corresponding to this observation.",
+            "rdfs:label": "modelInfo",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Device"
+                    "@id": "adex:AgriMachinery"
+                },
+                {
+                    "@id": "adex:Drone"
+                },
+                {
+                    "@id": "adex:Fertilizer"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
-                },
-                {
-                    "@id": "adex:ValueDescriptor"
+                    "@id": "adex:ModelDesc"
                 }
             ],
             "rdfs:isDefinedBy": {

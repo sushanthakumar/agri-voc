@@ -8,15 +8,15 @@
     },
     "@graph": [
         {
-            "@id": "adex:deviceSimNumber",
+            "@id": "adex:registrationNumber",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Gives the sim number of a particular device.",
-            "rdfs:label": "deviceSimNumber",
+            "rdfs:comment": "The registration number of the machinery or equipment as provided by the registering authority corresponding to this observation.",
+            "rdfs:label": "registrationNumber",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Device"
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [

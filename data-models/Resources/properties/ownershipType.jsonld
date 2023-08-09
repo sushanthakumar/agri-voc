@@ -18,15 +18,15 @@
             ],
             "rdfs:comment": "The type of ownership of the land, crop, property, item, entity, etc corresponding to the observation. ENUM: [Lease, Rented, Owned]",
             "rdfs:label": "ownershipType",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:LandParcel"
                 },
                 {
                     "@id": "adex:AgriMachinery"
+                },
+                {
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [
@@ -36,7 +36,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

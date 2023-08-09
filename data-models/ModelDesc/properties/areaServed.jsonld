@@ -8,19 +8,20 @@
     },
     "@graph": [
         {
-            "@id": "adex:deviceSimNumber",
+            "@id": "adex:areaServed",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Gives the sim number of a particular device.",
-            "rdfs:label": "deviceSimNumber",
+            "rdfs:comment": "Area served by the entity or a service.",
+            "rdfs:label": "areaServed",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Device"
+                    "@id": "adex:ModelDesc"
                 }
             ],
             "adex:rangeIncludes": [
                 {
+                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {

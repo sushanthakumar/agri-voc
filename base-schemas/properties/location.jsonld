@@ -39,6 +39,9 @@
                 },
                 {
                     "@id": "adex:Soil"
+                },
+                {
+                    "@id": "adex:Device"
                 }
             ],
             "adex:rangeIncludes": [

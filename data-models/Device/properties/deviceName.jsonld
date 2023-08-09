@@ -14,9 +14,6 @@
             ],
             "rdfs:comment": "Device Name or Station name of the sensor device/station corresponding to this observation.",
             "rdfs:label": "deviceName",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Device"
@@ -29,7 +26,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

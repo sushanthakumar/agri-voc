@@ -14,9 +14,6 @@
             ],
             "rdfs:comment": "The RSSI (Received Signal Strength Indicator) value of the entity corresponding to this observation.",
             "rdfs:label": "rssi",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Device"
@@ -30,6 +27,9 @@
                     "@id": "adex:ValueDescriptor"
                 }
             ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "skos:exactMatch": {
                 "@id": "Fiware: Device.rssi"
             }
