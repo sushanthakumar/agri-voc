@@ -1,5 +1,10 @@
 {
-  "objectType": "Drone",
+  "@context": "https://agrijson.adex.org.in",
+   "id": "provider-id/rs.adex.org.in/drone-rg/drone-ri",
+   "type": [
+        "adex:Drone",
+        "adex:Resource"
+    ],
   "icaoCode": "IC513342",
   "droneType": "Fixed-Wing Hybrid VTOL",
   "purposeDescription": "Real-time, accurate 3D comparable data",
