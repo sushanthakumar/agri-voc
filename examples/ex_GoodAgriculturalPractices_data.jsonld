@@ -1,0 +1,12 @@
+{
+  "@context": "https://agrijson.adex.org.in",
+	"id": "provider-id/rs.adex.org.in/gap-rg/gap-ri",
+	"type": [
+		"adex:GoodAgriculturalPractices",
+		"adex:Resource"
+	],
+ "moduleName": "Pest and Disease Management",
+ "subModuleName": "Integrated Pest Management (IPM)",
+ "controlPoints": ["Monitoring and early detection of pests and diseases", "Adoption of integrated pest management (IPM) strategies", "Proper use of pesticides, following recommended guidelines"],
+ "isGAPCompliant": "False"
+}

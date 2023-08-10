@@ -1,0 +1,127 @@
+{
+    "@context": "https://agrijson.adex.org.in",
+    "type": [
+        "adex:Device",
+        "adex:Schema"
+    ],
+    "id": "https://agrijson.adex.org.in/Device",
+    "schema": {
+        "title": "ADEX Device Data Model",
+        "type": "object",
+        "properties": {
+            "type": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "string",
+                        "description": "ADEX Data Model name. It has to be Device"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ADEX Entity type. It has to be Resource"
+                    }
+                ]
+            },
+            "location": {
+                "type": "object",
+                "description": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor."
+            },
+            "rfID": {
+                "type": "string",
+                "description": "Gives the ID of the RFID reader."
+            },
+            "deviceName": {
+                "type": "string",
+                "description": "Device Name or Station name of the sensor device/station corresponding to this observation."
+            },
+            "rssi": {
+                "type": "number",
+                "description": "The RSSI (Received Signal Strength Indicator) value of the entity corresponding to this observation.",
+                "unitText": "decibel milliwatt"
+            },
+            "deviceType": {
+                "type": "string",
+                "description": "The type of device or sensor corresponding to this observation."
+            },
+            "deviceModel": {
+                "type": "object",
+                "description": "Describes the model information of the device, sensor or system in consideration.",
+                "properties": {
+                    "manufacturerName": {
+                        "type": "string",
+                        "description": "Name of the manufacturer associated with an entity, e.g., sensor, device etc."
+                    },
+                    "areaServed": {
+                        "type": "array",
+                        "description": "Area served by the entity or a service.",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "modelURL": {
+                        "type": "string",
+                        "description": "URL providing further information of a specific model associated with an entity, e.g., sensor, device etc."
+                    },
+                    "modelName": {
+                        "type": "string",
+                        "description": "Name of a specific model associated with an entity, e.g., sensor, device etc."
+                    },
+                    "brandName": {
+                        "type": "string",
+                        "description": "Name of the brand associated with an entity, e.g., sensor, device etc."
+                    },
+                    "year": {
+                         "type": "number",
+                         "description": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
+                         "unitCode": "C62",
+                         "unitText": "Dimensionless"
+                    }
+                }
+            },
+            "deviceIdentityNumber": {
+                "type": "number",
+                "description": "The unique 15 digit International Mobile Equipment Identity (IMEI) number of the device corresponding to this observation.",
+                "unitCode": "C62",
+                "unitText": "Dimensionless"
+            },
+            "deviceBatteryStatus": {
+                "type": "string",
+                "description": "Gives the Battery charging status of the reporting device(Connected, Disconnected)."
+            },
+            "deviceStatus": {
+                "type": "string",
+                "description": "Indicates the status of physical device or sensor. For eg., active, inactive, etc."
+            },
+            "deviceSensitivity": {
+                "type": "number",
+                "description": "The sensitivity of the device or senor corresponding to this observation.",
+                "unitCode": "D49",
+				"unitText": "millivolt per kelvin"
+            },
+            "measurand": {
+                "type": "string",
+                "description": "Property/properties sensed/observed/measured by the device."
+            },
+            "deviceSimNumber": {
+                "type": "string",
+                "description": "Gives the sim number of a particular device."
+            },
+            "deviceID": {
+                "type": "string",
+                "description": "Device ID of the physical sensor/ measurement station corresponding to this observation."
+            },
+            "devicePrecision": {
+                "type": "number",
+                "description": "The precision of the device or sensor corresponding to this observation.",
+                "unitCode": "C62",
+                "unitText": "Dimensionless"
+            },
+            "deviceResolution": {
+                "type": "number",
+                "description": "The resolution of the device or sensor corresponding to this observation.",
+                "unitCode": "C81",
+				"unitText": "radian"
+            }
+        }
+    }
+}

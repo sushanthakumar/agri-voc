@@ -24,11 +24,13 @@
                 },
                 {
                     "@id": "adex:ConsentArtifact"
+                },
+                {
+                    "@id": "adex:Imagery"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {

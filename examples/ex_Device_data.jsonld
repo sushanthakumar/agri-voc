@@ -1,0 +1,34 @@
+{
+    "@context": "https://agrijson.adex.org.in",
+	"id": "provider-id/rs.adex.org.in/device-rg/device-ri",
+	"type": [
+		"adex:Device",
+		"adex:Resource"
+	],
+    "deviceID": "SBP_GSR1_LT70",
+    "deviceName": "APEX_WATER",
+    "rfID": "E2000123456789ABCDE",
+    "rssi": -3.6,
+    "deviceType": "water temperature",
+    "deviceModel": {
+            "manufacturerName": "ABC Pvt Ltd",
+            "areaServed": "Chennai",
+            "brandName": "CDE brand",
+            "year": 2021
+        },
+    "deviceIdentityNumber": "001019/00/345671/1",
+    "deviceBatteryStatus": "Connected",
+    "deviceStatus": "Active",
+    "deviceSensitivity": 51,
+    "measurand": "temperature",
+    "deviceSimNumber": "V863221048423623",
+    "devicePrecision": 92 ,
+    "deviceResolution": 95,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        91.285169,
+        23.834296
+      ]
+    }
+}

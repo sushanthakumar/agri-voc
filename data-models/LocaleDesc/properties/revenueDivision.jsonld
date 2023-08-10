@@ -14,9 +14,6 @@
             ],
             "rdfs:comment": "Name of the revenue division in a district corresponding to this observation.",
             "rdfs:label": "revenueDivision",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:LocaleDesc"
@@ -29,7 +26,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

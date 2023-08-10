@@ -1,0 +1,36 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org.in/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:controlPoints",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "The Control Points in India Good Agricultural Practices (IndGAP) is a set of guildlines that are crucial for maintaining the integrity of the food supply chain and reducing risks associated with foodborne illnesses, contamination, and environmental damage.",
+            "rdfs:label": "controlPoints",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:GoodAgriculturalPractices"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@container": "@list",
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}

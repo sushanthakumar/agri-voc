@@ -14,9 +14,6 @@
             ],
             "rdfs:comment": "Date of birth of the individual corresponding to this observation.",
             "rdfs:label": "birthDate",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:PersonnelDesc"
@@ -29,7 +26,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

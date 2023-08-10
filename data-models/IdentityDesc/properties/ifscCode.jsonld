@@ -12,11 +12,8 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The IFSC code for the bank corresponding to this observation.",
+            "rdfs:comment": "The IFSC code for the bank corresponding to this observation",
             "rdfs:label": "ifscCode",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:IdentityDesc"
@@ -29,7 +26,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

@@ -358,8 +358,11 @@
                           "description": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor."
                       },
                       "mediaURL": {
-                          "type": "string",
-                          "description": "URL providing further information of any image(s) or media of the complaint or place."
+                            "type": "array",
+                            "description": "URL providing further information of any image(s) or media of the complaint or place.",
+                            "items": {
+                                "type": "string"
+                            }
                       },
                       "observationDateTime": {
                           "type": "string",

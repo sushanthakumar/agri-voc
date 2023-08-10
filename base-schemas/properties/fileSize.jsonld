@@ -8,25 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:deviceModel",
+            "@id": "adex:fileSize",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Describes the information of the device, sensor or system in consideration.",
-            "rdfs:label": "deviceModel",
+            "rdfs:comment": "The size of the media file corresponding to this observation.",
+            "rdfs:label": "fileSize",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Device"
+                    "@id": "adex:Imagery"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:ModelDesc"
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

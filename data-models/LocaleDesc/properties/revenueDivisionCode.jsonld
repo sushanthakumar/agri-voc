@@ -14,9 +14,6 @@
             ],
             "rdfs:comment": "The revenue division code corresponding to this observation",
             "rdfs:label": "revenueDivisionCode",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:LocaleDesc"
@@ -29,7 +26,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

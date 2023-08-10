@@ -7,6 +7,7 @@
     ],
   "icaoCode": "IC513342",
   "droneType": "Fixed-Wing Hybrid VTOL",
+  "purposeCode": "F16-001XX",
   "purposeDescription": "Real-time, accurate 3D comparable data",
   "registeringAuthority": "Directorate General of Civil Aviation",
   "registrationNumber": "237127XXX",

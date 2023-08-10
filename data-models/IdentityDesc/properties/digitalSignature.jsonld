@@ -12,23 +12,23 @@
     },
     "@graph": [
         {
-            "@id": "adex:devicePrecision",
+            "@id": "adex:digitalSignature",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The precision of the device or senor corresponding to this observation.",
-            "rdfs:label": "devicePrecision",
+            "rdfs:comment": "The link to the digital signature of the entity corresponding to this observation.",
+            "rdfs:label": "digitalSignature",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Device"
+                    "@id": "adex:IdentityDesc"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

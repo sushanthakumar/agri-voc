@@ -1,0 +1,344 @@
+{
+    "@context": "https://agrijson.adex.org.in",
+    "type": [
+        "adex:Imagery",
+        "adex:Schema"
+    ],
+    "id": "https://agrijson.adex.org.in/Imagery",
+    "schema": {
+        "title": "ADEX Imagery Data Model",
+        "type": "object",
+        "properties": {
+            "type": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "string",
+                        "description": "ADEX Data Model name. It has to be Imagery"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ADEX Entity type. It has to be Resource"
+                    }
+                ]
+            },
+            "imageID": {
+                "type": "string",
+                "description": "The unique ID of the image assigned by the provider corresponding to this observation."
+            },
+            "fileSize": {
+                "type": "number",
+                "description": "The size of the media file corresponding to this observation.",
+                "unitCode": "4L",
+                "unitText": "megabyte"
+            },
+            "fileFormat": {
+                "type": "string",
+                "description": "Format of the media file corresponding to this observation."
+            },
+            "imageURL": {
+                "type": "array",
+                "description": "The link that points to the photo of the individual corresponding to this observation.",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "mediaURL": {
+                "type": "array",
+                "description": "URL providing further information of any image(s) or media of the complaint or place.",
+                "items": {
+                    "type": "string"
+                }
+           },
+            "spectralBandResolution": {
+                "type": "string",
+                "description": "Denotes the quantified degree of detail or distinction between different electromagnetic wavelengths that the system can capture and differentiate."
+            },
+            "spatialResolution": {
+                "type": "number",
+                "description": "Denotes the distance represented by a single pixel in an image such as 1m, 10m, etc.",
+                "unitCode": "MTR",
+                "unitText": "metre"
+            },
+            "radiometricResolution": {
+                "type": "number",
+                "description": "Denotes the intensity values of each pixel in a digital image corresponding to this observation.",
+                "unitCode": "A99",
+                "unitText": "bit"
+            },
+            "geometricResolution": {
+                "type": "number",
+                "description": "Denotes the size of an object in a single-pixel that an image can record.",
+                "unitCode": "MTR",
+                "unitText": "metre"
+            },
+            "temporalResolution": {
+                "type": "string",
+                "description": "Denotes the revisit interval of the satellite corresponding to this observation. For eg., every 2 days."
+            },
+            "contactPointInfo": {
+                "type": "object",
+                "description": "Contact point information of a individual/business/service corresponding to this observation",
+                "properties": {
+                    "contactPointPhone": {
+                        "type": "string",
+                        "description": "Phone number of point of contact to the business or service corresponding to this observation"
+                    },
+                    "contactPointName": {
+                        "type": "string",
+                        "description": "Name of the point of contact to the business or service corresponding to this observation"
+                    },
+                    "contactPointEmail": {
+                        "type": "string",
+                        "description": "Email address of the point of contact to the business or service corresponding to this observation."
+                    },
+                    "helplineNumber": {
+                        "type": "array",
+                        "description": "Helpline contact number(s) corresponding to this observation.",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "ownerInfo": {
+                "type": "object",
+                "description": "Details of the person who owns the entity corresponding to this observation.",
+                "properties": {
+                    "phone": {
+                        "type": "string",
+                        "description": "Phone number  corresponding to this observation"
+                    },
+                    "academicQualification": {
+                        "type": "string",
+                        "description": "The highest educational qualification of the individual corresponding to this observation."
+                    },
+                    "fieldOfResearch": {
+                        "type": "string",
+                        "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
+                    },
+                    "birthPlace": {
+                        "type": "string",
+                        "description": "Place of birth of the individual corresponding to this observation."
+                    },
+                    "residentialAddress": {
+						"type": "object",
+						"description": "Residential address corresponding to this observation",
+                        "properties": {
+                              "districtName": {
+                                  "type": "string",
+                                  "description": "Name of the district corresponding to this observation."
+                              },
+                              "stateName": {
+                                  "type": "string",
+                                  "description": "Name of the state corresponding to this observation."
+                              },
+                              "addressLine": {
+                                  "type": "string",
+                                  "description": "Address corresponding to this observation"
+                              },
+                              "cityName": {
+                                  "type": "string",
+                                  "description": "Name of the city corresponding to this observation."
+                              },
+                              "countryName": {
+                                  "type": "string",
+                                  "description": "Name of the country corresponding to this observation."
+                              },
+                              "locality": {
+                                  "type": "string",
+                                  "description": "Area name of the location corresponding to this observation."
+                              },
+                              "pincode": {
+                                  "type": "number",
+                                  "description": "The postal code corresponding to this observation.",
+                                  "unitCode": "C62",
+                                  "unitText": "Dimensionless"
+                              },
+                              "buildingNum": {
+                                  "type": "string",
+                                  "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+                              },
+                              "street": {
+                                  "type": "string",
+                                  "description": "Street name corresponding to this observation."
+                              }
+                          }
+                    },
+                    "birthDate": {
+                        "type": "string",
+                        "description": "Date of birth of the individual corresponding to this observation.",
+                        "format": "date"
+                    },
+                    "email": {
+                        "type": "string",
+                        "description": "Email address of the individual corresponding to this observation"
+                    },
+                    "salutation": {
+                        "type": "string",
+                        "description": "Salutation of the individual corresponding to this observation"
+                    },
+                    "permanentAddress": {
+                        "type": "object",
+                        "description": "Permanent address corresponding to this observation",
+                         "properties": {
+                              "districtName": {
+                                  "type": "string",
+                                  "description": "Name of the district corresponding to this observation."
+                              },
+                              "stateName": {
+                                  "type": "string",
+                                  "description": "Name of the state corresponding to this observation."
+                              },
+                              "addressLine": {
+                                  "type": "string",
+                                  "description": "Address corresponding to this observation"
+                              },
+                              "cityName": {
+                                  "type": "string",
+                                  "description": "Name of the city corresponding to this observation."
+                              },
+                              "countryName": {
+                                  "type": "string",
+                                  "description": "Name of the country corresponding to this observation."
+                              },
+                              "locality": {
+                                  "type": "string",
+                                  "description": "Area name of the location corresponding to this observation."
+                              },
+                              "pincode": {
+                                  "type": "number",
+                                  "description": "The postal code corresponding to this observation.",
+                                  "unitCode": "C62",
+                                  "unitText": "Dimensionless"
+                              },
+                              "buildingNum": {
+                                  "type": "string",
+                                  "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+                              },
+                              "street": {
+                                  "type": "string",
+                                  "description": "Street name corresponding to this observation."
+                              }
+                          }
+                    },
+                    "businessAddress": {
+                        "type": "object",
+                        "description": "Business address corresponding to this observation",
+                        "properties": {
+                              "districtName": {
+                                  "type": "string",
+                                  "description": "Name of the district corresponding to this observation."
+                              },
+                              "stateName": {
+                                  "type": "string",
+                                  "description": "Name of the state corresponding to this observation."
+                              },
+                              "addressLine": {
+                                  "type": "string",
+                                  "description": "Address corresponding to this observation"
+                              },
+                              "cityName": {
+                                  "type": "string",
+                                  "description": "Name of the city corresponding to this observation."
+                              },
+                              "countryName": {
+                                  "type": "string",
+                                  "description": "Name of the country corresponding to this observation."
+                              },
+                              "locality": {
+                                  "type": "string",
+                                  "description": "Area name of the location corresponding to this observation."
+                              },
+                              "pincode": {
+                                  "type": "number",
+                                  "description": "The postal code corresponding to this observation.",
+                                  "unitCode": "C62",
+                                  "unitText": "Dimensionless"
+                              },
+                              "buildingNum": {
+                                  "type": "string",
+                                  "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+                              },
+                              "street": {
+                                  "type": "string",
+                                  "description": "Street name corresponding to this observation."
+                              }
+                          }
+                    },
+                    "gender": {
+                        "type": "string",
+                        "description": "Gender of the individual corresponding to this observation"
+                    },
+                    "workStatus": {
+                        "type": "string",
+                        "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
+                    },
+                    "nationality": {
+                        "type": "string",
+                        "description": "Represents the nation that the individual corresponding to this observation belongs to."
+                    },
+                    "identityInfo": {
+                        "type": "object",
+                        "description": "Personal identification information issued by the government.",
+                        "properties": {
+                            "bankAccountNo": {
+                "type": "number",
+                "description": "The bank account number of the individual or business corresponding to this observation",
+                "unitCode": "C62",
+                "unitText": "Dimensionless"
+            },
+                            "gstin": {
+                                "type": "string",
+                                "description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
+                            },
+                            "ifscCode": {
+                                "type": "string",
+                                "description": "The IFSC code for the bank corresponding to this observation"
+                            },
+                            "drivingLicense": {
+                                "type": "string",
+                                "description": "The driving license number of the individual corresponding to this observation."
+                            },
+                            "digitalSignature": {
+                                "type": "string",
+                                "description": "The link to the digital signature of the entity corresponding to this observation."
+                            },
+                            "panNo": {
+                                "type": "string",
+                                "description": "The pan card number of the individual corresponding to this observation."
+                            },
+                            "fssaiLicense": {
+                                "type": "string",
+                                "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+                            },
+                            "aadharNo": {
+                                "type": "string",
+                                "description": "The aadhar number issued by the government for the individual corresponding to this observation."
+                            },
+                            "iec": {
+                                "type": "string",
+                                "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
+                            }
+                        }
+                    },
+                    "imageURL": {
+                        "type": "array",
+                        "description": "The link that points to the photo of the individual corresponding to this observation.",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "designation": {
+                        "type": "string",
+                        "description": "Designation of the individual corresponding to this observation"
+                    },
+                    "expertise": {
+                        "type": "string",
+                        "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
+                    }
+                }
+            }
+        }
+    }
+}

@@ -14,9 +14,6 @@
             ],
             "rdfs:comment": "The driving license number of the individual corresponding to this observation.",
             "rdfs:label": "drivingLicense",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:IdentityDesc"
@@ -29,7 +26,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

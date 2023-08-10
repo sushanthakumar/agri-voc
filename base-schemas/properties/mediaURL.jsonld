@@ -30,6 +30,9 @@
                 },
                 {
                     "@id": "adex:ConsentArtifact"
+                },
+                {
+                    "@id": "adex:Imagery"
                 }
             ],
             "adex:rangeIncludes": [

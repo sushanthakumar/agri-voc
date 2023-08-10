@@ -14,19 +14,22 @@
             ],
             "rdfs:comment": "Date of issual, expiry/validity, renewal of the document/certificate corresponding to this observation.",
             "rdfs:label": "certificateInfo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Fertilizer"
+                },
+                {
+                    "@id": "adex:GoodAgriculturalPractices"
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:CertificateDesc"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

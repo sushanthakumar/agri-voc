@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:deviceStatus",
+            "@id": "adex:deviceModel",
             "@type": [
-                "adex:TextProperty"
+                "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Indicates the status of physical device or devices. For eg., active, inactive, etc.",
-            "rdfs:label": "deviceStatus",
+            "rdfs:comment": "Describes the model information of the device, sensor or system in consideration.",
+            "rdfs:label": "deviceModel",
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Device"
@@ -21,10 +21,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
-                },
-                {
-                    "@id": "adex:ValueDescriptor"
+                    "@id": "adex:ModelDesc"
                 }
             ],
             "rdfs:isDefinedBy": {

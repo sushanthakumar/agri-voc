@@ -17,6 +17,9 @@
             "rdfs:label": "Device",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
+            },
+             "rdfs:subClassOf": {
+                "@id": "adex:Materials"
             }
         }
     ]

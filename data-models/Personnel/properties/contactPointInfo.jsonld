@@ -14,19 +14,22 @@
             ],
             "rdfs:comment": "Contact point information of a individual/business/service corresponding to this observation",
             "rdfs:label": "contactPointInfo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriMarket"
+                },
+                {
+                    "@id": "adex:Imagery"
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:ContactPointDesc"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

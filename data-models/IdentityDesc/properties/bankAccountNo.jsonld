@@ -12,11 +12,8 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The bank account number of the individual or business corresponding to this observation.",
+            "rdfs:comment": "The bank account number of the individual or business corresponding to this observation",
             "rdfs:label": "bankAccountNo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:IdentityDesc"
@@ -29,7 +26,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }
