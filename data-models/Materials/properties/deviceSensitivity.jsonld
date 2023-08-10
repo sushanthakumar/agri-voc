@@ -16,7 +16,7 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The sensitivity of the device or senor corresponding to this observation.",
+            "rdfs:comment": "The sensitivity of the device or sensor corresponding to this observation.",
             "rdfs:label": "deviceSensitivity",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
