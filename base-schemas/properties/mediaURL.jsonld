@@ -33,6 +33,12 @@
                 },
                 {
                     "@id": "adex:Imagery"
+                },
+                {
+                    "@id": "adex:PublicSchemes"
+                },
+                {
+                    "@id": "adex:FreightManagement"
                 }
             ],
             "adex:rangeIncludes": [

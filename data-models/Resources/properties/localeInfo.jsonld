@@ -39,6 +39,9 @@
                 },
                 {
                     "@id": "adex:Drone"
+                },
+                {
+                    "@id": "adex:PublicSchemes"
                 }
             ],
             "adex:rangeIncludes": [

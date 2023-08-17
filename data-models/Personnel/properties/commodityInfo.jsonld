@@ -14,19 +14,22 @@
             ],
             "rdfs:comment": "The information about the agricultural produce/commodity associated with the AMC/market corresponding to this observation.",
             "rdfs:label": "commodityInfo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriMarket"
+                },
+                {
+                    "@id": "adex:FreightManagement"
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:AgriProduce"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

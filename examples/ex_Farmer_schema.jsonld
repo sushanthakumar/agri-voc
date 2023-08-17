@@ -48,6 +48,12 @@
 						"unitCode": "INR",
 						"unitText": "Indian Rupee"
 					},
+					"sgst": {
+						"type": "number",
+						"description": "State Goods and Services Tax like CGST, is charged on the sale of products or services within a state.",
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
+					},
 					"netExpenditure": {
 						"type": "number",
 						"description": "The total cost incurred for the cultivation of a crop.",
@@ -60,9 +66,31 @@
 						"unitCode": "INR",
 						"unitText": "Indian Rupee"
 					},
+					"igst": {
+						"type": "number",
+						"description": "Integrated Goods and Services Tax is charged on inter-state transactions of products and services.",
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
+					},
+					"paymentTerm": {
+						"type": "string",
+						"description": "Description of the terms of payment corresponding to this observation."
+					},
+					"freightCost": {
+						"type": "number",
+						"description": "The cost incurred for transporting the goods from the point of origin to a destination location.",
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
+					},
 					"landCess": {
 						"type": "number",
 						"description": "The amount of tax levied on land holdings.",
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
+					},
+					"utgst": {
+						"type": "number",
+						"description": "Union Territory Goods and Services Tax is levied on the supply of products and services in any of the Union Territories in the country, viz. Andaman and Nicobar Islands, Daman and Diu, Dadra and Nagar Haveli, Lakshadweep, and Chandigarh. UTGST is levied along with CGST.",
 						"unitCode": "INR",
 						"unitText": "Indian Rupee"
 					},
@@ -84,15 +112,29 @@
 						"unitCode": "INR",
 						"unitText": "Indian Rupee"
 					},
+					"cgst": {
+						"type": "number",
+						"description": "Central Goods and Services Tax is charged on the intra state supply of products and services.",
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
+					},
 					"netIncome": {
 						"type": "number",
 						"description": "Net revenue from the farmland corresponding to this observation",
 						"unitCode": "INR",
 						"unitText": "Indian Rupee"
 					},
+					"costType": {
+						"type": "string",
+						"description": "Describes the type of the cost, for eg., whether the cost is estimated or billed."
+					},
+					"currencyType": {
+						"type": "string",
+						"description": "The type of currency used for selling the goods and services corresponding to this observation."
+					},
 					"transportationCost": {
 						"type": "number",
-						"description": "The total cost incurred due to transportation of raw materials and supplies.",
+						"description": "The total cost incurred due to transportation of raw materials / supplies / merchandise which includes the road tax, state and central tax, IGST, etc.",
 						"unitCode": "INR",
 						"unitText": "Indian Rupee"
 					}

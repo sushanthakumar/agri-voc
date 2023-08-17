@@ -12,11 +12,14 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:PublicSchemes",
-            "rdfs:comment": "Welfare Schemes corresponding to this observation.",
-            "rdfs:label": "PublicSchemes",
+            "@id": "adex:FreightManagement",
+            "rdfs:comment": "FreightManagement",
+            "rdfs:label": "FreightManagement",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "adex:Services"
             }
         }
     ]

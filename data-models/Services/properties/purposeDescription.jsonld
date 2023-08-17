@@ -20,6 +20,12 @@
                 },
                 {
                     "@id": "adex:Drone"
+                },
+                {
+                    "@id": "adex:AgriMachinery"
+                },
+                {
+                    "@id": "adex:PublicSchemes"
                 }
             ],
             "adex:rangeIncludes": [

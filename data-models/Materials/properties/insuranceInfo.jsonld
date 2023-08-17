@@ -14,19 +14,22 @@
             ],
             "rdfs:comment": "The information about the insurance for the product or equipment corresponding to this observation.",
             "rdfs:label": "insuranceInfo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriMachinery"
+                },
+                {
+                    "@id": "adex:FreightManagement"
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:CropInsurance"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

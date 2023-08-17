@@ -1,0 +1,14 @@
+{
+  "schemeID": "MSP1960",
+  "schemeName": "Minimum Support Price(MSP)",
+  "govtName": "Indian National Congress",
+  "valueChainPhase": "distribution",
+  "purposeDescription": "The minimum guaranteed price for agricultural products procured directly from farmers.",
+  "landHolding": "landHoldingMax1",
+  "cropType": "cotton",
+  "landGeography": "Hilly",
+  "applicationProcess": ["Submit documents required to prove the genuineness of the farmer", "Verification of documents", "Approval for procurement",
+    "Quality of stock", "Payment to the farmer"],
+  "dueDate": "2023-12-31",
+  "mediaURL": ["https://farmer.gov.in/mspstatements.aspx"]
+}

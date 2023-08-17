@@ -1,0 +1,37 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "iudx": "https://voc.iudx.org.in/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "adex": "https://agrijson.adex.org.in/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:policyProtection",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "The potential risk(s)/ event(s) that is (are) protected or insured against by the insurance policy corresponding to this observation. For eg., accidents, theft, fire, natural disasters, etc.",
+            "rdfs:label": "policyProtection",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:CropInsurance"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@container": "@list",
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}

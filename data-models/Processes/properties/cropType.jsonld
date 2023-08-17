@@ -24,6 +24,9 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropSpecies"
+                },
+                {
+                    "@id": "adex:PublicSchemes"
                 }
             ],
             "adex:rangeIncludes": [

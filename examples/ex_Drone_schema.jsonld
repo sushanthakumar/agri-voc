@@ -47,7 +47,47 @@
 					},
 					"residentialAddress": {
 						"type": "object",
-						"description": "Residential address corresponding to this observation"
+						"description": "Residential address corresponding to this observation",
+						"properties": {
+							"districtName": {
+								"type": "string",
+								"description": "Name of the district corresponding to this observation."
+							},
+							"stateName": {
+								"type": "string",
+								"description": "Name of the state corresponding to this observation."
+							},
+							"addressLine": {
+								"type": "string",
+								"description": "Address corresponding to this observation"
+							},
+							"cityName": {
+								"type": "string",
+								"description": "Name of the city corresponding to this observation."
+							},
+							"countryName": {
+								"type": "string",
+								"description": "Name of the country corresponding to this observation."
+							},
+							"locality": {
+								"type": "string",
+								"description": "Area name of the location corresponding to this observation."
+							},
+							"pincode": {
+								"type": "number",
+								"description": "The postal code corresponding to this observation.",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"buildingNum": {
+								"type": "string",
+								"description": "The unique number of the house/building/shop/flat corresponding to this observation."
+							},
+							"street": {
+								"type": "string",
+								"description": "Street name corresponding to this observation."
+							}
+						}
 					},
 					"birthDate": {
 						"type": "string",
@@ -64,11 +104,91 @@
 					},
 					"permanentAddress": {
 						"type": "object",
-						"description": "Permanent address corresponding to this observation"
+						"description": "Permanent address corresponding to this observation",
+						"properties": {
+							"districtName": {
+								"type": "string",
+								"description": "Name of the district corresponding to this observation."
+							},
+							"stateName": {
+								"type": "string",
+								"description": "Name of the state corresponding to this observation."
+							},
+							"addressLine": {
+								"type": "string",
+								"description": "Address corresponding to this observation"
+							},
+							"cityName": {
+								"type": "string",
+								"description": "Name of the city corresponding to this observation."
+							},
+							"countryName": {
+								"type": "string",
+								"description": "Name of the country corresponding to this observation."
+							},
+							"locality": {
+								"type": "string",
+								"description": "Area name of the location corresponding to this observation."
+							},
+							"pincode": {
+								"type": "number",
+								"description": "The postal code corresponding to this observation.",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"buildingNum": {
+								"type": "string",
+								"description": "The unique number of the house/building/shop/flat corresponding to this observation."
+							},
+							"street": {
+								"type": "string",
+								"description": "Street name corresponding to this observation."
+							}
+						}
 					},
 					"businessAddress": {
 						"type": "object",
-						"description": "Business address corresponding to this observation"
+						"description": "Business address corresponding to this observation",
+						"properties": {
+							"districtName": {
+								"type": "string",
+								"description": "Name of the district corresponding to this observation."
+							},
+							"stateName": {
+								"type": "string",
+								"description": "Name of the state corresponding to this observation."
+							},
+							"addressLine": {
+								"type": "string",
+								"description": "Address corresponding to this observation"
+							},
+							"cityName": {
+								"type": "string",
+								"description": "Name of the city corresponding to this observation."
+							},
+							"countryName": {
+								"type": "string",
+								"description": "Name of the country corresponding to this observation."
+							},
+							"locality": {
+								"type": "string",
+								"description": "Area name of the location corresponding to this observation."
+							},
+							"pincode": {
+								"type": "number",
+								"description": "The postal code corresponding to this observation.",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"buildingNum": {
+								"type": "string",
+								"description": "The unique number of the house/building/shop/flat corresponding to this observation."
+							},
+							"street": {
+								"type": "string",
+								"description": "Street name corresponding to this observation."
+							}
+						}
 					},
 					"gender": {
 						"type": "string",
@@ -199,11 +319,11 @@
 						"description": "Name of the brand associated with an entity, e.g., sensor, device etc."
 					},
 					"year": {
-                         "type": "number",
-                         "description": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
-                         "unitCode": "C62",
-                         "unitText": "Dimensionless"
-                    }
+						"type": "number",
+						"description": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
+						"unitCode": "C62",
+						"unitText": "Dimensionless"
+					}
 				}
 			},
 			"droneType": {

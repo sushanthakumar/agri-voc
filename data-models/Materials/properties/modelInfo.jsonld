@@ -23,6 +23,9 @@
                 },
                 {
                     "@id": "adex:Fertilizer"
+                },
+                {
+                    "@id": "adex:FreightManagement"
                 }
             ],
             "adex:rangeIncludes": [

@@ -24,6 +24,9 @@
                 },
                 {
                     "@id": "adex:AgriMarket"
+                },
+                {
+                    "@id": "adex:FreightManagement"
                 }
             ],
             "adex:rangeIncludes": [

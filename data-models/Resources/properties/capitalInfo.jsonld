@@ -24,6 +24,9 @@
                 },
                 {
                     "@id": "adex:Farmer"
+                },
+                {
+                    "@id": "adex:FreightManagement"
                 }
             ],
             "adex:rangeIncludes": [

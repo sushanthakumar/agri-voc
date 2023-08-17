@@ -24,6 +24,10 @@ dir_home = path.abspath(path.join(os.path.abspath(file_dir), "../../../.."))
 
 with open(dir_home + "/utils/misc/data-model-properties/template.jsonld", "r") as template:
     obj = json.load(template)
+del obj["@context"]['skos']
+del obj["@context"]['schema']
+del obj["@context"]['geojson']
+del obj["@context"]['xsd']
 
 
 def check_dir(file_path):
@@ -118,15 +122,45 @@ def find_name(pattern, path):
     return result
 
 
+def create_domain(properties_path):
+    subdomain_path = properties_path + "/" + domain_name + ".jsonld"
+    if not os.path.exists(subdomain_path):
+        comment = input("Enter the description for the domain\n")
+        class_dict = obj
+        class_dict["@graph"][0]["@type"] = ["owl:Class", "rdfs:Class"]
+        class_dict["@graph"][0]["@id"] = "iudx:" + domain_name
+        class_dict["@graph"][0]["rdfs:comment"] = comment
+        class_dict["@graph"][0]["rdfs:label"] = domain_name
+        dict1 = {}
+        dict1["rdfs:subClassOf"] = {"@id": "iudx:DataModel"}
+        obj["@graph"][0].update(dict1)
+
+        with open(subdomain_path, "w+") as prop_file:
+            json.dump(class_dict, prop_file, indent=4)
+
+
+def create_domain(properties_path):
+    subdomain_path = properties_path + "/" + sub_domain + ".jsonld"
+    if not os.path.exists(subdomain_path):
+        comment = input("Enter the description of Domain\n")
+        class_dict = obj
+        class_dict["@graph"][0]["@type"] = ["owl:Class", "rdfs:Class"]
+        class_dict["@graph"][0]["@id"] = "adex:" + sub_domain
+        class_dict["@graph"][0]["rdfs:comment"] = comment
+        class_dict["@graph"][0]["rdfs:label"] = sub_domain
+        dict1 = {}
+        dict1["rdfs:subClassOf"] = {"@id": "iudx:DataModel"}
+        obj["@graph"][0].update(dict1)
+
+        with open(subdomain_path, "w+") as prop_file:
+            json.dump(class_dict, prop_file, indent=4)
+
+
 def create_classes(properties_path, subclass):
     subdomain_path = properties_path + "/" + sub_domain + ".jsonld"
     if not os.path.exists(subdomain_path):
-        comment = input("Enter the description\n")
+        comment = input("Enter the description of Datamodel/Floating Class\n")
         class_dict = obj
-        del class_dict["@context"]['skos']
-        del class_dict["@context"]['schema']
-        del class_dict["@context"]['geojson']
-        del class_dict["@context"]['xsd']
         class_dict["@graph"][0]["@type"] = ["owl:Class", "rdfs:Class"]
         class_dict["@graph"][0]["@id"] = "adex:" + sub_domain
         class_dict["@graph"][0]["rdfs:comment"] = comment
@@ -250,7 +284,7 @@ def gen_properties(df):
 
             if "@graph" in obj.keys():
                 new_list = []
-                tmp_obj = OrderedDict()
+                tmp_obj = {}
                 new_list.append(tmp_obj)
                 tmp_obj["@id"] = "adex:" + csv_label
                 tmp_obj["@type"] = which_adex_property(csv_type)
@@ -323,30 +357,35 @@ def gen_properties(df):
 
 if __name__ == "__main__":
 
-    val = input("Do you want to make changes in existing Domain or Floating class(Y/N)\n").upper()
+    val = input("Do you want to add a new Domain (Y/N)\n").upper()
 
     options = ['Data Model', 'Floating Class']
     layout = [
         [sg.Listbox(options, size=(27, len(options)))],
         [sg.Button('Ok'), sg.Button('Cancel')]
     ]
-    window = sg.Window('Select an item to add', layout)
+    window = sg.Window('Select an item to add or update ', layout)
     values = window.read()
     window.close()
 
     if "Data Model" in values[1][0]:
         domain_name = input("Enter the Domain name (without trailing or inline spaces)\n")
-
     else:
-        domain_name = input("Enter the floating class name (without trailing or inline spaces)\n")
+        domain_name = Path(file_dir).stem
 
-    if val == "N":
+    if val == "Y":
         arr = next(os.walk(dir_home + "/data-models"))
-        if domain_name in arr[1]:
-            print("Domain/floating class already exists")
+        if domain_name in arr[1] and "Data Model" in values[1][0]:
+            print("Domain already exists")
+
+        elif domain_name in arr[1] and "Floating Class" in values[1][0]:
+            print("The Floating Class does not have a Domain.")
+
+        else:
+            create_domain(dir_home + "/data-models/classes")
 
     sub_domain = Path(file_dir).stem
-
+    print("sub_domain ------ ", sub_domain)
     model_name_dir = dir_home + "/data-models/" + domain_name
 
     check_dir(model_name_dir)
@@ -354,12 +393,11 @@ if __name__ == "__main__":
     class_path = model_name_dir + "/classes"
     check_dir(class_path)
     create_classes(class_path, values[1][0])
-    
-    #Fetching the data from csv file
-    
+
+    # Fetching the data from csv file
+
     df = pd.read_csv(file_dir).astype(str)
     gen_properties(df)
-
 
 
 

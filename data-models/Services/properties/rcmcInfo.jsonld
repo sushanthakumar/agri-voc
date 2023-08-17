@@ -1,0 +1,32 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org.in/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:rcmcInfo",
+            "@type": [
+                "adex:StructuredProperty"
+            ],
+            "rdfs:comment": "Detailed information about the RCMC (Registration-cum-membership-certificate) issued by Export Promotion Council.",
+            "rdfs:label": "rcmcInfo",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:FreightManagement"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:CertificateDesc"
+                }
+            ]
+        }
+    ]
+}

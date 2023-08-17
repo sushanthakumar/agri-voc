@@ -37,9 +37,28 @@
 				"unitCode": "INR",
 				"unitText": "Indian Rupee"
 			},
+			"insuranceCoverage": {
+				"type": "number",
+				"description": "The maximum amount payable in the event of a claim by the policy holder for the insurance policy corresponding to this observation.",
+				"unitCode": "INR",
+				"unitText": "Indian Rupee"
+			},
 			"policyNumber": {
 				"type": "string",
 				"description": "Insurance policy number corresponding to this observation"
+			},
+			"policyDate": {
+				"type": "string",
+				"description": "The date refers to the date on which the insurance policy itself becomes effective or starts providing coverage. It's the date from which the terms and conditions of the policy are applicable.",
+				"format": "date"
+			},
+			"agencyName": {
+				"type": "string",
+				"description": "The agency which procures the commodity corresponding to this observation."
+			},
+			"policyProtection": {
+				"type": "string",
+				"description": "The potential risk(s)/ event(s) that is (are) protected or insured against by the insurance policy corresponding to this observation. For eg., accidents, theft, fire, natural disasters, etc."
 			},
 			"cropSpeciesInfo": {
 				"type": "object",

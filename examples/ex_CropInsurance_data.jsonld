@@ -9,6 +9,9 @@
     "expiryDate": "2022-01-01",
     "renewalDate": "2022-02-01",
     "insurancePremium": 3000,
+    "agencyName": "United India",
+    "insuranceCoverage": 500000,
+    "policyProtection": ["Accidents", "Theft", "Fire", "Natural disasters"],
     "policyNumber": "BHAR00012345",
     "cropSpeciesInfo": {
         "cropNameCommon": "Rice",
