@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:FreightManagement",
-            "rdfs:comment": "FreightManagement",
+            "rdfs:comment": "A Data Model for freight management",
             "rdfs:label": "FreightManagement",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
