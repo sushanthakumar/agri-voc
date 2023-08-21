@@ -1,10 +1,16 @@
 {
+   "@context": "https://agrijson.adex.org.in",
+	"id": "provider-id/rs.adex.org.in/publicschemes-rg/publicschemes-ri",
+	"type": [
+		"adex:PublicSchemes",
+		"adex:Resource"
+	],
   "schemeID": "MSP1960",
   "schemeName": "Minimum Support Price(MSP)",
   "govtName": "Indian National Congress",
   "valueChainPhase": "distribution",
   "purposeDescription": "The minimum guaranteed price for agricultural products procured directly from farmers.",
-  "landHolding": "landHoldingMax1",
+  "landHolding": 5,
   "cropType": "cotton",
   "landGeography": "Hilly",
   "applicationProcess": ["Submit documents required to prove the genuineness of the farmer", "Verification of documents", "Approval for procurement",

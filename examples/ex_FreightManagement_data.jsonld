@@ -1,4 +1,10 @@
 {
+   "@context": "https://agrijson.adex.org.in",
+	"id": "provider-id/rs.adex.org.in/freightmgmt-rg/freightmgmt-ri",
+	"type": [
+		"adex:FreightManagement",
+		"adex:Resource"
+	],
   "exporterInfo": {
     "name": "AIC International",
     "house": "2 Ground floor",
