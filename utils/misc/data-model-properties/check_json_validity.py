@@ -21,8 +21,10 @@ def validate_json_files_in_folder(folder_path, output_file):
                         out_file.write(f"{file_path}: Invalid JSON\n")
 
 if __name__ == "__main__":
-    folder_path = "/home/monika/Documents/AGRI-VOC/agri-voc/data-models"
+    # folder_path = "/home/monika/Documents/AGRI-VOC/agri-voc/data-models"
+    folder_path = "/home/monika/Documents/AGRI-VOC/agri-voc/base-schemas"
 
+    # folder_path = "/home/monika/Documents/AGRI-VOC/agri-voc/examples"
     output_file = "json_validity.txt"
     validate_json_files_in_folder(folder_path, output_file)
     print(f"Validation results written to {output_file}")

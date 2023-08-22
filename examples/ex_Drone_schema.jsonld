@@ -196,7 +196,51 @@
 					},
 					"identityInfo": {
 						"type": "object",
-						"description": "Personal identification information issued by the government."
+						"description": "Personal identification information issued by the government.",
+						"properties": {
+							"bankAccountNo": {
+								"type": "number",
+								"description": "The bank account number of the individual or business corresponding to this observation",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"gstin": {
+								"type": "string",
+								"description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
+							},
+							"ifscCode": {
+								"type": "string",
+								"description": "The IFSC code for the bank corresponding to this observation"
+							},
+							"drivingLicense": {
+								"type": "string",
+								"description": "The driving license number of the individual corresponding to this observation."
+							},
+							"registrationNumber": {
+								"type": "string",
+								"description": "The registration number of the entity corresponding to this observation."
+							},
+							"digitalSignature": {
+								"type": "string",
+								"description": "The link to the digital signature of the entity corresponding to this observation."
+							},
+							"panNo": {
+								"type": "string",
+								"description": "The pan card number of the individual corresponding to this observation."
+							},
+							"fssaiLicense": {
+								"type": "string",
+								"description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+							},
+							"aadharNo": {
+								"type": "string",
+								"description": "The aadhar number issued by the government for the individual corresponding to this observation."
+							},
+							"iec": {
+								"type": "string",
+								"description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
+							}
+						}
 					},
 					"designation": {
 						"type": "string",
@@ -207,10 +251,6 @@
 			"registeringAuthority": {
 				"type": "string",
 				"description": "The name of the entity authorised to collect and/or verify user details for the issual of a digital certificate."
-			},
-			"registrationNumber": {
-				"type": "string",
-				"description": "The registration number of the machinery or equipment as provided by the registering authority corresponding to this observation."
 			},
 			"weight": {
 				"type": "number",
@@ -277,7 +317,51 @@
 					},
 					"identityInfo": {
 						"type": "object",
-						"description": "Personal identification information issued by the government."
+						"description": "Personal identification information issued by the government.",
+						"properties":{
+							"bankAccountNo": {
+								"type": "number",
+								"description": "The bank account number of the individual or business corresponding to this observation",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"gstin": {
+								"type": "string",
+								"description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
+							},
+							"ifscCode": {
+								"type": "string",
+								"description": "The IFSC code for the bank corresponding to this observation"
+							},
+							"drivingLicense": {
+								"type": "string",
+								"description": "The driving license number of the individual corresponding to this observation."
+							},
+							"registrationNumber": {
+								"type": "string",
+								"description": "The registration number of the entity corresponding to this observation."
+							},
+							"digitalSignature": {
+								"type": "string",
+								"description": "The link to the digital signature of the entity corresponding to this observation."
+							},
+							"panNo": {
+								"type": "string",
+								"description": "The pan card number of the individual corresponding to this observation."
+							},
+							"fssaiLicense": {
+								"type": "string",
+								"description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+							},
+							"aadharNo": {
+								"type": "string",
+								"description": "The aadhar number issued by the government for the individual corresponding to this observation."
+							},
+							"iec": {
+								"type": "string",
+								"description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
+							}
+						}
 					},
 					"designation": {
 						"type": "string",
@@ -291,6 +375,54 @@
 				"unitCode": "C62",
 				"unitText": "Dimensionless"
 			},
+			"identityInfo": {
+						"type": "object",
+						"description": "Personal identification information issued by the government.",
+						"properties": {
+							"bankAccountNo": {
+								"type": "number",
+								"description": "The bank account number of the individual or business corresponding to this observation",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"gstin": {
+								"type": "string",
+								"description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
+							},
+							"ifscCode": {
+								"type": "string",
+								"description": "The IFSC code for the bank corresponding to this observation"
+							},
+							"drivingLicense": {
+								"type": "string",
+								"description": "The driving license number of the individual corresponding to this observation."
+							},
+							"registrationNumber": {
+								"type": "string",
+								"description": "The registration number of the entity corresponding to this observation."
+							},
+							"digitalSignature": {
+								"type": "string",
+								"description": "The link to the digital signature of the entity corresponding to this observation."
+							},
+							"panNo": {
+								"type": "string",
+								"description": "The pan card number of the individual corresponding to this observation."
+							},
+							"fssaiLicense": {
+								"type": "string",
+								"description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+							},
+							"aadharNo": {
+								"type": "string",
+								"description": "The aadhar number issued by the government for the individual corresponding to this observation."
+							},
+							"iec": {
+								"type": "string",
+								"description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
+							}
+						}
+					},
 			"modelInfo": {
 				"type": "object",
 				"description": "The make/model information of the entity corresponding to this observation.",

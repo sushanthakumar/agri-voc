@@ -27,6 +27,9 @@
                 },
                 {
                     "@id": "adex:Soil"
+                },
+                {
+                    "@id": "adex:FarmerCollective"
                 }
             ],
             "adex:rangeIncludes": [

@@ -42,6 +42,9 @@
                 },
                 {
                     "@id": "adex:Soil"
+                },
+                {
+                    "@id": "adex:GhgReport"
                 }
             ],
             "adex:rangeIncludes": [

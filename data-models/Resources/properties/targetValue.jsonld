@@ -8,33 +8,30 @@
     },
     "@graph": [
         {
-            "@id": "adex:comments",
+            "@id": "adex:targetValue",
             "@type": [
-                "adex:TextProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "User comments corresponding to this observation.",
-            "rdfs:label": "comments",
+            "rdfs:comment": "Target cap of GHG emissions set by the management for the reporting period corresponding to this observation.",
+            "rdfs:label": "targetValue",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Version"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
+                    "@id": "adex:GhgReport"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
-                },
-                {
-                    "@id": "adex:Text-list ValueDescriptor"
                 }
             ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
+            "skos:exactMatch": {
+                "@id": "Fiware.KeyPerformanceIndicator.businessTarget"
             }
         }
     ]

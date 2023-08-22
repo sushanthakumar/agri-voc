@@ -195,7 +195,7 @@
 						"properties": {
 							"bankAccountNo": {
 								"type": "number",
-								"description": "The bank account number of the individual or business corresponding to this observation.",
+								"description": "The bank account number of the individual or business corresponding to this observation",
 								"unitCode": "C62",
 								"unitText": "Dimensionless"
 							},
@@ -205,11 +205,19 @@
 							},
 							"ifscCode": {
 								"type": "string",
-								"description": "The IFSC code for the bank corresponding to this observation."
+								"description": "The IFSC code for the bank corresponding to this observation"
 							},
 							"drivingLicense": {
 								"type": "string",
 								"description": "The driving license number of the individual corresponding to this observation."
+							},
+							"registrationNumber": {
+								"type": "string",
+								"description": "The registration number of the entity corresponding to this observation."
+							},
+							"digitalSignature": {
+								"type": "string",
+								"description": "The link to the digital signature of the entity corresponding to this observation."
 							},
 							"panNo": {
 								"type": "string",
@@ -222,6 +230,10 @@
 							"aadharNo": {
 								"type": "string",
 								"description": "The aadhar number issued by the government for the individual corresponding to this observation."
+							},
+							"iec": {
+								"type": "string",
+								"description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
 							}
 						}
 					},

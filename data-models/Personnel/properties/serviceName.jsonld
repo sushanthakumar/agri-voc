@@ -8,31 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:identityInfo",
+            "@id": "adex:serviceName",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "Personal identification information issued by the government.",
-            "rdfs:label": "identityInfo",
+            "rdfs:comment": "Name of the service offered by an organization or an entity corresponding to this observation.",
+            "rdfs:label": "serviceName",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:PersonnelDesc"
-                },
-                {
                     "@id": "adex:FarmerCollective"
-                },
-                {
-                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:IdentityDesc"
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

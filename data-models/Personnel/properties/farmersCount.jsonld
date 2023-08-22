@@ -14,12 +14,12 @@
             ],
             "rdfs:comment": "The total number of farmers registered with the market corresponding to this observation.",
             "rdfs:label": "farmersCount",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriMarket"
+                },
+                {
+                    "@id": "adex:FarmerCollective"
                 }
             ],
             "adex:rangeIncludes": [
@@ -29,7 +29,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

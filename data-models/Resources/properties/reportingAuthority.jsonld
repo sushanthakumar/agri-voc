@@ -8,18 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:comments",
+            "@id": "adex:reportingAuthority",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "User comments corresponding to this observation.",
-            "rdfs:label": "comments",
+            "rdfs:comment": "The name of the entity authorised to provide the GHG (GreenHouseGas) report.",
+            "rdfs:label": "reportingAuthority",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Version"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
+                    "@id": "adex:GhgReport"
                 }
             ],
             "adex:rangeIncludes": [
@@ -28,14 +28,8 @@
                 },
                 {
                     "@id": "adex:ValueDescriptor"
-                },
-                {
-                    "@id": "adex:Text-list ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

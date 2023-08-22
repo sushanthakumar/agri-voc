@@ -26,6 +26,9 @@
                 },
                 {
                     "@id": "adex:FreightManagement"
+                },
+                {
+                    "@id": "adex:FarmerCollective"
                 }
             ],
             "adex:rangeIncludes": [

@@ -8,34 +8,29 @@
     },
     "@graph": [
         {
-            "@id": "adex:comments",
+            "@id": "adex:ghgScope",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "User comments corresponding to this observation.",
-            "rdfs:label": "comments",
+            "rdfs:comment": "Scope of the emission being reported as per GHG Protocol - Scope 1, Scope 2, Scope 3 as per the India GHG Program https://www.indiaghgp.org/explaining-scope-1-2-3",
+            "rdfs:label": "ghgScope",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Version"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
+                    "@id": "adex:GhgReport"
                 }
             ],
             "adex:rangeIncludes": [
                 {
+                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
-                },
-                {
-                    "@id": "adex:Text-list ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

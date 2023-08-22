@@ -8,34 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:comments",
+            "@id": "adex:creditValue",
             "@type": [
-                "adex:TextProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "User comments corresponding to this observation.",
-            "rdfs:label": "comments",
+            "rdfs:comment": "Amount of carbon credits or its equivalents for the reporting period associated with an organisation corresponding to this observation.",
+            "rdfs:label": "creditValue",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Version"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
+                    "@id": "adex:GhgReport"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
-                },
-                {
-                    "@id": "adex:Text-list ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

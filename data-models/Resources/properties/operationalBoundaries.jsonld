@@ -8,18 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:comments",
+            "@id": "adex:operationalBoundaries",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "User comments corresponding to this observation.",
-            "rdfs:label": "comments",
+            "rdfs:comment": "List of LOB's and facilities included in the report corresponding to this observation.",
+            "rdfs:label": "operationalBoundaries",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Version"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
+                    "@id": "adex:GhgReport"
                 }
             ],
             "adex:rangeIncludes": [
@@ -28,14 +28,8 @@
                 },
                 {
                     "@id": "adex:ValueDescriptor"
-                },
-                {
-                    "@id": "adex:Text-list ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

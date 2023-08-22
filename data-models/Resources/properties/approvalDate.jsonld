@@ -8,18 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:comments",
+            "@id": "adex:approvalDate",
             "@type": [
-                "adex:TextProperty"
+                "adex:TimeProperty"
             ],
-            "rdfs:comment": "User comments corresponding to this observation.",
-            "rdfs:label": "comments",
+            "rdfs:comment": "The date on which a report or document has been offically approved.",
+            "rdfs:label": "approvalDate",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Version"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
+                    "@id": "adex:GhgReport"
                 }
             ],
             "adex:rangeIncludes": [
@@ -28,14 +28,8 @@
                 },
                 {
                     "@id": "adex:ValueDescriptor"
-                },
-                {
-                    "@id": "adex:Text-list ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

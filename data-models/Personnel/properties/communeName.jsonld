@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@id": "adex:comments",
+            "@id": "adex:serviceName",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "User comments corresponding to this observation.",
-            "rdfs:label": "comments",
+            "rdfs:comment": "The name of an agricultural cooperative or farmers' group, which is an organized entity formed by a group of farmers who come together for collective action, mutual benefit, and shared goals within the agricultural sector.",
+            "rdfs:label": "serviceName",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:Version"
-                },
                 {
                     "@id": "adex:FarmerCollective"
                 }
@@ -28,14 +28,8 @@
                 },
                 {
                     "@id": "adex:ValueDescriptor"
-                },
-                {
-                    "@id": "adex:Text-list ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

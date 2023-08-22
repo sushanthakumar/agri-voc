@@ -12,14 +12,14 @@
             "@type": [
                 "adex:TimeProperty"
             ],
-            "rdfs:comment": "The date when the business/market was established",
+            "rdfs:comment": "The date when the association/business/market was established",
             "rdfs:label": "foundingDate",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriMarket"
+                },
+                {
+                    "@id": "adex:FarmerCollective"
                 }
             ],
             "adex:rangeIncludes": [
@@ -29,7 +29,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

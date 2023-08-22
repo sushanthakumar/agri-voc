@@ -8,15 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:registrationNumber",
+            "@id": "adex:refPeriod",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The registration number of the machinery or equipment as provided by the registering authority corresponding to this observation.",
-            "rdfs:label": "registrationNumber",
+            "rdfs:comment": "A specific timeframe or time interval that is chosen as a basis for comparison, analysis, or measurement of certain events, data, or phenomena.",
+            "rdfs:label": "refPeriod",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Drone"
+                    "@id": "adex:GhgReport"
                 }
             ],
             "adex:rangeIncludes": [
@@ -26,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

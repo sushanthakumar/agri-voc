@@ -8,34 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:comments",
+            "@id": "adex:offsetValue",
             "@type": [
-                "adex:TextProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "User comments corresponding to this observation.",
-            "rdfs:label": "comments",
+            "rdfs:comment": "The offset value represents a measurable decrease or elimination of greenhouse gas emissions, specifically carbon dioxide (CO2) or its equivalents, permitted or asserted during the reporting period corresponding to this observation.",
+            "rdfs:label": "offsetValue",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Version"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
+                    "@id": "adex:GhgReport"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
-                },
-                {
-                    "@id": "adex:Text-list ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }
