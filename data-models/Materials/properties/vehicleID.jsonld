@@ -8,34 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:subsidyAmount",
+            "@id": "adex:vehicleID",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The amount of government subsidy for a product corresponding to this observation for the welfare of the people.",
-            "rdfs:label": "subsidyAmount",
+            "rdfs:comment": "The unique ID or code of the vehicle corresponding to this observation",
+            "rdfs:label": "vehicleID",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Fertilizer"
-                },
-                {
                     "@id": "adex:AgriMachinery"
-                },
-                {
-                    "@id": "adex:AgroChemicals"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

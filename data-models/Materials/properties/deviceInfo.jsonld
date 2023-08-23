@@ -14,19 +14,22 @@
             ],
             "rdfs:comment": "The information of the device/sensor used in/for the entity/ service  corresponding to this observation.",
             "rdfs:label": "deviceInfo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Drone"
+                },
+                {
+                    "@id": "adex:AgriMachinery"
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:Device"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

@@ -12,11 +12,8 @@
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "The information about the owner of the owner of the vehicle/machinery for agricultural purposes.",
+            "rdfs:comment": "The information about the entity which leases the vehicle/machinery for agricultural purposes.",
             "rdfs:label": "leasingEntity",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriMachinery"
@@ -26,7 +23,10 @@
                 {
                     "@id": "adex:PersonnelDesc"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

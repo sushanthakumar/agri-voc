@@ -12,7 +12,7 @@
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "The make/model information of the entity corresponding to this observation.",
+            "rdfs:comment": "The make/model information of the vehicle corresponding to this observation.",
             "rdfs:label": "modelInfo",
             "adex:domainIncludes": [
                 {

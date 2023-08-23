@@ -17,6 +17,9 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Drone"
+                },
+                {
+                    "@id": "adex:AgriMachinery"
                 }
             ],
             "adex:rangeIncludes": [
