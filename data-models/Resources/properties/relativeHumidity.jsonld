@@ -25,7 +25,10 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:TimeSeriesAggregation"
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
             ],
             "skos:exactMatch": {
