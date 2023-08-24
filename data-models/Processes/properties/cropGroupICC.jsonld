@@ -12,12 +12,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:cropType",
+            "@id": "adex:cropGroupICC",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Type of the crop species. For eg., Pulses, Cereals, Legumes, Veg Proteins, cash crop etc",
-            "rdfs:label": "cropType",
+            "rdfs:comment": "The crop classification as specified by the FAO (Food and Agriculture Organization) in a classification system called the ICC (International Standard for Coding Crops) classification, which groups crops into nine categories based on their botanical characteristics and use.",
+            "rdfs:label": "cropGroupICC",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },

@@ -15,9 +15,10 @@
 	"harvestedParts": "Seed",
 	"cropCategory": "Food",
 	"cropAge": 90,
-	"cropType": "Food",
+	"cropGroupICC": "Cereals",
 	"cropCodeICC": "PQ1231",
 	"cropSeason": "Kharif",
+	"season": "Monsoon",
 	"cropArea": 2.5,
 	"harvestEquipmentType": ["Machinery"],
 	"cropSpacing": 1.5,
@@ -26,7 +27,43 @@
 		"diseaseName": "Rice blast",
 		"partsAffected": "Leaves",
 		"pestName": "Pyricularia orizae",
+		"pestCode": "Py-1.23",
 		"infectionStage": "feeding and damage",
-		"diseaseSymptoms": "Yellow leaves"
+		"diseaseSymptoms": "Yellow leaves",
+		"controlMeasures":["keeping soil flooded 2 to 4 inches deep from the time rice plants are 6 to 8 inches tall until draining for harvest"],
+		"preventiveMeasures": ["crop rotation", "use of fungicides", "plantation in warm soil"]
+	},
+	"cropHeight":1.2,
+	"cropDensity":250,
+	"landIdentityInfo":{
+	    "surveyNumber": "26 / 2e",
+		"baseSurveyNumber": 26,
+		"landParcelID": 34554321345672
+	},
+	"mediaURL":["https://lpdaac.usgs.gov/media/images/MOD13Q1_V6_28Jul2018_Brazil_Hero.original_dEF2JTV.jpg"],
+	"landExtent":50,
+	"recommendedCrops":["Rice", "Wheat", "Maize"],
+	"recommendedCropVarieties":["Ariyan Nel, Arubatham Samba, Aruvadhan Kodai", "Karen Narendra, Karen Vandana, Karan Shriya", "Merut Yellow, Jaunpuri, Sartuj" ],
+	"soilClass": "Plinthosols",
+	"soilCategory": "Soils distinguished by Fe/Al chemistry",
+	"ndvi": ["http://api.agromonitoring.com/image/1.0/020598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a", "http://api.agromonitoring.com/image/1.0/030598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a"],
+	"lai": ["http://doi.org/10.5067/MODIS/MOD15A2H.006", "http://doi.org/10.5067/MODIS/MYD15A2H.006"],
+	"agriculturalExpert":{
+	    "name":"Chandran",
+        "phone":"+919876543210",
+        "email" : "chandranphd@gmail.com",
+        "academicQualification": "Doctor of Philosophy",
+        "workStatus": "Permanent",
+        "nationality": "Indian",
+        "expertise": "Pest Management"
+	},
+	"agriculturalResearcher":{
+	    "name":"Raman",
+        "phone":"+919876543210",
+        "email" : "ramanphd@gmail.com",
+        "academicQualification": "Doctor of Philosophy",
+        "workStatus": "Permanent",
+        "nationality": "Indian",
+        "fieldOfResearch": "Microbiologist"
 	}
 }

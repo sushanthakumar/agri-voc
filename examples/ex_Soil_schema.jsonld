@@ -35,6 +35,12 @@
 						"unitCode": "C62",
 						"unitText": "Dimensionless"
 					},
+					"landExtent": {
+                          "type": "number",
+                          "description": "Area of the land corresponding to this observation.",
+                          "unitCode": "ACR",
+                          "unitText": "acre"
+                      },
 					"recommendedCropVariety": {
 						"type": "array",
 						"description": "The top recommended crop varieties that can be cultivated for the season as suggested by the advisory entity.",
@@ -151,10 +157,11 @@
 						"description": "The name of the crop that was cultivated prior to the current crop in the land/ soil corresponding to this observation."
 					},
 					"lai": {
-						"type": "number",
+						"type": "array",
 						"description": "The Leaf Area Index (LAI) quantifies the amount of leaf material in a canopy. It is the ratio of one-sided leaf area per unit ground area.",
-						"unitCode": "C62",
-						"unitText": "Dimensionless"
+						"items": {
+					       "type": "string"
+				        }
 					},
 					"seedVarietyCode": {
 						"type": "string",
@@ -640,9 +647,9 @@
 						"type": "string",
 						"description": "Denotes whether the crop species is a major/sole crop with respect to the farmland corresponding to this observation. ENUM[Y, N]"
 					},
-					"cropType": {
+					"cropGroupICC": {
 						"type": "string",
-						"description": "Type of the crop species. For eg., Pulses, Cereals, Legumes, Veg Proteins, cash crop etc"
+						"description": "The crop classification as specified by the FAO (Food and Agriculture Organization) in a classification system called the ICC (International Standard for Coding Crops) classification, which groups crops into nine categories based on their botanical characteristics and use."
 					},
 					"harvestEquipmentType": {
 						"type": "array",

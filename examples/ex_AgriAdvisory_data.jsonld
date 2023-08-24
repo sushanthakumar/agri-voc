@@ -1,27 +1,28 @@
 {
 	"@context": "https://agrijson.adex.org.in",
-	"id": "provider-id/rs.adex.org.in/agriadvisory-rg/agriadvisory-ri",
-	"type": [
-		"adex:AgriAdvisory",
-		"adex:Resource"
-	],
+	"id": "provider-id/rs.adex.org.in/agri-advisory-rg/agri-advisory-ri",
+	"type": ["adex:AgriAdvisory", "adex:Resource"],
 	"mediaURL": ["https://gov-crop-advisory.com/rice"],
-	"advisoryNature": "Government",
-	"natureOfProblem": "crop disease",
+	"advisoryNature": "Disease management",
+	"natureOfProblem": "Moisture stress",
 	"advisoryChannel": ["Website", "Radio"],
-	"advisoryID": "IND0056",
+	"fileFormat": "Text",
+	"advisoryID": "TL0056",
 	"cropNameCommon": "Rice",
 	"cropDiseaseInfo": {
 		"diseaseName": "Rice blast",
 		"partsAffected": "Leaves",
-		"pestName": "Pyricularia orizae",
-		"infectionStage": "colonization",
+		"causalOrganism": "Pyricularia orizae",
+		"infectionStage": "Severe",
 		"diseaseSymptoms": "Yellow leaves",
-        "preventionMeasures":["crop rotation", "fungicides"]
+		"diseasePreventionMeasures": ["Plant the least-susceptible varieties and use a broad-spectrum seed treatment.", "Grow rice in fields where flood levels are easily maintained."]
 	},
-	"cropSeason": "Kharif",
+	"ndvi": ["http://api.agromonitoring.com/image/1.0/020598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a", "http://api.agromonitoring.com/image/1.0/030598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a"],
+	"lai": ["http://doi.org/10.5067/MODIS/MOD15A2H.006", "http://doi.org/10.5067/MODIS/MYD15A2H.006"],
+	"season": "Monsoon",
 	"cropCodeICC": "PQ1231",
 	"cropVarietyName": "CR Dhan 801",
+	"comments": "Good",
 	"localeInfo": {
 		"subdistrictName": "BONAKAL",
 		"clusterName": "BONAKAL",

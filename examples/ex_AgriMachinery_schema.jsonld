@@ -221,9 +221,9 @@
 								"unitCode": "C62",
 								"unitText": "dimensionless"
 							},
-							"cropType": {
+							"cropGroupICC": {
 								"type": "string",
-								"description": "Type of the crop species. For eg., Pulses, Cereals, Legumes, Veg Proteins, cash crop etc"
+								"description": "The crop classification as specified by the FAO (Food and Agriculture Organization) in a classification system called the ICC (International Standard for Coding Crops) classification, which groups crops into nine categories based on their botanical characteristics and use."
 							},
 							"cropCodeICC": {
 								"type": "string",

@@ -24,6 +24,9 @@
                 },
                 {
                     "@id": "adex:PublicSchemes"
+                },
+                {
+                     "@id": "adex:CropSpecies"
                 }
             ],
             "adex:rangeIncludes": [

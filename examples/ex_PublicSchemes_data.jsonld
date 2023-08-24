@@ -11,7 +11,7 @@
   "valueChainPhase": "distribution",
   "purposeDescription": "The minimum guaranteed price for agricultural products procured directly from farmers.",
   "landHolding": 5,
-  "cropType": "cotton",
+  "cropGroupICC": "Cereals",
   "landGeography": "Hilly",
   "applicationProcess": ["Submit documents required to prove the genuineness of the farmer", "Verification of documents", "Approval for procurement",
     "Quality of stock", "Payment to the farmer"],

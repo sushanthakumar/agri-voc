@@ -9,23 +9,20 @@ def is_valid_json(file_path):
     except (ValueError, UnicodeDecodeError):
         return False
 
-def validate_json_files_in_folder(folder_path, output_file):
-    with open(output_file, 'w') as out_file:
+def validate_json_files_in_folder(folder_path):
+
+    with open("json_validity.txt", 'a') as out_file:
         for root, dirs, files in os.walk(folder_path):
             for file_name in files:
                 if file_name.endswith('.jsonld'):
                     file_path = os.path.join(root, file_name)
-                    if is_valid_json(file_path):
-                        out_file.write(f"{file_path}: Valid JSON\n")
-                    else:
+                    if not is_valid_json(file_path):
                         out_file.write(f"{file_path}: Invalid JSON\n")
 
 if __name__ == "__main__":
-    # folder_path = "/home/monika/Documents/AGRI-VOC/agri-voc/data-models"
-    # folder_path = "/home/monika/Documents/AGRI-VOC/agri-voc/base-schemas"
-
-    folder_path = "/home/monika/Documents/AGRI-VOC/agri-voc/examples"
+    folder_paths = ["/home/monika/Documents/AGRI-VOC/agri-voc/data-models", "/home/monika/Documents/AGRI-VOC/agri-voc/base-schemas", "/home/monika/Documents/AGRI-VOC/agri-voc/examples"]
     output_file = "json_validity.txt"
-    validate_json_files_in_folder(folder_path, output_file)
+    list(map(validate_json_files_in_folder, folder_paths))
+    # validate_json_files_in_folder(folder_path, output_file)
     print(f"Validation results written to {output_file}")
 

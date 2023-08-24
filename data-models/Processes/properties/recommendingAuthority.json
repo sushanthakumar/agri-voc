@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@id": "adex:regionalLandID",
+            "@id": "adex:recommendingAuthority",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The unique ID representing the regional language of the location corresponding to this observation.",
-            "rdfs:label": "regionalLandID",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
+            "rdfs:comment": "Provides guidance and suggestions on agricultural practices, techniques, and decisions to enhance productivity and sustainability.",
+            "rdfs:label": "recommendingAuthority",
             "adex:domainIncludes": [
+                {
+                    "@id": "adex:CropSpecies"
+                },
                 {
                     "@id": "adex:AgriAdvisory"
                 }
@@ -29,7 +29,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

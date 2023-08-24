@@ -24,14 +24,14 @@
 			"wingSpan": {
 				"type": "number",
 				"description": "The maximum extent across the wings of the drone, measured from tip to tip",
-				"unitCode": "metre",
-				"unitText": "MTR"
+				"unitCode": "MTR",
+				"unitText": "metre"
 			},
 			"wingLength": {
 				"type": "number",
 				"description": "The length of the wing of the drone corresponding to this observation",
-				"unitCode": "metre",
-				"unitText": "MTR"
+				"unitCode": "MTR",
+				"unitText": "metre"
 			},
 			"lessorInfo": {
 				"type": "object",
