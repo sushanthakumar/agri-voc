@@ -35,6 +35,10 @@
                 },
                 {
                     "@id": "adex:ValueDescriptor"
+                },
+                {
+                    "@container": "@list",
+                    "@id": "adex:Text"
                 }
             ]
         }

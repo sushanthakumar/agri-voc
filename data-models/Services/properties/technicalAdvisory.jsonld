@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "A detailed professional advisory to the farmers, for the cultivation of a specific crop or rearing of livestock or other agricultural practice corresponding to this observation.",
             "rdfs:label": "technicalAdvisory",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriAdvisory"
@@ -33,7 +30,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

@@ -30,6 +30,9 @@
                 },
                 {
                     "@id": "adex:Soil"
+                },
+                {
+                    "@id": "adex:AgriAdvisory"
                 }
             ],
             "adex:rangeIncludes": [

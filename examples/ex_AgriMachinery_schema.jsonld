@@ -249,14 +249,14 @@
 										"type": "string",
 										"description": "The parts of the crop affected by the crop disease."
 									},
-									"diseaseControlMeasures": {
+									"controlMeasures": {
 										"type": "array",
 										"items": {
 											"type": "string"
 										},
 										"description": "The measures that needs to taken to reduce or control the pest and disease in the crops"
 									},
-									"causalOrganism": {
+									"pestName": {
 										"type": "string",
 										"description": "The name of the organism/pest which has caused the crop disease."
 									},
@@ -268,7 +268,7 @@
 										"type": "string",
 										"description": "Respresents the symptoms for the crop disease."
 									},
-									"diseasePreventionMeasures": {
+									"preventionMeasures": {
 										"type": "array",
 										"items": {
 											"type": "string"

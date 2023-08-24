@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:diseaseControlMeasures",
+            "@id": "adex:diseaseCode",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The measures that needs to taken to reduce or control the pest and disease in the crops",
-            "rdfs:label": "diseaseControlMeasures",
+            "rdfs:comment": "The unique code of the disease corresponding to this observation.",
+            "rdfs:label": "diseaseCode",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
@@ -24,7 +24,6 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {

@@ -14,10 +14,10 @@
 	"cropDiseaseInfo": {
 		"diseaseName": "Rice blast",
 		"partsAffected": "Leaves",
-		"causalOrganism": "Pyricularia orizae",
-		"infectionStage": "Severe",
+		"pestName": "Pyricularia orizae",
+		"infectionStage": "colonization",
 		"diseaseSymptoms": "Yellow leaves",
-        "diseasePreventionMeasures":["crop rotation", "fungicides"]
+        "preventionMeasures":["crop rotation", "fungicides"]
 	},
 	"cropSeason": "Kharif",
 	"cropCodeICC": "PQ1231",

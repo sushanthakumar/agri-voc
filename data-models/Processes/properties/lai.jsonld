@@ -18,12 +18,12 @@
             ],
             "rdfs:comment": "The Leaf Area Index (LAI) quantifies the amount of leaf material in a canopy. It is the ratio of one-sided leaf area per unit ground area.",
             "rdfs:label": "lai",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropSpecies"
+                },
+                {
+                    "@id": "adex:AgriAdvisory"
                 }
             ],
             "adex:rangeIncludes": [
@@ -33,7 +33,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

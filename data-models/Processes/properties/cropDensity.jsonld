@@ -12,12 +12,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:plantDensity",
+            "@id": "adex:cropDensity",
             "@type": [
                 "adex:QuantitativeProperty"
             ],
             "rdfs:comment": "The average number of crops/plants per square unit of the land corresponding to this observation.",
-            "rdfs:label": "plantDensity",
+            "rdfs:label": "cropDensity",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },

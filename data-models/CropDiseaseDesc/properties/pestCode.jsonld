@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:diseasePreventionMeasures",
+            "@id": "adex:pestCode",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The measures that has to be taken to prevent the attack of pest and diseases for the crops.",
-            "rdfs:label": "diseasePreventionMeasures",
+            "rdfs:comment": "The unique code identifying the organism which has affected the crop.",
+            "rdfs:label": "pestCode",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
@@ -24,7 +24,6 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {

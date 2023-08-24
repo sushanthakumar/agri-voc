@@ -8,28 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:infectionStage",
+            "@id": "adex:hasMoistureStress",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The current stage of the infection caused by the disease or pest corresponding to this observation. For eg., initial infestation, colonization, feeding and damage, incubation, reproduction etc.",
-            "rdfs:label": "infectionStage",
+            "rdfs:comment": "Whether the crop is under moisture stress or not. True - is the crop is under moisture stress, False - if it is not.",
+            "rdfs:label": "hasMoistureStress",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:CropDiseaseDesc"
+                    "@id": "adex:CropSpecies"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Boolean"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

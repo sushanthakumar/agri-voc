@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "A brief on how the weather has been in the past and/or is to be in the near future and/or is to prevail for the current day.",
             "rdfs:label": "weatherSummary",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriAdvisory"
@@ -33,7 +30,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

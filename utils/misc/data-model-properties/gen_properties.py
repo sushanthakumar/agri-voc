@@ -2,6 +2,7 @@ import deepdiff
 # deepdiff 5.8.1
 
 import csv
+import re
 import json
 import copy
 import os
@@ -159,7 +160,7 @@ def create_domain(properties_path):
 def create_classes(properties_path, subclass):
     subdomain_path = properties_path + "/" + sub_domain + ".jsonld"
     if not os.path.exists(subdomain_path):
-        comment = input("Enter the description of Datamodel/Floating Class\n")
+        comment = input(f"Enter the description of {sub_domain}\n")
         class_dict = obj
         class_dict["@graph"][0]["@type"] = ["owl:Class", "rdfs:Class"]
         class_dict["@graph"][0]["@id"] = "adex:" + sub_domain
@@ -335,8 +336,8 @@ def gen_properties(df):
             else:
                 print("@graph missing in  " + csv_label)
         if item[8] == "1":
-            base_property = item[0]
-            domain = item[3]
+            base_property = re.sub(r'[,\s]', '', item[0])
+            domain = re.sub(r'[,\s]', '', item[3])
             range_include = item[4].strip()
             filename = dir_home + "/base-schemas/properties/" + base_property + ".jsonld"
             jsonld_update(filename, domain, "adex:domainIncludes", "baseSchema")
@@ -344,8 +345,8 @@ def gen_properties(df):
 
         if item[7] == "1":
             # try:
-            base_property = item[0]
-            domain = item[3]
+            base_property = re.sub(r'[,\s]', '', item[0])
+            domain = re.sub(r'[,\s]', '', item[3])
             range_include = item[4].strip()
             property_path = find_name(base_property + '.jsonld', dir_home)
             jsonld_update(property_path[0], domain, "adex:domainIncludes", "")
@@ -357,7 +358,7 @@ def gen_properties(df):
 
 if __name__ == "__main__":
 
-    val = input("Do you want to add a new Domain (Y/N)\n").upper()
+    val = re.sub(r'[,\s]', '', input("Do you want to add a new Domain (Y/N)\n").upper())
 
     options = ['Data Model', 'Floating Class']
     layout = [
@@ -378,7 +379,7 @@ if __name__ == "__main__":
         if domain_name in arr[1] and "Data Model" in values[1][0]:
             print("Domain already exists")
 
-        elif domain_name in arr[1] and "Floating Class" in values[1][0]:
+        elif "Floating Class" in values[1][0]:
             print("The Floating Class does not have a Domain.")
 
         else:

@@ -12,11 +12,8 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The name of the disease that has affected the crop/ farm.",
+            "rdfs:comment": "The name of the disease corresponding to this observation.",
             "rdfs:label": "diseaseName",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropDiseaseDesc"
@@ -29,7 +26,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

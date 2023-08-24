@@ -8,12 +8,15 @@
     },
     "@graph": [
         {
-            "@id": "adex:infectionStage",
+            "@id": "adex:controlMeasures",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The current stage of the infection caused by the disease or pest corresponding to this observation. For eg., initial infestation, colonization, feeding and damage, incubation, reproduction etc.",
-            "rdfs:label": "infectionStage",
+            "rdfs:comment": "The measures that need to be taken in order to mitigate or control the adverse effects of a problem, hazard, or any unfavourable incidents.",
+            "rdfs:label": "controlMeasures",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropDiseaseDesc"
@@ -21,15 +24,13 @@
             ],
             "adex:rangeIncludes": [
                 {
+                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

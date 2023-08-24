@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:causalOrganism",
+            "@id": "adex:diseaseImpact",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The name of the organism/pest which has caused the crop disease.",
-            "rdfs:label": "causalOrganism",
+            "rdfs:comment": "The effects and consequences of crop diseases(caused by pathogens such as bacteria, viruses, fungi, and parasites) on farmers, communities, ecosystems and public health.",
+            "rdfs:label": "diseaseImpact",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },

@@ -8,12 +8,15 @@
     },
     "@graph": [
         {
-            "@id": "adex:infectionStage",
+            "@id": "adex:pestImpact",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The current stage of the infection caused by the disease or pest corresponding to this observation. For eg., initial infestation, colonization, feeding and damage, incubation, reproduction etc.",
-            "rdfs:label": "infectionStage",
+            "rdfs:comment": "The effects and consequences of pests on various aspects of human activities, ecosystems and environments. Such as whiteflies, thrips, leafhoppers, grasshoppers, etc.",
+            "rdfs:label": "pestImpact",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropDiseaseDesc"
@@ -26,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

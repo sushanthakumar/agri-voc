@@ -14,12 +14,12 @@
             ],
             "rdfs:comment": "The date of issual of consent for the data corresponding to this observation.",
             "rdfs:label": "validFrom",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:ConsentArtifact"
+                },
+                {
+                    "@id": "adex:AgriAdvisory"
                 }
             ],
             "adex:rangeIncludes": [
@@ -29,7 +29,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

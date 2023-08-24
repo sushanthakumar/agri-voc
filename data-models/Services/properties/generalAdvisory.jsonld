@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "A general advisory to the farmers, for the cultivation of crops in regards to the conditions of weather, soil ,land etc. It may include warnings of potential catastrophical events.",
             "rdfs:label": "generalAdvisory",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriAdvisory"
@@ -33,7 +30,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

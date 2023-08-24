@@ -21,8 +21,8 @@
   	"businessAddress": {
 		"buildingNum": "52",
 	  	"street": "A street",
-		"locality": "Tirunelveli",
-	  	"villageTownCity": "Thenkasi",
+		"locality": "Thenkasi",
+	  	"cityName": "Tirunelveli",
 	  	"state": "Tamil Nadu",
 		"country": "India",
 		"pincode": 627811

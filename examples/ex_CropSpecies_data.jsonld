@@ -25,8 +25,8 @@
 	"cropDiseaseInfo": {
 		"diseaseName": "Rice blast",
 		"partsAffected": "Leaves",
-		"causalOrganism": "Pyricularia orizae",
-		"infectionStage": "Severe",
+		"pestName": "Pyricularia orizae",
+		"infectionStage": "feeding and damage",
 		"diseaseSymptoms": "Yellow leaves"
 	}
 }

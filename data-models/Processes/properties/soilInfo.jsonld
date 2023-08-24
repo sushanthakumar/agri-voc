@@ -18,19 +18,22 @@
             ],
             "rdfs:comment": "Comprehensive information of the soil corresponding to this observation",
             "rdfs:label": "soilInfo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropSpecies"
+                },
+                {
+                    "@id": "adex:AgriAdvisory"
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:Soil"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }
