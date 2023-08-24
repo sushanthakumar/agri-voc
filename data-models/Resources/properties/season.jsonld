@@ -8,18 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:regionalLandID",
+            "@id": "adex:season",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The unique ID representing the regional language of the location corresponding to this observation.",
-            "rdfs:label": "regionalLandID",
+            "rdfs:comment": "Represents specific time of the year that has distinct weather patterns and conditions, such as summer, autumn (fall), etc.",
+            "rdfs:label": "season",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgriAdvisory"
+                    "@id": "adex:Weather"
                 }
             ],
             "adex:rangeIncludes": [

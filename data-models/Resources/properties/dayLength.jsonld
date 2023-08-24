@@ -30,7 +30,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "skos:exactMatch": {
+                "@id": "Fiware:"
+            }
         }
     ]
 }

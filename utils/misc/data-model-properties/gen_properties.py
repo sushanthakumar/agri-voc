@@ -337,7 +337,7 @@ def gen_properties(df):
                 print("@graph missing in  " + csv_label)
         if item[8] == "1":
             base_property = re.sub(r'[,\s]', '', item[0])
-            domain = re.sub(r'[,\s]', '', item[3])
+            domain = item[3]
             range_include = item[4].strip()
             filename = dir_home + "/base-schemas/properties/" + base_property + ".jsonld"
             jsonld_update(filename, domain, "adex:domainIncludes", "baseSchema")
@@ -346,7 +346,7 @@ def gen_properties(df):
         if item[7] == "1":
             # try:
             base_property = re.sub(r'[,\s]', '', item[0])
-            domain = re.sub(r'[,\s]', '', item[3])
+            domain = item[3]
             range_include = item[4].strip()
             property_path = find_name(base_property + '.jsonld', dir_home)
             jsonld_update(property_path[0], domain, "adex:domainIncludes", "")

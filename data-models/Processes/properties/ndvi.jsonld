@@ -14,7 +14,7 @@
         {
             "@id": "adex:ndvi",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
             "rdfs:comment": "The value of Normalized Differential Vegetation Index (NDVI) which is a metric for quantifying the health and density of vegetation corresponding to this observation. The NDVI values range from -1 to +1.",
             "rdfs:label": "ndvi",
@@ -28,7 +28,8 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
+                    "@container": "@list",
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

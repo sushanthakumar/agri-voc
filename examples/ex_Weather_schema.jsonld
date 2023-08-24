@@ -123,10 +123,34 @@
 				"description": "Forecasted relative humidity (water vapour in air) over a certain duration in future."
 			},
 			"windSpeed": {
-				"type": "number",
+				"type": "object",
 				"description": "Observed wind speed.",
-				"unitCode": "MTS",
-				"unitText": "metre per second"
+				"properties":{
+					"avgOverTime": {
+						"type": "number",
+						"description": "Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+						"unitCode": "MTS",
+				        "unitText": "metre per second"
+					},
+					"maxOverTime": {
+						"type": "number",
+						"description": "Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+						"unitCode": "MTS",
+						"unitText": "metre per second"
+					},
+					"instValue": {
+						"type": "number",
+						"description": "Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.",
+						"unitCode": "MTS",
+				        "unitText": "metre per second"
+					},
+					"minOverTime": {
+						"type": "number",
+						"description": "Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value",
+						"unitCode": "MTS",
+				        "unitText": "metre per second"
+					}
+				}
 			},
 			"precipitationForecast": {
 				"type": "number",
@@ -138,6 +162,10 @@
 				"type": "string",
 				"description": "Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future.."
 			},
+			"season": {
+                "type": "string",
+                "description": "Represents specific time of the year that has distinct weather patterns and conditions, such as summer, autumn (fall), etc."
+            },
 			"illuminance": {
 				"type": "object",
 				"description": "Observed instantaneous ambient light intensity.",

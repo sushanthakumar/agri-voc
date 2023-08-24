@@ -32,7 +32,7 @@
                 }
             ],
             "skos:exactMatch": {
-                "@id": "iudx:dewPoint"
+                "@id": "Fiware:dewPoint"
             }
         }
     ]

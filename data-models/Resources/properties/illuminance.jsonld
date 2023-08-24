@@ -29,9 +29,6 @@
                 },
                 {
                     "@id": "adex:ValueDescriptor"
-                },
-                {
-                    "@id": "adex:TimeSeriesAggregation"
                 }
             ],
             "skos:exactMatch": {

@@ -16,7 +16,7 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The number of photons that are being emitted by the sun.",
+            "rdfs:comment": "Observed solar radiation.",
             "rdfs:label": "solarRadiation",
             "adex:domainIncludes": [
                 {
