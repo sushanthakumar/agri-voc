@@ -20,9 +20,6 @@
                 },
                 {
                     "@id": "adex:AgriMachinery"
-                },
-                {
-                    "@id": "adex:AgroChemicals"
                 }
             ],
             "adex:rangeIncludes": [
