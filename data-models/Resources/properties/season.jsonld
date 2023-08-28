@@ -1,53 +1,35 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.adex.org.in/"
-    },
-    "@graph": [
+ "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.adex.org.in/"
+  },
+  "@graph": [
+    {
+      "@id": "adex:season",
+      "@type": [
+        "adex:TextProperty"
+      ],
+      "rdfs:comment": "Represents specific time of the year that has distinct weather patterns and conditions, such as summer, autumn (fall), etc.",
+      "rdfs:label": "season",
+      "rdfs:isDefinedBy": {
+        "@id": "adex:"
+      },
+      "adex:domainIncludes": [
         {
-<<<<<<< HEAD:data-models/Processes/properties/recommendingAuthority.json
-            "@id": "adex:recommendingAuthority",
-            "@type": [
-                "adex:TextProperty"
-            ],
-            "rdfs:comment": "Provides guidance and suggestions on agricultural practices, techniques, and decisions to enhance productivity and sustainability.",
-            "rdfs:label": "recommendingAuthority",
-            "adex:domainIncludes": [
-                {
-                    "@id": "adex:CropSpecies"
-                },
-                {
-                    "@id": "adex:AgriAdvisory"
-=======
-            "@id": "adex:season",
-            "@type": [
-                "adex:TextProperty"
-            ],
-            "rdfs:comment": "Represents specific time of the year that has distinct weather patterns and conditions, such as summer, autumn (fall), etc.",
-            "rdfs:label": "season",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
-            "adex:domainIncludes": [
-                {
-                    "@id": "adex:Weather"
->>>>>>> 133392b3c5d877ebe978e3d7c5a0a687226802ea:data-models/Resources/properties/season.jsonld
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "adex:Text"
-                },
-                {
-                    "@id": "adex:ValueDescriptor"
-                }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+          "@id": "adex:Weather"
         }
-    ]
+      ],
+      "adex:rangeIncludes": [
+        {
+          "@id": "adex:Text"
+        },
+        {
+          "@id": "adex:ValueDescriptor"
+        }
+      ]
+    }
+  ]
 }
