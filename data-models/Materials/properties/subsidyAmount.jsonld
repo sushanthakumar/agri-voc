@@ -16,7 +16,7 @@
             "rdfs:label": "subsidyAmount",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Fertilizer"
+                    "@id": "adex:AgroChemicals"
                 },
                 {
                     "@id": "adex:AgriMachinery"

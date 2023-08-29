@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:particleSize",
+            "@id": "adex:chemicalProportion",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The size of the fertilizer particles corresponding to this observation.",
-            "rdfs:label": "particleSize",
+            "rdfs:comment": "The ordered array comprising the quantity/ measure of each compound contained in the fertilizer added to the soil.",
+            "rdfs:label": "chemicalProportion",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
@@ -24,7 +24,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

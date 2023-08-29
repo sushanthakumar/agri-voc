@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:particleSize",
+            "@id": "adex:storageGuidance",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The size of the fertilizer particles corresponding to this observation.",
-            "rdfs:label": "particleSize",
+            "rdfs:comment": "The advice, direction, support, or recommendations for storing the goods, products and commodities in a storage plant.",
+            "rdfs:label": "storageGuidance",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
@@ -24,7 +24,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

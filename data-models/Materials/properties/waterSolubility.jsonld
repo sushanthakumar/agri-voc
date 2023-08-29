@@ -19,7 +19,7 @@
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Fertilizer"
+                    "@id": "adex:AgroChemicals"
                 }
             ],
             "adex:rangeIncludes": [

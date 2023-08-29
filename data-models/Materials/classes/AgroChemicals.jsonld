@@ -12,9 +12,9 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:Fertilizer",
-            "rdfs:comment": "A Data Model for information about agricultural fertilizers.",
-            "rdfs:label": "Fertilizer",
+            "@id": "adex:AgroChemicals",
+            "rdfs:comment": "A Data Model for information about agricultural fertilizers and pesticides.",
+            "rdfs:label": "AgroChemicals",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },

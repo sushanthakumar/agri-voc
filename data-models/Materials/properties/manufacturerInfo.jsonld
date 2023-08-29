@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:particleSize",
+            "@id": "adex:manufacturerInfo",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:StructuredProperty"
             ],
-            "rdfs:comment": "The size of the fertilizer particles corresponding to this observation.",
-            "rdfs:label": "particleSize",
+            "rdfs:comment": "Details of the manufacturer of the product/merchandise corresponding to this observation",
+            "rdfs:label": "manufacturerInfo",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
@@ -24,10 +24,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
-                },
-                {
-                    "@id": "adex:ValueDescriptor"
+                    "@id": "adex:PersonnelDesc"
                 }
             ]
         }

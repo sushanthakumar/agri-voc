@@ -8,18 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:fertilizerProportion",
+            "@id": "adex:precautionaryMeasures",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The quantity/ measure of each compound contained in the fertilizer added to the soil.",
-            "rdfs:label": "fertilizerProportion",
+            "rdfs:comment": "The action of being careful, vigilant, and the steps to avoid potential dangers or risks.",
+            "rdfs:label": "precautionaryMeasures",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Fertilizer"
+                    "@id": "adex:AgroChemicals"
                 }
             ],
             "adex:rangeIncludes": [

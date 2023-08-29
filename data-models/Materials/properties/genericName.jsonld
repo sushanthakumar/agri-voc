@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:particleSize",
+            "@id": "adex:genericName",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The size of the fertilizer particles corresponding to this observation.",
-            "rdfs:label": "particleSize",
+            "rdfs:comment": "The chemical/generic name of the fertilizer corresponding to this observation.",
+            "rdfs:label": "genericName",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
@@ -24,7 +24,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

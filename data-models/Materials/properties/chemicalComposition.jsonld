@@ -8,22 +8,23 @@
     },
     "@graph": [
         {
-            "@id": "adex:fertilizerName",
+            "@id": "adex:chemicalComposition",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The chemical/generic name of the fertilizer corresponding to this observation.",
-            "rdfs:label": "fertilizerName",
+            "rdfs:comment": "The ordered array comprising the chemical/ organic composition of the fertilizer added to the soil",
+            "rdfs:label": "chemicalComposition",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Fertilizer"
+                    "@id": "adex:AgroChemicals"
                 }
             ],
             "adex:rangeIncludes": [
                 {
+                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {

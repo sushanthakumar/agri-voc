@@ -26,6 +26,9 @@
                 },
                 {
                     "@id": "adex:PublicSchemes"
+                },
+                {
+                    "@id": "adex:AgroChemicals"
                 }
             ],
             "adex:rangeIncludes": [

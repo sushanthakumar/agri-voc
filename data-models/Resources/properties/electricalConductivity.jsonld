@@ -19,7 +19,7 @@
                     "@id": "adex:Soil"
                 },
                 {
-                    "@id": "adex:Fertilizer"
+                    "@id": "adex:AgroChemicals"
                 }
             ],
             "adex:rangeIncludes": [

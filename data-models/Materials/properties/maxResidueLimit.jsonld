@@ -8,24 +8,23 @@
     },
     "@graph": [
         {
-            "@id": "adex:fertilizerComposition",
+            "@id": "adex:maxResidueLimit",
             "@type": [
-                "adex:TextProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The ordered array comprising the chemical/ organic composition of the fertilizer added to the soil",
-            "rdfs:label": "fertilizerComposition",
+            "rdfs:comment": "The maximum concentration of the chemical or pesiticides permitted by the competent regulatory authority corresponding to this observation.",
+            "rdfs:label": "maxResidueLimit",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Fertilizer"
+                    "@id": "adex:AgroChemicals"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@container": "@list",
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
