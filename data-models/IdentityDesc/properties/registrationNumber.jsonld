@@ -17,6 +17,9 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:IdentityDesc"
+                },
+                {
+                    "@id": "adex:AgriMarket"
                 }
             ],
             "adex:rangeIncludes": [

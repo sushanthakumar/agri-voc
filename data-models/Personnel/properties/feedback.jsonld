@@ -8,26 +8,22 @@
     },
     "@graph": [
         {
-            "@id": "adex:areaServed",
+            "@id": "adex:feedback",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Area served by the entity or a service.",
-            "rdfs:label": "areaServed",
+            "rdfs:comment": "The opinions or evaluations of an individual or group about an entity or service corresponding to this observation.",
+            "rdfs:label": "feedback",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:ModelDesc"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
-                },
-                {
                     "@id": "adex:AgriMarket"
+                },
+                {
+                    "@id": "adex:AgriAdvisory"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {

@@ -8,35 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:areaServed",
+            "@id": "adex:pos",
             "@type": [
-                "adex:TextProperty"
+                "adex:GeoProperty"
             ],
-            "rdfs:comment": "Area served by the entity or a service.",
-            "rdfs:label": "areaServed",
+            "rdfs:comment": "Point of Sale (POS) represents the location(s) where transactions are completed when goods or services are sold corresponding to this observation.",
+            "rdfs:label": "pos",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:ModelDesc"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
-                },
                 {
                     "@id": "adex:AgriMarket"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@container": "@list",
-                    "@id": "adex:Text"
+                    "@id": "adex:Place"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

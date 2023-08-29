@@ -12,7 +12,7 @@
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Contact point information of a individual/business/service corresponding to this observation",
+            "rdfs:comment": "Contact point information of a individual/business/service corresponding to this observation.",
             "rdfs:label": "contactPointInfo",
             "adex:domainIncludes": [
                 {

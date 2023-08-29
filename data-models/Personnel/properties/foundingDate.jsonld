@@ -12,7 +12,7 @@
             "@type": [
                 "adex:TimeProperty"
             ],
-            "rdfs:comment": "The date when the association/business/market was established",
+            "rdfs:comment": "The date when the association/business/market was established.",
             "rdfs:label": "foundingDate",
             "adex:domainIncludes": [
                 {

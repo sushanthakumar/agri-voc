@@ -39,6 +39,9 @@
                 },
                 {
                     "@id": "adex:FreightManagement"
+                },
+                {
+                    "@id": "adex:AgriMarket"
                 }
             ],
             "adex:rangeIncludes": [
@@ -56,3 +59,6 @@
         }
     ]
 }
+
+
+

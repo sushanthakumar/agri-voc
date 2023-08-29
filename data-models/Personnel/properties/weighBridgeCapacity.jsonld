@@ -8,35 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:areaServed",
+            "@id": "adex:weighBridgeCapacity",
             "@type": [
-                "adex:TextProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Area served by the entity or a service.",
-            "rdfs:label": "areaServed",
+            "rdfs:comment": "The maximum capacity of the weighing bridge corresponding to this observation.",
+            "rdfs:label": "weighBridgeCapacity",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:ModelDesc"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
-                },
                 {
                     "@id": "adex:AgriMarket"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@container": "@list",
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

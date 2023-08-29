@@ -14,12 +14,12 @@
             ],
             "rdfs:comment": "Name of the service offered by an organization or an entity corresponding to this observation.",
             "rdfs:label": "serviceName",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:FarmerCollective"
+                },
+                {
+                    "@id": "adex:AgriMarket"
                 }
             ],
             "adex:rangeIncludes": [
@@ -29,7 +29,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

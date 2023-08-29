@@ -26,7 +26,10 @@
                     "@id": "adex:PublicSchemes"
                 },
                 {
-                     "@id": "adex:CropSpecies"
+                    "@id": "adex:CropSpecies"
+                },
+                {
+                    "@id": "adex:AgriMarket"
                 }
             ],
             "adex:rangeIncludes": [

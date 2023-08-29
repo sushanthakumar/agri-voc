@@ -24,13 +24,11 @@
             ],
             "adex:rangeIncludes": [
                 {
+                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
-                },
-                {
-                    "@id": "adex:Text-list ValueDescriptor"
                 }
             ],
             "rdfs:isDefinedBy": {

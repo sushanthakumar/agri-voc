@@ -42,6 +42,9 @@
                 },
                 {
                     "@id": "adex:Device"
+                },
+                {
+                    "@id": "adex:AgriMarket"
                 }
             ],
             "adex:rangeIncludes": [

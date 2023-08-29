@@ -14,9 +14,6 @@
             ],
             "rdfs:comment": "The agency which procures the commodity corresponding to this observation.",
             "rdfs:label": "agencyName",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriMarket"
@@ -32,7 +29,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

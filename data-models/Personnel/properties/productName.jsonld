@@ -8,35 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:areaServed",
+            "@id": "adex:productName",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Area served by the entity or a service.",
-            "rdfs:label": "areaServed",
+            "rdfs:comment": "Name of the product corresponding to this observation.",
+            "rdfs:label": "productName",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:ModelDesc"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
-                },
                 {
                     "@id": "adex:AgriMarket"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }
