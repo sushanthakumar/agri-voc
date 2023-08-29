@@ -45,6 +45,9 @@
                 },
                 {
                     "@id": "adex:AgriMachinery"
+                },
+                {
+                    "@id": "adex:Seed"
                 }
             ],
             "adex:rangeIncludes": [

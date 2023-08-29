@@ -24,6 +24,9 @@
                 },
                 {
                     "@id": "adex:AgriAdvisory"
+                },
+                {
+                    "@id": "adex:Seed"
                 }
             ],
             "adex:rangeIncludes": [

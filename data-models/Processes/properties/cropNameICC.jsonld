@@ -18,12 +18,12 @@
             ],
             "rdfs:comment": "The name of the crop as given by the ICC (Indicative Crop Classification) of FAO (Food and Agicultural Organisation).",
             "rdfs:label": "cropNameICC",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropSpecies"
+                },
+                {
+                    "@id": "adex:Seed"
                 }
             ],
             "adex:rangeIncludes": [
@@ -33,7 +33,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

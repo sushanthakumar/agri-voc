@@ -26,6 +26,12 @@
                 },
                 {
                     "@id": "adex:GhgReport"
+                },
+                {
+                    "@id": "adex:CropSpecies"
+                },
+                {
+                    "@id": "adex:Seed"
                 }
             ],
             "adex:rangeIncludes": [

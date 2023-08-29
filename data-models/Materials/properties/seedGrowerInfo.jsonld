@@ -8,31 +8,25 @@
     },
     "@graph": [
         {
-            "@id": "adex:season",
+            "@id": "adex:seedGrowerInfo",
             "@type": [
-                "adex:TextProperty"
+                "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Represents specific time of the year that has distinct weather patterns and conditions, such as summer, autumn (fall), etc.",
-            "rdfs:label": "season",
+            "rdfs:comment": "The personal details of the seed grower.",
+            "rdfs:label": "seedGrowerInfo",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:Weather"
-                },
                 {
                     "@id": "adex:Seed"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
-                },
-                {
-                    "@id": "adex:ValueDescriptor"
+                    "@id": "adex:PersonnelDesc"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }
