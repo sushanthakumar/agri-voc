@@ -1,23 +1,22 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "geojson": "https://purl.org/geojson/vocab#",
         "owl": "http://www.w3.org/2002/07/owl#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "iudx": "https://voc.iudx.org.in/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
         "adex": "https://agrijson.adex.org.in/"
     },
     "@graph": [
         {
-            "@id": "adex:landParcelInfo",
+            "@id": "adex:extensionWorker",
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Land parcel information corresponding to this observation",
-            "rdfs:label": "landParcelInfo",
+            "rdfs:comment": "Details about extension worker who is a trained professional and acts as facilitator, educator, and adviser, working closely with farmers to improve agricultural productivity, sustainability, and overall livelihoods",
+            "rdfs:label": "extensionWorker",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Farmer"
@@ -25,12 +24,9 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:LandParcel"
+                    "@id": "adex:PersonnelDesc"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

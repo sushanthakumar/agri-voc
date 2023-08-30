@@ -14,12 +14,12 @@
             ],
             "rdfs:comment": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
             "rdfs:label": "language",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriMarket"
+                },
+                {
+                    "@id": "adex:Farmer"
                 }
             ],
             "adex:rangeIncludes": [
@@ -31,6 +31,9 @@
                     "@id": "adex:ValueDescriptor"
                 }
             ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "skos:exactMatch": {
                 "@id": "Fiware: CPSV-AP.PublicService"
             }

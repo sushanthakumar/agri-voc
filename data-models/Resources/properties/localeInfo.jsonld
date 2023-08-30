@@ -48,6 +48,9 @@
                 },
                 {
                     "@id": "adex:Seed"
+                },
+                {
+                    "@id": "adex:Farmer"
                 }
             ],
             "adex:rangeIncludes": [
