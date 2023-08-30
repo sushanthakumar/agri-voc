@@ -195,7 +195,7 @@
               }
             }
           },
-          "birthDate": {
+          "dob": {
             "type": "string",
             "description": "Date of birth of the individual corresponding to this observation.",
             "format": "date"

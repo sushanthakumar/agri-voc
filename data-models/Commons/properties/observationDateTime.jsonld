@@ -45,6 +45,9 @@
                 },
                 {
                     "@id": "adex:GhgReport"
+                },
+                {
+                    "@id": "adex:CropSpecies"
                 }
             ],
             "adex:rangeIncludes": [

@@ -12,7 +12,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The grade assigned to the Agricultural Market Committee corresponding to this observation.",
+            "rdfs:comment": "The grade assigned by the Agricultural Market Committee corresponding to this observation.",
             "rdfs:label": "amcGrade",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:birthDate",
+            "@id": "adex:dob",
             "@type": [
                 "adex:TimeProperty"
             ],
-            "rdfs:comment": "Date of birth of the individual corresponding to this observation.",
-            "rdfs:label": "birthDate",
+            "rdfs:comment": "Date of birth (DOB) of the individual corresponding to this observation.",
+            "rdfs:label": "dob",
             "adex:domainIncludes": [
                 {
                     "@id": "adex:PersonnelDesc"

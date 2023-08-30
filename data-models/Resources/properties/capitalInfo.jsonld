@@ -30,6 +30,9 @@
                 },
                 {
                     "@id": "adex:AgriMachinery"
+                },
+                {
+                    "@id": "adex:AgriMarket"
                 }
             ],
             "adex:rangeIncludes": [

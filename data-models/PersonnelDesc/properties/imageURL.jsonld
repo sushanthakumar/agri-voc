@@ -16,7 +16,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The link that points to the photo of the individual corresponding to this observation.",
+            "rdfs:comment": "The link that points to the photo of the entity corresponding to this observation.",
             "rdfs:label": "imageURL",
             "adex:domainIncludes": [
                 {

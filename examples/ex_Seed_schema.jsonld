@@ -202,7 +202,7 @@
                         "type": "string",
                         "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
                     },
-                    "birthDate": {
+                    "dob": {
                         "type": "string",
                         "description": "Date of birth of the individual corresponding to this observation.",
                         "format": "date"
