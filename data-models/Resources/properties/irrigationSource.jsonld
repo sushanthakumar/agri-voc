@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "The source of irrigation for a land, such as well, canals, tanks, borewell, etc",
             "rdfs:label": "irrigationSource",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:LandParcel"
@@ -33,7 +30,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

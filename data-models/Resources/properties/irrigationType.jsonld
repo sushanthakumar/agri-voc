@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "The type of irrigation for a farm land, such as sprinkler, drip, furrow, etc",
             "rdfs:label": "irrigationType",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:LandParcel"
@@ -33,7 +30,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

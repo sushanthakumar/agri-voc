@@ -18,9 +18,6 @@
             ],
             "rdfs:comment": "Area of the agricultural land used for cultivation, i.e, the arable land area.",
             "rdfs:label": "cropArea",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:LandParcel"
@@ -36,7 +33,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

@@ -16,7 +16,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The type of ownership of the land, crop, property, item, entity, etc corresponding to the observation. ENUM: [Lease, Rented, Owned]",
+            "rdfs:comment": "The type of ownership of the entity corresponding to this observation. ENUM: [Lease, Rent, Own]",
             "rdfs:label": "ownershipType",
             "adex:domainIncludes": [
                 {

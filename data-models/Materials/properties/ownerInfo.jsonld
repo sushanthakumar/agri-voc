@@ -20,6 +20,12 @@
                 },
                 {
                     "@id": "adex:Imagery"
+                },
+                {
+                    "@id": "adex:AgriMachinery"
+                },
+                {
+                    "@id": "adex:LandParcel"
                 }
             ],
             "adex:rangeIncludes": [

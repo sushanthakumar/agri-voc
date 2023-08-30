@@ -1,23 +1,22 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "geojson": "https://purl.org/geojson/vocab#",
         "owl": "http://www.w3.org/2002/07/owl#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "iudx": "https://voc.iudx.org.in/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
         "adex": "https://agrijson.adex.org.in/"
     },
     "@graph": [
         {
-            "@id": "adex:ler",
+            "@id": "adex:landClassCode",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "Land Equivalent Ratio (LER) is the ratio of the area under sole cropping to the area under intercropping needed to give equal amounts of yield at the same management level.",
-            "rdfs:label": "ler",
+            "rdfs:comment": "The code of land classification as assigned by the government. Land classification can be based on several aspects such as type of land settlements, resource availability, irrigation etc.",
+            "rdfs:label": "landClassCode",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:LandParcel"
@@ -25,15 +24,12 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

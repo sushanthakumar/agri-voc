@@ -346,7 +346,7 @@ def gen_properties(df):
         if item[7] == "1":
             # try:
             base_property = re.sub(r'[,\s]', '', item[0])
-            domain = item[3]
+            domain =  item[3]
             range_include = item[4].strip()
             property_path = find_name(base_property + '.jsonld', dir_home)
             jsonld_update(property_path[0], domain, "adex:domainIncludes", "")

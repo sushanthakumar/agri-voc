@@ -14,19 +14,25 @@
             ],
             "rdfs:comment": "Details of the person who leases the entity corresponding to this observation.",
             "rdfs:label": "lessorInfo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Drone"
+                },
+                {
+                    "@id": "adex:AgriMachinery"
+                },
+                {
+                    "@id": "adex:LandParcel"
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:PersonnelDesc"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }
