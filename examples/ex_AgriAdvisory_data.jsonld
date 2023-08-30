@@ -8,6 +8,8 @@
 	"advisoryChannel": ["Website", "Radio"],
 	"fileFormat": "Text",
 	"advisoryID": "TL0056",
+	"validFrom": "2023-01-02",
+	"validTill": "2023-01-15",
 	"cropNameCommon": "Rice",
 	"cropDiseaseInfo": {
 		"diseaseName": "Rice blast",
@@ -19,6 +21,9 @@
 	},
 	"ndvi": ["http://api.agromonitoring.com/image/1.0/020598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a", "http://api.agromonitoring.com/image/1.0/030598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a"],
 	"lai": ["http://doi.org/10.5067/MODIS/MOD15A2H.006", "http://doi.org/10.5067/MODIS/MYD15A2H.006"],
+	"recommendingAuthority": "Department of Agriculture and Farmers Welfare, Government of India",
+	"recommendedCrops":["Rice", "Wheat", "Maize"],
+	"recommendedCropVarieties":["Ariyan Nel, Arubatham Samba, Aruvadhan Kodai", "Karen Narendra, Karen Vandana, Karan Shriya", "Merut Yellow, Jaunpuri, Sartuj" ],
 	"season": "Monsoon",
 	"cropCodeICC": "PQ1231",
 	"cropVarietyName": "CR Dhan 801",
@@ -30,5 +35,12 @@
 		"villageName": "ALLAPADU",
 		"stateName": "Telangana"
 	},
-	"observationDateTime": "2022-12-08T05:45:00+05:30"
+	"observationDateTime": "2022-12-08T05:45:00+05:30",
+	"feedback":"comprehensive advisory crop disease prevention would be appreciated",
+	"landExtent":150,
+	"landIdentityInfo":{
+	    "surveyNumber": "26 / 2e",
+		"baseSurveyNumber": 26,
+		"landParcelID": 34554321345672
+	}
 }

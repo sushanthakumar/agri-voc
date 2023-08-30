@@ -31,8 +31,10 @@
 		"infectionStage": "feeding and damage",
 		"diseaseSymptoms": "Yellow leaves",
 		"controlMeasures":["keeping soil flooded 2 to 4 inches deep from the time rice plants are 6 to 8 inches tall until draining for harvest"],
-		"preventiveMeasures": ["crop rotation", "use of fungicides", "plantation in warm soil"]
+		"preventiveMeasures": ["crop rotation", "use of fungicides", "plantation in warm soil"],
+		"mediaURL":["https://rice-disease-img001","https://rice-disease-img002","https://rice-disease-img003"]
 	},
+	"observationDateTime": "2023-01-01T00:20:00+05:30",
 	"cropHeight":1.2,
 	"cropDensity":250,
 	"landIdentityInfo":{
@@ -50,7 +52,7 @@
 	"lai": ["http://doi.org/10.5067/MODIS/MOD15A2H.006", "http://doi.org/10.5067/MODIS/MYD15A2H.006"],
 	"agriculturalExpert":{
 	    "name":"Chandran",
-        "phone":"+919876543210",
+        "phone":"+919876543211",
         "email" : "chandranphd@gmail.com",
         "academicQualification": "Doctor of Philosophy",
         "workStatus": "Permanent",
@@ -65,5 +67,7 @@
         "workStatus": "Permanent",
         "nationality": "Indian",
         "fieldOfResearch": "Microbiologist"
-	}
+	},
+	"mediaURL": ["https://rice-crop-img01", "https://rice-crop-img02", "https://rice-crop-img03"],
+	"hasMoistureStress": false
 }
