@@ -131,8 +131,8 @@
                     "baseSurveyNumber": {
                         "type": "number",
                         "description": "The base survey number of the land corresponding to this observation.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "unitCode": "C62",
+                        "unitText": "Dimensionless"
                     },
                     "subdivisionNumber": {
                         "type": "string",

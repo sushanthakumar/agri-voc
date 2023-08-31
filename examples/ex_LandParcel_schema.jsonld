@@ -43,14 +43,14 @@
 			"landExtent": {
 				"type": "number",
 				"description": "Area of the land corresponding to this observation.",
-				"unitCode": "",
-				"unitText": ""
+				"unitCode": "ACR",
+				"unitText": "acre"
 			},
 			"ler": {
 				"type": "number",
 				"description": "Land Equivalent Ratio (LER) is the ratio of the area under sole cropping to the area under intercropping needed to give equal amounts of yield at the same management level.",
-				"unitCode": "",
-				"unitText": ""
+				"unitCode": "C62",
+				"unitText": "Dimensionless"
 			},
 			"harvestDate": {
 				"type": "string",
@@ -60,8 +60,8 @@
 			"totalCropYield": {
 				"type": "number",
 				"description": "The harvested production from the crop land.",
-				"unitCode": "",
-				"unitText": ""
+				"unitCode":"KGM",
+				"unitText": "kilogram"
 			},
 			"capitalInfo": {
 				"type": "object",
@@ -70,20 +70,20 @@
 					"cgst": {
 						"type": "number",
 						"description": "Central Goods and Services Tax is charged on the intra state supply of products and services.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "C62",
+						"unitText": "Dimensionless"
 					},
 					"utgst": {
 						"type": "number",
 						"description": "Union Territory Goods and Services Tax is levied on the supply of products and services in any of the Union Territories in the country, viz. Andaman and Nicobar Islands, Daman and Diu, Dadra and Nagar Haveli, Lakshadweep, and Chandigarh. UTGST is levied along with CGST.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "C62",
+						"unitText": "Dimensionless"
 					},
 					"freightCost": {
 						"type": "number",
 						"description": "The cost incurred for transporting the goods from the point of origin to a destination location.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
 					},
 					"paymentTerm": {
 						"type": "string",
@@ -92,50 +92,50 @@
 					"netExpenditure": {
 						"type": "number",
 						"description": "The total cost incurred for the cultivation of a crop.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
 					},
 					"transportationCost": {
 						"type": "number",
 						"description": "The total cost incurred due to transportation of raw materials / supplies / merchandise which includes the road tax, state and central tax, IGST, etc.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
 					},
 					"landCess": {
 						"type": "number",
 						"description": "The amount of tax levied on land holdings.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
 					},
 					"miscellaneousCost": {
 						"type": "number",
 						"description": "The inevitable minor expenses incurred for a season in the cultivation of a crop corresponding to this observation.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
 					},
 					"electricityCost": {
 						"type": "number",
 						"description": "The total electricity cost incurred from agricultural purposes.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
 					},
 					"cultivationCost": {
 						"type": "number",
 						"description": "The total expense incurred on cultivation",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
 					},
 					"machineryCost": {
 						"type": "number",
 						"description": "The total machinery cost incurred from agricultural purposes.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
 					},
 					"harvestCost": {
 						"type": "number",
 						"description": "The total cost incurred for harvesting the crop.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
 					},
 					"currencyType": {
 						"type": "string",
@@ -144,20 +144,20 @@
 					"leaseAmount": {
 						"type": "number",
 						"description": "The amount paid by the lessee for the land under cultivation.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
 					},
 					"netIncome": {
 						"type": "number",
 						"description": "Net revenue from the farmland corresponding to this observation",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
 					},
 					"labourCost": {
 						"type": "number",
 						"description": "The total labour cost incurred during the cultivation of a crop.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
 					},
 					"costType": {
 						"type": "string",
@@ -166,14 +166,14 @@
 					"sgst": {
 						"type": "number",
 						"description": "State Goods and Services Tax like CGST, is charged on the sale of products or services within a state.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "C62",
+						"unitText": "Dimensionless"
 					},
 					"igst": {
 						"type": "number",
 						"description": "Integrated Goods and Services Tax is charged on inter-state transactions of products and services.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "C62",
+						"unitText": "Dimensionless"
 					}
 				}
 			},
@@ -193,8 +193,8 @@
 			"cropArea": {
 				"type": "number",
 				"description": "Area of the agricultural land used for cultivation, i.e, the arable land area.",
-				"unitCode": "",
-				"unitText": ""
+				"unitCode": "HAR",
+				"unitText": "Hectare"
 			},
 			"interCrops": {
 				"type": "string",
@@ -285,8 +285,8 @@
 			"landSlope": {
 				"type": "number",
 				"description": "The extent that a soil surface has an incline relative to the horizontal.",
-				"unitCode": "",
-				"unitText": ""
+				"unitCode": "C62",
+				"unitText": "Dimensionless"
 			},
 			"landIdentityInfo": {
 				"type": "object",
@@ -295,8 +295,8 @@
 					"baseSurveyNumber": {
 						"type": "number",
 						"description": "The base survey number of the land corresponding to this observation.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "C62",
+						"unitText": "Dimensionless"
 					},
 					"subdivisionNumber": {
 						"type": "string",
@@ -309,8 +309,8 @@
 					"landParcelID": {
 						"type": "number",
 						"description": "The ULPIN(Unique Land Parcel Identification Number) representing the land parcel corresponding to the observation.",
-						"unitCode": "",
-						"unitText": ""
+						"unitCode": "C62",
+						"unitText": "Dimensionless"
 					}
 				}
 			},

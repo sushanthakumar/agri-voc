@@ -1,4 +1,10 @@
 {
+	"@context": "https://agrijson.adex.org.in",
+	"id": "provider-id/rs.adex.org.in/agrimachinery-rg/agrimachinery-ri",
+	"type": [
+		"adex:AgriMachinery",
+		"adex:Resource"
+	],
 	"hsCode": "870190",
 	"productType": "Tiller",
 	"productName": "M&M",

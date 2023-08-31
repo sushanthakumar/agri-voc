@@ -12,9 +12,9 @@
 			"type": {
 				"type": "array",
 				"items": [{
-					"type": "string",
-					"description": "ADEX Data Model name. It has to be Farmer"
-				},
+						"type": "string",
+						"description": "ADEX Data Model name. It has to be Farmer"
+					},
 					{
 						"type": "string",
 						"description": "ADEX Entity type. It has to be Resource"
@@ -120,7 +120,7 @@
 					"labourCost": {
 						"type": "number",
 						"description": "The total labour cost incurred during the cultivation of a crop.",
-						"unitCode": "",
+						"unitCode": "INR",
 						"unitText": "Indian Rupee"
 					},
 					"costType": {
@@ -253,312 +253,7 @@
 			},
 			"landParcelInfo": {
 				"type": "object",
-				"description": "Land parcel information corresponding to this observation",
-				"properties": {
-					"type": {
-						"type": "array",
-						"items": [{
-							"type": "string",
-							"description": "ADEX Data Model name. It has to be LandParcel"
-						},
-							{
-								"type": "string",
-								"description": "ADEX Entity type. It has to be Resource"
-							}
-						]
-					},
-					"id": {
-						"type": "string",
-						"description": "Unique ADEX ID for the resource."
-					},
-					"location": {
-						"type": "object",
-						"description": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor."
-					},
-					"mediaURL": {
-						"type": "string",
-						"description": "URL providing further information of any image(s) or media of the complaint or place."
-					},
-					"observationDateTime": {
-						"type": "string",
-						"description": "Last reported time of observation.",
-						"format": "date-time"
-					},
-					"sowingDate": {
-						"type": "string",
-						"description": "The date at which the crop has been sown in the farm corresponding to this observation.",
-						"format": "date"
-					},
-					"ownershipType": {
-						"type": "string",
-						"description": "The type of ownership of the entire land/crop area corresponding to the observation. ENUM: [Lease, Rented, Owned]"
-					},
-					"capitalInfo": {
-						"type": "object",
-						"description": "The income and expenditure information corresponding to the entity.",
-						"properties": {
-							"electricityCost": {
-								"type": "number",
-								"description": "The total electricity cost incurred from agricultural purposes.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"leaseAmount": {
-								"type": "number",
-								"description": "The amount paid by the lessee for the land under cultivation.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"cultivationCost": {
-								"type": "number",
-								"description": "The total expense incurred on cultivation",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"sgst": {
-								"type": "number",
-								"description": "State Goods and Services Tax like CGST, is charged on the sale of products or services within a state.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"netExpenditure": {
-								"type": "number",
-								"description": "The total cost incurred for the cultivation of a crop.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"miscellaneousCost": {
-								"type": "number",
-								"description": "The inevitable minor expenses incurred for a season in the cultivation of a crop corresponding to this observation.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"igst": {
-								"type": "number",
-								"description": "Integrated Goods and Services Tax is charged on inter-state transactions of products and services.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"paymentTerm": {
-								"type": "string",
-								"description": "Description of the terms of payment corresponding to this observation."
-							},
-							"freightCost": {
-								"type": "number",
-								"description": "The cost incurred for transporting the goods from the point of origin to a destination location.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"landCess": {
-								"type": "number",
-								"description": "The amount of tax levied on land holdings.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"utgst": {
-								"type": "number",
-								"description": "Union Territory Goods and Services Tax is levied on the supply of products and services in any of the Union Territories in the country, viz. Andaman and Nicobar Islands, Daman and Diu, Dadra and Nagar Haveli, Lakshadweep, and Chandigarh. UTGST is levied along with CGST.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"harvestCost": {
-								"type": "number",
-								"description": "The total cost incurred for harvesting the crop.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"labourCost": {
-								"type": "number",
-								"description": "The total labour cost incurred during the cultivation of a crop.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"machineryCost": {
-								"type": "number",
-								"description": "The total machinery cost incurred from agricultural purposes.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"cgst": {
-								"type": "number",
-								"description": "Central Goods and Services Tax is charged on the intra state supply of products and services.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"netIncome": {
-								"type": "number",
-								"description": "Net revenue from the farmland corresponding to this observation",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							},
-							"costType": {
-								"type": "string",
-								"description": "Describes the type of the cost, for eg., whether the cost is estimated or billed."
-							},
-							"currencyType": {
-								"type": "string",
-								"description": "The type of currency used for selling the goods and services corresponding to this observation."
-							},
-							"transportationCost": {
-								"type": "number",
-								"description": "The total cost incurred due to transportation of raw materials / supplies / merchandise which includes the road tax, state and central tax, IGST, etc.",
-								"unitCode": "INR",
-								"unitText": "Indian Rupee"
-							}
-						}
-					},
-					"interCrops": {
-						"type": "string",
-						"description": "The crops which are cultivated in addition to the major crop in the farm corresponding to this observation."
-					},
-					"ler": {
-						"type": "number",
-						"description": "Land Equivalent Ratio (LER) is the ratio of the area under sole cropping to the area under intercropping needed to give equal amounts of yield at the same management level.",
-						"unitCode": "C62",
-						"unitText": "Dimensionless"
-					},
-					"landSlope": {
-						"type": "number",
-						"description": "The extent that a soil surface has an incline relative to the horizontal.",
-						"unitCode": "P1",
-						"unitText": "Percentage"
-					},
-					"totalCropYield": {
-						"type": "number",
-						"description": "The harvested production from the crop land.",
-						"unitCode": "KGM",
-						"unitText": "kilogram"
-					},
-					"landIdentityInfo": {
-						"type": "object",
-						"description": "The unique land identification information corresponding to this observation.",
-						"properties": {
-							"surveyNumber": {
-								"type": "string",
-								"description": "The unique land survey number allocated to the land corresponding to this observation."
-							},
-							"baseSurveyNumber": {
-								"type": "number",
-								"description": "The base survey number of the land corresponding to this observation.",
-								"unitCode": "C62",
-								"unitText": "Dimensionless"
-							},
-							"landParcelID": {
-								"type": "number",
-								"description": "The ULPIN(Unique Land Parcel Identification Number) representing the land parcel corresponding to the observation.",
-								"unitCode": "C62",
-								"unitText": "Dimensionless"
-							},
-							"subdivisionNumber": {
-								"type": "string",
-								"description": "The subdivision number from the land survey number corresponding to this observation"
-							}
-						}
-					},
-					"cropArea": {
-						"type": "number",
-						"description": "Area of the agricultural land used for cultivation, i.e, the arable land area.",
-						"unitCode": "HAR",
-						"unitText": "hectare"
-					},
-					"soleCrop": {
-						"type": "string",
-						"description": "The major crop cultivated in the farm corresponding to this observation."
-					},
-					"landCondition": {
-						"type": "string",
-						"description": "Explains the current condition of the farm. It can take up a value like Barren, Cultivated, Harvested, etc."
-					},
-					"irrigationType": {
-						"type": "string",
-						"description": "The type of irrigation for a farm land, such as sprinkler, drip, furrow, etc"
-					},
-					"landExtent": {
-						"type": "number",
-						"description": "Area of the land corresponding to this observation.",
-						"unitCode": "ACR",
-						"unitText": "acre"
-					},
-					"localeInfo": {
-						"type": "object",
-						"description": "Locale information corresponding to this observation.",
-						"properties": {
-							"subdistrictName": {
-								"type": "string",
-								"description": "Name of the subdistrict corresponding to this observation. A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
-							},
-							"wardName": {
-								"type": "string",
-								"description": "Ward name corresponding to this observation."
-							},
-							"clusterCode": {
-								"type": "string",
-								"description": "The cluster code corresponding to this observation."
-							},
-							"clusterName": {
-								"type": "string",
-								"description": "Name of the cluster corresponding to this observation."
-							},
-							"zoneID": {
-								"type": "string",
-								"description": "Zone ID corresponding to this observation."
-							},
-							"districtCode": {
-								"type": "string",
-								"description": "The district code corresponding to this observation."
-							},
-							"districtName": {
-								"type": "string",
-								"description": "Name of the district corresponding to this observation."
-							},
-							"zoneName": {
-								"type": "string",
-								"description": "Zone name corresponding to this observation."
-							},
-							"subdistrictCode": {
-								"type": "string",
-								"description": "The subdistrict code corresponding to this observation."
-							},
-							"wardID": {
-								"type": "string",
-								"description": "Ward ID corresponding to this observation."
-							},
-							"villageName": {
-								"type": "string",
-								"description": "Name of the village corresponding to this observation."
-							},
-							"stateCode": {
-								"type": "string",
-								"description": "The state code corresponding to this observation."
-							},
-							"revenueDivisionCode": {
-								"type": "string",
-								"description": "The revenue division code corresponding to this observation"
-							},
-							"villageCode": {
-								"type": "string",
-								"description": "The village code corresponding to this observation."
-							},
-							"revenueDivision": {
-								"type": "string",
-								"description": "Name of the revenue division in a district corresponding to this observation."
-							},
-							"stateName": {
-								"type": "string",
-								"description": "Name of the state corresponding to this observation."
-							}
-						}
-					},
-					"harvestDate": {
-						"type": "string",
-						"description": "The date at which the crop has been harvested in the farm corresponding to this observation.",
-						"format": "date"
-					},
-					"irrigationSource": {
-						"type": "string",
-						"description": "The source of irrigation for a land, such as well, canals, tanks, borewell, etc"
-					}
-				}
+				"description": "Land parcel information corresponding to this observation"
 			},
 			"personnelInfo": {
 				"type": "object",
@@ -580,25 +275,47 @@
 						"type": "object",
 						"description": "Personal identification information issued by the government.",
 						"properties": {
-							"surveyNumber": {
-								"type": "string",
-								"description": "The unique land survey number allocated to the land corresponding to this observation."
-							},
-							"baseSurveyNumber": {
+							"bankAccountNo": {
 								"type": "number",
-								"description": "The base survey number of the land corresponding to this observation.",
+								"description": "The bank account number of the individual or business corresponding to this observation",
 								"unitCode": "C62",
 								"unitText": "Dimensionless"
 							},
-							"landParcelID": {
-								"type": "number",
-								"description": "The ULPIN(Unique Land Parcel Identification Number) representing the land parcel corresponding to the observation.",
-								"unitCode": "C62",
-								"unitText": "Dimensionless"
-							},
-							"subdivisionNumber": {
+							"gstin": {
 								"type": "string",
-								"description": "The subdivision number from the land survey number corresponding to this observation"
+								"description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
+							},
+							"ifscCode": {
+								"type": "string",
+								"description": "The IFSC code for the bank corresponding to this observation"
+							},
+							"drivingLicense": {
+								"type": "string",
+								"description": "The driving license number of the individual corresponding to this observation."
+							},
+							"registrationNumber": {
+								"type": "string",
+								"description": "The registration number of the entity corresponding to this observation."
+							},
+							"digitalSignature": {
+								"type": "string",
+								"description": "The link to the digital signature of the entity corresponding to this observation."
+							},
+							"panNo": {
+								"type": "string",
+								"description": "The pan card number of the individual corresponding to this observation."
+							},
+							"fssaiLicense": {
+								"type": "string",
+								"description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+							},
+							"aadharNo": {
+								"type": "string",
+								"description": "The aadhar number issued by the government for the individual corresponding to this observation."
+							},
+							"iec": {
+								"type": "string",
+								"description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
 							}
 						}
 					},
@@ -782,7 +499,47 @@
 			},
 			"schemeInfo": {
 				"type": "object",
-				"description": "Farmer welfare schemes information corresponding to this observation."
+				"description": "Farmer welfare schemes information corresponding to this observation.",
+				"properties": {
+					"schemeName": {
+						"type": "string",
+						"description": "The name of the scheme or programme introduced by the government for public welfare and development."
+					},
+					"sanctionedAmount": {
+						"type": "number",
+						"description": "The actual amount spent from the grant/allocated amount for the scheme.",
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
+					},
+					"eligibleBeneficiaries": {
+						"type": "string",
+						"description": "Represents the group(s) or category(ies) of people who can avail the benefits of the scheme corresponding to this observation."
+					},
+					"departmentID": {
+						"type": "string",
+						"description": "Unique ID or code associated with the department which is associated with the service or the issue corresponding to this observation."
+					},
+					"schemeID": {
+						"type": "string",
+						"description": "The unique ID representing the scheme corresponding to this observation."
+					},
+					"department": {
+						"type": "string",
+						"description": "Division or section of the organization corresponding to this observation. Eg. Health, Transport."
+					},
+					"beneficiaryCount": {
+						"type": "number",
+						"description": "Represents the count of people benefited under the scheme corresponding to this observation.",
+						"unitCode": "C62",
+						"unitText": "Dimensionless"
+					},
+					"grantAmount": {
+						"type": "number",
+						"description": "The amount released for the public welfare under the scheme from the total budget corresponding to this observation.",
+						"unitCode": "INR",
+						"unitText": "Indian Rupee"
+					}
+				}
 			},
 			"extensionWorker": {
 				"type": "object",
@@ -1029,25 +786,13 @@
 			"landHolding": {
 				"type": "number",
 				"description": "The aggregate land possession attributed to a farmer.",
-				"unitCode": "ACR",
-				"unitText": "acre"
+				"unitCode": "C62",
+				"unitText": "Dimensionless"
 			},
 			"cropSpeciesInfo": {
 				"type": "object",
 				"description": "Information of crops corresponding to this observation.",
 				"properties": {
-					"type": {
-						"type": "array",
-						"items": [{
-							"type": "string",
-							"description": "ADEX Data Model name. It has to be CropSpecies"
-						},
-							{
-								"type": "string",
-								"description": "ADEX Entity type. It has to be Resource"
-							}
-						]
-					},
 					"year": {
 						"type": "number",
 						"description": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
@@ -1897,7 +1642,6 @@
 						"format": "date-time"
 					}
 				}
-
 
 			}
 		}

@@ -114,7 +114,7 @@
 					"labourCost": {
 						"type": "number",
 						"description": "The total labour cost incurred during the cultivation of a crop.",
-						"unitCode": "",
+						"unitCode": "INR",
 						"unitText": "Indian Rupee"
 					},
 					"costType": {
