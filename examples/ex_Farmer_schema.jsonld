@@ -465,7 +465,7 @@
 						"type": "string",
 						"description": "The major crop cultivated in the farm corresponding to this observation."
 					},
-					"farmCondition": {
+					"landCondition": {
 						"type": "string",
 						"description": "Explains the current condition of the farm. It can take up a value like Barren, Cultivated, Harvested, etc."
 					},

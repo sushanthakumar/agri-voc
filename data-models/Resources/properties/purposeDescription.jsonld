@@ -12,7 +12,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Describes the purpose of the consent request corresponding to this observation.",
+            "rdfs:comment": "Descibes the purpose(s) of the entity or service corresponding this observation.",
             "rdfs:label": "purposeDescription",
             "adex:domainIncludes": [
                 {

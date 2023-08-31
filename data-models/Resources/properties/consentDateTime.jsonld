@@ -8,34 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:registrationNumber",
+            "@id": "adex:consentDateTime",
             "@type": [
-                "adex:TextProperty"
+                "adex:TimeProperty"
             ],
-            "rdfs:comment": "The registration number of the entity corresponding to this observation.",
-            "rdfs:label": "registrationNumber",
+            "rdfs:comment": "The date and time at which data consent was granted for the first time.",
+            "rdfs:label": "consentDateTime",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:IdentityDesc"
-                },
-                {
-                    "@id": "adex:AgriMarket"
-                },
-                {
-                    "@id": "adex:AgriMachinery"
+                    "@id": "adex:ConsentArtifact"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:DateTime"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

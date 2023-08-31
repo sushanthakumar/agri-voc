@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:machineryType",
+            "@id": "adex:productType",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The type of vehicle/machine corresponding to this observation. Eg., tractor, tiller, harrow etc.",
-            "rdfs:label": "machineryType",
+            "rdfs:comment": "The type of agricultural product corresponding to this observation.",
+            "rdfs:label": "productType",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },

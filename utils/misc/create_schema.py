@@ -17,6 +17,7 @@ SPs = []
 SP1s = []
 schema = {}
 
+
 schema["title"] = "ADEX " + dm + " Data Model"
 schema["type"] = "object"
 schema["properties"] = {}

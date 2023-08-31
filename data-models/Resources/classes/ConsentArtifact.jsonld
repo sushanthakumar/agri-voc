@@ -13,13 +13,13 @@
                 "rdfs:Class"
             ],
             "@id": "adex:ConsentArtifact",
-            "rdfs:comment": "A Data Model for consent management of agricultural data. ",
+            "rdfs:comment": "A Data Model for consent management of agricultural data.",
             "rdfs:label": "ConsentArtifact",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "rdfs:subClassOf": {
-                "@id": "adex:Services"
+                "@id": "adex:Resources"
             }
         }
     ]

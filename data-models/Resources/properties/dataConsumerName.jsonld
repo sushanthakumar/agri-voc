@@ -8,34 +8,29 @@
     },
     "@graph": [
         {
-            "@id": "adex:registrationNumber",
+            "@id": "adex:dataConsumerName",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The registration number of the entity corresponding to this observation.",
-            "rdfs:label": "registrationNumber",
+            "rdfs:comment": "The name of the consumer who has been granted access to the data corresponding to this observation.",
+            "rdfs:label": "dataConsumerName",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:IdentityDesc"
-                },
-                {
-                    "@id": "adex:AgriMarket"
-                },
-                {
-                    "@id": "adex:AgriMachinery"
+                    "@id": "adex:ConsentArtifact"
                 }
             ],
             "adex:rangeIncludes": [
                 {
+                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }
