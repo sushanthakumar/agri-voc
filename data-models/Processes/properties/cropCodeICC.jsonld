@@ -16,7 +16,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The unique code assigned for the crop species as per the ICC (Indicative Crop Classification) of FAO (Food and Agicultural Organisation).",
+            "rdfs:comment": "The unique code assigned for the crop species as per the ICC (Indicative Crop Classification) of FAO (Food and Agricultural Organisation).",
             "rdfs:label": "cropCodeICC",
             "adex:domainIncludes": [
                 {

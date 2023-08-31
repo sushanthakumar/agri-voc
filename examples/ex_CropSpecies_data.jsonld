@@ -46,6 +46,7 @@
 	"landExtent":50,
 	"recommendedCrops":["Rice", "Wheat", "Maize"],
 	"recommendedCropVarieties":["Ariyan Nel, Arubatham Samba, Aruvadhan Kodai", "Karen Narendra, Karen Vandana, Karan Shriya", "Merut Yellow, Jaunpuri, Sartuj" ],
+	"recommendingAuthority": "Department of Agriculture and Farmers Welfare, Government of India",
 	"soilClass": "Plinthosols",
 	"soilCategory": "Soils distinguished by Fe/Al chemistry",
 	"ndvi": ["http://api.agromonitoring.com/image/1.0/020598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a", "http://api.agromonitoring.com/image/1.0/030598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a"],

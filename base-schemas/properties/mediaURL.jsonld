@@ -42,6 +42,9 @@
                 },
                 {
                     "@id": "adex:AgriMarket"
+                },
+                {
+                    "@id": "adex:CropSpecies"
                 }
             ],
             "adex:rangeIncludes": [

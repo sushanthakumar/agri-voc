@@ -12,7 +12,7 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The maximum concentration of the chemical or pesiticides permitted by the competent regulatory authority corresponding to this observation.",
+            "rdfs:comment": "The maximum concentration of the chemical or pesticides permitted by the competent regulatory authority corresponding to this observation.",
             "rdfs:label": "maxResidueLimit",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

@@ -12,7 +12,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Respresents the symptoms for the crop disease.",
+            "rdfs:comment": "Represents the symptoms for the crop disease.",
             "rdfs:label": "diseaseSymptoms",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

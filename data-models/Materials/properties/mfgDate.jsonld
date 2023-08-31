@@ -12,7 +12,7 @@
             "@type": [
                 "adex:TimeProperty"
             ],
-            "rdfs:comment": "The date of manufature of the commodity or product corresponding to this observation.",
+            "rdfs:comment": "The date of manufacture of the commodity or product corresponding to this observation.",
             "rdfs:label": "mfgDate",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

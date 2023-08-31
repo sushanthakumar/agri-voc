@@ -38,6 +38,9 @@
                     "@id": "adex:FarmerCollective"
                 },
                 {
+                    "@id": "adex:AgriAdvisory"
+                },
+                {
                     "@id": "adex:GhgReport"
                 }
             ],

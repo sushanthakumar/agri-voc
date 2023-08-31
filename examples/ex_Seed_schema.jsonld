@@ -36,11 +36,11 @@
             },
             "cropCodeICC": {
                 "type": "string",
-                "description": "The unique code assigned for the crop species as per the ICC (Indicative Crop Classification) of FAO (Food and Agicultural Organisation)."
+                "description": "The unique code assigned for the crop species as per the ICC (Indicative Crop Classification) of FAO (Food and Agricultural Organisation)."
             },
             "cropNameICC": {
                 "type": "string",
-                "description": "The name of the crop as given by the ICC (Indicative Crop Classification) of FAO (Food and Agicultural Organisation)."
+                "description": "The name of the crop as given by the ICC (Indicative Crop Classification) of FAO (Food and Agricultural Organisation)."
             },
             "cropNameBotanical": {
                 "type": "string",
