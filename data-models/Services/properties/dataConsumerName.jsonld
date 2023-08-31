@@ -12,7 +12,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The name of the consumer who has been granted access to the data corresponding to this observation.",
+            "rdfs:comment": "The name(s) of the consumer(s) who has been granted access to the data corresponding to this observation.",
             "rdfs:label": "dataConsumerName",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:revocation",
+            "@id": "adex:revocationDateTime",
             "@type": [
                 "adex:TimeProperty"
             ],
             "rdfs:comment": "The date and time of revocation for the consent of data corresponding to this observation.",
-            "rdfs:label": "revocation",
+            "rdfs:label": "revocationDateTime",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },

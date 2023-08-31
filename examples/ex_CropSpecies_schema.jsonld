@@ -12,9 +12,9 @@
 			"type": {
 				"type": "array",
 				"items": [{
-						"type": "string",
-						"description": "ADEX Data Model name. It has to be CropSpecies"
-					},
+					"type": "string",
+					"description": "ADEX Data Model name. It has to be CropSpecies"
+				},
 					{
 						"type": "string",
 						"description": "ADEX Entity type. It has to be Resource"
@@ -28,11 +28,11 @@
 				"unitText": "Dimensionless"
 			},
 			"landExtent": {
-                          "type": "number",
-                          "description": "Area of the land corresponding to this observation.",
-                          "unitCode": "ACR",
-                          "unitText": "acre"
-                      },
+				"type": "number",
+				"description": "Area of the land corresponding to this observation.",
+				"unitCode": "ACR",
+				"unitText": "acre"
+			},
 			"recommendingAuthority": {
 				"type": "string",
 				"description": "The top recommended crop varieties that can be cultivated for the season as suggested by the advisory entity."
@@ -94,45 +94,45 @@
 						"type": "object",
 						"description": "Residential address corresponding to this observation",
 						"properties": {
-              "districtName": {
-                "type": "string",
-                "description": "Name of the district corresponding to this observation."
-              },
-              "stateName": {
-                "type": "string",
-                "description": "Name of the state corresponding to this observation."
-              },
-              "addressLine": {
-                "type": "string",
-                "description": "Address corresponding to this observation"
-              },
-              "cityName": {
-                "type": "string",
-                "description": "Name of the city corresponding to this observation."
-              },
-              "countryName": {
-                "type": "string",
-                "description": "Name of the country corresponding to this observation."
-              },
-              "locality": {
-                "type": "string",
-                "description": "Area name of the location corresponding to this observation."
-              },
-              "pincode": {
-                "type": "number",
-                "description": "The postal code corresponding to this observation.",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-              },
-              "buildingNum": {
-                "type": "string",
-                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-              },
-              "street": {
-                "type": "string",
-                "description": "Street name corresponding to this observation."
-              }
-            }
+							"districtName": {
+								"type": "string",
+								"description": "Name of the district corresponding to this observation."
+							},
+							"stateName": {
+								"type": "string",
+								"description": "Name of the state corresponding to this observation."
+							},
+							"addressLine": {
+								"type": "string",
+								"description": "Address corresponding to this observation"
+							},
+							"cityName": {
+								"type": "string",
+								"description": "Name of the city corresponding to this observation."
+							},
+							"countryName": {
+								"type": "string",
+								"description": "Name of the country corresponding to this observation."
+							},
+							"locality": {
+								"type": "string",
+								"description": "Area name of the location corresponding to this observation."
+							},
+							"pincode": {
+								"type": "number",
+								"description": "The postal code corresponding to this observation.",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"buildingNum": {
+								"type": "string",
+								"description": "The unique number of the house/building/shop/flat corresponding to this observation."
+							},
+							"street": {
+								"type": "string",
+								"description": "Street name corresponding to this observation."
+							}
+						}
 					},
 					"dob": {
 						"type": "string",
@@ -151,89 +151,89 @@
 						"type": "object",
 						"description": "Permanent address corresponding to this observation",
 						"properties": {
-              "districtName": {
-                "type": "string",
-                "description": "Name of the district corresponding to this observation."
-              },
-              "stateName": {
-                "type": "string",
-                "description": "Name of the state corresponding to this observation."
-              },
-              "addressLine": {
-                "type": "string",
-                "description": "Address corresponding to this observation"
-              },
-              "cityName": {
-                "type": "string",
-                "description": "Name of the city corresponding to this observation."
-              },
-              "countryName": {
-                "type": "string",
-                "description": "Name of the country corresponding to this observation."
-              },
-              "locality": {
-                "type": "string",
-                "description": "Area name of the location corresponding to this observation."
-              },
-              "pincode": {
-                "type": "number",
-                "description": "The postal code corresponding to this observation.",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-              },
-              "buildingNum": {
-                "type": "string",
-                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-              },
-              "street": {
-                "type": "string",
-                "description": "Street name corresponding to this observation."
-              }
-            }
+							"districtName": {
+								"type": "string",
+								"description": "Name of the district corresponding to this observation."
+							},
+							"stateName": {
+								"type": "string",
+								"description": "Name of the state corresponding to this observation."
+							},
+							"addressLine": {
+								"type": "string",
+								"description": "Address corresponding to this observation"
+							},
+							"cityName": {
+								"type": "string",
+								"description": "Name of the city corresponding to this observation."
+							},
+							"countryName": {
+								"type": "string",
+								"description": "Name of the country corresponding to this observation."
+							},
+							"locality": {
+								"type": "string",
+								"description": "Area name of the location corresponding to this observation."
+							},
+							"pincode": {
+								"type": "number",
+								"description": "The postal code corresponding to this observation.",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"buildingNum": {
+								"type": "string",
+								"description": "The unique number of the house/building/shop/flat corresponding to this observation."
+							},
+							"street": {
+								"type": "string",
+								"description": "Street name corresponding to this observation."
+							}
+						}
 					},
 					"businessAddress": {
 						"type": "object",
 						"description": "Business address corresponding to this observation",
 						"properties": {
-              "districtName": {
-                "type": "string",
-                "description": "Name of the district corresponding to this observation."
-              },
-              "stateName": {
-                "type": "string",
-                "description": "Name of the state corresponding to this observation."
-              },
-              "addressLine": {
-                "type": "string",
-                "description": "Address corresponding to this observation"
-              },
-              "cityName": {
-                "type": "string",
-                "description": "Name of the city corresponding to this observation."
-              },
-              "countryName": {
-                "type": "string",
-                "description": "Name of the country corresponding to this observation."
-              },
-              "locality": {
-                "type": "string",
-                "description": "Area name of the location corresponding to this observation."
-              },
-              "pincode": {
-                "type": "number",
-                "description": "The postal code corresponding to this observation.",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-              },
-              "buildingNum": {
-                "type": "string",
-                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-              },
-              "street": {
-                "type": "string",
-                "description": "Street name corresponding to this observation."
-              }
-            }
+							"districtName": {
+								"type": "string",
+								"description": "Name of the district corresponding to this observation."
+							},
+							"stateName": {
+								"type": "string",
+								"description": "Name of the state corresponding to this observation."
+							},
+							"addressLine": {
+								"type": "string",
+								"description": "Address corresponding to this observation"
+							},
+							"cityName": {
+								"type": "string",
+								"description": "Name of the city corresponding to this observation."
+							},
+							"countryName": {
+								"type": "string",
+								"description": "Name of the country corresponding to this observation."
+							},
+							"locality": {
+								"type": "string",
+								"description": "Area name of the location corresponding to this observation."
+							},
+							"pincode": {
+								"type": "number",
+								"description": "The postal code corresponding to this observation.",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"buildingNum": {
+								"type": "string",
+								"description": "The unique number of the house/building/shop/flat corresponding to this observation."
+							},
+							"street": {
+								"type": "string",
+								"description": "Street name corresponding to this observation."
+							}
+						}
 					},
 					"gender": {
 						"type": "string",
@@ -251,49 +251,49 @@
 						"type": "object",
 						"description": "Personal identification information issued by the government.",
 						"properties":{
-              "bankAccountNo": {
-                "type": "number",
-                "description": "The bank account number of the individual or business corresponding to this observation",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-              },
-              "gstin": {
-                "type": "string",
-                "description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
-              },
-              "ifscCode": {
-                "type": "string",
-                "description": "The IFSC code for the bank corresponding to this observation"
-              },
-              "drivingLicense": {
-                "type": "string",
-                "description": "The driving license number of the individual corresponding to this observation."
-              },
-              "registrationNumber": {
-                "type": "string",
-                "description": "The registration number of the entity corresponding to this observation."
-              },
-              "digitalSignature": {
-                "type": "string",
-                "description": "The link to the digital signature of the entity corresponding to this observation."
-              },
-              "panNo": {
-                "type": "string",
-                "description": "The pan card number of the individual corresponding to this observation."
-              },
-              "fssaiLicense": {
-                "type": "string",
-                "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
-              },
-              "aadharNo": {
-                "type": "string",
-                "description": "The aadhar number issued by the government for the individual corresponding to this observation."
-              },
-              "iec": {
-                "type": "string",
-                "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
-              }
-            }
+							"bankAccountNo": {
+								"type": "number",
+								"description": "The bank account number of the individual or business corresponding to this observation",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"gstin": {
+								"type": "string",
+								"description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
+							},
+							"ifscCode": {
+								"type": "string",
+								"description": "The IFSC code for the bank corresponding to this observation"
+							},
+							"drivingLicense": {
+								"type": "string",
+								"description": "The driving license number of the individual corresponding to this observation."
+							},
+							"registrationNumber": {
+								"type": "string",
+								"description": "The registration number of the entity corresponding to this observation."
+							},
+							"digitalSignature": {
+								"type": "string",
+								"description": "The link to the digital signature of the entity corresponding to this observation."
+							},
+							"panNo": {
+								"type": "string",
+								"description": "The pan card number of the individual corresponding to this observation."
+							},
+							"fssaiLicense": {
+								"type": "string",
+								"description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+							},
+							"aadharNo": {
+								"type": "string",
+								"description": "The aadhar number issued by the government for the individual corresponding to this observation."
+							},
+							"iec": {
+								"type": "string",
+								"description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
+							}
+						}
 					},
 					"imageURL": {
 						"type": "array",
@@ -390,12 +390,12 @@
 						}
 					},
 					"mediaURL": {
-				"type": "array",
-				"description": "URL providing further information of any image(s) or media of the complaint or place.",
-				"items": {
-					"type": "string"
-				}
-			},
+						"type": "array",
+						"description": "URL providing further information of any image(s) or media of the complaint or place.",
+						"items": {
+							"type": "string"
+						}
+					},
 					"observationDateTime": {
 						"type": "string",
 						"description": "Last reported time of observation.",
@@ -440,45 +440,45 @@
 						"type": "object",
 						"description": "Residential address corresponding to this observation",
 						"properties": {
-              "districtName": {
-                "type": "string",
-                "description": "Name of the district corresponding to this observation."
-              },
-              "stateName": {
-                "type": "string",
-                "description": "Name of the state corresponding to this observation."
-              },
-              "addressLine": {
-                "type": "string",
-                "description": "Address corresponding to this observation"
-              },
-              "cityName": {
-                "type": "string",
-                "description": "Name of the city corresponding to this observation."
-              },
-              "countryName": {
-                "type": "string",
-                "description": "Name of the country corresponding to this observation."
-              },
-              "locality": {
-                "type": "string",
-                "description": "Area name of the location corresponding to this observation."
-              },
-              "pincode": {
-                "type": "number",
-                "description": "The postal code corresponding to this observation.",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-              },
-              "buildingNum": {
-                "type": "string",
-                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-              },
-              "street": {
-                "type": "string",
-                "description": "Street name corresponding to this observation."
-              }
-            }
+							"districtName": {
+								"type": "string",
+								"description": "Name of the district corresponding to this observation."
+							},
+							"stateName": {
+								"type": "string",
+								"description": "Name of the state corresponding to this observation."
+							},
+							"addressLine": {
+								"type": "string",
+								"description": "Address corresponding to this observation"
+							},
+							"cityName": {
+								"type": "string",
+								"description": "Name of the city corresponding to this observation."
+							},
+							"countryName": {
+								"type": "string",
+								"description": "Name of the country corresponding to this observation."
+							},
+							"locality": {
+								"type": "string",
+								"description": "Area name of the location corresponding to this observation."
+							},
+							"pincode": {
+								"type": "number",
+								"description": "The postal code corresponding to this observation.",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"buildingNum": {
+								"type": "string",
+								"description": "The unique number of the house/building/shop/flat corresponding to this observation."
+							},
+							"street": {
+								"type": "string",
+								"description": "Street name corresponding to this observation."
+							}
+						}
 					},
 					"dob": {
 						"type": "string",
@@ -497,89 +497,89 @@
 						"type": "object",
 						"description": "Permanent address corresponding to this observation",
 						"properties": {
-              "districtName": {
-                "type": "string",
-                "description": "Name of the district corresponding to this observation."
-              },
-              "stateName": {
-                "type": "string",
-                "description": "Name of the state corresponding to this observation."
-              },
-              "addressLine": {
-                "type": "string",
-                "description": "Address corresponding to this observation"
-              },
-              "cityName": {
-                "type": "string",
-                "description": "Name of the city corresponding to this observation."
-              },
-              "countryName": {
-                "type": "string",
-                "description": "Name of the country corresponding to this observation."
-              },
-              "locality": {
-                "type": "string",
-                "description": "Area name of the location corresponding to this observation."
-              },
-              "pincode": {
-                "type": "number",
-                "description": "The postal code corresponding to this observation.",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-              },
-              "buildingNum": {
-                "type": "string",
-                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-              },
-              "street": {
-                "type": "string",
-                "description": "Street name corresponding to this observation."
-              }
-            }
+							"districtName": {
+								"type": "string",
+								"description": "Name of the district corresponding to this observation."
+							},
+							"stateName": {
+								"type": "string",
+								"description": "Name of the state corresponding to this observation."
+							},
+							"addressLine": {
+								"type": "string",
+								"description": "Address corresponding to this observation"
+							},
+							"cityName": {
+								"type": "string",
+								"description": "Name of the city corresponding to this observation."
+							},
+							"countryName": {
+								"type": "string",
+								"description": "Name of the country corresponding to this observation."
+							},
+							"locality": {
+								"type": "string",
+								"description": "Area name of the location corresponding to this observation."
+							},
+							"pincode": {
+								"type": "number",
+								"description": "The postal code corresponding to this observation.",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"buildingNum": {
+								"type": "string",
+								"description": "The unique number of the house/building/shop/flat corresponding to this observation."
+							},
+							"street": {
+								"type": "string",
+								"description": "Street name corresponding to this observation."
+							}
+						}
 					},
 					"businessAddress": {
 						"type": "object",
 						"description": "Business address corresponding to this observation",
 						"properties": {
-              "districtName": {
-                "type": "string",
-                "description": "Name of the district corresponding to this observation."
-              },
-              "stateName": {
-                "type": "string",
-                "description": "Name of the state corresponding to this observation."
-              },
-              "addressLine": {
-                "type": "string",
-                "description": "Address corresponding to this observation"
-              },
-              "cityName": {
-                "type": "string",
-                "description": "Name of the city corresponding to this observation."
-              },
-              "countryName": {
-                "type": "string",
-                "description": "Name of the country corresponding to this observation."
-              },
-              "locality": {
-                "type": "string",
-                "description": "Area name of the location corresponding to this observation."
-              },
-              "pincode": {
-                "type": "number",
-                "description": "The postal code corresponding to this observation.",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-              },
-              "buildingNum": {
-                "type": "string",
-                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-              },
-              "street": {
-                "type": "string",
-                "description": "Street name corresponding to this observation."
-              }
-            }
+							"districtName": {
+								"type": "string",
+								"description": "Name of the district corresponding to this observation."
+							},
+							"stateName": {
+								"type": "string",
+								"description": "Name of the state corresponding to this observation."
+							},
+							"addressLine": {
+								"type": "string",
+								"description": "Address corresponding to this observation"
+							},
+							"cityName": {
+								"type": "string",
+								"description": "Name of the city corresponding to this observation."
+							},
+							"countryName": {
+								"type": "string",
+								"description": "Name of the country corresponding to this observation."
+							},
+							"locality": {
+								"type": "string",
+								"description": "Area name of the location corresponding to this observation."
+							},
+							"pincode": {
+								"type": "number",
+								"description": "The postal code corresponding to this observation.",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"buildingNum": {
+								"type": "string",
+								"description": "The unique number of the house/building/shop/flat corresponding to this observation."
+							},
+							"street": {
+								"type": "string",
+								"description": "Street name corresponding to this observation."
+							}
+						}
 					},
 					"gender": {
 						"type": "string",
@@ -597,49 +597,49 @@
 						"type": "object",
 						"description": "Personal identification information issued by the government.",
 						"properties":{
-              "bankAccountNo": {
-                "type": "number",
-                "description": "The bank account number of the individual or business corresponding to this observation",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-              },
-              "gstin": {
-                "type": "string",
-                "description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
-              },
-              "ifscCode": {
-                "type": "string",
-                "description": "The IFSC code for the bank corresponding to this observation"
-              },
-              "drivingLicense": {
-                "type": "string",
-                "description": "The driving license number of the individual corresponding to this observation."
-              },
-              "registrationNumber": {
-                "type": "string",
-                "description": "The registration number of the entity corresponding to this observation."
-              },
-              "digitalSignature": {
-                "type": "string",
-                "description": "The link to the digital signature of the entity corresponding to this observation."
-              },
-              "panNo": {
-                "type": "string",
-                "description": "The pan card number of the individual corresponding to this observation."
-              },
-              "fssaiLicense": {
-                "type": "string",
-                "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
-              },
-              "aadharNo": {
-                "type": "string",
-                "description": "The aadhar number issued by the government for the individual corresponding to this observation."
-              },
-              "iec": {
-                "type": "string",
-                "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
-              }
-            }
+							"bankAccountNo": {
+								"type": "number",
+								"description": "The bank account number of the individual or business corresponding to this observation",
+								"unitCode": "C62",
+								"unitText": "Dimensionless"
+							},
+							"gstin": {
+								"type": "string",
+								"description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
+							},
+							"ifscCode": {
+								"type": "string",
+								"description": "The IFSC code for the bank corresponding to this observation"
+							},
+							"drivingLicense": {
+								"type": "string",
+								"description": "The driving license number of the individual corresponding to this observation."
+							},
+							"registrationNumber": {
+								"type": "string",
+								"description": "The registration number of the entity corresponding to this observation."
+							},
+							"digitalSignature": {
+								"type": "string",
+								"description": "The link to the digital signature of the entity corresponding to this observation."
+							},
+							"panNo": {
+								"type": "string",
+								"description": "The pan card number of the individual corresponding to this observation."
+							},
+							"fssaiLicense": {
+								"type": "string",
+								"description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+							},
+							"aadharNo": {
+								"type": "string",
+								"description": "The aadhar number issued by the government for the individual corresponding to this observation."
+							},
+							"iec": {
+								"type": "string",
+								"description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
+							}
+						}
 					},
 					"imageURL": {
 						"type": "array",
@@ -671,259 +671,6 @@
 				"description": "The height of the crop corresponding to this observation.",
 				"unitCode": "MTR",
 				"unitText": "metre"
-			},
-			"soilInfo": {
-				"type": "object",
-				"description": "Comprehensive information of the soil corresponding to this observation",
-				"properties": {
-					"location": {
-						"type": "object",
-						"description": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor."
-					},
-					"cropSpeciesInfo": {
-						"type": "object",
-						"description": "Information of crops corresponding to this observation."
-					},
-					"observationDateTime": {
-						"type": "string",
-						"description": "Last reported time of observation.",
-						"format": "date-time"
-					},
-					"clayLevel": {
-						"type": "number",
-						"description": "The proportion of clay in the soil composition",
-						"unitCode": "P1",
-						"unitText": "Percentage"
-					},
-					"sandLevel": {
-						"type": "number",
-						"description": "The proportion of sand in the soil composition",
-						"unitCode": "P1",
-						"unitText": "Percentage"
-					},
-					"waterRetentionCapacity": {
-						"type": "number",
-						"description": "The water holding capacity of the soil.",
-						"unitCode": "P1",
-						"unitText": "Percentage"
-					},
-					"siltLevel": {
-						"type": "number",
-						"description": "The proportion of silt in the soil composition",
-						"unitCode": "P1",
-						"unitText": "Percentage"
-					},
-					"electricalConductivity": {
-						"type": "number",
-						"description": "The measure of electrical conductivity of the entity corresponding to this observation.",
-						"unitCode": "D10",
-						"unitText": "siemens per metre"
-					},
-					"testDateTime": {
-						"type": "string",
-						"description": "The date and time at which the sample is being tested in the laboratory or the testing centre.",
-						"format": "date-time"
-					},
-					"soilCategory": {
-						"type": "string",
-						"description": "The soil category may be specified as per the national system of soil classification or customizing the WRB(World Reference Base) codes."
-					},
-					"topSoilDepth": {
-						"type": "number",
-						"description": "The measure of top soil layer, which contains the high nutrients and organic matter neccessary for plant growth.",
-						"unitCode": "CMT",
-						"unitText": "centimetre"
-					},
-					"soilMoisture": {
-						"type": "number",
-						"description": "Volumetric Water Content (VMC) is the numerical measure of soil moisture. It is simply the ratio of water volume to soil volume.",
-						"unitCode": "G31",
-						"unitText": "kilogram per cubic centimetre"
-					},
-					"soilTexture": {
-						"type": "string",
-						"description": "Represents the texture of soil. It can take up values like sandy, silt, clay, loam."
-					},
-					"soilSalinity": {
-						"type": "number",
-						"description": "The level of soil salinity. It is directly proportional to the measure of electrical conductivity of the soil moisture.",
-						"unitCode": "G43",
-						"unitText": "microsiemens per metre"
-					},
-					"loamLevel": {
-						"type": "number",
-						"description": "The proportion of loam in the soil composition",
-						"unitCode": "P1",
-						"unitText": "Percentage"
-					},
-					"pH": {
-						"type": "number",
-						"description": "The measure of the acidity or basicity.",
-						"unitCode": "C62",
-						"unitText": "dimensionless"
-					},
-					"soilClass": {
-						"type": "string",
-						"description": "The soil class may be specified as per the national system of soil classification or customizing the WRB(World Reference Base) codes."
-					},
-					"soilType": {
-						"type": "string",
-						"description": "The type of soil corresponding to this observation, such as Alluvial Soil, Black Cotton Soil, Arid or Desert Soil, etc."
-					},
-					"landIdentityInfo": {
-						"type": "object",
-						"description": "The unique land identification information corresponding to this observation.",
-						"properties": {
-					"surveyNumber": {
-						"type": "string",
-						"description": "The unique land survey number allocated to the land corresponding to this observation."
-					},
-					"baseSurveyNumber": {
-						"type": "number",
-						"description": "The base survey number of the land corresponding to this observation.",
-						"unitCode": "C62",
-						"unitText": "Dimensionless"
-					},
-					"landParcelID": {
-						"type": "number",
-						"description": "The ULPIN(Unique Land Parcel Identification Number) representing the land parcel corresponding to the observation.",
-						"unitCode": "C62",
-						"unitText": "Dimensionless"
-					},
-					"subdivisionNumber": {
-						"type": "string",
-						"description": "The subdivision number from the land survey number corresponding to this observation"
-					}
-				}
-					},
-					"sampleID": {
-						"type": "string",
-						"description": "The unique ID representing the sample corresponding to this observation"
-					},
-					"testCentreCode": {
-						"type": "string",
-						"description": "The unique code of the centre at which the sample is being tested."
-					},
-					"soilQuality": {
-						"type": "string",
-						"description": "The quality of the soil which has been tested from the land parcel. ENUM [Good, Moderate, Poor]."
-					},
-					"sampleDateTime": {
-						"type": "string",
-						"description": "The date and time at which the sample is being collected corresponding to this observation.",
-						"format": "date-time"
-					},
-					"testCentreID": {
-						"type": "string",
-						"description": "The unique ID of the centre at which the sample is being tested."
-					},
-					"testCentreName": {
-						"type": "string",
-						"description": "The name of the centre at which the sample is being tested."
-					},
-					"nutrientInfo": {
-						"type": "object",
-						"description": "The chemical elements and compounds that are necessary for plant growth, reproduction, metabolism.",
-						"properties": {
-							"nitrogen": {
-								"type": "number",
-								"description": "Observed value of Nitrogen composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"cl": {
-								"type": "number",
-								"description": "Observed value of Chlorine composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"sulphur": {
-								"type": "number",
-								"description": "Observed value of sulphur composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"boron": {
-								"type": "number",
-								"description": "Observed value of Boron composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"k2o": {
-								"type": "number",
-								"description": "Observed value of Potassium Oxide composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"p2o5": {
-								"type": "number",
-								"description": "Observed value of Phosphorus Pentoxide composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"ca": {
-								"type": "number",
-								"description": "Observed value of Calcium composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"zn": {
-								"type": "number",
-								"description": "Observed value of Zinc composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"fe": {
-								"type": "number",
-								"description": "Observed value of Iron composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"potassium": {
-								"type": "number",
-								"description": "Observed value of Potassium composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"cu": {
-								"type": "number",
-								"description": "Observed value of Copper composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"mo": {
-								"type": "number",
-								"description": "Observed value of Molybdenum composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"mn": {
-								"type": "number",
-								"description": "Observed value of Manganese composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"phosphorus": {
-								"type": "number",
-								"description": "Observed value of Phosphorus composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"organicCarbon": {
-								"type": "number",
-								"description": "Observed value of Organic Carbon composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							},
-							"mgo": {
-								"type": "number",
-								"description": "Observed value of Magnesium Oxide composition in the soil.",
-								"unitCode": "P1",
-								"unitText": "Percentage"
-							}
-						}
-					}
-				}
 			},
 			"cropSeason": {
 				"type": "string",
@@ -1121,7 +868,7 @@
 				"type": "string",
 				"description": "Last reported time of observation.",
 				"format": "date-time"
-      		}
+			}
 		}
 	}
 }

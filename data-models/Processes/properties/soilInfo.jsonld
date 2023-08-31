@@ -20,9 +20,6 @@
             "rdfs:label": "soilInfo",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:CropSpecies"
-                },
-                {
                     "@id": "adex:AgriAdvisory"
                 }
             ],

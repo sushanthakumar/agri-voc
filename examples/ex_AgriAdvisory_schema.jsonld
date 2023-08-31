@@ -883,10 +883,6 @@
 								"unitCode": "MTR",
 								"unitText": "metre"
 							},
-							"soilInfo": {
-								"type": "object",
-								"description": "Comprehensive information of the soil corresponding to this observation"
-							},
 							"cropSeason": {
 								"type": "string",
 								"description": "The season in which the crop species is planted and harvested. ENUM [Kharif, Rabi, Zaid]."
