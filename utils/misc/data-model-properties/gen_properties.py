@@ -124,8 +124,8 @@ def find_name(pattern, path):
 
 
 def create_domain(properties_path):
-    subdomain_path = properties_path + "/" + domain_name + ".jsonld"
-    if not os.path.exists(subdomain_path):
+    domain_path = properties_path + "/" + domain_name + ".jsonld"
+    if not os.path.exists(domain_path):
         comment = input("Enter the description for the domain\n")
         class_dict = obj
         class_dict["@graph"][0]["@type"] = ["owl:Class", "rdfs:Class"]
@@ -136,7 +136,7 @@ def create_domain(properties_path):
         dict1["rdfs:subClassOf"] = {"@id": "iudx:DataModel"}
         obj["@graph"][0].update(dict1)
 
-        with open(subdomain_path, "w+") as prop_file:
+        with open(domain_path, "w+") as prop_file:
             json.dump(class_dict, prop_file, indent=4)
 
 

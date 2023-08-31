@@ -8,28 +8,13 @@
     },
     "@graph": [
         {
-            "@id": "adex:purposeDescription",
+            "@id": "adex:isCaseSensitive",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Describes the purpose of the consent request corresponding to this observation.",
-            "rdfs:label": "purposeDescription",
+            "rdfs:comment": "Represents whether the codes in the code system or value set are case sensitive or not. True - if case sensitive, False - if not.",
+            "rdfs:label": "isCaseSensitive",
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:ConsentArtifact"
-                },
-                {
-                    "@id": "adex:Drone"
-                },
-                {
-                    "@id": "adex:AgriMachinery"
-                },
-                {
-                    "@id": "adex:PublicSchemes"
-                },
-                {
-                    "@id": "adex:AgroChemicals"
-                },
                 {
                     "@id": "adex:CodeSystems"
                 },
@@ -39,7 +24,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Boolean"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

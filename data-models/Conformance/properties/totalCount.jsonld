@@ -8,28 +8,13 @@
     },
     "@graph": [
         {
-            "@id": "adex:purposeDescription",
+            "@id": "adex:totalCount",
             "@type": [
-                "adex:TextProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Describes the purpose of the consent request corresponding to this observation.",
-            "rdfs:label": "purposeDescription",
+            "rdfs:comment": "Total number of items in the entity corresponding to this observation.",
+            "rdfs:label": "totalCount",
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:ConsentArtifact"
-                },
-                {
-                    "@id": "adex:Drone"
-                },
-                {
-                    "@id": "adex:AgriMachinery"
-                },
-                {
-                    "@id": "adex:PublicSchemes"
-                },
-                {
-                    "@id": "adex:AgroChemicals"
-                },
                 {
                     "@id": "adex:CodeSystems"
                 },
@@ -39,7 +24,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

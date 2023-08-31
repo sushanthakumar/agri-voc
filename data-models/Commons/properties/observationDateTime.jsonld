@@ -29,9 +29,6 @@
                     "@id": "adex:LandParcel"
                 },
                 {
-                    "@id": "adex:Commons"
-                },
-                {
                     "@id": "adex:AgriMarket"
                 },
                 {
@@ -48,6 +45,12 @@
                 },
                 {
                     "@id": "adex:CropSpecies"
+                },
+                {
+                    "@id": "adex:CodeSystems"
+                },
+                {
+                    "@id": "adex:ValueSets"
                 }
             ],
             "adex:rangeIncludes": [

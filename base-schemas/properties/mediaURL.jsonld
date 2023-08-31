@@ -45,6 +45,12 @@
                 },
                 {
                     "@id": "adex:CropSpecies"
+                },
+                {
+                    "@id": "adex:CodeSystems"
+                },
+                {
+                    "@id": "adex:ValueSets"
                 }
             ],
             "adex:rangeIncludes": [

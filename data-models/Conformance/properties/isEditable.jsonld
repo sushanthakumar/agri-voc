@@ -1,0 +1,35 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org.in/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:isEditable",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Denotes whether the document, report, or system corresponding to this observation can be edited or not.True - if editable, False - if not editable",
+            "rdfs:label": "isEditable",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:ValueSets"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Boolean"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}

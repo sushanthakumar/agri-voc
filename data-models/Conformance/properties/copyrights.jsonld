@@ -8,28 +8,13 @@
     },
     "@graph": [
         {
-            "@id": "adex:purposeDescription",
+            "@id": "adex:copyrights",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Describes the purpose of the consent request corresponding to this observation.",
-            "rdfs:label": "purposeDescription",
+            "rdfs:comment": "Copyrights are legal protections that grant creators exclusive rights to control the use and distribution of their original work.",
+            "rdfs:label": "copyrights",
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:ConsentArtifact"
-                },
-                {
-                    "@id": "adex:Drone"
-                },
-                {
-                    "@id": "adex:AgriMachinery"
-                },
-                {
-                    "@id": "adex:PublicSchemes"
-                },
-                {
-                    "@id": "adex:AgroChemicals"
-                },
                 {
                     "@id": "adex:CodeSystems"
                 },
