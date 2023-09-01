@@ -16,7 +16,7 @@
             "rdfs:comment": "Data models that pertain to the conformance domain",
             "rdfs:label": "Conformance",
             "rdfs:subClassOf": {
-                "@id": "iudx:DataModel"
+                "@id": "adex:DataModel"
             }
         }
     ]

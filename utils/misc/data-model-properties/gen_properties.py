@@ -133,29 +133,11 @@ def create_domain(properties_path):
         class_dict["@graph"][0]["rdfs:comment"] = comment
         class_dict["@graph"][0]["rdfs:label"] = domain_name
         dict1 = {}
-        dict1["rdfs:subClassOf"] = {"@id": "iudx:DataModel"}
+        dict1["rdfs:subClassOf"] = {"@id": "adex:DataModel"}
         obj["@graph"][0].update(dict1)
 
         with open(domain_path, "w+") as prop_file:
             json.dump(class_dict, prop_file, indent=4)
-
-
-def create_domain(properties_path):
-    subdomain_path = properties_path + "/" + sub_domain + ".jsonld"
-    if not os.path.exists(subdomain_path):
-        comment = input("Enter the description of Domain\n")
-        class_dict = obj
-        class_dict["@graph"][0]["@type"] = ["owl:Class", "rdfs:Class"]
-        class_dict["@graph"][0]["@id"] = "adex:" + sub_domain
-        class_dict["@graph"][0]["rdfs:comment"] = comment
-        class_dict["@graph"][0]["rdfs:label"] = sub_domain
-        dict1 = {}
-        dict1["rdfs:subClassOf"] = {"@id": "iudx:DataModel"}
-        obj["@graph"][0].update(dict1)
-
-        with open(subdomain_path, "w+") as prop_file:
-            json.dump(class_dict, prop_file, indent=4)
-
 
 def create_classes(properties_path, subclass):
     subdomain_path = properties_path + "/" + sub_domain + ".jsonld"
