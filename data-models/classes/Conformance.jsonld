@@ -8,16 +8,13 @@
     },
     "@graph": [
         {
+            "@id": "adex:Conformance",
             "@type": [
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:Conformance",
             "rdfs:comment": "Data models that pertain to the conformance domain",
             "rdfs:label": "Conformance",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "rdfs:subClassOf": {
                 "@id": "iudx:DataModel"
             }
