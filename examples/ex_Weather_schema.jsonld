@@ -21,10 +21,6 @@
 					}
 				]
 			},
-			"id": {
-				"type": "string",
-				"description": "Unique ADEX ID for the resource."
-			},
 			"observationDateTime": {
 				"type": "string",
 				"format": "date-time",

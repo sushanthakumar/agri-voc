@@ -1736,10 +1736,6 @@
 				"type": "object",
 				"description": "The information about the agricultural produce/commodity associated with the AMC/market corresponding to this observation.",
 				"properties": {
-					"id": {
-						"type": "string",
-						"description": "Unique ADEX ID for the resource."
-					},
 					"minimumPrice": {
 						"type": "number",
 						"description": "The minimum price of the product/commodity/service corresponding to this observation.",
