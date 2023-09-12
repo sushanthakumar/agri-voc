@@ -8,18 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:villageName",
+            "@id": "adex:countryCode",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Name of the village corresponding to this observation.",
-            "rdfs:label": "villageName",
+            "rdfs:comment": "The country code corresponding to this observation.",
+            "rdfs:label": "countryCode",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:LocaleDesc"
+                    "@id": "adex:AddressDesc"
                 },
                 {
-                    "@id": "adex:AddressDesc"
+                    "@id": "adex:LocaleDesc"
                 }
             ],
             "adex:rangeIncludes": [

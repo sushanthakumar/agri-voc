@@ -16,6 +16,9 @@
             "rdfs:label": "stateCode",
             "adex:domainIncludes": [
                 {
+                    "@id": "adex:AddressDesc"
+                },
+                {
                     "@id": "adex:LocaleDesc"
                 }
             ],
