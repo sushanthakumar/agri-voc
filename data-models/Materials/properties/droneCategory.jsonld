@@ -8,26 +8,23 @@
     },
     "@graph": [
         {
-            "@id": "adex:landGeography",
+            "@id": "adex:droneCategory",
             "@type": [
-                "adex:TextProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The geographic characteristics of the land such as desert, hilly, etc",
-            "rdfs:label": "landGeography",
+            "rdfs:comment": "The category of the drone corresponding to this observation.",
+            "rdfs:label": "droneCategory",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:LandParcel"
-                },
-                {
-                    "@id": "adex:PublicSchemes"
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

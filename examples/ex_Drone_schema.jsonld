@@ -809,6 +809,10 @@
                   "unitCode": "C62",
                   "unitText": "Dimensionless"
                },
+               "purposeDescription": {
+                   "description": "Descibes the purpose(s) of the entity or service corresponding this observation.",
+                   "type": "string"
+               },
                "deviceBatteryStatus": {
                   "type": "string",
                   "description": "Gives the Battery charging status of the reporting device(Connected, Disconnected)."
@@ -852,6 +856,16 @@
          "purposeCode": {
             "type": "string",
             "description": "The unique code representing the consent artifact corresponding to this observation."
+         },
+         "droneCapacity": {
+             "description": "The maximum weight or load that a drone, can carry or transport.",
+             "type": "number",
+             "unitCode": "KGM",
+             "unitText": "kilogram"
+         },
+         "droneCategory": {
+             "description": "The category of the drone corresponding to this observation.",
+             "type": "string"
          },
          "validTill": {
             "type": "string",

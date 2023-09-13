@@ -8,26 +8,23 @@
     },
     "@graph": [
         {
-            "@id": "adex:landGeography",
+            "@id": "adex:droneCapacity",
             "@type": [
-                "adex:TextProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The geographic characteristics of the land such as desert, hilly, etc",
-            "rdfs:label": "landGeography",
+            "rdfs:comment": "The maximum weight or load that a drone, can carry or transport.",
+            "rdfs:label": "droneCapacity",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:LandParcel"
-                },
-                {
-                    "@id": "adex:PublicSchemes"
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

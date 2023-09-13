@@ -34,6 +34,9 @@
                     "@id": "adex:CodeSystems"
                 },
                 {
+                    "@id": "adex:Device"
+                },
+                {
                     "@id": "adex:ValueSets"
                 }
             ],

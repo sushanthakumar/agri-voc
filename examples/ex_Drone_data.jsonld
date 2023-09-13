@@ -10,10 +10,10 @@
   "purposeCode": "F16-001XX",
   "purposeDescription": "Real-time, accurate 3D comparable data",
   "registeringAuthority": "Directorate General of Civil Aviation",
-  "identityInfo":{
-    "registrationNumber": "237127XXX"
-  },
+  "registrationNumber": "237127XXX",
   "registrationDate": "2023-01-01",
+  "droneCapacity": 20,
+  "droneCategory": "Commercial Drones",
   "validTill": "2023-12-31",
   "localeInfo": {
     "districtName": "Khammam",
