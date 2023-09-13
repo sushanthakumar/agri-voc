@@ -1,38 +1,31 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "geojson": "https://purl.org/geojson/vocab#",
         "owl": "http://www.w3.org/2002/07/owl#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "iudx": "https://voc.iudx.org.in/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
         "adex": "https://agrijson.adex.org.in/"
     },
     "@graph": [
         {
-            "@id": "adex:personnelInfo",
+            "@id": "adex:contactPointInfo",
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Personnel information of an individual or business corresponding to this observation.",
-            "rdfs:label": "personnelInfo",
+            "rdfs:comment": "Contact point information of a individual/business/service corresponding to this observation.",
+            "rdfs:label": "contactPointInfo",
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:Farmer"
-                },
                 {
                     "@id": "adex:AgriMarket"
                 },
                 {
-                    "@id": "adex:AgroChemicals"
+                    "@id": "adex:Imagery"
                 },
                 {
-                    "@id": "adex:CropInsurance"
+                    "@id": "adex:Farmer"
                 },
                 {
-                    "@id": "adex:AgriMachinery"
+                    "@id": "adex:FreightManagement"
                 },
                 {
                     "@id": "adex:FarmerCollective"
@@ -41,12 +34,12 @@
                     "@id": "adex:AgriAdvisory"
                 },
                 {
-                    "@id": "adex:GhgReport"
+                    "@id": "adex:AgriBusiness"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:PersonnelDesc"
+                    "@id": "adex:ContactPointDesc"
                 }
             ],
             "rdfs:isDefinedBy": {

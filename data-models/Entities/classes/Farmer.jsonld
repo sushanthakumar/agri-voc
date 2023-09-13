@@ -16,7 +16,7 @@
             "rdfs:comment": "Data Model for the information about farmer.",
             "rdfs:label": "Farmer",
             "rdfs:subClassOf": {
-                "@id": "adex:Personnel"
+                "@id": "adex:Entities"
             }
         }
     ]

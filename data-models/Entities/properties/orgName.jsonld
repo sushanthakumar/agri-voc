@@ -8,21 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:productName",
+            "@id": "adex:orgName",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Name of the product corresponding to this observation.",
-            "rdfs:label": "productName",
+            "rdfs:comment": "The name of the organisation or entity corresponding to this observation.",
+            "rdfs:label": "orgName",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgriMarket"
-                },
-                {
-                    "@id": "adex:AgroChemicals"
-                },
-                {
-                    "@id": "adex:AgriMachinery"
+                    "@id": "adex:AgriBusiness"
                 }
             ],
             "adex:rangeIncludes": [
@@ -32,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

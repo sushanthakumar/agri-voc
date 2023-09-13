@@ -12,45 +12,36 @@
     },
     "@graph": [
         {
-            "@id": "adex:localeInfo",
+            "@id": "adex:personnelInfo",
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Locale information corresponding to this observation.",
-            "rdfs:label": "localeInfo",
+            "rdfs:comment": "Personnel information of an individual or business corresponding to this observation.",
+            "rdfs:label": "personnelInfo",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:LandParcel"
-                },
-                {
-                    "@id": "adex:Weather"
+                    "@id": "adex:Farmer"
                 },
                 {
                     "@id": "adex:AgriMarket"
                 },
                 {
-                    "@id": "adex:AgriAdvisory"
+                    "@id": "adex:AgroChemicals"
                 },
                 {
                     "@id": "adex:CropInsurance"
                 },
                 {
-                    "@id": "adex:CropSpecies"
-                },
-                {
-                    "@id": "adex:Drone"
-                },
-                {
-                    "@id": "adex:PublicSchemes"
-                },
-                {
                     "@id": "adex:AgriMachinery"
                 },
                 {
-                    "@id": "adex:Seed"
+                    "@id": "adex:FarmerCollective"
                 },
                 {
-                    "@id": "adex:Farmer"
+                    "@id": "adex:AgriAdvisory"
+                },
+                {
+                    "@id": "adex:GhgReport"
                 },
                 {
                     "@id": "adex:AgriBusiness"
@@ -58,7 +49,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:LocaleDesc"
+                    "@id": "adex:PersonnelDesc"
                 }
             ],
             "rdfs:isDefinedBy": {

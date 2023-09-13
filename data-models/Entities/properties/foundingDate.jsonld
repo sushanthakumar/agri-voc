@@ -8,18 +8,21 @@
     },
     "@graph": [
         {
-            "@id": "adex:serviceDescription",
+            "@id": "adex:foundingDate",
             "@type": [
-                "adex:TextProperty"
+                "adex:TimeProperty"
             ],
-            "rdfs:comment": "The description of the service corresponding to this observation.",
-            "rdfs:label": "serviceDescription",
+            "rdfs:comment": "The date when the association/business/market was established.",
+            "rdfs:label": "foundingDate",
             "adex:domainIncludes": [
+                {
+                    "@id": "adex:AgriMarket"
+                },
                 {
                     "@id": "adex:FarmerCollective"
                 },
                 {
-                    "@id": "adex:AgriMarket"
+                    "@id": "adex:AgriBusiness"
                 }
             ],
             "adex:rangeIncludes": [

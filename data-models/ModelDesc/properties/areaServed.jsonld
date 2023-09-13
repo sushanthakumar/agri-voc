@@ -23,6 +23,9 @@
                 },
                 {
                     "@id": "adex:AgriMarket"
+                },
+                {
+                    "@id": "adex:AgriBusiness"
                 }
             ],
             "adex:rangeIncludes": [

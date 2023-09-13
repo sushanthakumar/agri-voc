@@ -8,18 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:productCode",
+            "@id": "adex:serviceDescription",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The unique code assigned to the product corresponding to this observation.",
-            "rdfs:label": "productCode",
+            "rdfs:comment": "The description of the service corresponding to this observation.",
+            "rdfs:label": "serviceDescription",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgriMarket"
+                    "@id": "adex:FarmerCollective"
                 },
                 {
-                    "@id": "adex:AgroChemicals"
+                    "@id": "adex:AgriBusiness"
                 }
             ],
             "adex:rangeIncludes": [

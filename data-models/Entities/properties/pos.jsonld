@@ -8,23 +8,23 @@
     },
     "@graph": [
         {
-            "@id": "adex:productDescription",
+            "@id": "adex:pos",
             "@type": [
-                "adex:TextProperty"
+                "adex:GeoProperty"
             ],
-            "rdfs:comment": "The detailed description of the product corresponding to this observation.",
-            "rdfs:label": "productDescription",
+            "rdfs:comment": "Point of Sale (POS) represents the location(s) where transactions are completed when goods or services are sold corresponding to this observation.",
+            "rdfs:label": "pos",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgriMarket"
+                    "@id": "adex:AgriBusiness"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Place"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

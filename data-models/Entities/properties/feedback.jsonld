@@ -8,18 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:serviceName",
+            "@id": "adex:feedback",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Name of the service offered by an organization or an entity corresponding to this observation.",
-            "rdfs:label": "serviceName",
+            "rdfs:comment": "The opinions, insights, and suggestions of an individual or group about an entity or service corresponding to this observation",
+            "rdfs:label": "feedback",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:FarmerCollective"
+                    "@id": "adex:AgriBusiness"
                 },
                 {
-                    "@id": "adex:AgriMarket"
+                    "@id": "adex:AgriAdvisory"
                 }
             ],
             "adex:rangeIncludes": [

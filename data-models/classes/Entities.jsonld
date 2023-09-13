@@ -13,8 +13,8 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "rdfs:comment": "Data models that pertain to the personnel domain",
-            "rdfs:label": "Personnel",
+            "rdfs:comment": "Data models that pertain to the entities domain",
+            "rdfs:label": "Entities",
             "rdfs:subClassOf": {
                 "@id": "adex:DataModel"
             }

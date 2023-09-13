@@ -51,6 +51,9 @@
                 },
                 {
                     "@id": "adex:ValueSets"
+                },
+                {
+                    "@id": "adex:AgriBusiness"
                 }
             ],
             "adex:rangeIncludes": [

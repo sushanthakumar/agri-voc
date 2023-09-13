@@ -8,18 +8,21 @@
     },
     "@graph": [
         {
-            "@id": "adex:foundingDate",
+            "@id": "adex:productName",
             "@type": [
-                "adex:TimeProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The date when the association/business/market was established.",
-            "rdfs:label": "foundingDate",
+            "rdfs:comment": "Name of the product corresponding to this observation.",
+            "rdfs:label": "productName",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgriMarket"
+                    "@id": "adex:AgriBusiness"
                 },
                 {
-                    "@id": "adex:FarmerCollective"
+                    "@id": "adex:AgroChemicals"
+                },
+                {
+                    "@id": "adex:AgriMachinery"
                 }
             ],
             "adex:rangeIncludes": [

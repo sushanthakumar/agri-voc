@@ -8,18 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:feedback",
+            "@id": "adex:productCode",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The opinions or evaluations of an individual or group about an entity or service corresponding to this observation.",
-            "rdfs:label": "feedback",
+            "rdfs:comment": "The unique code assigned to the product corresponding to this observation.",
+            "rdfs:label": "productCode",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgriMarket"
+                    "@id": "adex:AgriBusiness"
                 },
                 {
-                    "@id": "adex:AgriAdvisory"
+                    "@id": "adex:AgroChemicals"
                 }
             ],
             "adex:rangeIncludes": [
