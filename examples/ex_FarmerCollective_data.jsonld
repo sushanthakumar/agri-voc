@@ -43,5 +43,7 @@
   "serviceName": "Seedling and Seed Sales",
   "serviceCode": "628",
   "serviceDescription": "Selling the good variety of paddy seedlings",
-  "orgBranches": ["Delhi", "Bombay", "Calcutta"]
+  "orgBranches": ["Delhi", "Bombay", "Calcutta"],
+  "totalCount":57,
+  "feedback":"Reasonable pricing of seedlings"
 }

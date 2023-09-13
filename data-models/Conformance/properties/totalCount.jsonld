@@ -12,7 +12,7 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Total number of items in the entity corresponding to this observation.",
+            "rdfs:comment": "Total number entities corresponding to this observation.",
             "rdfs:label": "totalCount",
             "adex:domainIncludes": [
                 {
@@ -20,6 +20,9 @@
                 },
                 {
                     "@id": "adex:ValueSets"
+                },
+                {
+                    "@id": "adex:FarmerCollective"
                 }
             ],
             "adex:rangeIncludes": [

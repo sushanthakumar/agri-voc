@@ -57,7 +57,9 @@
 		"academicQualification": "Doctor of Philosophy",
 		"workStatus": "Permanent",
 		"nationality": "Indian",
-		"expertise": "Pest Management"
+		"expertise": "Pest Management",
+		"language":["Tamizh","Telugu","Kannada","Malayalam"],
+		"jurisdiction":"State of Tamil Nadu and Union Territory of Puducherry."
 	},
 	"agriculturalResearcher": {
 		"name": "Raman",
@@ -66,7 +68,8 @@
 		"academicQualification": "Doctor of Philosophy",
 		"workStatus": "Permanent",
 		"nationality": "Indian",
-		"fieldOfResearch": "Microbiologist"
+		"fieldOfResearch": "Microbiologist",
+		"language":["Tamizh","Telugu","Kannada","Malayalam"]
 	},
 	"mediaURL": ["https://rice-crop-img01", "https://rice-crop-img02", "https://rice-crop-img03"],
 	"hasMoistureStress": false

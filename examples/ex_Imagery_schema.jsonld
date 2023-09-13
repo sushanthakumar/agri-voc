@@ -105,6 +105,10 @@
             "type": "object",
             "description": "Details of the person who owns the entity corresponding to this observation.",
             "properties": {
+               "name": {
+                  "type": "string",
+                  "description": "Name of the entity."
+               },
                "phone": {
                   "type": "string",
                   "description": "Phone number  corresponding to this observation"
@@ -177,11 +181,6 @@
                      }
                   }
                },
-               "dob": {
-                  "type": "string",
-                  "description": "Date of birth of the individual corresponding to this observation.",
-                  "format": "date"
-               },
                "email": {
                   "type": "string",
                   "description": "Email address of the individual corresponding to this observation"
@@ -189,6 +188,11 @@
                "salutation": {
                   "type": "string",
                   "description": "Salutation of the individual corresponding to this observation"
+               },
+               "dob": {
+                  "type": "string",
+                  "description": "Date of birth (DOB) of the individual corresponding to this observation.",
+                  "format": "date"
                },
                "permanentAddress": {
                   "type": "object",
@@ -364,7 +368,7 @@
                },
                "imageURL": {
                   "type": "array",
-                  "description": "The link that points to the photo of the individual corresponding to this observation.",
+                  "description": "The link that points to the picture of the entity corresponding to this observation.",
                   "items": {
                      "type": "string"
                   }
@@ -373,9 +377,23 @@
                   "type": "string",
                   "description": "Designation of the individual corresponding to this observation"
                },
+               "jurisdiction": {
+                  "type": "array",
+                  "description": "The administrative divisions within which the entity holds territorial scope of authority.",
+                  "items": {
+                     "type": "string"
+                  }
+               },
                "expertise": {
                   "type": "string",
                   "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
+               },
+               "language": {
+                  "type": "array",
+                  "description": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
+                  "items": {
+                     "type": "string"
+                  }
                }
             }
          }

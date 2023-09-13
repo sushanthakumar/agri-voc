@@ -17,9 +17,6 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Version"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
                 }
             ],
             "adex:rangeIncludes": [

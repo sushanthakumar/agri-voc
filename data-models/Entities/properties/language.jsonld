@@ -20,6 +20,9 @@
                 },
                 {
                     "@id": "adex:Farmer"
+                },
+                {
+                    "@id": "adex:PersonnelDesc"
                 }
             ],
             "adex:rangeIncludes": [

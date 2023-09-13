@@ -131,6 +131,10 @@
                   "type": "object",
                   "description": "The personal details of an agricultural expert who has specialised training, education, and practical experience in the field of agriculture.",
                   "properties": {
+                     "name": {
+                        "type": "string",
+                        "description": "Name of the entity."
+                     },
                      "phone": {
                         "type": "string",
                         "description": "Phone number  corresponding to this observation"
@@ -203,11 +207,6 @@
                            }
                         }
                      },
-                     "dob": {
-                        "type": "string",
-                        "description": "Date of birth of the individual corresponding to this observation.",
-                        "format": "date"
-                     },
                      "email": {
                         "type": "string",
                         "description": "Email address of the individual corresponding to this observation"
@@ -215,6 +214,11 @@
                      "salutation": {
                         "type": "string",
                         "description": "Salutation of the individual corresponding to this observation"
+                     },
+                     "dob": {
+                        "type": "string",
+                        "description": "Date of birth (DOB) of the individual corresponding to this observation.",
+                        "format": "date"
                      },
                      "permanentAddress": {
                         "type": "object",
@@ -390,7 +394,7 @@
                      },
                      "imageURL": {
                         "type": "array",
-                        "description": "The link that points to the photo of the individual corresponding to this observation.",
+                        "description": "The link that points to the picture of the entity corresponding to this observation.",
                         "items": {
                            "type": "string"
                         }
@@ -399,9 +403,23 @@
                         "type": "string",
                         "description": "Designation of the individual corresponding to this observation"
                      },
+                     "jurisdiction": {
+                        "type": "array",
+                        "description": "The administrative divisions within which the entity holds territorial scope of authority.",
+                        "items": {
+                           "type": "string"
+                        }
+                     },
                      "expertise": {
                         "type": "string",
                         "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
+                     },
+                     "language": {
+                        "type": "array",
+                        "description": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
+                        "items": {
+                           "type": "string"
+                        }
                      }
                   }
                },
@@ -513,6 +531,10 @@
                   "type": "object",
                   "description": "The personal details of a professional who conducts systematic investigations, studies, and experiments related to various aspects of agriculture.",
                   "properties": {
+                     "name": {
+                        "type": "string",
+                        "description": "Name of the entity."
+                     },
                      "phone": {
                         "type": "string",
                         "description": "Phone number  corresponding to this observation"
@@ -585,11 +607,6 @@
                            }
                         }
                      },
-                     "dob": {
-                        "type": "string",
-                        "description": "Date of birth of the individual corresponding to this observation.",
-                        "format": "date"
-                     },
                      "email": {
                         "type": "string",
                         "description": "Email address of the individual corresponding to this observation"
@@ -597,6 +614,11 @@
                      "salutation": {
                         "type": "string",
                         "description": "Salutation of the individual corresponding to this observation"
+                     },
+                     "dob": {
+                        "type": "string",
+                        "description": "Date of birth (DOB) of the individual corresponding to this observation.",
+                        "format": "date"
                      },
                      "permanentAddress": {
                         "type": "object",
@@ -772,7 +794,7 @@
                      },
                      "imageURL": {
                         "type": "array",
-                        "description": "The link that points to the photo of the individual corresponding to this observation.",
+                        "description": "The link that points to the picture of the entity corresponding to this observation.",
                         "items": {
                            "type": "string"
                         }
@@ -781,9 +803,23 @@
                         "type": "string",
                         "description": "Designation of the individual corresponding to this observation"
                      },
+                     "jurisdiction": {
+                        "type": "array",
+                        "description": "The administrative divisions within which the entity holds territorial scope of authority.",
+                        "items": {
+                           "type": "string"
+                        }
+                     },
                      "expertise": {
                         "type": "string",
                         "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
+                     },
+                     "language": {
+                        "type": "array",
+                        "description": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
+                        "items": {
+                           "type": "string"
+                        }
                      }
                   }
                },
@@ -1087,9 +1123,21 @@
             "type": "object",
             "description": "Personnel information of an individual or business corresponding to this observation.",
             "properties": {
+               "name": {
+                  "type": "string",
+                  "description": "Name of the entity."
+               },
                "phone": {
                   "type": "string",
                   "description": "Phone number  corresponding to this observation"
+               },
+               "academicQualification": {
+                  "type": "string",
+                  "description": "The highest educational qualification of the individual corresponding to this observation."
+               },
+               "fieldOfResearch": {
+                  "type": "string",
+                  "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
                },
                "birthPlace": {
                   "type": "string",
@@ -1151,11 +1199,6 @@
                      }
                   }
                },
-               "dob": {
-                  "type": "string",
-                  "description": "Date of birth of the individual corresponding to this observation.",
-                  "format": "date"
-               },
                "email": {
                   "type": "string",
                   "description": "Email address of the individual corresponding to this observation"
@@ -1163,6 +1206,11 @@
                "salutation": {
                   "type": "string",
                   "description": "Salutation of the individual corresponding to this observation"
+               },
+               "dob": {
+                  "type": "string",
+                  "description": "Date of birth (DOB) of the individual corresponding to this observation.",
+                  "format": "date"
                },
                "permanentAddress": {
                   "type": "object",
@@ -1280,6 +1328,14 @@
                   "type": "string",
                   "description": "Gender of the individual corresponding to this observation"
                },
+               "workStatus": {
+                  "type": "string",
+                  "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
+               },
+               "nationality": {
+                  "type": "string",
+                  "description": "Represents the nation that the individual corresponding to this observation belongs to."
+               },
                "identityInfo": {
                   "type": "object",
                   "description": "Personal identification information issued by the government.",
@@ -1328,9 +1384,34 @@
                      }
                   }
                },
+               "imageURL": {
+                  "type": "array",
+                  "description": "The link that points to the picture of the entity corresponding to this observation.",
+                  "items": {
+                     "type": "string"
+                  }
+               },
                "designation": {
                   "type": "string",
                   "description": "Designation of the individual corresponding to this observation"
+               },
+               "jurisdiction": {
+                  "type": "array",
+                  "description": "The administrative divisions within which the entity holds territorial scope of authority.",
+                  "items": {
+                     "type": "string"
+                  }
+               },
+               "expertise": {
+                  "type": "string",
+                  "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
+               },
+               "language": {
+                  "type": "array",
+                  "description": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
+                  "items": {
+                     "type": "string"
+                  }
                }
             }
          },
@@ -1358,6 +1439,16 @@
                   }
                }
             }
+         },
+         "totalCount": {
+            "type": "number",
+            "description": "Total number entities corresponding to this observation.",
+            "unitCode": "C62",
+            "unitText": "Dimensionless"
+         },
+         "feedback": {
+            "type": "string",
+            "description": "The opinions, insights, and suggestions of an individual or group about an entity or service corresponding to this observation"
          }
       }
    }
