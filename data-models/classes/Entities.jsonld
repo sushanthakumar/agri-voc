@@ -8,7 +8,7 @@
     },
     "@graph": [
         {
-            "@id": "adex:Personnel",
+            "@id": "adex:Entities",
             "@type": [
                 "owl:Class",
                 "rdfs:Class"
