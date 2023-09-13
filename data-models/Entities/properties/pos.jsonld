@@ -20,6 +20,9 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriBusiness"
+                },
+                {
+                    "@id": "adex:FreightManagement"
                 }
             ],
             "adex:rangeIncludes": [

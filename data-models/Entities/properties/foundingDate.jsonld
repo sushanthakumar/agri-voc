@@ -22,6 +22,9 @@
                     "@id": "adex:FarmerCollective"
                 },
                 {
+                    "@id": "adex:FreightManagement"
+                },
+                {
                     "@id": "adex:AgriBusiness"
                 }
             ],

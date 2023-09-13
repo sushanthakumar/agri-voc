@@ -75,5 +75,12 @@
     "expiryDate": "2024-10-12",
     "policyNumber": "CR5284257933",
     "policyDate": "2023-10-12"
-  }
+  },
+  "pos": {
+		"type": "Point",
+		"coordinates": [
+			93.8259,
+			6.7806
+		]
+	}
 }
