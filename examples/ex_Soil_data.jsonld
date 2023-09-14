@@ -7,6 +7,10 @@
 	],
 	"topSoilDepth": 2.3,
 	"soilMoisture": 30.42,
+	"healthCardNum": "TN87234134",
+	"generalAdvisory": "Use sprinkler for irrigation",
+	"validFrom": "1995-12-31",
+	"validTill": "1996-08-12",
 	"clayLevel": 23.4,
 	"sandLevel": 10.21,
 	"soilTexture": "Clay",
@@ -51,33 +55,6 @@
 		"baseSurveyNumber": 26,
 		"landParcelID": 34554321345672
 	},
-	"location": {
-        "type": "Polygon",
-        "coordinates": [
-            [
-                [
-                    80.08143614977598,
-                    17.303484375140563
-                ],
-                [
-                    80.08049637079239,
-                    17.30380703811607
-                ],
-                [
-                    80.0806925073266,
-                    17.304120097485768
-                ],
-                [
-                    80.08155919611454,
-                    17.30373789609754
-                ],
-                [
-                    80.08143614977598,
-                    17.303484375140563
-                ]
-            ]
-        ]
-    },
 	"sampleID": "62bc08ff2582d0001b3398f4",
 	"cropNameCommon": "chilli (irrigated)",
 	"previousCropName": "chilli (irrigated)",
@@ -86,6 +63,5 @@
 	"testCentreID": "6296fe392bca3f0013a31f9e",    
     "testCentreName": "Raithu Vedika",
     "testCentreCode": "digitalgreen00001",
-    "testDateTime": "2022-07-03T13:53:30+05:30",
-    "observationDateTime": "2022-06-29T08:10:39+05:30"
+    "testDateTime": "2022-07-03T13:53:30+05:30"
 }
