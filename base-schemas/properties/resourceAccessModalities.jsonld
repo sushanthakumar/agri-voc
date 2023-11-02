@@ -9,21 +9,22 @@
     },
     "@graph": [
         {
-            "@id": "adex:resourceServerFileAccessURL",
+            "@id": "adex:resourceAccessModalities",
             "@type": [
-                "adex:Relationship"
+                "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Resource Server URL for file access",
-            "rdfs:label": "resourceServerFileAccessURL",
+            "rdfs:comment": "Description of domains available for accessing data from the exchange.",
+            "rdfs:label": "resourceAccessModalities",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:ResourceServer"
+                    "@id": "adex:ResourceServer",
+                    "adex:requiredProperty": true
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text",
-                    "@type": "@id"
+                    "@container": "@list",
+                    "@id": "adex:ResourceAccessModalities"
                 }
             ]
         }

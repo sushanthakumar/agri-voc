@@ -17,9 +17,6 @@
             "rdfs:label": "accessPolicy",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:ResourceGroup"
-                },
-                {
                     "@id": "adex:Resource"
                 }
             ],

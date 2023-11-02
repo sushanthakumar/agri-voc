@@ -9,19 +9,19 @@
     },
     "@graph": [
         {
-            "@id": "adex:provider",
+            "@id": "adex:owner",
             "@type": [
                 "adex:Relationship"
             ],
-            "rdfs:comment": "IRI pointing to the provider entity associated with the given catalogue item",
-            "rdfs:label": "provider",
+            "rdfs:comment": "UUID of owner entity associated with the given catalogue item.",
+            "rdfs:label": "owner",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Resource",
+                    "@id": "adex:ResourceServer",
                     "adex:requiredProperty": true
                 },
                 {
-                    "@id": "adex:ResourceGroup",
+                    "@id": "adex:COS",
                     "adex:requiredProperty": true
                 }
             ],

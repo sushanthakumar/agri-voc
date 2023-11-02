@@ -9,21 +9,25 @@
     },
     "@graph": [
         {
-            "@id": "adex:resourceServerStreamingAccessURL",
+            "@id": "adex:cos",
             "@type": [
                 "adex:Relationship"
             ],
-            "rdfs:comment": "Resource Server URL for data access based on Streaming",
-            "rdfs:label": "resourceServerStreamingAccessURL",
+            "rdfs:comment": "UUID of the COS(City Operations System) entity associated with the given catalogue item .",
+            "rdfs:label": "cos",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:ResourceServer"
+                    "@id": "adex:ResourceServer",
+                    "adex:requiredProperty": true
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:Text",
                     "@type": "@id"
+                },
+                {
+                    "@id": "adex:RelationshipValue"
                 }
             ]
         }

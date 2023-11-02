@@ -1,0 +1,14 @@
+ {
+      "@context": "https://voc.adex.org.in/",
+      "type": [
+        "adex:COS"
+      ],
+      "id": "637e32b6-9a6c-396f-914c-9db5d1a222b0",
+      "name": "cos-adex-test.adex.org.in",
+      "owner": "8bbfc675-150c-4f1c-abea-aac5ef57b3a9",
+      "description": "Data Exchange COS Layer",
+      "cosURL": "cos-adex-test.adex.org.in",
+      "cosUI": "https://catalogue.test.cop-adex.adex.org.in/",
+      "itemStatus": "ACTIVE",
+      "itemCreatedAt": "2023-08-21T08:47:13+0530"
+}

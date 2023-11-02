@@ -17,10 +17,14 @@
             "rdfs:label": "resourceServer",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Resource"
+                    "@id": "adex:Resource",
+                    "adex:requiredProperty": true
                 },
                 {
-                    "@id": "adex:ResourceGroup"
+                    "@id": "iudx:ResourceGroup"
+                },
+                {
+                    "@id": "adex:Provider"
                 }
             ],
             "adex:rangeIncludes": [

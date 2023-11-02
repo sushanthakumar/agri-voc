@@ -9,19 +9,15 @@
     },
     "@graph": [
         {
-            "@id": "adex:provider",
+            "@id": "adex:resourceServerRegURL",
             "@type": [
                 "adex:Relationship"
             ],
-            "rdfs:comment": "IRI pointing to the provider entity associated with the given catalogue item",
-            "rdfs:label": "provider",
+            "rdfs:comment": "The registered URL for the Resource Server.",
+            "rdfs:label": "resourceServerRegURL",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Resource",
-                    "adex:requiredProperty": true
-                },
-                {
-                    "@id": "adex:ResourceGroup",
+                    "@id": "adex:ResourceServer",
                     "adex:requiredProperty": true
                 }
             ],
@@ -29,9 +25,6 @@
                 {
                     "@id": "adex:Text",
                     "@type": "@id"
-                },
-                {
-                    "@id": "adex:RelationshipValue"
                 }
             ]
         }
