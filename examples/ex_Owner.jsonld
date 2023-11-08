@@ -1,9 +1,10 @@
 {
-    "@context": "https://agrijson.adex.org.in/",
-    "type": [
-        "adex:Owner"
-    ],
-    "id": "8bbfc675-150c-4f1c-abea-aac5ef57b3a9",
-    "name": "AdexOwner",
-    "description": "provider id for uuid test"
+  "@context": "https://agrijson.adex.org.in/",
+  "type": [
+      "adex:Owner"
+      "iudx:Owner"
+  ],
+  "id": "40b80571-edff-4291-b723-94c2a611f859",
+  "name": "AdexOwner",
+  "description": "Owner of ADEX COS"
 }

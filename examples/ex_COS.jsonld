@@ -1,14 +1,13 @@
- {
-      "@context": "https://voc.adex.org.in/",
-      "type": [
-        "adex:COS"
-      ],
-      "id": "637e32b6-9a6c-396f-914c-9db5d1a222b0",
-      "name": "cos-adex-test.adex.org.in",
-      "owner": "8bbfc675-150c-4f1c-abea-aac5ef57b3a9",
-      "description": "Data Exchange COS Layer",
-      "cosURL": "cos-adex-test.adex.org.in",
-      "cosUI": "https://catalogue.test.cop-adex.adex.org.in/",
-      "itemStatus": "ACTIVE",
-      "itemCreatedAt": "2023-08-21T08:47:13+0530"
+{
+    "@context": "https://agrijson.adex.org.in/",
+    "type": [
+      "adex:COS",
+      "iudx:COS"
+    ],
+    "id": "49f96c4c-e595-4fee-984c-43dededfba48",
+    "name": "AdexCos",
+    "owner": "40b80571-edff-4291-b723-94c2a611f859",
+    "description": "COS ADEX",
+    "cosURL": "ts.adex.org.in",
+    "cosUI": " dataexplorer.ts.adex.org.in"
 }

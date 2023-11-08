@@ -1,39 +1,71 @@
 {
-    "@context": "https://agrijson.adex.org.in/",
-    "type": [
-        "adex:ResourceServer"
-    ],
-    "id": "providerID/example.com/",
-    "name": "adexResourceServer",
-    "description": "Generic ADEX resource server",
-    "tags": "ADEX, Resource, Server, Platform",
-    "itemStatus": "ACTIVE",
-    "itemCreatedAt": "2020-07-01T10:03:26+0000",
-    "resourceServerHTTPAccessURL": "example.com/",
-    "resourceServerOrg": {
-        "name": "adex",
-        "additionalInfoURL": "https://iudx.org.in",
-        "location": {
-            "type": "Place",
-            "address": "IISc, Bangalore",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    75.92,
-                    13.5
-                ]
-            }
-        }
-    },
-    "location": {
-        "type": "Place",
-        "address": "Pune",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                74.92,
-                12.5
-            ]
-        }
-    }
+	"@context": "https://agrijson.adex.org.in/",
+	"type": [
+		"adex:ResourceServer",
+		"iudx:ResourceServer"
+	],
+	"id": "41bb4389-ebaf-4df7-a575-556ec6092a25",
+	"name": "AdexResourceServer",
+	"description": "Multi tenanted ADEX Resource Server",
+	"tags": [
+		"ADEX",
+		"Resource",
+		"Server",
+		"Platform"
+	],
+	"owner": "40b80571-edff-4291-b723-94c2a611f859",
+	"cos": "49f96c4c-e595-4fee-984c-43dededfba48",
+	"resourceServerOrg": {
+		"name": "adex",
+		"additionalInfoURL": "https://agrijson.adex.org.in/",
+		"location": {
+			"type": "Place",
+			"address": "IISc, Bangalore",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.570423,
+					13.013945
+				]
+			}
+		}
+	},
+	"resourceServerRegURL": "rs.ts.adex.org.in",
+	"resourceAccessModalities": [
+		{
+		"type": [
+			"adex:HTTPAccess",
+			"iudx:HTTPAccess"
+		],
+		"protocol": "https",
+		"accessURL": "rs.ts.adex.org.in"
+	},
+		{
+		"type": [
+			"adex:StreamingAccess",
+			"iudx:StreamingAccess"
+		],
+		"protocol": "amqps",
+		"accessURL": "databroker.ts.adex.org.in"
+	},
+		{
+		"type": [
+			"adex:ProxyServer",
+			"iudx:ProxyServer"
+		],
+		"protocol": "https",
+		"accessURL": "gateway.ts.adex.org.in"
+	}
+	],
+	"location": {
+		"type": "Place",
+		"address": "IISc, Bangalore",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [
+				77.570423,
+				13.013945
+			]
+		}
+	}
 }
