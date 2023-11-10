@@ -1,7 +1,7 @@
 {
   "@context": "https://agrijson.adex.org.in/",
   "type": [
-      "adex:Owner"
+      "adex:Owner",
       "iudx:Owner"
   ],
   "id": "40b80571-edff-4291-b723-94c2a611f859",
