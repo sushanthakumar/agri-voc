@@ -54,6 +54,21 @@
                 },
                 {
                     "@id": "adex:AgriBusiness"
+                },
+                {
+                    "@id": "adex:CropCondition"
+                },
+                {
+                    "@id": "adex:Transporter"
+                },
+                {
+                    "@id": "adex:TransportCost"
+                },
+                {
+                    "@id": "adex:ExportTransaction"
+                },
+                {
+                    "@id": "adex:HyperLocalAdvisory"
                 }
             ],
             "adex:rangeIncludes": [

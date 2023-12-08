@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:Drone",
-            "rdfs:comment": "A Data Model for specifications and utility of drones.",
+            "rdfs:comment": "A data model for drone.",
             "rdfs:label": "Drone",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

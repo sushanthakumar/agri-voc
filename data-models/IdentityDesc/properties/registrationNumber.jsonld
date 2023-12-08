@@ -22,10 +22,10 @@
                     "@id": "adex:AgriMarket"
                 },
                 {
-                    "@id": "adex:AgriMachinery"
+                    "@id": "adex:AgriBusiness"
                 },
                 {
-                    "@id": "adex:AgriBusiness"
+                    "@id": "adex:AgriMachinery"
                 }
             ],
             "adex:rangeIncludes": [

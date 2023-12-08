@@ -22,7 +22,25 @@
                     "@id": "adex:FarmerCollective"
                 },
                 {
+                    "@id": "adex:Transporter"
+                },
+                {
+                    "@id": "adex:TransportCost"
+                },
+                {
                     "@id": "adex:Drone"
+                },
+                {
+                    "@id": "adex:AgriExpert"
+                },
+                {
+                    "@id": "adex:ExtensionWorker"
+                },
+                {
+                    "@id": "adex:AgriResearcher"
+                },
+                {
+                    "@id": "adex:AgriManufacturer"
                 }
             ],
             "adex:rangeIncludes": [

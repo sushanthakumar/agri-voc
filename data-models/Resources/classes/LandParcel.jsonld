@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:LandParcel",
-            "rdfs:comment": "A Data Model for agricultural land parcel information",
+            "rdfs:comment": "A data model for land parcel.",
             "rdfs:label": "LandParcel",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

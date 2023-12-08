@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:Seed",
-            "rdfs:comment": "A Data Model for seed.",
+            "rdfs:comment": "A data model for seed.",
             "rdfs:label": "Seed",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

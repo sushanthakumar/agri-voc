@@ -14,12 +14,12 @@
             ],
             "rdfs:comment": "The name of the origin location corresponding to this observation.",
             "rdfs:label": "originName",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:FreightManagement"
+                    "@id": "adex:TransportCost"
+                },
+                {
+                    "@id": "adex:ExportTransaction"
                 }
             ],
             "adex:rangeIncludes": [
@@ -29,7 +29,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

@@ -14,6 +14,9 @@
             ],
             "rdfs:comment": "The current stage of the infection caused by the disease or pest corresponding to this observation. For eg., initial infestation, colonization, feeding and damage, incubation, reproduction etc.",
             "rdfs:label": "infectionStage",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropDiseaseDesc"
@@ -26,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

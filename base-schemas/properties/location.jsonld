@@ -38,7 +38,7 @@
                     "@id": "adex:LandParcel"
                 },
                 {
-                    "@id": "adex:Soil"
+                    "@id": "adex:SoilHealth"
                 },
                 {
                     "@id": "adex:Device"

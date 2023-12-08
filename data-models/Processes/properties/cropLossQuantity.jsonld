@@ -1,13 +1,9 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "geojson": "https://purl.org/geojson/vocab#",
         "owl": "http://www.w3.org/2002/07/owl#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "iudx": "https://voc.iudx.org.in/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
         "adex": "https://agrijson.adex.org.in/"
     },
     "@graph": [
@@ -16,14 +12,14 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The total quantity of crop lost due to storage, mulching, natural calamities etc.",
+            "rdfs:comment": "nan",
             "rdfs:label": "cropLossQuantity",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:CropSpecies"
+                    "@id": "adex:CropCondition"
                 }
             ],
             "adex:rangeIncludes": [

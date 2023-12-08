@@ -1,0 +1,44 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org.in/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:purposeCode",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "The unique code representing the purpose of entity or service corresponding to this observation.",
+            "rdfs:label": "purposeCode",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Drone"
+                },
+                {
+                    "@id": "adex:ConsentArtifact"
+                },
+                {
+                    "@id": "adex:OtherAgroChemical"
+                },
+                {
+                    "@id": "adex:ConsentHistory"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        }
+    ]
+}

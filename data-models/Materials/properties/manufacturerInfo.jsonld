@@ -14,19 +14,25 @@
             ],
             "rdfs:comment": "Details of the manufacturer of the product/merchandise corresponding to this observation",
             "rdfs:label": "manufacturerInfo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgroChemicals"
+                    "@id": "adex:OtherAgroChemical"
+                },
+                {
+                    "@id": "adex:Pesticide"
+                },
+                {
+                    "@id": "adex:Fertilizer"
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:PersonnelDesc"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

@@ -14,15 +14,15 @@
             ],
             "rdfs:comment": "Provides guidance and suggestions on agricultural practices, techniques, and decisions to enhance productivity and sustainability.",
             "rdfs:label": "recommendingAuthority",
-             "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:CropSpecies"
+                    "@id": "adex:CropCondition"
                 },
                 {
                     "@id": "adex:AgriAdvisory"
+                },
+                {
+                    "@id": "adex:RecommendedCropVariety"
                 }
             ],
             "adex:rangeIncludes": [
@@ -32,7 +32,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

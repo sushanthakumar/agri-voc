@@ -17,6 +17,9 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:AgriAdvisory"
+                },
+                {
+                    "@id": "adex:HyperLocalAdvisory"
                 }
             ],
             "adex:rangeIncludes": [

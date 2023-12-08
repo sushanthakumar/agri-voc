@@ -17,15 +17,21 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Version"
+                },
+                {
+                    "@id": "adex:FarmerCollective"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
+                },
+                {
+                    "@container": "@list",
+                    "@id": "adex:Text"
                 }
             ],
             "rdfs:isDefinedBy": {

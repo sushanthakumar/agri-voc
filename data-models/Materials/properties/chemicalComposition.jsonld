@@ -14,12 +14,15 @@
             ],
             "rdfs:comment": "The ordered array comprising the chemical/ organic composition of the fertilizer added to the soil",
             "rdfs:label": "chemicalComposition",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgroChemicals"
+                    "@id": "adex:OtherAgroChemical"
+                },
+                {
+                    "@id": "adex:Pesticide"
+                },
+                {
+                    "@id": "adex:Fertilizer"
                 }
             ],
             "adex:rangeIncludes": [
@@ -30,7 +33,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

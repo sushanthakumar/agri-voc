@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:Version",
-            "rdfs:comment": "Information about version of a device/sensor",
+            "rdfs:comment": "A class for version description.",
             "rdfs:label": "Version",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

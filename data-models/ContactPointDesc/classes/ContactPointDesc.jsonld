@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:ContactPointDesc",
-            "rdfs:comment": "Information about point of contact(s) to an individual or business.",
+            "rdfs:comment": "A class for contact point description.",
             "rdfs:label": "ContactPointDesc",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

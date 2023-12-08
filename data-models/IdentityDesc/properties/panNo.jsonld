@@ -14,6 +14,9 @@
             ],
             "rdfs:comment": "The pan card number of the individual corresponding to this observation.",
             "rdfs:label": "panNo",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:IdentityDesc"
@@ -26,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

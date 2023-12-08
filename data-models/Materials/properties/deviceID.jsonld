@@ -14,6 +14,9 @@
             ],
             "rdfs:comment": "Device ID of the physical sensor/ measurement station corresponding to this observation.",
             "rdfs:label": "deviceID",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Device"
@@ -26,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

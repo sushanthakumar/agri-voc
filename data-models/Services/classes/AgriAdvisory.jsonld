@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:AgriAdvisory",
-            "rdfs:comment": "A Data Model for agriculture advisory.",
+            "rdfs:comment": "A data model for agriculture advisory.",
             "rdfs:label": "AgriAdvisory",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

@@ -19,7 +19,7 @@
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:CropSpecies"
+                    "@id": "adex:CropCondition"
                 }
             ],
             "adex:rangeIncludes": [

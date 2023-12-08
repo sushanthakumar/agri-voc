@@ -13,7 +13,7 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "rdfs:comment": "Data models that pertain to the entities domain",
+            "rdfs:comment": "Data models that pertain to the entities domain defining an individual or a group, that have common interests, goals, or characteristics, with specific attributes and identity.",
             "rdfs:label": "Entities",
             "rdfs:subClassOf": {
                 "@id": "adex:DataModel"

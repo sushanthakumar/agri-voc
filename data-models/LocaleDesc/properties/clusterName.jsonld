@@ -14,6 +14,9 @@
             ],
             "rdfs:comment": "Name of the cluster corresponding to this observation. A cluster or a firkas represents a group of villages.",
             "rdfs:label": "clusterName",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:LocaleDesc"
@@ -26,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

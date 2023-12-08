@@ -10,16 +10,16 @@
         {
             "@id": "adex:registrationDate",
             "@type": [
-                "adex:TextProperty"
+                "adex:TimeProperty"
             ],
             "rdfs:comment": "The date on which a particular item or entity becomes officially recognized, authorized or approved according to the relevant regulations, procedures or requirements.",
             "rdfs:label": "registrationDate",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Drone"
+                    "@id": "adex:AgriMachinery"
                 },
                 {
-                    "@id": "adex:AgriMachinery"
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [

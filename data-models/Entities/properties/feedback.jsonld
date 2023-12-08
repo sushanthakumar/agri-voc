@@ -12,15 +12,12 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The opinions, insights, and suggestions of an individual or group about an entity or service corresponding to this observation",
+            "rdfs:comment": "The opinions or evaluations of an individual or group about an entity or service corresponding to this observation",
             "rdfs:label": "feedback",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:AgriBusiness"
-                },
-                {
-                    "@id": "adex:AgriAdvisory"
-                },
                 {
                     "@id": "adex:FarmerCollective"
                 }
@@ -32,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

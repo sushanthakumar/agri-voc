@@ -12,14 +12,14 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The country code corresponding to this observation.",
+            "rdfs:comment": "Name of the country code corresponding to this observation.",
             "rdfs:label": "countryCode",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AddressDesc"
+                    "@id": "adex:LocaleDesc"
                 },
                 {
-                    "@id": "adex:LocaleDesc"
+                    "@id": "adex:AddressDesc"
                 }
             ],
             "adex:rangeIncludes": [

@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:LandIdentityDesc",
-            "rdfs:comment": "The unique land identification information corresponding to this observation.",
+            "rdfs:comment": "A class for land identity description.",
             "rdfs:label": "LandIdentityDesc",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

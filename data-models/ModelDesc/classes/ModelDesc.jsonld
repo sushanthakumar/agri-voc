@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:ModelDesc",
-            "rdfs:comment": "Information about model of a device/sensor",
+            "rdfs:comment": "A class for model description",
             "rdfs:label": "ModelDesc",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

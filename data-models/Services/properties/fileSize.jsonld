@@ -1,0 +1,38 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org.in/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:fileSize",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "The size of the media file corresponding to this observation",
+            "rdfs:label": "fileSize",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:Imagery"
+                },
+                {
+                    "@id": "adex:Common"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}

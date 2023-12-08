@@ -19,7 +19,7 @@
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:FreightManagement"
+                    "@id": "adex:TransportCost"
                 }
             ],
             "adex:rangeIncludes": [

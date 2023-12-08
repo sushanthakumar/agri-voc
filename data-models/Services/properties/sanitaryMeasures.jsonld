@@ -19,11 +19,12 @@
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:FreightManagement"
+                    "@id": "adex:ExportTransaction"
                 }
             ],
             "adex:rangeIncludes": [
                 {
+                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {

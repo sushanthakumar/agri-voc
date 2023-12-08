@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:IdentityDesc",
-            "rdfs:comment": "Identifier information corresponding to this observation.",
+            "rdfs:comment": "A class for identity description.",
             "rdfs:label": "IdentityDesc",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:CropInsurance",
-            "rdfs:comment": "A Data Model for crop insurance",
+            "rdfs:comment": "A data model for crop insurance.",
             "rdfs:label": "CropInsurance",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

@@ -27,6 +27,12 @@
                 },
                 {
                     "@id": "adex:Imagery"
+                },
+                {
+                    "@id": "adex:Common"
+                },
+                {
+                    "@id": "adex:HyperLocalAdvisory"
                 }
             ],
             "adex:rangeIncludes": [
@@ -35,6 +41,9 @@
                 },
                 {
                     "@container": "@list",
+                    "@id": "adex:Text"
+                },
+                {
                     "@id": "adex:Text"
                 }
             ]

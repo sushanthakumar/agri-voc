@@ -14,10 +14,10 @@
             ],
             "rdfs:comment": "The state code corresponding to this observation.",
             "rdfs:label": "stateCode",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:AddressDesc"
-                },
                 {
                     "@id": "adex:LocaleDesc"
                 }
@@ -29,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

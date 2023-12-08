@@ -14,6 +14,9 @@
             ],
             "rdfs:comment": "The aadhar number issued by the government for the individual corresponding to this observation.",
             "rdfs:label": "aadharNo",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:IdentityDesc"
@@ -26,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

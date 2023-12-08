@@ -13,12 +13,12 @@
                 "rdfs:Class"
             ],
             "@id": "adex:Device",
-            "rdfs:comment": "Information about the device or sensor used to capture realtime data",
+            "rdfs:comment": "A data model for device.",
             "rdfs:label": "Device",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
-             "rdfs:subClassOf": {
+            "rdfs:subClassOf": {
                 "@id": "adex:Materials"
             }
         }

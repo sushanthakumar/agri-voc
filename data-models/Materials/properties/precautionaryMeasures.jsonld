@@ -14,12 +14,15 @@
             ],
             "rdfs:comment": "The action of being careful, vigilant, and the steps to avoid potential dangers or risks.",
             "rdfs:label": "precautionaryMeasures",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgroChemicals"
+                    "@id": "adex:OtherAgroChemical"
+                },
+                {
+                    "@id": "adex:Pesticide"
+                },
+                {
+                    "@id": "adex:Fertilizer"
                 }
             ],
             "adex:rangeIncludes": [
@@ -29,7 +32,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

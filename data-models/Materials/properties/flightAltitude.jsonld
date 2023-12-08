@@ -12,7 +12,7 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The vertical distance that the flight can reach above the ground or mean sea level.",
+            "rdfs:comment": "The vertical distance or height above a specific reference point, usually the Mean Sea Level (MSL) or a defined datum such as WGS 84 CRS (https://en.wikipedia.org/wiki/World_Geodetic_System).",
             "rdfs:label": "flightAltitude",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

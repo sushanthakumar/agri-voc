@@ -17,6 +17,18 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:PersonnelDesc"
+                },
+                {
+                    "@id": "adex:Transporter"
+                },
+                {
+                    "@id": "adex:AgriExpert"
+                },
+                {
+                    "@id": "adex:ExtensionWorker"
+                },
+                {
+                    "@id": "adex:AgriResearcher"
                 }
             ],
             "adex:rangeIncludes": [

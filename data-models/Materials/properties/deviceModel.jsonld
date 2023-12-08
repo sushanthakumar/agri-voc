@@ -12,8 +12,11 @@
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Describes the model information of the device, sensor or system in consideration.",
+            "rdfs:comment": "Describes the information of the device, sensor or system in consideration.",
             "rdfs:label": "deviceModel",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Device"
@@ -23,10 +26,7 @@
                 {
                     "@id": "adex:ModelDesc"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

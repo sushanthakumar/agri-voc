@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:AddressDesc",
-            "rdfs:comment": "Address information corresponding to this observation",
+            "rdfs:comment": "A class for address description",
             "rdfs:label": "AddressDesc",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

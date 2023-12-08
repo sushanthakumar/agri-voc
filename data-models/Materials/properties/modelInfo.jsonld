@@ -16,16 +16,19 @@
             "rdfs:label": "modelInfo",
             "adex:domainIncludes": [
                 {
+                    "@id": "adex:OtherAgroChemical"
+                },
+                {
+                    "@id": "adex:Pesticide"
+                },
+                {
+                    "@id": "adex:Fertilizer"
+                },
+                {
                     "@id": "adex:AgriMachinery"
                 },
                 {
                     "@id": "adex:Drone"
-                },
-                {
-                    "@id": "adex:AgroChemicals"
-                },
-                {
-                    "@id": "adex:FreightManagement"
                 }
             ],
             "adex:rangeIncludes": [

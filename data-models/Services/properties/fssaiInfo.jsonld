@@ -14,19 +14,22 @@
             ],
             "rdfs:comment": "The FSSAI (Food and Safety Standards Authority of India) license details corresponding to this observation.",
             "rdfs:label": "fssaiInfo",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:FreightManagement"
+                    "@id": "adex:ExportTransaction"
+                },
+                {
+                    "@id": "adex:AgriManufacturer"
                 }
             ],
             "adex:rangeIncludes": [
                 {
                     "@id": "adex:CertificateDesc"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

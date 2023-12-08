@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:AgriMachinery",
-            "rdfs:comment": "A Data Model for information about agricultural machineries.",
+            "rdfs:comment": "A data model for agricultural machineries.",
             "rdfs:label": "AgriMachinery",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

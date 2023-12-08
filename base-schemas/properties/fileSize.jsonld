@@ -20,6 +20,9 @@
                 },
                 {
                     "@id": "adex:ConsentArtifact"
+                },
+                {
+                    "@id": "adex:Common"
                 }
             ],
             "adex:rangeIncludes": [

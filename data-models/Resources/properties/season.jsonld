@@ -19,13 +19,16 @@
                     "@id": "adex:Weather"
                 },
                 {
+                    "@id": "adex:CropCondition"
+                },
+                {
                     "@id": "adex:Seed"
                 },
                 {
-                    "@id": "adex:CropSpecies"
+                    "@id": "adex:AgriAdvisory"
                 },
                 {
-                    "@id": "adex:AgriAdvisory"
+                    "@id": "adex:HyperLocalAdvisory"
                 }
             ],
             "adex:rangeIncludes": [

@@ -16,10 +16,10 @@
             "rdfs:label": "deviceInfo",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Drone"
+                    "@id": "adex:AgriMachinery"
                 },
                 {
-                    "@id": "adex:AgriMachinery"
+                    "@id": "adex:Drone"
                 }
             ],
             "adex:rangeIncludes": [

@@ -12,7 +12,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The type of currency used for selling the goods and services corresponding to this observation..",
+            "rdfs:comment": "The type of currency used for selling the goods and services corresponding to this observation.",
             "rdfs:label": "currencyType",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
@@ -24,7 +24,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

@@ -16,16 +16,16 @@
             "rdfs:label": "foundingDate",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgriMarket"
-                },
-                {
                     "@id": "adex:FarmerCollective"
                 },
                 {
-                    "@id": "adex:FreightManagement"
+                    "@id": "adex:AgriMarket"
                 },
                 {
                     "@id": "adex:AgriBusiness"
+                },
+                {
+                    "@id": "adex:Transporter"
                 }
             ],
             "adex:rangeIncludes": [

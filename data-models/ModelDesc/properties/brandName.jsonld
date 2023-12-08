@@ -14,6 +14,9 @@
             ],
             "rdfs:comment": "Name of the brand associated with an entity, e.g., sensor, device etc.",
             "rdfs:label": "brandName",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:ModelDesc"
@@ -26,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

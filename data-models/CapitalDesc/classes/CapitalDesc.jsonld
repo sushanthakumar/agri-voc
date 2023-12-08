@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:CapitalDesc",
-            "rdfs:comment": "Income and Expenditure information corresponding to this observation.",
+            "rdfs:comment": "A class for capital description",
             "rdfs:label": "CapitalDesc",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

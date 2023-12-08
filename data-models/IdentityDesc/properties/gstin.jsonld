@@ -14,6 +14,9 @@
             ],
             "rdfs:comment": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation.",
             "rdfs:label": "gstin",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:IdentityDesc"
@@ -26,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

@@ -10,7 +10,7 @@
         {
             "@id": "adex:droneCategory",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
             "rdfs:comment": "The category of the drone corresponding to this observation.",
             "rdfs:label": "droneCategory",
@@ -24,7 +24,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

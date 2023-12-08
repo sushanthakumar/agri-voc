@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@id": "adex:serviceName",
+            "@id": "adex:communeName",
             "@type": [
                 "adex:TextProperty"
             ],
             "rdfs:comment": "The name of an agricultural cooperative or farmers' group, which is an organized entity formed by a group of farmers who come together for collective action, mutual benefit, and shared goals within the agricultural sector.",
-            "rdfs:label": "serviceName",
+            "rdfs:label": "communeName",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },

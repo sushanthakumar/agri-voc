@@ -33,6 +33,9 @@
                 },
                 {
                     "@id": "adex:ModelDesc"
+                },
+                {
+                    "@id": "adex:CropCondition"
                 }
             ],
             "adex:rangeIncludes": [

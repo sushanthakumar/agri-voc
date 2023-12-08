@@ -12,7 +12,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The parts of the crop affected by the crop disease.",
+            "rdfs:comment": "The parts of the crop affected by the crop disease or pest.",
             "rdfs:label": "partsAffected",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

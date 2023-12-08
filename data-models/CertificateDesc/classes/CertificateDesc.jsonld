@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:CertificateDesc",
-            "rdfs:comment": "Description of a certificate issued by an authority for an item or a service.",
+            "rdfs:comment": "A class for certificate description",
             "rdfs:label": "CertificateDesc",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

@@ -12,7 +12,7 @@
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "The effects and consequences of pests on various aspects of human activities, ecosystems and environments. Such as whiteflies, thrips, leafhoppers, grasshoppers, etc.",
+            "rdfs:comment": "The effects and consequences of pests over the crops and croplands.",
             "rdfs:label": "pestImpact",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

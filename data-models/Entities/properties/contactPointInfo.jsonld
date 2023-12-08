@@ -12,35 +12,35 @@
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Contact point information of a individual/business/service corresponding to this observation.",
+            "rdfs:comment": "Contact point information of a business/service corresponding to this observation",
             "rdfs:label": "contactPointInfo",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgriMarket"
-                },
-                {
-                    "@id": "adex:Imagery"
-                },
-                {
                     "@id": "adex:Farmer"
-                },
-                {
-                    "@id": "adex:FreightManagement"
                 },
                 {
                     "@id": "adex:FarmerCollective"
                 },
                 {
-                    "@id": "adex:AgriAdvisory"
+                    "@id": "adex:AgriMarket"
                 },
                 {
                     "@id": "adex:AgriBusiness"
                 },
                 {
-                    "@id": "adex:CodeSystems"
+                    "@id": "adex:Transporter"
                 },
                 {
-                    "@id": "adex:ValueSets"
+                    "@id": "adex:TransportCost"
+                },
+                {
+                    "@id": "adex:Imagery"
+                },
+                {
+                    "@id": "adex:AgriAdvisory"
+                },
+                {
+                    "@id": "adex:AgriManufacturer"
                 }
             ],
             "adex:rangeIncludes": [

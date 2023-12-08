@@ -1,0 +1,68 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org.in/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:purposeDescription",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "Describes the purpose of the entity or service corresponding this observation.",
+            "rdfs:label": "purposeDescription",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:OtherAgroChemical"
+                },
+                {
+                    "@id": "adex:ConsentArtifact"
+                },
+                {
+                    "@id": "adex:Pesticide"
+                },
+                {
+                    "@id": "adex:Fertilizer"
+                },
+                {
+                    "@id": "adex:Device"
+                },
+                {
+                    "@id": "adex:AgriMachinery"
+                },
+                {
+                    "@id": "adex:Drone"
+                },
+                {
+                    "@id": "adex:PublicSchemes"
+                },
+                {
+                    "@id": "adex:ConsentHistory"
+                },
+                {
+                    "@id": "adex:CodeSystems"
+                },
+                {
+                    "@id": "adex:ValueSets"
+                },
+                {
+                    "@id": "adex:AgriManufacturer"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        }
+    ]
+}
