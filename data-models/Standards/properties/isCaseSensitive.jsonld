@@ -16,7 +16,7 @@
             "rdfs:label": "isCaseSensitive",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:CodeSystems"
+                    "@id": "adex:CodeSystem"
                 },
                 {
                     "@id": "adex:ValueSets"

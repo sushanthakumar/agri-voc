@@ -29,9 +29,6 @@
                     "@id": "adex:Farmer"
                 },
                 {
-                    "@id": "adex:CropSpecies"
-                },
-                {
                     "@id": "adex:ModelDesc"
                 },
                 {

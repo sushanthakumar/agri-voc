@@ -12,9 +12,9 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:CodeSystems",
+            "@id": "adex:CodeSystem",
             "rdfs:comment": "A data model for code systems.",
-            "rdfs:label": "CodeSystems",
+            "rdfs:label": "CodeSystem",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },

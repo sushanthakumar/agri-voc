@@ -38,16 +38,10 @@
                     "@id": "adex:PublicSchemes"
                 },
                 {
-                    "@id": "adex:FreightManagement"
-                },
-                {
                     "@id": "adex:AgriMarket"
                 },
                 {
-                    "@id": "adex:CropSpecies"
-                },
-                {
-                    "@id": "adex:CodeSystems"
+                    "@id": "adex:CodeSystem"
                 },
                 {
                     "@id": "adex:ValueSets"

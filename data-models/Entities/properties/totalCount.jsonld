@@ -19,7 +19,7 @@
                     "@id": "adex:FarmerCollective"
                 },
                 {
-                    "@id": "adex:CodeSystems"
+                    "@id": "adex:CodeSystem"
                 },
                 {
                     "@id": "adex:ValueSets"

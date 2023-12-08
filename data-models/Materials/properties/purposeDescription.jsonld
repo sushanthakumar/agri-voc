@@ -43,7 +43,7 @@
                     "@id": "adex:ConsentHistory"
                 },
                 {
-                    "@id": "adex:CodeSystems"
+                    "@id": "adex:CodeSystem"
                 },
                 {
                     "@id": "adex:ValueSets"
