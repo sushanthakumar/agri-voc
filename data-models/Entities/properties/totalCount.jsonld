@@ -22,7 +22,7 @@
                     "@id": "adex:CodeSystem"
                 },
                 {
-                    "@id": "adex:ValueSets"
+                    "@id": "adex:ValueSet"
                 }
             ],
             "adex:rangeIncludes": [

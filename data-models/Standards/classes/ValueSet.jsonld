@@ -12,9 +12,9 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:ValueSets",
+            "@id": "adex:ValueSet",
             "rdfs:comment": "A data model for value sets.",
-            "rdfs:label": "ValueSets",
+            "rdfs:label": "ValueSet",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
