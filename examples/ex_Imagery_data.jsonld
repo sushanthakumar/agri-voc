@@ -1,6 +1,6 @@
 {
   "@context": "https://agrijson.adex.org.in",
-  "id": "provider-id/rs.adex.org.in/imagery-rg/imagery-ri",
+  "id": "resource-item-id",
   "type": [
     "adex:Imagery",
     "adex:Resource"

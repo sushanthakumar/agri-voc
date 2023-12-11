@@ -1,6 +1,6 @@
 {
   "@context": "https://agrijson.adex.org.in",
-  "id": "provider-id/rs.adex.org.in/ghg-report-rg/ghg-report-ri",
+  "id": "resource-item-id",
   "type": [
     "adex:GhgReport",
     "adex:Resource"

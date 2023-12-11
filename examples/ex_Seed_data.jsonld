@@ -1,6 +1,6 @@
 {
 	"@context": "https://agrijson.adex.org.in",
-	"id": "provider-id/rs.adex.org.in/seed-rg/seed-ri",
+	"id": "resource-item-id",
 	"type": ["adex:Seed", "adex:Resource"],
 	"cropNameICC": "Avocado",
 	"cropNameCommon": "Makhanfal",

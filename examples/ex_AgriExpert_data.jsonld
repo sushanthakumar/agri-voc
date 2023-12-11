@@ -1,8 +1,8 @@
 {
     "@context": "https://agrijson.adex.org.in",
-    "id": "provider-id/rs.adex.org.in/farmer-data-rg/farmer-data-ri",
+    "id": "resource-item-id",
     "type": [
-        "adex:Farmer",
+        "adex:AgriExpert",
         "adex:Resource"
     ],
     "name": "Swaminathan",
