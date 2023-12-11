@@ -35,12 +35,6 @@
                 },
                 {
                     "@id": "adex:ValueDescriptor"
-                },
-                {
-                    "@id": "adex:Text"
-                },
-                {
-                    "@id": "adex:Text-list ValueDescriptor"
                 }
             ],
             "rdfs:isDefinedBy": {

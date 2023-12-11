@@ -1,0 +1,32 @@
+{
+    "@context": "https://agrijson.adex.org.in",
+    "id": "provider-id/rs.adex.org.in/farmer-data-rg/farmer-data-ri",
+    "type": [
+        "adex:Farmer",
+        "adex:Resource"
+    ],
+    "name": "Swaminathan",
+    "orgName": "KKMS",
+    "jurisdiction": "Indian states and Union Territories",
+    "imageURL": "",
+    "language": [
+        "Tamil",
+        "English",
+        "Hindi",
+        "Telugu"
+    ],
+    "email": "swaminathanofficial@gmail.com",
+    "gender": "Male",
+    "phone": "9283294XXX",
+    "WorkStatus": "R&D head",
+    "academicQualification": "Doctorate in Philosophy",
+    "residentialAddress": {
+        "buildingNum": "61/65",
+        "street": "abc",
+        "locality": "Ballepalli",
+        "districtName": "Khammam",
+        "stateName": "Telangana",
+        "countryName": "India",
+        "pincode": 507002
+    }
+}

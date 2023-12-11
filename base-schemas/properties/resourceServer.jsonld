@@ -21,7 +21,7 @@
                     "adex:requiredProperty": true
                 },
                 {
-                    "@id": "iudx:ResourceGroup"
+                    "@id": "adex:ResourceGroup"
                 },
                 {
                     "@id": "adex:Provider"

@@ -9,24 +9,24 @@
   },
   "@graph": [
     {
-      "@id": "iudx:cosUI",
+      "@id": "adex:cosUI",
       "@type": [
-        "iudx:Relationship"
+        "adex:Relationship"
       ],
       "rdfs:comment": "URL pointing to the user interface/ catalogue which consists of information about the resources stored in the City Operations System(COS) corresponding to this observation.",
       "rdfs:label": "cosUI",
-      "iudx:domainIncludes": [
+      "adex:domainIncludes": [
         {
-          "@id": "iudx:COS"
+          "@id": "adex:COS"
         }
       ],
-      "iudx:rangeIncludes": [
+      "adex:rangeIncludes": [
         {
-          "@id": "iudx:Text",
+          "@id": "adex:Text",
           "@type": "@id"
         },
         {
-          "@id": "iudx:RelationshipValue"
+          "@id": "adex:RelationshipValue"
         }
       ]
     }
