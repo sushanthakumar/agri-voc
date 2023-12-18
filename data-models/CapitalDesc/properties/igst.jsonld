@@ -12,7 +12,7 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Integrated Goods and Services Tax is charged on inter-state transactions of products and services.",
+            "rdfs:comment": "Integrated Goods and Service Tax is charged on inter-state transactions of products and services.",
             "rdfs:label": "igst",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

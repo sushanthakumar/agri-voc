@@ -12,7 +12,7 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Central Goods and Services Tax is charged on the intra state supply of products and services.",
+            "rdfs:comment": "Central Goods and Service Tax is charged on the intra state supply of products and services.",
             "rdfs:label": "cgst",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

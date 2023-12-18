@@ -12,7 +12,7 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "State Goods and Services Tax like CGST, is charged on the sale of products or services within a state.",
+            "rdfs:comment": "State Goods and Service Tax like CGST, is charged on the sale of products or services within a state.",
             "rdfs:label": "sgst",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"

@@ -12,7 +12,7 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Union Territory Goods and Services Tax is levied on the supply of products and services in any of the Union Territories in the country, viz. Andaman and Nicobar Islands, Daman and Diu, Dadra and Nagar Haveli, Lakshadweep, and Chandigarh. UTGST is levied along with CGST.",
+            "rdfs:comment": "Union Territory Goods and Service Tax is levied on the supply of products and services in any of the Union Territories in the country, viz. Andaman and Nicobar Islands, Daman and Diu, Dadra and Nagar Haveli, Lakshadweep, and Chandigarh. UTGST is levied along with CGST.",
             "rdfs:label": "utgst",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
