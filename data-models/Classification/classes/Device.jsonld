@@ -13,7 +13,7 @@
                 "rdfs:Class"
             ],
             "@id": "adex:Device",
-            "rdfs:comment": "A data model for device.",
+            "rdfs:comment": "A data model for devices.",
             "rdfs:label": "Device",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
