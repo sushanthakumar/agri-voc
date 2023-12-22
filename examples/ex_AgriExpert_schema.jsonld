@@ -1,5 +1,5 @@
 {
-    "@context": "https://agrijson.adex.org.in",
+    "@context": "https://agrijson.org.in",
     "type": [
         "adex:AgriExpert",
         "adex:Schema"
