@@ -12,9 +12,9 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "adex:OtherAgroChemical ",
+            "@id": "adex:OtherAgroChemical",
             "rdfs:comment": "A data model for other agro chemicals.",
-            "rdfs:label": "OtherAgroChemical ",
+            "rdfs:label": "OtherAgroChemical",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
