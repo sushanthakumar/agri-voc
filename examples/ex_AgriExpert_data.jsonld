@@ -1,5 +1,5 @@
 {
-    "@context": "https://agrijson.adex.org.in",
+    "@context": "https://agrijson.adex.org",
     "id": "resource-item-id",
     "type": [
         "adex:AgriExpert",

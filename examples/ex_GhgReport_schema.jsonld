@@ -1,5 +1,5 @@
 {
-    "@context": "https://agrijson.adex.org.in",
+    "@context": "https://agrijson.adex.org",
     "type": [
         "adex:GhgReport",
         "adex:Schema"

@@ -6,7 +6,7 @@ dm = input("Enter the name of the data model -")
 print("datamodel :", dm)
 datamodels = os.listdir("../../data-models")
 file = {}
-file["@context"] = "https://agrijson.adex.org.in"
+file["@context"] = "https://agrijson.adex.org/"
 file["type"] = [
     "adex:" + dm,
     "adex:Schema"
