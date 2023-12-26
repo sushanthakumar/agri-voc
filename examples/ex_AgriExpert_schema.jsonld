@@ -4,7 +4,7 @@
         "adex:AgriExpert",
         "adex:Schema"
     ],
-    "id": "https://agrijson.adex.org.in/AgriExpert",
+    "id": "https://agrijson.adex.org/AgriExpert",
     "schema": {
         "title": "ADEX AgriExpert Data Model",
         "type": "object",

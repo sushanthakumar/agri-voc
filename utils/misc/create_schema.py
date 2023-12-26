@@ -11,7 +11,7 @@ file["type"] = [
     "adex:" + dm,
     "adex:Schema"
 ]
-file["id"] = "https://agrijson.adex.org.in/" + dm
+file["id"] = "https://agrijson.adex.org/" + dm
 
 SPs = []
 SP1s = []

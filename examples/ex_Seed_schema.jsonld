@@ -4,7 +4,7 @@
       "adex:Seed",
       "adex:Schema"
    ],
-   "id": "https://agrijson.adex.org.in/Seed",
+   "id": "https://agrijson.adex.org/Seed",
    "schema": {
       "title": "ADEX Seed Data Model",
       "type": "object",

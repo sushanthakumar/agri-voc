@@ -8,7 +8,7 @@
         "schema": "http://schema.org/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "owl": "http://www.w3.org/2002/07/owl#",
-        "adex": "https://agrijson.adex.org.in/"
+        "adex": "https://agrijson.adex.org/"
     },
     "@graph": [
         {

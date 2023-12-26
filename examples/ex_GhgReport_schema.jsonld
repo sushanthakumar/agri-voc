@@ -4,7 +4,7 @@
         "adex:GhgReport",
         "adex:Schema"
     ],
-    "id": "https://agrijson.adex.org.in/GhgReport",
+    "id": "https://agrijson.adex.org/GhgReport",
     "schema": {
         "title": "ADEX GhgReport Data Model",
         "type": "object",

@@ -21,7 +21,7 @@ token = ""
 with open("../config/vocserver.json", "r") as f:
     token = json.load(f)["vocserver.webhookpasswd"]
 
-url = "https://agrijson.adex.org.in/"
+url = "https://agrijson.adex.org/"
 
 
 voc_headers = {"token": token, "content-type": "application/ld+json", "accept": "application/ld+json"}

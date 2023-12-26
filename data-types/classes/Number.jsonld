@@ -6,7 +6,7 @@
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "schema": "http://schema.org/",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "adex": "https://agrijson.adex.org.in/"
+        "adex": "https://agrijson.adex.org/"
     },
     "@graph": [
         {

@@ -4,7 +4,7 @@
         "adex:Imagery",
         "adex:Schema"
     ],
-    "id": "https://agrijson.adex.org.in/Imagery",
+    "id": "https://agrijson.adex.org/Imagery",
     "schema": {
         "title": "ADEX Imagery Data Model",
         "type": "object",

@@ -1,0 +1,38 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.adex.org/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:irrigationType",
+            "@type": [
+                "adex:TextProperty"
+            ],
+            "rdfs:comment": "The type of irrigation for a farm land, such as sprinkler, drip, furrow, etc",
+            "rdfs:label": "irrigationType",
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:LandParcel"
+                },
+                {
+                    "@id": "adex:CropCondition"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
+        }
+    ]
+}
