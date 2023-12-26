@@ -1,10 +1,10 @@
 {
-    "@context": "https://agrijson.adex.org",
+    "@context": "https://agrijson.org/",
     "type": [
         "adex:Imagery",
         "adex:Schema"
     ],
-    "id": "https://agrijson.adex.org/Imagery",
+    "id": "https://agrijson.org/Imagery",
     "schema": {
         "title": "ADEX Imagery Data Model",
         "type": "object",

@@ -1,10 +1,10 @@
 {
-    "@context": "https://agrijson.org.in",
+    "@context": "https://agrijson.org/",
     "type": [
         "adex:AgriExpert",
         "adex:Schema"
     ],
-    "id": "https://agrijson.adex.org/AgriExpert",
+    "id": "https://agrijson.org/AgriExpert",
     "schema": {
         "title": "ADEX AgriExpert Data Model",
         "type": "object",

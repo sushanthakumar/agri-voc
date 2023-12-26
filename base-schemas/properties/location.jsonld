@@ -8,7 +8,7 @@
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.adex.org/"
+        "adex": "https://agrijson.org/"
     },
     "@graph": [
         {

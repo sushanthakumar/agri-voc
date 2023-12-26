@@ -1,5 +1,5 @@
 {
-    "@context": "https://agrijson.adex.org/",
+    "@context": "https://agrijson.org/",
     "type": [
         "adex:Provider",
         "iudx:Provider"

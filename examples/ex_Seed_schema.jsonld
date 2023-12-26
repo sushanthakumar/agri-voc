@@ -1,10 +1,10 @@
 {
-   "@context": "https://agrijson.adex.org",
+   "@context": "https://agrijson.org/",
    "type": [
       "adex:Seed",
       "adex:Schema"
    ],
-   "id": "https://agrijson.adex.org/Seed",
+   "id": "https://agrijson.org/Seed",
    "schema": {
       "title": "ADEX Seed Data Model",
       "type": "object",

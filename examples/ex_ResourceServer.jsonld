@@ -1,5 +1,5 @@
 {
-	"@context": "https://agrijson.adex.org/",
+	"@context": "https://agrijson.org/",
 	"type": [
 		"adex:ResourceServer",
 		"iudx:ResourceServer"
@@ -17,7 +17,7 @@
 	"cos": "49f96c4c-e595-4fee-984c-43dededfba48",
 	"resourceServerOrg": {
 		"name": "adex",
-		"additionalInfoURL": "https://agrijson.adex.org/",
+		"additionalInfoURL": "https://agrijson.org/",
 		"location": {
 			"type": "Place",
 			"address": "IISc, Bangalore",

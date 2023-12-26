@@ -1,5 +1,5 @@
 {
-  "@context": "https://agrijson.adex.org/",
+  "@context": "https://agrijson.org/",
   "id": "y6543b2b-00e4-4a90-a74f-ddf6840d32d8",
   "type": [
     "adex:Resource",

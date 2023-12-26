@@ -33,7 +33,7 @@ context = {}
 
 contextsources["type"] = "@type"
 contextsources["id"] = "@id"
-contextsources["@vocab"] = "https://agrijson.adex.org/"
+contextsources["@vocab"] = "https://agrijson.org/"
 
 for fldr in folders:
     for fl in os.listdir(fldr):
