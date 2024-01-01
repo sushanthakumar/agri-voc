@@ -16,9 +16,6 @@
             "rdfs:label": "leasePeriod",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:LandParcel"
-                },
-                {
                     "@id": "adex:AgriMachinery"
                 }
             ],

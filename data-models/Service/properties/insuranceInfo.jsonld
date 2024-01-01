@@ -16,9 +16,6 @@
             "rdfs:label": "insuranceInfo",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:TransportCost"
-                },
-                {
                     "@id": "adex:ExportTransaction"
                 },
                 {

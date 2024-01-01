@@ -17,9 +17,6 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropInsurance"
-                },
-                {
-                    "@id": "adex:AgriMachinery"
                 }
             ],
             "adex:rangeIncludes": [

@@ -16,9 +16,6 @@
             "rdfs:label": "schemeInfo",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Farmer"
-                },
-                {
                     "@id": "adex:CropInsurance"
                 }
             ],

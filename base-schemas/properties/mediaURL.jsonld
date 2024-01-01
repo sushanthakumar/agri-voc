@@ -23,9 +23,6 @@
                     "@id": "adex:CropDiseaseDesc"
                 },
                 {
-                    "@id": "adex:LandParcel"
-                },
-                {
                     "@id": "adex:AgriAdvisory"
                 },
                 {

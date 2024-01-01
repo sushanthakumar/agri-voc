@@ -8,18 +8,21 @@
     },
     "@graph": [
         {
-            "@id": "adex:department",
+            "@id": "adex:natureOfIntervention",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Division or section of the organization corresponding to this observation. Eg. Health, Transport.",
-            "rdfs:label": "department",
+            "rdfs:comment": "The nature of intervention proposed by the advisory, including the options, application of inputs, dosage, method of application, irrigation, and related GAP.",
+            "rdfs:label": "natureOfIntervention",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:PublicSchemes"
+                    "@id": "adex:AgriAdvisory"
+                },
+                {
+                    "@id": "adex:HyperLocalAdvisory"
                 }
             ],
             "adex:rangeIncludes": [

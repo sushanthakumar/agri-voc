@@ -50,6 +50,9 @@
                 },
                 {
                     "@id": "adex:HyperLocalAdvisory"
+                },
+                {
+                    "@id": "adex:RecommendedCropVariety"
                 }
             ],
             "adex:rangeIncludes": [

@@ -22,12 +22,6 @@
                     "@id": "adex:ConsentArtifact"
                 },
                 {
-                    "@id": "adex:Pesticide"
-                },
-                {
-                    "@id": "adex:Fertilizer"
-                },
-                {
                     "@id": "adex:Device"
                 },
                 {

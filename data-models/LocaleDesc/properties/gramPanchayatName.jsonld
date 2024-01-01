@@ -8,28 +8,31 @@
     },
     "@graph": [
         {
-            "@id": "adex:sanctionedAmount",
+            "@id": "adex:gramPanchayatName",
             "@type": [
-                "adex:QuantitativeProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The actual amount spent from the grant/allocated amount for the scheme.",
-            "rdfs:label": "sanctionedAmount",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
+            "rdfs:comment": "Name of the gram panchayat corresponding to this observation.",
+            "rdfs:label": "gramPanchayatName",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:PublicSchemes"
+                    "@id": "adex:LocaleDesc"
+                },
+                {
+                    "@id": "adex:AddressDesc"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Number"
+                    "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

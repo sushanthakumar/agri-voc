@@ -1,8 +1,7 @@
 {
     "@context": "https://agrijson.org/",
     "type": [
-      "adex:COS",
-      "iudx:COS"
+      "adex:COS"
     ],
     "id": "49f96c4c-e595-4fee-984c-43dededfba48",
     "name": "AdexCos",

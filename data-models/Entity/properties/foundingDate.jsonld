@@ -26,6 +26,9 @@
                 },
                 {
                     "@id": "adex:Transporter"
+                },
+                {
+                    "@id": "adex:AgriManufacturer"
                 }
             ],
             "adex:rangeIncludes": [

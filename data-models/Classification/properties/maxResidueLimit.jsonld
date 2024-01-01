@@ -20,9 +20,6 @@
                 },
                 {
                     "@id": "adex:Pesticide"
-                },
-                {
-                    "@id": "adex:Fertilizer"
                 }
             ],
             "adex:rangeIncludes": [

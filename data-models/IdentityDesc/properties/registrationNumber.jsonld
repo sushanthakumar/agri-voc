@@ -22,9 +22,6 @@
                     "@id": "adex:AgriMarket"
                 },
                 {
-                    "@id": "adex:AgriBusiness"
-                },
-                {
                     "@id": "adex:AgriMachinery"
                 }
             ],

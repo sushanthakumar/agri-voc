@@ -17,12 +17,6 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:CropInsurance"
-                },
-                {
-                    "@id": "adex:AgriMarket"
-                },
-                {
-                    "@id": "adex:ExportTransaction"
                 }
             ],
             "adex:rangeIncludes": [

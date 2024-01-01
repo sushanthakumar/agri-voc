@@ -27,7 +27,7 @@
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:PersonnelDesc"
+                    "@id": "adex:AgriManufacturer"
                 }
             ],
             "rdfs:isDefinedBy": {

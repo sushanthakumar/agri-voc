@@ -19,9 +19,6 @@
                     "@id": "adex:Crop"
                 },
                 {
-                    "@id": "adex:CropCondition"
-                },
-                {
                     "@id": "adex:Seed"
                 }
             ],

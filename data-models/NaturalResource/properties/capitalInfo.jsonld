@@ -19,12 +19,6 @@
                     "@id": "adex:LandParcel"
                 },
                 {
-                    "@id": "adex:Farmer"
-                },
-                {
-                    "@id": "adex:AgriMarket"
-                },
-                {
                     "@id": "adex:TransportCost"
                 },
                 {

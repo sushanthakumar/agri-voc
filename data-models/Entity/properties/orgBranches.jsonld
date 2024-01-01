@@ -17,9 +17,6 @@
             "adex:domainIncludes": [
                 {
                     "@id": "adex:FarmerCollective"
-                },
-                {
-                    "@id": "adex:AgriMarket"
                 }
             ],
             "adex:rangeIncludes": [

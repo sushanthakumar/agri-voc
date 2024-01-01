@@ -26,6 +26,9 @@
                 },
                 {
                     "@id": "adex:AgriBusiness"
+                },
+                {
+                    "@id": "adex:Transporter"
                 }
             ],
             "adex:rangeIncludes": [

@@ -28,9 +28,6 @@
                     "@id": "adex:TransportCost"
                 },
                 {
-                    "@id": "adex:Drone"
-                },
-                {
                     "@id": "adex:AgriExpert"
                 },
                 {

@@ -16,9 +16,6 @@
             "rdfs:label": "recommendingAuthority",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:CropCondition"
-                },
-                {
                     "@id": "adex:AgriAdvisory"
                 },
                 {

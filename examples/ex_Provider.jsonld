@@ -1,8 +1,7 @@
 {
     "@context": "https://agrijson.org/",
     "type": [
-        "adex:Provider",
-        "iudx:Provider"
+        "adex:Provider"
     ],
     "id": "64f4ty9-ebaf-6df7-b575-766ec6092a25",
     "name": "ADEXAdmin",

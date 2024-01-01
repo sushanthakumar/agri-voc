@@ -19,9 +19,6 @@
                     "@id": "adex:Weather"
                 },
                 {
-                    "@id": "adex:CropCondition"
-                },
-                {
                     "@id": "adex:Seed"
                 },
                 {

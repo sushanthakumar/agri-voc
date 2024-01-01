@@ -16,16 +16,10 @@
             "rdfs:label": "orgName",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:AgriBusiness"
-                },
-                {
                     "@id": "adex:AgriExpert"
                 },
                 {
                     "@id": "adex:ExtensionWorker"
-                },
-                {
-                    "@id": "adex:AgriResearcher"
                 }
             ],
             "adex:rangeIncludes": [

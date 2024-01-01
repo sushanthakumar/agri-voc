@@ -1,8 +1,7 @@
 {
 	"@context": "https://agrijson.org/",
 	"type": [
-		"adex:ResourceServer",
-		"iudx:ResourceServer"
+		"adex:ResourceServer"
 	],
 	"id": "41bb4389-ebaf-4df7-a575-556ec6092a25",
 	"name": "AdexResourceServer",
