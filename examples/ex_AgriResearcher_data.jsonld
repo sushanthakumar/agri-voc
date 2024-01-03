@@ -3,7 +3,7 @@
   "id": "resource-item-id",
   "type": [
     "adex:AgriResearcher",
-    "adex:Schema"
+    "adex:Resource"
   ],
   "name": "Swaminathan",
   "phone": "9283294XXX",

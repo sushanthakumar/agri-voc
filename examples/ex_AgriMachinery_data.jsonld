@@ -3,7 +3,7 @@
 	"id": "resource-item-id",
 	"type": [
 		"adex:AgriMachinery",
-		"adex:Schema"
+		"adex:Resource"
 	],
 	"hsCode": "870190",
 	"certificateInfo": {
