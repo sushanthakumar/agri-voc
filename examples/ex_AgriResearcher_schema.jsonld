@@ -1,12 +1,12 @@
 {
     "@context": "https://agrijson.org/",
     "type": [
-        "adex:AgriExpert",
+        "adex:AgriResearcher",
         "adex:Schema"
     ],
-    "id": "https://agrijson.org/AgriExpert",
+    "id": "https://agrijson.org/AgriResearcher",
     "schema": {
-        "title": "ADEX AgriExpert Data Model",
+        "title": "ADEX AgriResearcher Data Model",
         "type": "object",
         "properties": {
             "type": {
@@ -14,7 +14,7 @@
                 "items": [
                     {
                         "type": "string",
-                        "description": "ADEX Data Model name. It has to be AgriExpert"
+                        "description": "ADEX Data Model name. It has to be AgriResearcher"
                     },
                     {
                         "type": "string",
@@ -26,10 +26,6 @@
                 "type": "string",
                 "description": "Name of the entity."
             },
-            "orgName": {
-                "type": "string",
-                "description": "The name of the organisation or entity corresponding to this observation."
-            },
             "phone": {
                 "type": "string",
                 "description": "Phone number  corresponding to this observation"
@@ -37,6 +33,10 @@
             "academicQualification": {
                 "type": "string",
                 "description": "The highest educational qualification of the individual corresponding to this observation."
+            },
+            "fieldOfResearch": {
+                "type": "string",
+                "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
             },
             "residentialAddress": {
                 "type": "object",
@@ -61,8 +61,8 @@
                     "pincode": {
                         "type": "number",
                         "description": "The postal code corresponding to this observation.",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
+                        "unitCode": "",
+                        "unitText": ""
                     },
                     "stateCode": {
                         "type": "string",
@@ -101,8 +101,8 @@
                     "pincode": {
                         "type": "number",
                         "description": "The postal code corresponding to this observation.",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
+                        "unitCode": "",
+                        "unitText": ""
                     },
                     "stateCode": {
                         "type": "string",
@@ -137,8 +137,8 @@
                     "pincode": {
                         "type": "number",
                         "description": "The postal code corresponding to this observation.",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
+                        "unitCode": "",
+                        "unitText": ""
                     },
                     "stateCode": {
                         "type": "string",
@@ -165,8 +165,8 @@
                     "bankAccountNo": {
                         "type": "number",
                         "description": "The bank account number of the individual or business corresponding to this observation",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
+                        "unitCode": "",
+                        "unitText": ""
                     },
                     "gstin": {
                         "type": "string",
@@ -223,17 +223,6 @@
             "designation": {
                 "type": "string",
                 "description": "Designation of the individual corresponding to this observation"
-            },
-            "jurisdiction": {
-                "type": "array",
-                "description": "The administrative divisions within which the entity holds territorial scope of authority.",
-                "items": {
-                    "type": "string"
-                }
-            },
-            "expertise": {
-                "type": "string",
-                "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
             }
         }
     }

@@ -1,12 +1,12 @@
 {
     "@context": "https://agrijson.org/",
     "type": [
-        "adex:AgriExpert",
+        "adex:ExtensionWorker",
         "adex:Schema"
     ],
-    "id": "https://agrijson.org/AgriExpert",
+    "id": "https://agrijson.org/ExtensionWorker",
     "schema": {
-        "title": "ADEX AgriExpert Data Model",
+        "title": "ADEX ExtensionWorker Data Model",
         "type": "object",
         "properties": {
             "type": {
@@ -14,7 +14,7 @@
                 "items": [
                     {
                         "type": "string",
-                        "description": "ADEX Data Model name. It has to be AgriExpert"
+                        "description": "ADEX Data Model name. It has to be ExtensionWorker"
                     },
                     {
                         "type": "string",
@@ -61,8 +61,8 @@
                     "pincode": {
                         "type": "number",
                         "description": "The postal code corresponding to this observation.",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
+                        "unitCode": "",
+                        "unitText": ""
                     },
                     "stateCode": {
                         "type": "string",
@@ -101,8 +101,8 @@
                     "pincode": {
                         "type": "number",
                         "description": "The postal code corresponding to this observation.",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
+                        "unitCode": "",
+                        "unitText": ""
                     },
                     "stateCode": {
                         "type": "string",
@@ -137,8 +137,8 @@
                     "pincode": {
                         "type": "number",
                         "description": "The postal code corresponding to this observation.",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
+                        "unitCode": "",
+                        "unitText": ""
                     },
                     "stateCode": {
                         "type": "string",
@@ -165,8 +165,8 @@
                     "bankAccountNo": {
                         "type": "number",
                         "description": "The bank account number of the individual or business corresponding to this observation",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
+                        "unitCode": "",
+                        "unitText": ""
                     },
                     "gstin": {
                         "type": "string",
@@ -230,10 +230,6 @@
                 "items": {
                     "type": "string"
                 }
-            },
-            "expertise": {
-                "type": "string",
-                "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
             }
         }
     }

@@ -12,7 +12,7 @@
             "@type": [
                 "adex:StructuredProperty"
             ],
-            "rdfs:comment": "Details of the person/ orgnization which has published the code system corresponding to this observation.",
+            "rdfs:comment": "Details of the person/ organization which has published the code system corresponding to this observation.",
             "rdfs:label": "publisherInfo",
             "adex:domainIncludes": [
                 {
