@@ -4,7 +4,7 @@
         "adex:SoilHealth",
         "adex:Schema"
     ],
-    "id": "https://agrijson.org/SoilHealth",
+    "$id": "https://agrijson.org/SoilHealth",
     "schema": {
         "title": "ADEX SoilHealth Data Model",
         "type": "object",
