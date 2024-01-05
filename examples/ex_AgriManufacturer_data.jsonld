@@ -2,25 +2,21 @@
     "@context": "https://agrijson.org/",
     "id": "resource-item-id",
     "type": [
-        "adex:AgriExpert",
+        "adex:AgriManufacturer",
         "adex:Resource"
     ],
+    "fssaiInfo": {
+        "certificateNumber": "FS7235632",
+        "certifyingAuthority": "Ministry of Health & Family Welfare, Government of India",
+        "certificationIssualDate": "2023-02-31",
+        "certificationExpiryDate": "2026-12-31"
+    },
     "name": "Swaminathan",
-    "orgName": "KKMS",
-    "jurisdiction": "Indian states and Union Territories",
-    "imageURL": "https://example_url.img",
-    "language": [
-        "Tamil",
-        "English",
-        "Hindi",
-        "Telugu"
-    ],
     "email": "swaminathanofficial@gmail.com",
-    "gender": "Male",
     "phone": "9283294XXX",
-    "workStatus": "Retired",
-    "designation": "R&D head",
-    "academicQualification": "Doctorate in Philosophy",
+    "productName": "Tractor",
+    "purposeDescription": "Farming",
+    "foundingDate": "2023-12-15",
     "residentialAddress": {
         "buildingNum": "61/65",
         "street": "abc",
@@ -33,5 +29,13 @@
     "identityInfo": {
         "panNo": "AXXXXXXHHZ",
         "aadharNo": "3112XXXX54XXX"
+    },
+    "feedback": "Good",
+    "pos": {
+        "type": "Point",
+        "coordinates": [
+            93.8259,
+            6.7806
+        ]
     }
 }

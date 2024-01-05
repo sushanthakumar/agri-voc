@@ -61,8 +61,8 @@
                     "pincode": {
                         "type": "number",
                         "description": "The postal code corresponding to this observation.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "unitCode": "C62",
+                        "unitText": "Dimensionless"
                     },
                     "stateCode": {
                         "type": "string",
@@ -101,8 +101,8 @@
                     "pincode": {
                         "type": "number",
                         "description": "The postal code corresponding to this observation.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "unitCode": "C62",
+                        "unitText": "Dimensionless"
                     },
                     "stateCode": {
                         "type": "string",
@@ -137,8 +137,8 @@
                     "pincode": {
                         "type": "number",
                         "description": "The postal code corresponding to this observation.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "unitCode": "C62",
+                        "unitText": "Dimensionless"
                     },
                     "stateCode": {
                         "type": "string",
@@ -165,8 +165,8 @@
                     "bankAccountNo": {
                         "type": "number",
                         "description": "The bank account number of the individual or business corresponding to this observation",
-                        "unitCode": "",
-                        "unitText": ""
+                        "unitCode": "C62",
+                        "unitText": "Dimensionless"
                     },
                     "gstin": {
                         "type": "string",

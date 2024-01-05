@@ -2,13 +2,12 @@
     "@context": "https://agrijson.org/",
     "id": "resource-item-id",
     "type": [
-        "adex:AgriExpert",
+        "adex:Farmer",
         "adex:Resource"
     ],
     "name": "Swaminathan",
-    "orgName": "KKMS",
-    "jurisdiction": "Indian states and Union Territories",
-    "imageURL": "https://example_url.img",
+    "farmerID": "IN12741",
+    "imageURL": "https://sample.org.in",
     "language": [
         "Tamil",
         "English",
@@ -18,9 +17,13 @@
     "email": "swaminathanofficial@gmail.com",
     "gender": "Male",
     "phone": "9283294XXX",
-    "workStatus": "Retired",
-    "designation": "R&D head",
-    "academicQualification": "Doctorate in Philosophy",
+    "year": "2024",
+    "landHolding": 4.6,
+    "landParcelInfo": {
+        "landClassCode": "LC172",
+        "landExtent": 10000,
+        "irrigationSource": "check dam"
+    },
     "residentialAddress": {
         "buildingNum": "61/65",
         "street": "abc",
@@ -29,9 +32,5 @@
         "stateName": "Telangana",
         "countryName": "India",
         "pincode": 507002
-    },
-    "identityInfo": {
-        "panNo": "AXXXXXXHHZ",
-        "aadharNo": "3112XXXX54XXX"
     }
 }

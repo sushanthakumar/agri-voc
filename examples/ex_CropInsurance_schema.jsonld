@@ -1,12 +1,12 @@
 {
     "@context": "https://agrijson.org/",
     "type": [
-        "adex:Imagery",
+        "adex:CropInsurance",
         "adex:Schema"
     ],
-    "id": "https://agrijson.org/Imagery",
+    "id": "https://agrijson.org/CropInsurance",
     "schema": {
-        "title": "ADEX Imagery Data Model",
+        "title": "ADEX CropInsurance Data Model",
         "type": "object",
         "properties": {
             "type": {
@@ -14,7 +14,7 @@
                 "items": [
                     {
                         "type": "string",
-                        "description": "ADEX Data Model name. It has to be Imagery"
+                        "description": "ADEX Data Model name. It has to be CropInsurance"
                     },
                     {
                         "type": "string",
@@ -22,54 +22,35 @@
                     }
                 ]
             },
-            "fileFormat": {
-                "type": "array",
-                "description": "Format of the media file corresponding to this observation.",
-                "items": {
-                    "type": "string"
-                }
-            },
-            "fileSize": {
-                "type": "number",
-                "description": "The size of the media file corresponding to this observation",
-                "unitCode": "2P",
-                "unitText": "kilobyte"
-            },
-            "mediaURL": {
-                "type": "array",
-                "description": "URL providing further information of any image(s) or media of the complaint or place.",
-                "items": {
-                    "type": "string"
-                }
-            },
-            "contactPointInfo": {
+            "landIdentityInfo": {
                 "type": "object",
-                "description": "Contact point information of a business/service corresponding to this observation",
+                "description": "The unique land identification information corresponding to this observation.",
                 "properties": {
-                    "contactPointPhone": {
-                        "type": "string",
-                        "description": "Phone number of point of contact to the business or service corresponding to this observation"
+                    "baseSurveyNumber": {
+                        "type": "number",
+                        "description": "The base survey number of the land corresponding to this observation.",
+                        "unitCode": "C62",
+                        "unitText": "Dimensionless"
                     },
-                    "helplineNumber": {
-                        "type": "array",
-                        "description": "Helpline contact number(s) corresponding to this observation.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "contactPointName": {
+                    "subdivisionNumber": {
                         "type": "string",
-                        "description": "Name of the point of contact to the business or service corresponding to this observation"
+                        "description": "The subdivision number from the land survey number corresponding to this observation"
                     },
-                    "contactPointEmail": {
+                    "surveyNumber": {
                         "type": "string",
-                        "description": "Email address of the point of contact to the business or service corresponding to this observation."
+                        "description": "The unique land survey number allocated to the land corresponding to this observation."
+                    },
+                    "landParcelID": {
+                        "type": "number",
+                        "description": "The ULPIN(Unique Land Parcel Identification Number) representing the land parcel corresponding to the observation.",
+                        "unitCode": "C62",
+                        "unitText": "Dimensionless"
                     }
                 }
             },
-            "ownerInfo": {
+            "personnelInfo": {
                 "type": "object",
-                "description": "Details of the person who owns the entity corresponding to this observation.",
+                "description": "Personnel information of an individual or business corresponding to this observation.",
                 "properties": {
                     "language": {
                         "type": "array",
@@ -94,27 +75,11 @@
                         "type": "object",
                         "description": "Personal identification information issued by the government.",
                         "properties": {
-                            "panNo": {
-                                "type": "string",
-                                "description": "The pan card number of the individual corresponding to this observation."
-                            },
-                            "digitalSignature": {
-                                "type": "string",
-                                "description": "The link to the digital signature of the entity corresponding to this observation."
-                            },
-                            "iec": {
-                                "type": "string",
-                                "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
-                            },
                             "bankAccountNo": {
                                 "type": "number",
                                 "description": "The bank account number of the individual or business corresponding to this observation",
                                 "unitCode": "C62",
                                 "unitText": "Dimensionless"
-                            },
-                            "registrationNumber": {
-                                "type": "string",
-                                "description": "The registration number of the entity corresponding to this observation."
                             },
                             "gstin": {
                                 "type": "string",
@@ -124,17 +89,33 @@
                                 "type": "string",
                                 "description": "The IFSC code for the bank corresponding to this observation"
                             },
-                            "fssaiLicense": {
-                                "type": "string",
-                                "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
-                            },
                             "drivingLicense": {
                                 "type": "string",
                                 "description": "The driving license number of the individual corresponding to this observation."
                             },
+                            "registrationNumber": {
+                                "type": "string",
+                                "description": "The registration number of the entity corresponding to this observation."
+                            },
+                            "digitalSignature": {
+                                "type": "string",
+                                "description": "The link to the digital signature of the entity corresponding to this observation."
+                            },
+                            "panNo": {
+                                "type": "string",
+                                "description": "The pan card number of the individual corresponding to this observation."
+                            },
+                            "fssaiLicense": {
+                                "type": "string",
+                                "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+                            },
                             "aadharNo": {
                                 "type": "string",
                                 "description": "The aadhar number issued by the government for the individual corresponding to this observation."
+                            },
+                            "iec": {
+                                "type": "string",
+                                "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
                             }
                         }
                     },
@@ -142,57 +123,29 @@
                         "type": "string",
                         "description": "Represents the nation that the individual corresponding to this observation belongs to."
                     },
-                    "businessAddress": {
-                        "type": "object",
-                        "description": "Business address corresponding to this observation",
-                        "properties": {
-                            "street": {
-                                "type": "string",
-                                "description": "Street name corresponding to this observation."
-                            },
-                            "locality": {
-                                "type": "string",
-                                "description": "Area name of the location corresponding to this observation."
-                            },
-                            "pincode": {
-                                "type": "number",
-                                "description": "The postal code corresponding to this observation.",
-                                "unitCode": "C62",
-                                "unitText": "Dimensionless"
-                            },
-                            "cityName": {
-                                "type": "string",
-                                "description": "Name of the city corresponding to this observation."
-                            },
-                            "stateCode": {
-                                "type": "string",
-                                "description": "Name of the state code corresponding to this observation."
-                            },
-                            "addressLine": {
-                                "type": "string",
-                                "description": "Address corresponding to this observation"
-                            },
-                            "buildingNum": {
-                                "type": "string",
-                                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-                            }
-                        }
-                    },
                     "phone": {
                         "type": "string",
                         "description": "Phone number  corresponding to this observation"
                     },
-                    "residentialAddress": {
+                    "businessAddress": {
                         "type": "object",
-                        "description": "Residential address corresponding to this observation",
+                        "description": "Business address corresponding to this observation",
                         "properties": {
-                            "street": {
+                            "addressLine": {
                                 "type": "string",
-                                "description": "Street name corresponding to this observation."
+                                "description": "Address corresponding to this observation"
+                            },
+                            "cityName": {
+                                "type": "string",
+                                "description": "Name of the city corresponding to this observation."
                             },
                             "locality": {
                                 "type": "string",
                                 "description": "Area name of the location corresponding to this observation."
+                            },
+                            "buildingNum": {
+                                "type": "string",
+                                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
                             },
                             "pincode": {
                                 "type": "number",
@@ -200,21 +153,13 @@
                                 "unitCode": "C62",
                                 "unitText": "Dimensionless"
                             },
-                            "cityName": {
-                                "type": "string",
-                                "description": "Name of the city corresponding to this observation."
-                            },
                             "stateCode": {
                                 "type": "string",
                                 "description": "Name of the state code corresponding to this observation."
                             },
-                            "addressLine": {
+                            "street": {
                                 "type": "string",
-                                "description": "Address corresponding to this observation"
-                            },
-                            "buildingNum": {
-                                "type": "string",
-                                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+                                "description": "Street name corresponding to this observation."
                             }
                         }
                     },
@@ -222,13 +167,21 @@
                         "type": "object",
                         "description": "Permanent address corresponding to this observation",
                         "properties": {
-                            "street": {
+                            "addressLine": {
                                 "type": "string",
-                                "description": "Street name corresponding to this observation."
+                                "description": "Address corresponding to this observation"
+                            },
+                            "cityName": {
+                                "type": "string",
+                                "description": "Name of the city corresponding to this observation."
                             },
                             "locality": {
                                 "type": "string",
                                 "description": "Area name of the location corresponding to this observation."
+                            },
+                            "buildingNum": {
+                                "type": "string",
+                                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
                             },
                             "pincode": {
                                 "type": "number",
@@ -236,21 +189,49 @@
                                 "unitCode": "C62",
                                 "unitText": "Dimensionless"
                             },
+                            "stateCode": {
+                                "type": "string",
+                                "description": "Name of the state code corresponding to this observation."
+                            },
+                            "street": {
+                                "type": "string",
+                                "description": "Street name corresponding to this observation."
+                            }
+                        }
+                    },
+                    "residentialAddress": {
+                        "type": "object",
+                        "description": "Residential address corresponding to this observation",
+                        "properties": {
+                            "addressLine": {
+                                "type": "string",
+                                "description": "Address corresponding to this observation"
+                            },
                             "cityName": {
                                 "type": "string",
                                 "description": "Name of the city corresponding to this observation."
+                            },
+                            "locality": {
+                                "type": "string",
+                                "description": "Area name of the location corresponding to this observation."
+                            },
+                            "buildingNum": {
+                                "type": "string",
+                                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+                            },
+                            "pincode": {
+                                "type": "number",
+                                "description": "The postal code corresponding to this observation.",
+                                "unitCode": "C62",
+                                "unitText": "Dimensionless"
                             },
                             "stateCode": {
                                 "type": "string",
                                 "description": "Name of the state code corresponding to this observation."
                             },
-                            "addressLine": {
+                            "street": {
                                 "type": "string",
-                                "description": "Address corresponding to this observation"
-                            },
-                            "buildingNum": {
-                                "type": "string",
-                                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+                                "description": "Street name corresponding to this observation."
                             }
                         }
                     },
@@ -299,42 +280,60 @@
                     }
                 }
             },
-            "imageURL": {
+            "schemeInfo": {
+                "type": "object",
+                "description": "Farmer welfare schemes information corresponding to this observation."
+            },
+            "cropSpeciesInfo": {
+                "type": "object",
+                "description": "Information of crops corresponding to this observation."
+            },
+            "policyProtection": {
                 "type": "array",
-                "description": "The link that points to the picture of the individual or an entity corresponding to this observation.",
+                "description": "The potential risk(s)/ event(s) that is (are) protected or insured against by the insurance policy corresponding to this observation. For eg., accidents, theft, fire, natural disasters, etc.",
                 "items": {
                     "type": "string"
                 }
             },
-            "spectralBandResolution": {
+            "expiryDate": {
                 "type": "string",
-                "description": "Denotes the quantified degree of detail or distinction between various electromagnetic wavelengths that the system can capture and differentiate."
+                "description": "The date of expiry of the insurance corresponding to this observation.",
+                "format": "date"
             },
-            "radiometricResolution": {
+            "insurancePremium": {
                 "type": "number",
-                "description": "Denotes the intensity values of each pixel in a digital image corresponding to this observation.",
-                "unitCode": "A99",
-                "unitText": "bit"
+                "description": "The amount that is paid by the individual or business for availing the insurance policy.",
+                "unitCode": "INR",
+                "unitText": "Indian Rupee"
             },
-            "geometricResolution": {
-                "type": "number",
-                "description": "Denotes the size of an object in a single-pixel that an image can record.",
-                "unitCode": "MTR",
-                "unitText": "metre"
-            },
-            "temporalResolution": {
+            "renewalDate": {
                 "type": "string",
-                "description": "Denotes the time-stamp or the revisit time of the satellite corresponding to this observation."
+                "description": "The date of renewal of the insurance corresponding to this observation.",
+                "format": "date"
             },
-            "spatialResolution": {
-                "type": "number",
-                "description": "Denotes the distance represented by a single pixel in an image such as 1m, 10m, etc.",
-                "unitCode": "MTR",
-                "unitText": "metre"
-            },
-            "imageID": {
+            "issualDate": {
                 "type": "string",
-                "description": "The unique ID of the image assigned by the provider corresponding to this observation."
+                "description": "The date of issual of the insurance corresponding to this observation.",
+                "format": "date"
+            },
+            "agencyName": {
+                "type": "string",
+                "description": "The agency which procures the commodity corresponding to this observation."
+            },
+            "insuranceCoverage": {
+                "type": "number",
+                "description": "The maximum amount payable in the event of a claim by the policy holder for the insurance policy corresponding to this observation.",
+                "unitCode": "INR",
+                "unitText": "Indian Rupee"
+            },
+            "policyNumber": {
+                "type": "string",
+                "description": "Insurance policy number corresponding to this observation"
+            },
+            "policyDate": {
+                "type": "string",
+                "description": "The date refers to the date on which the insurance policy itself becomes effective or starts providing coverage. It's the date from which the terms and conditions of the policy are applicable",
+                "format": "date"
             }
         }
     }
