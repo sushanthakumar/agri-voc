@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@id": "adex:tradersCount",
+            "@id": "adex:farmerCount",
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The total number of traders registered with the market corresponding to this observation.",
-            "rdfs:label": "tradersCount",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
+            "rdfs:comment": "The total number of farmers corresponding to this observation.",
+            "rdfs:label": "farmerCount",
             "adex:domainIncludes": [
+                {
+                    "@id": "adex:FarmerCollective"
+                },
                 {
                     "@id": "adex:AgriMarket"
                 }
@@ -29,7 +29,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

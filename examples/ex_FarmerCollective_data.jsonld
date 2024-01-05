@@ -32,7 +32,7 @@
         "certificationExpiryDate": "2002-02-02"
     },
     "areaServed": "West Bengal",
-    "farmersCount": 45,
+    "farmerCount": 45,
     "cropSpeciesInfo": {
         "cropNameICC": "Orange",
         "cropCodeICC": "3727",

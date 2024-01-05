@@ -12,7 +12,7 @@ cropSpeciesInfo,SP,Information of crops corresponding to this observation.,"Crop
 Farmer, FarmerCollective",CropCondition,,,1,0,
 comments,TXP,User comments corresponding to this observation.,"Version, FarmerCollective","Text, Text-list, ValueDescriptor",,,1,0,
 legalStatus,TXP,The legal status of the entity corresponding to this observation.,FarmerCollective,"Text, ValueDescriptor",,,0,0,
-farmersCount,QP,The total number of farmers corresponding to this observation.,FarmerCollective,"Number, ValueDescriptor",,,0,0,
+farmerCount,QP,The total number of farmers corresponding to this observation.,FarmerCollective,"Number, ValueDescriptor",,,0,0,
 serviceName,TXP,Name of the service offered by an organization or an entity corresponding to this observation.,FarmerCollective,"Text, ValueDescriptor",,,0,0,
 serviceCode,TXP,The unique code assigned to a service corresponding to this observation.,FarmerCollective,"Text, ValueDescriptor",,,0,0,
 serviceDescription,TXP,The description of the service corresponding to this observation.,FarmerCollective,"Text, ValueDescriptor",,,0,0,

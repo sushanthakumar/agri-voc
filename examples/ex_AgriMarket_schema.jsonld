@@ -172,7 +172,7 @@
                 "unitCode": "FTK",
                 "unitText": "square foot"
             },
-            "commissionAgentsCount": {
+            "commissionAgentCount": {
                 "type": "number",
                 "description": "The total number of commission agents registered with the market corresponding to this observation.",
                 "unitCode": "C62",
@@ -451,13 +451,13 @@
                 "type": "string",
                 "description": "The name of the Agricultural Market Committee corresponding to this observation."
             },
-            "farmersCount": {
+            "farmerCount": {
                 "type": "number",
                 "description": "The total number of farmers corresponding to this observation.",
                 "unitCode": "C62",
                 "unitText": "Dimensionless"
             },
-            "tradersCount": {
+            "traderCount": {
                 "type": "number",
                 "description": "The total number of traders registered with the market corresponding to this observation.",
                 "unitCode": "C62",

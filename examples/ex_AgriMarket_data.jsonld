@@ -25,9 +25,9 @@
     "amcCode": "300",
     "amcName": "Badepally",
     "amcGrade": "Spl.Gr",
-    "commissionAgentsCount": 23,
-    "tradersCount": 30,
-    "farmersCount": 57,
+    "commissionAgentCount": 23,
+    "traderCount": 30,
+    "farmerCount": 57,
     "foundingDate": "2023-03-31",
     "marketValuation": 90000,
     "commodityInfo": {
