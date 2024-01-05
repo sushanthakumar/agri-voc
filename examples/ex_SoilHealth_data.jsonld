@@ -2,7 +2,7 @@
   "@context": "https://agrijson.org/",
   "id": "resource-item-id",
   "type": [
-    "adex:RecommendedCropVariety",
+    "adex:SoilHealth",
     "adex:Resource"
   ],
   "landIdentityInfo":{
