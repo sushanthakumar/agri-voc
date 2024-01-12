@@ -8,9 +8,9 @@ import shutil
 classes = ['owl:Class', 'rdfs:Class']
 properties = ["adex:TextProperty", "adex:QuantitativeProperty", "adex:StructuredProperty", "adex:GeoProperty", "adex:TimeProperty", "adex:Relationship", 'rdf:Property'] 
 relation = ["adex:Relationship"]
-class_folder_path = "/tmp/all_classes/"
-properties_folder_path = "/tmp/all_properties/"
-examples_path = "/tmp/all_examples"
+class_folder_path = "../tmp/all_classes/"
+properties_folder_path = "../tmp/all_properties/"
+examples_path = "../tmp/all_examples"
 
 
 relation_list = ["domainOf", "subClassOf", "rangeOf"]
@@ -169,6 +169,20 @@ class Vocabulary:
                 with open(class_folder_path + name_list[1] + ".jsonld", "w") as context_file:
                     json.dump(grph,context_file, indent=4)
 
+    def class_sorting(self):
+        for filename in os.listdir(class_folder_path):
+            if filename.endswith(".jsonld"):
+                file_path = os.path.join(class_folder_path, filename)
+                with open(file_path, 'r') as file:
+                    json_data = json.load(file)
+
+                    sorted_graph = sorted(
+                        filter(lambda x: "@id" in x and "@id" != "rdfs:subClassOf", json_data["@graph"]),
+                        key=lambda x: x.get("@id"),
+                    )
+                    sorted_data = {"@graph": sorted_graph, "@context": json_data["@context"]}
+                    with open(file_path, "w") as json_file:
+                        json.dump(sorted_data, json_file, indent=4)
 
     def is_loop(self, v, visited={}, root=str):
         visited[v.id] = True
@@ -238,6 +252,7 @@ def main():
 
     voc = Vocabulary("./")
     voc.make_classfile()
+    voc.class_sorting()
     voc.make_propertiesfile()
     voc.make_master()
     voc.gen_examples()
@@ -245,3 +260,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
