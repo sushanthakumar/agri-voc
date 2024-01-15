@@ -169,6 +169,44 @@ class Vocabulary:
                 with open(class_folder_path + name_list[1] + ".jsonld", "w") as context_file:
                     json.dump(grph,context_file, indent=4)
 
+    def class_sorting(self):
+        for filename in os.listdir(class_folder_path):
+            if filename.endswith(".jsonld"):
+                file_path = os.path.join(class_folder_path, filename)
+                with open(file_path, 'r') as file:
+                    json_data = json.load(file)
+
+                    sorted_graph = sorted(
+                        filter(lambda x: "@id" in x and "@id" != "rdfs:subClassOf", json_data["@graph"]),
+                        key=lambda x: x.get("@id"),
+                    )
+                    
+                    matching_item = next(
+                        (item for item in sorted_graph if "rdfs:subClassOf" in item and "rdfs:isDefinedBy" in item ),
+                        None,
+                    )
+                    #Class name be the first 
+                    if matching_item:
+                        sorted_graph.remove(matching_item)
+                        sorted_graph.insert(0, matching_item)
+
+                    
+                    matching_item = next(
+                        (item for item in sorted_graph if "rdfs:subClassOf" in item and "rdfs:isDefinedBy" not in item and item["@id"] != "adex:DataModel"),
+                        None,
+                    )
+                    #concept name be next to class name
+
+                    if matching_item:
+                        sorted_graph.remove(matching_item)
+                        sorted_graph.insert(1, matching_item)
+
+                    sorted_data = {"@graph": sorted_graph, "@context": json_data["@context"]}
+
+                    with open(file_path, "w") as json_file:
+                        json.dump(sorted_data, json_file, indent=4)
+
+
 
     def is_loop(self, v, visited={}, root=str):
         visited[v.id] = True
@@ -238,6 +276,7 @@ def main():
 
     voc = Vocabulary("./")
     voc.make_classfile()
+    voc.class_sorting()
     voc.make_propertiesfile()
     voc.make_master()
     voc.gen_examples()
