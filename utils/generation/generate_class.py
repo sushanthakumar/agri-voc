@@ -8,9 +8,9 @@ import shutil
 classes = ['owl:Class', 'rdfs:Class']
 properties = ["adex:TextProperty", "adex:QuantitativeProperty", "adex:StructuredProperty", "adex:GeoProperty", "adex:TimeProperty", "adex:Relationship", 'rdf:Property'] 
 relation = ["adex:Relationship"]
-class_folder_path = "/tmp/all_classes/"
-properties_folder_path = "/tmp/all_properties/"
-examples_path = "/tmp/all_examples"
+class_folder_path = "/home/iudx/adex-voc/agri-voc/tmp/all_classes/"
+properties_folder_path = "/home/iudx/adex-voc/agri-voc/tmp/all_properties/"
+examples_path = "/home/iudx/adex-voc/agri-voc/tmp/all_examples"
 
 
 relation_list = ["domainOf", "subClassOf", "rangeOf"]
@@ -181,8 +181,20 @@ class Vocabulary:
                         key=lambda x: x.get("@id"),
                     )
                     sorted_data = {"@graph": sorted_graph, "@context": json_data["@context"]}
+                    
+                    first_index = next(
+                    (i for i, item in enumerate(sorted_graph) if "@id" in item and all(key in item for key in ["rdfs:subClassOf", "rdfs:isDefinedBy"])),
+                    None
+                    )
+
+                    if first_index != None:
+                        sorted_graph.insert(0, sorted_graph.pop(first_index))
+
+                    
                     with open(file_path, "w") as json_file:
                         json.dump(sorted_data, json_file, indent=4)
+
+
 
     def is_loop(self, v, visited={}, root=str):
         visited[v.id] = True
