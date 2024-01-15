@@ -190,7 +190,14 @@ class Vocabulary:
                     if first_index != None:
                         sorted_graph.insert(0, sorted_graph.pop(first_index))
 
-                    
+                    matching_item = next(
+                        (item for item in sorted_graph if "rdfs:subClassOf" in item and "rdfs:isDefinedBy" not in item and item["@id"] != "adex:DataModel"),
+                        None,
+                    )
+
+                    if matching_item:
+                        sorted_graph.remove(matching_item)
+                        sorted_graph.insert(1, matching_item)
 
                     with open(file_path, "w") as json_file:
                         json.dump(sorted_data, json_file, indent=4)
