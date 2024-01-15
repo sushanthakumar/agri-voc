@@ -8,9 +8,9 @@ import shutil
 classes = ['owl:Class', 'rdfs:Class']
 properties = ["adex:TextProperty", "adex:QuantitativeProperty", "adex:StructuredProperty", "adex:GeoProperty", "adex:TimeProperty", "adex:Relationship", 'rdf:Property'] 
 relation = ["adex:Relationship"]
-class_folder_path = "../tmp/all_classes/"
-properties_folder_path = "../tmp/all_properties/"
-examples_path = "../tmp/all_examples"
+class_folder_path = "/tmp/all_classes/"
+properties_folder_path = "/tmp/all_properties/"
+examples_path = "/tmp/all_examples"
 
 
 relation_list = ["domainOf", "subClassOf", "rangeOf"]
