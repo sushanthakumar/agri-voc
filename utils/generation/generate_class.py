@@ -180,7 +180,6 @@ class Vocabulary:
                         filter(lambda x: "@id" in x and "@id" != "rdfs:subClassOf", json_data["@graph"]),
                         key=lambda x: x.get("@id"),
                     )
-                    sorted_data = {"@graph": sorted_graph, "@context": json_data["@context"]}
                     
                     first_index = next(
                     (i for i, item in enumerate(sorted_graph) if "@id" in item and all(key in item for key in ["rdfs:subClassOf", "rdfs:isDefinedBy"])),
@@ -198,6 +197,9 @@ class Vocabulary:
                     if matching_item:
                         sorted_graph.remove(matching_item)
                         sorted_graph.insert(1, matching_item)
+                    
+                    sorted_data = {"@graph": sorted_graph, "@context": json_data["@context"]}
+                    
 
                     with open(file_path, "w") as json_file:
                         json.dump(sorted_data, json_file, indent=4)
