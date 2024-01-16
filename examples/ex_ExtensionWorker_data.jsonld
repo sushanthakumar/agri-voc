@@ -2,17 +2,17 @@
   "@context": "https://agrijson.org/",
   "id": "resource-item-id",
   "type": [
-    "adex:AgriExpert",
+    "adex:ExtensionWorker",
     "adex:Resource"
   ],
-  "name": "Swaminathan",
-  "orgName": "KKMS",
+  "name": "Shelley",
+  "orgName": "Frankenstien",
   "phone": "9283294XXX",
-  "academicQualification": "Doctorate in Agricultural Science",
+  "academicQualification": "12th grade",
   "residentialAddress": {
     "buildingNum": "61/65",
     "street": "abc",
-    "locality": "Ballepalli",
+    "locality": "Modi nagar",
     "districtName": "Khammam",
     "stateName": "Telangana",
     "countryName": "India",
@@ -25,12 +25,12 @@
   "language": [
     "Tamil",
     "English",
-    "Hindi",
-    "Telugu"
+    "Kashmiri",
+    "Urdu"
   ],
   "designation": "R&D head",
-  "email": "swaminathanofficial@gmail.com",
-  "gender": "Male",
+  "email": "hdfwr@gmail.com",
+  "gender": "Female",
   "jurisdiction": "Indian states and Union Territories",
-  "workStatus": "Retired"
+  "workStatus": "temporary"
 }
