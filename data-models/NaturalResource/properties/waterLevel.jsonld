@@ -8,28 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:nutrientInfo",
+            "@id": "adex:waterLevel",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The chemical elements and compounds that are necessary for plant growth, reproduction, metabolism.",
-            "rdfs:label": "nutrientInfo",
+            "rdfs:comment": "The water level in a specific water body such as the reservoir or the ground water table.",
+            "rdfs:label": "waterLevel",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:SoilHealth"
-                },
                 {
                     "@id": "adex:Irrigation"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:NutrientDesc"
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

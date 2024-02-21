@@ -26,6 +26,9 @@
                 },
                 {
                     "@id": "adex:HyperLocalAdvisory"
+                },
+                {
+                    "@id": "adex:Irrigation"
                 }
             ],
             "adex:rangeIncludes": [

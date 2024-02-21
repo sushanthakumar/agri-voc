@@ -59,6 +59,9 @@
                 },
                 {
                     "@id": "adex:SoilHealth"
+                },
+                {
+                    "@id": "adex:Irrigation"
                 }
             ],
             "adex:rangeIncludes": [

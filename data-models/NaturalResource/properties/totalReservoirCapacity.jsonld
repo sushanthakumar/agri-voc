@@ -8,28 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:nutrientInfo",
+            "@id": "adex:totalReservoirCapacity",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The chemical elements and compounds that are necessary for plant growth, reproduction, metabolism.",
-            "rdfs:label": "nutrientInfo",
+            "rdfs:comment": "Represents the total volume of water that the reservoir corresponding to this observation can hold.",
+            "rdfs:label": "totalReservoirCapacity",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:SoilHealth"
-                },
                 {
                     "@id": "adex:Irrigation"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:NutrientDesc"
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

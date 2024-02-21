@@ -8,28 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:nutrientInfo",
+            "@id": "adex:riverBasin",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The chemical elements and compounds that are necessary for plant growth, reproduction, metabolism.",
-            "rdfs:label": "nutrientInfo",
+            "rdfs:comment": "The name of the river/stream corresponding to this observation",
+            "rdfs:label": "riverBasin",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:SoilHealth"
-                },
                 {
                     "@id": "adex:Irrigation"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:NutrientDesc"
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

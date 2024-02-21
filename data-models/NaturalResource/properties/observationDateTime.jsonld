@@ -59,6 +59,9 @@
                 },
                 {
                     "@id": "adex:ValueSet"
+                },
+                {
+                    "@id": "adex:Irrigation"
                 }
             ],
             "adex:rangeIncludes": [

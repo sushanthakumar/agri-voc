@@ -8,23 +8,23 @@
     },
     "@graph": [
         {
-            "@id": "adex:nutrientInfo",
+            "@id": "adex:landExtentType",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The chemical elements and compounds that are necessary for plant growth, reproduction, metabolism.",
-            "rdfs:label": "nutrientInfo",
+            "rdfs:comment": "The classification of the land parcel extent based on certain aspects such as its size.",
+            "rdfs:label": "landExtentType",
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:SoilHealth"
-                },
-                {
-                    "@id": "adex:Irrigation"
+                    "@id": "adex:LandParcel"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:NutrientDesc"
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
             ],
             "rdfs:isDefinedBy": {

@@ -1,0 +1,35 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/"
+    },
+    "@graph": [
+        {
+            "@id": "adex:achievementRate",
+            "@type": [
+                "adex:QuantitativeProperty"
+            ],
+            "rdfs:comment": "The ratio of the actual loan amount disbursed to the loan amount targeted to be disbursed for a particular loan type, expressed as a percentage, denoting the level of attainment of the credit goals. It is calculated as (loanAchievementAmount / loanTargetAmount)*100.",
+            "rdfs:label": "achievementRate",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "adex:AgriCredit"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "adex:Number"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}

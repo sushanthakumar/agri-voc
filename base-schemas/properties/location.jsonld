@@ -48,6 +48,9 @@
                 },
                 {
                     "@id": "adex:Weather"
+                },
+                {
+                    "@id": "adex:Irrigation"
                 }
             ],
             "adex:rangeIncludes": [

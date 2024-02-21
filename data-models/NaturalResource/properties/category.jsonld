@@ -8,28 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:nutrientInfo",
+            "@id": "adex:category",
             "@type": [
-                "adex:StructuredProperty"
+                "adex:TextProperty"
             ],
-            "rdfs:comment": "The chemical elements and compounds that are necessary for plant growth, reproduction, metabolism.",
-            "rdfs:label": "nutrientInfo",
+            "rdfs:comment": "Represents the name of classification of an entity or service based on a particular aspect.",
+            "rdfs:label": "category",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:SoilHealth"
-                },
                 {
                     "@id": "adex:Irrigation"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:NutrientDesc"
+                    "@id": "adex:Text"
+                },
+                {
+                    "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

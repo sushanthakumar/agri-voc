@@ -748,6 +748,14 @@
             "irrigationSource": {
                 "type": "string",
                 "description": "The source of irrigation for a land, such as well, canals, tanks, borewell, etc"
+            },
+            "landExtentType": {
+                "type": "string",
+                "description": "The classification of the land parcel extent based on certain aspects such as its size."
+            },
+            "foodCropArea": {
+                "type": "string",
+                "description": "The total area of land used solely for the cultivation of food crops (eg., rice, wheat, millets, etc.), excluding non-food crops (eg., cotton, rubber, etc)."
             }
         }
     }
