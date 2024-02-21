@@ -176,35 +176,34 @@ class Vocabulary:
                 with open(file_path, 'r') as file:
                     json_data = json.load(file)
 
-                    sorted_graph = sorted(
-                        filter(lambda x: "@id" in x and "@id" != "rdfs:subClassOf", json_data["@graph"]),
-                        key=lambda x: x.get("@id"),
-                    )
+                    data_list = json_data["@graph"]
+
+                    sorted_data_list = sorted(data_list, key=lambda x: x.get("@id", ""))
+
+                    item_name = filename.split(".")[0]
                     
-                    matching_item = next(
-                        (item for item in sorted_graph if "rdfs:subClassOf" in item and "rdfs:isDefinedBy" in item ),
-                        None,
+                
+                    second_index = next(
+                    (i for i, item in enumerate(sorted_data_list) if "@id" in item and all(key in item for key in ["rdfs:subClassOf"]) and item["@id"] != ("iudx:%s"%item_name) and item["rdfs:subClassOf"]["@id"] == "adex:DataModel"),
+                    None
                     )
-                    #Class name be the first 
-                    if matching_item:
-                        sorted_graph.remove(matching_item)
-                        sorted_graph.insert(0, matching_item)
 
-                    
-                    matching_item = next(
-                        (item for item in sorted_graph if "rdfs:subClassOf" in item and "rdfs:isDefinedBy" not in item and item["@id"] != "adex:DataModel"),
-                        None,
+                    if second_index != None:
+                        sorted_data_list.insert(0, sorted_data_list.pop(second_index))
+
+                    first_index = next(
+                    (i for i, item in enumerate(sorted_data_list) if "@id" in item and all(key in item for key in ["rdfs:subClassOf"]) and item["@id"] == ("adex:%s"%item_name)),
+                    None
                     )
-                    #concept name be next to class name
 
-                    if matching_item:
-                        sorted_graph.remove(matching_item)
-                        sorted_graph.insert(1, matching_item)
+                    if first_index != None:
+                        sorted_data_list.insert(0, sorted_data_list.pop(first_index))
 
-                    sorted_data = {"@graph": sorted_graph, "@context": json_data["@context"]}
+                    json_data["@graph"] = sorted_data_list                    
 
                     with open(file_path, "w") as json_file:
-                        json.dump(sorted_data, json_file, indent=4)
+                        json.dump(json_data, json_file, indent=4)
+                    
 
 
 
@@ -284,3 +283,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
