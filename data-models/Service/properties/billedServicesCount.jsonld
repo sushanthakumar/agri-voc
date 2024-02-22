@@ -8,26 +8,23 @@
     },
     "@graph": [
         {
-            "@id": "adex:cityName",
+            "@id": "adex:billedServicesCount",
             "@type": [
-                "adex:TextProperty"
+                "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Name of the city corresponding to this observation.",
-            "rdfs:label": "cityName",
+            "rdfs:comment": "The total count of services that are billed corresponding to this observation.",
+            "rdfs:label": "billedServicesCount",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:AddressDesc"
-                },
                 {
                     "@id": "adex:PowerDistribution"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@id": "adex:Text"
+                    "@id": "adex:Number"
                 },
                 {
                     "@id": "adex:ValueDescriptor"

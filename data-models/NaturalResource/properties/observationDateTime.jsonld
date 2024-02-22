@@ -62,6 +62,9 @@
                 },
                 {
                     "@id": "adex:Irrigation"
+                },
+                {
+                    "@id": "adex:PowerDistribution"
                 }
             ],
             "adex:rangeIncludes": [

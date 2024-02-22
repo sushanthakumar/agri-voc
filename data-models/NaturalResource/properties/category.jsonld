@@ -14,12 +14,12 @@
             ],
             "rdfs:comment": "Represents the name of classification of an entity or service based on a particular aspect.",
             "rdfs:label": "category",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:Irrigation"
+                },
+                {
+                    "@id": "adex:PowerDistribution"
                 }
             ],
             "adex:rangeIncludes": [
@@ -29,7 +29,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

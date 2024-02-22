@@ -8,44 +8,28 @@
     },
     "@graph": [
         {
-            "@id": "adex:areaServed",
+            "@id": "adex:powerDistributionSection",
             "@type": [
                 "adex:TextProperty"
             ],
-            "rdfs:comment": "Area served by the entity or a service.",
-            "rdfs:label": "areaServed",
+            "rdfs:comment": "The name of the power distribution section corresponding to this observation.",
+            "rdfs:label": "powerDistributionSection",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
-                {
-                    "@id": "adex:ModelDesc"
-                },
-                {
-                    "@id": "adex:FarmerCollective"
-                },
-                {
-                    "@id": "adex:AgriMarket"
-                },
-                {
-                    "@id": "adex:AgriBusiness"
-                },
-                {
-                    "@id": "adex:Transporter"
-                },
                 {
                     "@id": "adex:PowerDistribution"
                 }
             ],
             "adex:rangeIncludes": [
                 {
-                    "@container": "@list",
                     "@id": "adex:Text"
                 },
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }
