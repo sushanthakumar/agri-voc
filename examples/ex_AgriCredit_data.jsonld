@@ -1,0 +1,17 @@
+{
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "adex:AgriCredit",
+    "adex:Resource"
+  ],
+  "year":2011,
+  "evaluationYear":"2011-12",
+  "loanType":"crop loan",
+  "loanTargetAmount":10233.00,
+  "loanAchievementAmount":11787.00,
+  "achievementRate":115.19,
+  "totalTargetAmount":16123.00,
+  "totalAchievementAmount":22899.00,
+  "totalAchievementRate":142.03
+}

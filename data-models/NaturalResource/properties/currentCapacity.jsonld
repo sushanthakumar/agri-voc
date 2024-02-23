@@ -8,15 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:fe",
+            "@id": "adex:currentCapacity",
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Observed value of Iron composition in the entity under consideration.",
-            "rdfs:label": "fe",
+            "rdfs:comment": "The current volume of water stored in the reservoir corresponding to this observation.",
+            "rdfs:label": "currentCapacity",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:NutrientDesc"
+                    "@id": "adex:Irrigation"
                 }
             ],
             "adex:rangeIncludes": [
@@ -26,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

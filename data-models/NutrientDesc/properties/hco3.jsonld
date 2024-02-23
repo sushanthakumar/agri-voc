@@ -8,12 +8,15 @@
     },
     "@graph": [
         {
-            "@id": "adex:fe",
+            "@id": "adex:hco3",
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Observed value of Iron composition in the entity under consideration.",
-            "rdfs:label": "fe",
+            "rdfs:comment": "Observed value of Bicarbonate in the entity under consideration.",
+            "rdfs:label": "hco3",
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:NutrientDesc"
@@ -26,10 +29,7 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            }
+            ]
         }
     ]
 }

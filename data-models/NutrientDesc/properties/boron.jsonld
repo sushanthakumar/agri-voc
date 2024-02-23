@@ -12,11 +12,8 @@
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "Observed value of Boron composition in the soil.",
+            "rdfs:comment": "Observed value of Boron composition in the entity under consideration.",
             "rdfs:label": "boron",
-            "rdfs:isDefinedBy": {
-                "@id": "adex:"
-            },
             "adex:domainIncludes": [
                 {
                     "@id": "adex:NutrientDesc"
@@ -29,7 +26,10 @@
                 {
                     "@id": "adex:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "adex:"
+            }
         }
     ]
 }

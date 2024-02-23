@@ -46,8 +46,8 @@
             "inflow": {
                 "type": "number",
                 "description": "Indicates the rate at which water enters into the reservoir corresponding to this observation.",
-                "unitCode": "",
-                "unitText": ""
+                "unitCode": "K6",
+                "unitText": "kilolitre"
             },
             "riverBasin": {
                 "type": "string",
@@ -56,14 +56,26 @@
             "fullReservoirLevel": {
                 "type": "number",
                 "description": "The maximum level the water in the reservoir is designed to reach.",
-                "unitCode": "",
-                "unitText": ""
+                "unitCode": "LF",
+                "unitText": "linear foot"
+            },
+            "totalCapacity": {
+                "type": "number",
+                "description": "Represents the total volume of water that the reservoir corresponding to this observation can hold.",
+                "unitCode": "D41",
+                "unitText": "tonne per cubic metre"
             },
             "outflow": {
                 "type": "number",
                 "description": "Indicates the rate at which water flows out of the reservoir corresponding to this observation.",
-                "unitCode": "",
-                "unitText": ""
+                "unitCode": "K6",
+                "unitText": "kilolitre"
+            },
+            "currentCapacity": {
+                "type": "number",
+                "description": "The current volume of water stored in the reservoir corresponding to this observation.",
+                "unitCode": "D41",
+                "unitText": "tonne per cubic metre"
             },
             "season": {
                 "type": "string",
@@ -151,23 +163,11 @@
                     }
                 }
             },
-            "totalReservoirCapacity": {
-                "type": "number",
-                "description": "Represents the total volume of water that the reservoir corresponding to this observation can hold.",
-                "unitCode": "",
-                "unitText": ""
-            },
-            "currentReservoirCapacity": {
-                "type": "number",
-                "description": "The current volume of water stored in the reservoir corresponding to this observation.",
-                "unitCode": "",
-                "unitText": ""
-            },
             "waterLevel": {
                 "type": "number",
                 "description": "The water level in a specific water body such as the reservoir or the ground water table.",
-                "unitCode": "",
-                "unitText": ""
+                "unitCode": "LF",
+                "unitText": "linear foot"
             },
             "nutrientInfo": {
                 "type": "object",
@@ -175,99 +175,147 @@
                 "properties": {
                     "mgo": {
                         "type": "number",
-                        "description": "Observed value of Magnesium Oxide composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Magnesium Oxide composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "k2o": {
                         "type": "number",
-                        "description": "Observed value of Potassium Oxide composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Potassium Oxide composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "ca": {
                         "type": "number",
-                        "description": "Observed value of Calcium composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Calcium composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "nitrogen": {
                         "type": "number",
-                        "description": "Observed value of Nitrogen composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Nitrogen composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "organicCarbon": {
                         "type": "number",
-                        "description": "Observed value of Organic Carbon composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Organic Carbon composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "so4": {
+                        "type": "number",
+                        "description": "Observed value of Sulphate in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "mg": {
+                        "type": "number",
+                        "description": "Observed value of Magnesium in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "cl": {
                         "type": "number",
-                        "description": "Observed value of Chlorine composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Chlorine composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "boron": {
                         "type": "number",
-                        "description": "Observed value of Boron composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Boron composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "sulphur": {
                         "type": "number",
-                        "description": "Observed value of sulphur composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of sulphur composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "tds": {
+                        "type": "number",
+                        "description": "Observed value of Carbon trioxide in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "hco3": {
+                        "type": "number",
+                        "description": "Observed value of Bicarbonate in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "fluorine": {
+                        "type": "number",
+                        "description": "Observed value of Fluorine in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "potassium": {
                         "type": "number",
-                        "description": "Observed value of Potassium composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Potassium composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "fe": {
                         "type": "number",
-                        "description": "Observed value of Iron composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Iron composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "no3": {
+                        "type": "number",
+                        "description": "Observed value of Nitrate in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "zn": {
                         "type": "number",
-                        "description": "Observed value of Zinc composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Zinc composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "co3": {
+                        "type": "number",
+                        "description": "Observed value of Carbon trioxide in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "p2o5": {
                         "type": "number",
-                        "description": "Observed value of Phosphorus Pentoxide composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Phosphorus Pentoxide composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "na": {
+                        "type": "number",
+                        "description": "Observed value of Sodium in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "cu": {
                         "type": "number",
-                        "description": "Observed value of Copper composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Copper composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "mn": {
                         "type": "number",
-                        "description": "Observed value of Manganese composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Manganese composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "phosphorus": {
                         "type": "number",
-                        "description": "Observed value of Phosphorus composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Phosphorus composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     },
                     "mo": {
                         "type": "number",
-                        "description": "Observed value of Molybdenum composition in the soil.",
-                        "unitCode": "",
-                        "unitText": ""
+                        "description": "Observed value of Molybdenum composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
                     }
                 }
             }

@@ -8,18 +8,18 @@
     },
     "@graph": [
         {
-            "@id": "adex:currentReservoirCapacity",
+            "@id": "adex:so4",
             "@type": [
                 "adex:QuantitativeProperty"
             ],
-            "rdfs:comment": "The current volume of water stored in the reservoir corresponding to this observation.",
-            "rdfs:label": "currentReservoirCapacity",
+            "rdfs:comment": "Observed value of Sulphate in the entity under consideration.",
+            "rdfs:label": "so4",
             "rdfs:isDefinedBy": {
                 "@id": "adex:"
             },
             "adex:domainIncludes": [
                 {
-                    "@id": "adex:Irrigation"
+                    "@id": "adex:NutrientDesc"
                 }
             ],
             "adex:rangeIncludes": [
